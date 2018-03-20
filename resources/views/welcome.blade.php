@@ -79,7 +79,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    Content-Kvartiva
                 </div>
 
                 <div class="links">
