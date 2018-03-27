@@ -4,7 +4,7 @@
 @include('includes.footer')
 
 @section('intro')
-    <article id="intro" class="section-wrapper clearfix" data-custom-background-img="{{asset('img/bg9.jpg')}}">
+    <article id="main" class="section-wrapper clearfix" data-custom-background-img="{{asset('img/bg9.jpg')}}">
         <div class="content-wrapper clearfix wow fadeInDown" data-wow-delay="0.3s">
             <div class="col-sm-10 col-md-9 pull-right">
 
