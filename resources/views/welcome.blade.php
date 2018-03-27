@@ -80,10 +80,13 @@
             <div class="content">
                 <div class="title m-b-md">
                     Content-Kvartiva
+                    <span>AHAHAHAHahahahahHAHAHAHAHahhaha</span>
+                    <p>New super web site</p>
+                    <span>This site was developed from true developers Andrei and Philip</span>
                 </div>
 
                 <div class="links">
-                    <a href="https://laravel.com/docs">Documentation!!</a>
+                    <a href="https://laravel.com/docs">Documentation</a>
                     <a href="https://laracasts.com">Laracasts</a>
                     <a href="https://laravel-news.com">News</a>
                     <a href="https://forge.laravel.com">Forge</a>
