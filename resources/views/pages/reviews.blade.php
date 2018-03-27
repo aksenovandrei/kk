@@ -1,6 +1,6 @@
 @extends('layout.layout')
-@include('icludes.menu')
-@include('icludes.footer')
+@include('includes.menu')
+@include('includes.footer')
 @section('title', 'Отзывы')
 @section('reviews')
     <article id="carousel" class="section-wrapper clearfix" data-custom-background-img="{{asset('img/bg6.jpg')}}">

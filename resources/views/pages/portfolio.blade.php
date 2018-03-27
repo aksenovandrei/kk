@@ -1,6 +1,6 @@
 @extends('layout.layout')
-@include('icludes.menu')
-@include('icludes.footer')
+@include('includes.menu')
+@include('includes.footer')
 @section('title', 'Портфолио')
 @section('portfolio')
     <article id="grid" class="section-wrapper clearfix" data-custom-background-img="{{asset('img/bg2.jpg')}}">

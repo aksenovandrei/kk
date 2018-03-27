@@ -1,7 +1,7 @@
 @extends('layout.layout')
 @section('title', 'Главная')
-@include('icludes.menu')
-@include('icludes.footer')
+@include('includes.menu')
+@include('includes.footer')
 
 @section('intro')
     <article id="intro" class="section-wrapper clearfix" data-custom-background-img="{{asset('img/bg9.jpg')}}">
