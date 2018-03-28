@@ -1,5 +1,7 @@
 @import url('stylesheet.css');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,700&subset=cyrillic');
+/*@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,700&subset=cyrillic');*/
+/*@import url('https://fonts.googleapis.com/css?family=Open+Sans:700|Roboto:300,400,400i,700');*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans:700|Roboto:300,400,400i,700');
 /* ====================================================
    GENERAL STYLES
    ==================================================== */
@@ -10,7 +12,7 @@ html {
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 300;
     color: #fff;
     background: #000;
@@ -51,7 +53,7 @@ a:hover {
 p a {
     padding-bottom:1px;
     border-bottom:1px dotted rgba(255,255,255,0.4);
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 400;
 }
 p a:hover {
@@ -60,11 +62,11 @@ p a:hover {
 }
 
 strong {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 700;
 }
 em {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-style: italic;
 }
 
@@ -80,8 +82,12 @@ h6,
 .h4,
 .h5,
 .h6 {
-    font-family: 'Open Sans', sans-serif;
+    /*font-family: 'Open Sans', sans-serif;*/
+    font-family: 'Montserrat', sans-serif;
     font-weight: 700;
+}
+h1.main-title {
+    font-family: 'Open Sans', sans-serif;
 }
 h1 span {
     color:#FBB03B;
@@ -387,7 +393,7 @@ table {
     list-style: none;
     margin:0;
     padding:0;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-size:0.86em;
     line-height:1.05;
@@ -418,7 +424,7 @@ table {
 }
 
 #left-sidebar #main-menu > li.menu-item.active > * {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-weight: bold;
     background:rgba(0,0,0,0.15);
@@ -564,7 +570,7 @@ table {
     margin:20px 5%;
     overflow: visible;
     min-height:1px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 300;
     -webkit-transform: translate3d(0,0,0);
 }
@@ -706,6 +712,7 @@ h6 {
 
 #main-content *.section-title {
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+    margin-top: 20%;
 }
 
 #main-content .feature-paragraph {
@@ -1011,7 +1018,7 @@ ul.list {
     right:12%;
     text-align: right;
     position: absolute;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: bold;
     -webkit-transition: all 0.4s;
     transition: all 0.4s;
@@ -1246,7 +1253,7 @@ ul.list {
     background:#fff;
     color:#a10000;
     font-size: 0.7em;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 700;
     border-radius: 0;
     padding:8px 10px;
@@ -1269,7 +1276,7 @@ ul.list {
 
 #main-content .contact-details {
     font-size: 0.9em;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
     @media (min-width: 768px) {
@@ -1477,7 +1484,7 @@ ul.list {
     cursor: pointer;
     background:none;
     border-radius:0;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size:0.8em;
     line-height:1;
     font-weight: normal;
@@ -1521,12 +1528,15 @@ ul.list {
 
 #main-content .carousel *.title {
     font-size:2em;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 700;
     line-height:1.1;
     color:#fff;
     margin:0.6em 0 0.7em 0;
     display:block;
+}
+#main-content .carousel .reply-text {
+    font-style: italic;
 }
 
     @media (min-width: 768px) { 
@@ -1567,7 +1577,7 @@ ul.list {
             margin:0.3em 0 0.4em 0;
         }       
         #main-content .carousel .item p {
-            line-height:1.7;
+            line-height:1.3;
             margin:1.5em 0;
         }          
     }
@@ -1731,7 +1741,7 @@ ul.list {
     font-size: 0.9em;
     line-height: 1.1;
     text-align: center;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 300;
 }
 
@@ -1830,14 +1840,12 @@ ul.list {
 .tabpanel.styled-tabs ul.nav > li {
     position: relative;
     z-index: 1;
-    display: block;
+    display: inline-block;
     margin: 0;
     text-align: left;
-    width: 50%;
-    /*-webkit-flex: 1;
-    -moz-flex: 1;
-    -ms-flex: 1;
-    flex: 1;*/
+    width: 47%;
+    float: none;
+
 }
 
 .tabpanel.styled-tabs ul.nav > li > a {

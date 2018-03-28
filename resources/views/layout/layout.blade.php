@@ -50,8 +50,8 @@
     <section id="main-content" class="clearfix">
         @yield('intro')
         @yield('about')
-        @yield('reviews')
         @yield('services')
+        @yield('reviews')
         @yield('portfolio')
         @yield('vacancies')
         @yield('contact')

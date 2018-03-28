@@ -118,8 +118,8 @@
         <ul id="main-menu">
             <li id="menu-item-main" class="menu-item scroll"><a href="<?php echo route('main')?>">Главная</a></li>
             <li id="menu-item-text" class="menu-item scroll"><a href="<?php echo route('about')?>">О проекте</a></li>
-            <li id="menu-item-carousel" class="menu-item scroll"><a href="<?php echo route('reviews')?>">Отзывы</a></li>
             <li id="menu-item-tabs" class="menu-item scroll"><a href="<?php echo route('services')?>">Услуги</a></li>
+            <li id="menu-item-carousel" class="menu-item scroll"><a href="<?php echo route('reviews')?>">Отзывы</a></li>
             <li id="menu-item-featured" class="menu-item scroll"><a href="<?php echo route('portfolio')?>">Портфолио</a></li>
             <li id="menu-item-grid" class="menu-item scroll"><a href="<?php echo route('vacancies')?>">Вакансии</a></li>
             <li id="menu-item-contact" class="menu-item scroll"><a href="<?php echo route('contact')?>">Контакты</a></li>
