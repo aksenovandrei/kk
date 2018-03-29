@@ -11,9 +11,8 @@
 |
 */
 
-Route::get('/', ['as' => 'main', function () {
-    return view('pages.main');
-}]);
+Route::get('/', ['as' => 'main', 'uses' => 'ContactController@show']);
+Route::post('/', ['as' => 'main', 'uses' => 'ContactController@store']);
 Route::get('/about', ['as' => 'about', function () {
     return view('pages.about');
 }]);
@@ -31,4 +30,7 @@ Route::get('/vacancies', ['as' => 'vacancies', function () {
 }]);
 Route::get('/contact', ['as' => 'contact', function () {
     return view('pages.contact');
+}]);
+Route::get('/thanks', ['as' => 'thanks', function () {
+    return view('pages.thanks');
 }]);

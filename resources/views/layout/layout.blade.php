@@ -55,6 +55,7 @@
         @yield('portfolio')
         @yield('vacancies')
         @yield('contact')
+        @yield('thanks')
     </section>
     <!-- end: Main Content -->
     <!-- Footer -->
