@@ -483,173 +483,164 @@ function load_images(b, d, f) {
     }
 }
 
-function validate_and_submit_forms(b) {
-    var a = (b !== undefined && b.length > 0) ? b : $("form.validate-form");
-    a.each(function() {
-        var c = $(this);
-        c.find(".validate-field").each(function() {
-            $(this).change(function() {
-                $(this).siblings(".alert").fadeOut("fast", function() {
-                    $(this).remove()
-                });
-                if ($(this).val().trim() != "") {
-                    var e = validate_fields(c, $(this));
-                    if (e.length > 0) {
-                        if (e[0]["message"] !== undefined && e[0]["message"] != "" && e[0]["message"] != "success") {
-                            var d = '<div class="alert">' + e[0]["message"] + "</div>";
-                            $(this).after(d);
-                            $(this).siblings(".alert").fadeIn("fast")
-                        }
-                    }
-                }
-            })
-        });
-        c.find("#form-captcha-refresh").click(function() {
-            reset_captcha(c)
-        });
-        c.submit(function(e) {
-            e.preventDefault ? e.preventDefault() : e.returnValue = false;
-            $(this).find(".form-loader").fadeIn("fast");
-            var d = $(this).attr("action");
-            if (d === undefined && d == "") {
-                return false
-            }
-            $(this).find(".alert").fadeOut("fast", function() {
-                $(this).remove()
-            });
-            $(this).find(".form-general-error-container").fadeOut("fast", function() {
-                $(this).empty()
-            });
-            var f = false;
-            $(this).find(".validate-field").each(function() {
-                var h = validate_fields(c, $(this));
-                if (h.length > 0) {
-                    if (h[0]["message"] !== undefined && h[0]["message"] != "" && h[0]["message"] != "success") {
-                        var g = '<div class="alert">' + h[0]["message"] + "</div>";
-                        $(this).after(g);
-                        $(this).siblings(".alert").fadeIn("fast");
-                        f = true
-                    }
-                }
-            });
-            if (f == true) {
-                $(this).find(".form-loader").fadeOut("fast");
-                return false
-            }
-            $.ajax({
-                type: "POST",
-                url: d,
-                data: $(this).serialize(),
-                dataType: "html",
-                success: function(k) {
-                    c.find(".form-loader").fadeOut("fast");
-                    var l = (k == "success") ? true : false;
-                    var h = (k == "captcha") ? false : true;
-                    var g = "";
-                    switch (k) {
-                        case "success":
-                            g = "Form submitted successfully.";
-                            break;
-                        case "captcha":
-                            g = "Incorrect text entered. (Case-sensitive)";
-                            break;
-                        case "incomplete":
-                            g = "Please fill in all required fields.";
-                            break;
-                        case "error":
-                            g = "An error occured. Please try again later.";
-                            break
-                    }
-                    var j = '<div class="alert ';
-                    j += (l == true) ? "success" : "error";
-                    j += '">' + g + "</div>";
-                    if (!h) {
-                        c.find("#form-captcha").parent(".form-group").append(j);
-                        c.find("#form-captcha").siblings(".alert").fadeIn("fast")
-                    } else {
-                        c.find(".form-general-error-container").html(j).fadeIn("fast", function() {
-                            $(this).delay(10000).fadeOut("fast", function() {
-                                $(this).html("")
-                            })
-                        })
-                    }
-                    reset_captcha(c);
-                    if (l == true) {
-                        c.find(".form-control").val("")
-                    }
+$(document).ready(function() {
+    $('#sub-btn').on('click', function () {
+        if ($('#form-email').val().trim() == "" && $('#form-contact-number').val().trim() != "") {
+            console.log('!!!!!1111');
+            $('.form-val').bootstrapValidator({
+                // To use feedback icons, ensure that you use Bootstrap v3.1.0 or later
+
+                feedbackIcons: {
+                    valid: 'glyphicon glyphicon-ok',
+                    invalid: 'glyphicon glyphicon-remove',
+                    validating: 'glyphicon glyphicon-refresh'
                 },
-                error: function(h) {
-                    c.find(".form-loader").fadeOut("fast");
-                    var g = '<div class="alert">An error occured. Please try again later.</div>';
-                    c.find(".form-general-error-container").html(g).fadeIn("fast")
-                }
-            })
-        })
-    })
-}
-
-function reset_forms(b) {
-    if (b !== undefined && b.length > 0) {
-        var a = b;
-        a.find("input").val("");
-        a.find(".alert").remove();
-        a.find(".form-general-error-container").empty().hide();
-        reset_captcha(b)
-    }
-}
-
-function reset_captcha(b) {
-    var a = (b !== undefined && b.length > 0) ? b : $("form.validate-form");
-    a.each(function() {
-        var e = $(this);
-        var c = e.find("#form-captcha-img");
-        if (c.length > 0 && e.is(":visible")) {
-            var f = new Date().getTime();
-            c.replaceWith('<img id="form-captcha-img" src="assets/php/form_captcha/captcha_img.php?t=' + f + '" style="display:none">');
-            e.find("#form-captcha").val("");
-            setTimeout(function() {
-                e.find("#form-captcha-img").show()
-            }, 500)
-        }
-    })
-}
-
-function validate_fields(d, a) {
-    if (d !== undefined && d.length > 0) {
-        var b = (a !== undefined && a.length > 0) ? a : d.find(".validate");
-        var c = new Array();
-        b.each(function() {
-            var e = $(this).attr("data-validation-type");
-            var h = $(this).hasClass("required");
-            var g = $(this).val().trim();
-            var f = new Array();
-            f.field_object = $(this);
-            f.message = "success";
-            if (h == true && (g == "" || g === null || g === undefined)) {
-                f.message = "This field is required"
-            }
-            if (e == "string" && (g != "" && g !== null && g !== undefined)) {
-                if (g.match(/^[a-z0-9 .\-]+$/i) == null) {
-                    f.message = "Invalid characters found."
-                }
-            } else {
-                if (e == "email" && (g != "" && g !== null && g !== undefined)) {
-                    if (g.match(/^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/) == null) {
-                        f.message = "Please enter a valid email address."
-                    }
-                } else {
-                    if (e == "phone" && (g != "" && g !== null && g !== undefined)) {
-                        if (g.match(/^\(?\+?[\d\(\-\s\)]+$/) == null) {
-                            f.message = "Invalid characters found."
+                fields: {
+                    name: {
+                        validators: {
+                            stringLength: {
+                                min: 2,
+                                max: 10,
+                            },
+                            notEmpty: {
+                                message: 'Please supply your name'
+                            }
+                        }
+                    },
+                    contact_number: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Please supply your phone number'
+                            }
                         }
                     }
                 }
-            }
-            c.push(f)
-        });
-        return c
-    }
-}
+            })
+        } else if ($('#form-contact-number').val().trim() == "" && $('#form-email').val().trim() != "") {
+            console.log('2222222222222222');
+            $('.form-val').bootstrapValidator({
+                // To use feedback icons, ensure that you use Bootstrap v3.1.0 or later
+
+                feedbackIcons: {
+                    valid: 'glyphicon glyphicon-ok',
+                    invalid: 'glyphicon glyphicon-remove',
+                    validating: 'glyphicon glyphicon-refresh'
+                },
+                fields: {
+                    name: {
+                        validators: {
+                            stringLength: {
+                                min: 2,
+                                max: 10
+                            },
+                            notEmpty: {
+                                message: 'Please supply your name'
+                            }
+                        }
+                    },
+                    email: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Please supply your email address'
+                            },
+                            emailAddress: {
+                                message: 'Please supply a valid email address'
+                            }
+                        }
+                    }
+                }
+            })
+        } else {
+            console.log('3333333');
+            $('.form-val').bootstrapValidator({
+                // To use feedback icons, ensure that you use Bootstrap v3.1.0 or later
+
+                feedbackIcons: {
+                    valid: 'glyphicon glyphicon-ok',
+                    invalid: 'glyphicon glyphicon-remove',
+                    validating: 'glyphicon glyphicon-refresh'
+                },
+                fields: {
+                    name: {
+                        validators: {
+                            stringLength: {
+                                min: 2,
+                                max: 10,
+                            },
+                            notEmpty: {
+                                message: 'Please supply your name'
+                            }
+                        }
+                    },
+                    email: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Please supply your email address'
+                            },
+                            emailAddress: {
+                                message: 'Please supply a valid email address'
+                            }
+                        }
+                    },
+                    contact_number: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Please supply your phone number'
+                            }
+                        }
+                    }
+                }
+            })
+                /*.on('success.form.bv', function(e) {
+                    $('#success_message').slideDown({ opacity: "show" }, "slow") // Do something ...
+                    $('.form-val').data('bootstrapValidator').resetForm();
+
+                    // Prevent form submission
+                    e.preventDefault();
+
+                    // Get the form instance
+                    var $form = $(e.target);
+
+                    // Get the BootstrapValidator instance
+                    var bv = $form.data('bootstrapValidator');
+
+                    // Use Ajax to submit form data
+                    $.post($form.attr('action'), $form.serialize(), function(result) {
+                        console.log(result);
+                    }, 'json');
+                });*/
+        }
+    });
+
+
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 function contact_form_IE9_placeholder_fix() {
     var a = $("form");

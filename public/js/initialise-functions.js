@@ -36,9 +36,6 @@ function initialise_document_ready_functions()
       interval: 6000
     });
 
-    // initialise form validation and submit functions 
-    validate_and_submit_forms();
-
     // responsive videos
     $('.content-wrapper').fitVids();
 
@@ -92,13 +89,6 @@ function initialise_document_ready_functions()
             }
           }); 
         }
-
-        // initialise forms in popups
-        if ($('#common-modal form.validate-form').length > 0)
-        {
-            validate_and_submit_forms($('#common-modal form.validate-form'));
-            reset_forms($('#common-modal form.validate-form'));
-        }
     });
 
     // ------ On Closing Popups ------
@@ -111,14 +101,7 @@ function initialise_document_ready_functions()
           carousel_initialised_data.destroy();
         }
 
-        // reset captcha outside popup
-        if ($('#common-modal form.validate-form').length > 0)
-        {
-            setTimeout(function(){
-                $('#common-modal form.validate-form').remove();
-                reset_captcha();
-            }, 500);
-        }        
+
     });
     // ------ END: Owl Carousel ------    
 

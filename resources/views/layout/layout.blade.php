@@ -82,6 +82,11 @@
 <!-- Jquery and Bootstrap JS -->
 {{--<script src="{{asset('js/jquery.js')}}"></script>--}}
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+
+<script src='http://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.4.5/js/bootstrapvalidator.min.js'></script>
+
+
 {{--<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>--}}
 <script>window.jQuery || document.write('<script src="{{asset('js/jquery-1.11.2.min.js')}}"><\/script>')</script>
 <script src="{{asset('js/bootstrap.min.js')}}"></script>
@@ -111,7 +116,7 @@
 <script src="{{asset('js/jquery.fitvids.js')}}"></script>
 
 <!-- Custom functions for this theme -->
-<script src="{{asset('js/functions.min.js')}}"></script>
+<script src="{{asset('js/test.js')}}"></script>
 <script src="{{asset('js/initialise-functions.js')}}"></script>
 
 <!-- IE9 form fields placeholder fix -->
