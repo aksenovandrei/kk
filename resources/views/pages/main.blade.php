@@ -524,7 +524,7 @@
                 <!-- IMPORTANT: change the email address at the top of the assets/php/mail.php file to the email address that you want this form to send to -->
 
                 <form class="form-style clearfix form-val" action="{{route('main')}}" method="POST"
-                      role="form"> <!-- убрал класс validate-form-->
+                      role="form" name="form_name"> <!-- убрал класс validate-form-->
                 {{ csrf_field() }}
                 <!-- form left col -->
                     <div class="col-md-6">
@@ -541,7 +541,8 @@
                         <div class="form-group">
                             <input type="tel" class="text-field form-control phone"
                                    data-validation-type="phone" id="form-contact-number"
-                                   placeholder="Ваш телефон" name="contact_number" value="{{old('contact_number')}}">
+                                   placeholder="Ваш телефон" name="contact_number" value="{{old('contact_number')}}"
+                                   data-bv-live="disabled">
                         </div>
                         <!--<div class="form-group text-right">-->
                         <!--<img id="form-captcha-img" src="img/captcha_img.php">-->

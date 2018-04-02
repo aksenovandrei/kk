@@ -485,135 +485,49 @@ function load_images(b, d, f) {
 
 $(document).ready(function() {
     $('#sub-btn').on('click', function () {
-        if ($('#form-email').val().trim() == "" && $('#form-contact-number').val().trim() != "") {
-            console.log('!!!!!1111');
-            $('.form-val').bootstrapValidator({
-                // To use feedback icons, ensure that you use Bootstrap v3.1.0 or later
+        $('#form-email').removeAttr('disabled');
+        $('#form-contact-number').removeAttr('disabled');
 
-                feedbackIcons: {
-                    valid: 'glyphicon glyphicon-ok',
-                    invalid: 'glyphicon glyphicon-remove',
-                    validating: 'glyphicon glyphicon-refresh'
-                },
-                fields: {
-                    name: {
-                        validators: {
-                            stringLength: {
-                                min: 2,
-                                max: 10,
-                            },
-                            notEmpty: {
-                                message: 'Please supply your name'
-                            }
-                        }
-                    },
-                    contact_number: {
-                        validators: {
-                            notEmpty: {
-                                message: 'Please supply your phone number'
-                            }
-                        }
-                    }
-                }
-            })
-        } else if ($('#form-contact-number').val().trim() == "" && $('#form-email').val().trim() != "") {
-            console.log('2222222222222222');
-            $('.form-val').bootstrapValidator({
-                // To use feedback icons, ensure that you use Bootstrap v3.1.0 or later
-
-                feedbackIcons: {
-                    valid: 'glyphicon glyphicon-ok',
-                    invalid: 'glyphicon glyphicon-remove',
-                    validating: 'glyphicon glyphicon-refresh'
-                },
-                fields: {
-                    name: {
-                        validators: {
-                            stringLength: {
-                                min: 2,
-                                max: 10
-                            },
-                            notEmpty: {
-                                message: 'Please supply your name'
-                            }
-                        }
-                    },
-                    email: {
-                        validators: {
-                            notEmpty: {
-                                message: 'Please supply your email address'
-                            },
-                            emailAddress: {
-                                message: 'Please supply a valid email address'
-                            }
-                        }
-                    }
-                }
-            })
-        } else {
-            console.log('3333333');
-            $('.form-val').bootstrapValidator({
-                // To use feedback icons, ensure that you use Bootstrap v3.1.0 or later
-
-                feedbackIcons: {
-                    valid: 'glyphicon glyphicon-ok',
-                    invalid: 'glyphicon glyphicon-remove',
-                    validating: 'glyphicon glyphicon-refresh'
-                },
-                fields: {
-                    name: {
-                        validators: {
-                            stringLength: {
-                                min: 2,
-                                max: 10,
-                            },
-                            notEmpty: {
-                                message: 'Please supply your name'
-                            }
-                        }
-                    },
-                    email: {
-                        validators: {
-                            notEmpty: {
-                                message: 'Please supply your email address'
-                            },
-                            emailAddress: {
-                                message: 'Please supply a valid email address'
-                            }
-                        }
-                    },
-                    contact_number: {
-                        validators: {
-                            notEmpty: {
-                                message: 'Please supply your phone number'
-                            }
-                        }
-                    }
-                }
-            })
-                /*.on('success.form.bv', function(e) {
-                    $('#success_message').slideDown({ opacity: "show" }, "slow") // Do something ...
-                    $('.form-val').data('bootstrapValidator').resetForm();
-
-                    // Prevent form submission
-                    e.preventDefault();
-
-                    // Get the form instance
-                    var $form = $(e.target);
-
-                    // Get the BootstrapValidator instance
-                    var bv = $form.data('bootstrapValidator');
-
-                    // Use Ajax to submit form data
-                    $.post($form.attr('action'), $form.serialize(), function(result) {
-                        console.log(result);
-                    }, 'json');
-                });*/
-        }
+       if ($('#form-email').val().trim() != '') {
+           $('#form-contact-number').attr('disabled', 'disabled');
+       } else if (($('#form-contact-number').val().trim() != '')) {
+           $('#form-email').attr('disabled', 'disabled');
+       }
     });
-
-
-
+    $('.form-val').bootstrapValidator({
+        // To use feedback icons, ensure that you use Bootstrap v3.1.0 or later
+        feedbackIcons: {
+            valid: 'glyphicon glyphicon-ok',
+            invalid: 'glyphicon glyphicon-remove',
+            validating: 'glyphicon glyphicon-refresh'
+        },
+        fields: {
+            name: {
+                validators: {
+                    stringLength: {
+                        min: 2,
+                    },
+                    notEmpty: {
+                        message: '11111111111111111111111111'
+                    }
+                }
+            },
+            email: {
+                validators: {
+                    notEmpty: {
+                        message: 'asdasdasdasd'
+                    }
+                }
+            },
+            contact_number: {
+                validators: {
+                    notEmpty: {
+                        message: 'asdasdasdasd'
+                    }
+                }
+            }
+        }
+    })
 });
 
 
