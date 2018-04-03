@@ -117,11 +117,11 @@
 
         <ul id="main-menu">
             <li id="menu-item-main" class="menu-item scroll"><a href="#main">Главная</a></li>
-            <li id="menu-item-text" class="menu-item scroll"><a href="#about">О проекте</a></li>
-            <li id="menu-item-tabs" class="menu-item scroll"><a href="#services">Услуги</a></li>
-            <li id="menu-item-carousel" class="menu-item scroll"><a href="#reviews">Отзывы</a></li>
-            <li id="menu-item-featured" class="menu-item scroll"><a href="#portfolio">Портфолио</a></li>
-            <li id="menu-item-grid" class="menu-item scroll"><a href="#vacancies">Вакансии</a></li>
+            <li id="menu-item-about" class="menu-item scroll"><a href="#about">О проекте</a></li>
+            <li id="menu-item-services" class="menu-item scroll"><a href="#services">Услуги</a></li>
+            <li id="menu-item-reviews" class="menu-item scroll"><a href="#reviews">Отзывы</a></li>
+            <li id="menu-item-portfolio" class="menu-item scroll"><a href="#portfolio">Портфолио</a></li>
+            <li id="menu-item-vacancies" class="menu-item scroll"><a href="#vacancies">Вакансии</a></li>
             <li id="menu-item-contact" class="menu-item scroll"><a href="#contact">Контакты</a></li>
         </ul><!-- #main-menu -->
 

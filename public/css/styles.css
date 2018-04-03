@@ -2075,3 +2075,8 @@ img.full-width {
 .vegas-loading {
   display:none !important;
 }
+small.help-block  {
+    background: #ffffff;
+    margin: 0;
+    padding: 5px;
+}

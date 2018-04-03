@@ -487,6 +487,7 @@ $(document).ready(function() {
     $('#sub-btn').on('click', function () {
         $('#form-email').removeAttr('disabled');
         $('#form-contact-number').removeAttr('disabled');
+        $('#sub-btn').removeAttr('disabled');
 
        if ($('#form-email').val().trim() != '') {
            $('#form-contact-number').attr('disabled', 'disabled');
@@ -505,24 +506,31 @@ $(document).ready(function() {
             name: {
                 validators: {
                     stringLength: {
-                        min: 2,
+                        min: 2
                     },
                     notEmpty: {
-                        message: '11111111111111111111111111'
+                        message: 'Пожадуйста, введите свое имя'
                     }
                 }
             },
             email: {
                 validators: {
                     notEmpty: {
-                        message: 'asdasdasdasd'
+                        message: 'Пожалуйста, введите свой email'
+                    },
+                    regexp: {
+                        regexp: /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/,
+                        message: 'Введите правильный email адрес'
                     }
                 }
             },
             contact_number: {
                 validators: {
+                    stringLength: {
+                        min: 5
+                    },
                     notEmpty: {
-                        message: 'asdasdasdasd'
+                        message: 'Пожалуйста, введите свой телефон'
                     }
                 }
             }
