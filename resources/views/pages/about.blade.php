@@ -1,7 +1,10 @@
 @extends('layout.layout')
-@include('includes.menu')
+@include('includes.sub-menu')
 @include('includes.footer')
 @section('title', 'О проекте')
+<!-- Menu -->
+@yield('sub-menu')
+<!-- end: Menu -->
 @section('about')
     <article id="about" class="section-wrapper clearfix about-1" data-custom-background-img="{{asset('img/bg1.jpg')}}">
         <div class="content-wrapper clearfix">

@@ -488,12 +488,14 @@ $(document).ready(function() {
         $('#form-email').removeAttr('disabled');
         $('#form-contact-number').removeAttr('disabled');
         $('#sub-btn').removeAttr('disabled');
-
-       if ($('#form-email').val().trim() != '') {
+        if ($('#form-email').val().trim() != '' && $('#form-contact-number').val().trim() != '' ) {
+            $('#form-contact-number').attr('disabled', 'enabled');
+            $('#form-email').attr('disabled', 'enabled');
+        } else if ($('#form-email').val().trim() != '') {
            $('#form-contact-number').attr('disabled', 'disabled');
-       } else if (($('#form-contact-number').val().trim() != '')) {
+        } else if (($('#form-contact-number').val().trim() != '')) {
            $('#form-email').attr('disabled', 'disabled');
-       }
+        }
     });
     $('.form-val').bootstrapValidator({
         // To use feedback icons, ensure that you use Bootstrap v3.1.0 or later

@@ -43,9 +43,6 @@
 
 <body data-default-background-img="{{asset('img/bg5.jpg')}}" data-overlay="true" data-overlay-opacity="0.35">
 <div id="outer-container">
-    <!-- Menu -->
-@yield('menu')
-<!-- end: Menu -->
     <!-- Main Content -->
     <section id="main-content" class="clearfix">
         @yield('intro')
@@ -53,6 +50,7 @@
         @yield('services')
         @yield('reviews')
         @yield('portfolio')
+        @yield('partners')
         @yield('vacancies')
         @yield('contact')
         @yield('thanks')

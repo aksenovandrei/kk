@@ -2,7 +2,9 @@
 @section('title', 'Главная')
 @include('includes.menu')
 @include('includes.footer')
-
+<!-- Menu -->
+@yield('menu')
+<!-- end: Menu -->
 @section('intro')
     <article id="main" class="section-wrapper clearfix" data-custom-background-img="{{asset('img/bg9.jpg')}}">
         <div class="content-wrapper clearfix wow fadeInDown" data-wow-delay="0.3s">
@@ -444,6 +446,65 @@
                         </div><!-- #modal-content-8 -->
                         <p class="btn-inrow"><a href="#text" class="link-scroll btn btn-outline-inverse btn-lg">Больше
                                 кейсов</a></p>
+                    </article>
+                </section><!-- end: .feature-columns -->
+
+                <!-- End: Section content to edit -->
+
+            </div><!-- .col-sm-10 -->
+        </div><!-- .content-wrapper -->
+    </article><!-- .section-wrapper -->
+@stop
+@section('partners')
+    <article id="partners" class="section-wrapper clearfix" data-custom-background-img="{{asset('img/bg3.jpg')}}">
+        <div class="content-wrapper clearfix">
+            <div class="col-sm-11 pull-right">
+
+                <h1 class="section-title">Наши партнеры</h1>
+
+                <!-- feature columns -->
+                <section class="feature-columns row clearfix">
+
+                    <!-- feature 1 -->
+                    <article class="feature-col col-md-4">
+                        <a href="#"
+                           class="thumbnail linked">
+                            <div class="image-container">
+                                <img data-img-src="{{asset('img/mega-preview.jpg')}}" class="lazy item-thumbnail"
+                                     alt="Lorem Ipsum">
+                            </div>
+                            <div class="caption">
+                                <h6>Текст на лендинг Мегатренинга Ицхака Пинтосевича</h6>
+                            </div><!-- .caption -->
+                        </a><!-- .thumbnail -->
+                    </article>
+
+                    <!-- feature 2 -->
+                    <article class="feature-col col-md-4">
+                        <a href="#"
+                           class="thumbnail linked">
+                            <div class="image-container">
+                                <img data-img-src="{{asset('img/kolesnikov-preview.jpg')}}" class="lazy item-thumbnail"
+                                     alt="Lorem Ipsum">
+                            </div>
+                            <div class="caption">
+                                <h6>Блог эксперта по Facebook из США</h6>
+                            </div><!-- .caption -->
+                        </a><!-- .thumbnail -->
+                    </article>
+
+                    <!-- feature 3 -->
+                    <article class="feature-col col-md-4">
+                        <a href="#"
+                           class="thumbnail linked">
+                            <div class="image-container">
+                                <img data-img-src="{{asset('img/gayvan-preview.jpg')}}" class="lazy item-thumbnail"
+                                     alt="Lorem Ipsum">
+                            </div>
+                            <div class="caption">
+                                <h6>Страница в Instagram интернет-магазина чая из Германии</h6>
+                            </div><!-- .caption -->
+                        </a><!-- .thumbnail -->
                     </article>
                 </section><!-- end: .feature-columns -->
 
