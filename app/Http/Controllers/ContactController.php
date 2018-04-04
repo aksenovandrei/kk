@@ -19,15 +19,16 @@ class ContactController extends Controller
         $order->name = $request->name;
         $order->email = $request->email;
         $order->phone = $request->contact_number;
-        $order->text = $request->message;
+        $order->message = $request->message;
 
         $order->save();
 
-
-
+        $order->sendEmail($order);
 
         $request->session()->put('userName', $request->name);
         return redirect()->route('thanks');
 
     }
+
 }
+

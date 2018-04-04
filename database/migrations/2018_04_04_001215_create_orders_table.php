@@ -18,7 +18,7 @@ class CreateOrdersTable extends Migration
             $table->string('name', 70);
             $table->integer('phone');
             $table->string('email');
-            $table->text('text');
+            $table->text('message');
             $table->text('user_order');
             $table->timestamps();
         });

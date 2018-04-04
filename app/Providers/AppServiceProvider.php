@@ -19,10 +19,10 @@ class AppServiceProvider extends ServiceProvider
         Schema::defaultStringLength(191); // без это записий не работает миграция
 
         //прослушивание - как только будет выполняться любой sql запрос - метод listen вызовет на исполнение эту функцию
-        DB::listen(function ($query){
-            dump($query->sql);
-            dump($query->bindings);
-        });
+//        DB::listen(function ($query){
+//            dump($query->sql);
+//            dump($query->bindings);
+//        });
     }
 
     /**
