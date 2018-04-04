@@ -13,6 +13,7 @@ class ContactController extends Controller
         return view('pages.main');
     }
     public function store(Request $request){
+dd ($request);
 
         $order = new Order();
 

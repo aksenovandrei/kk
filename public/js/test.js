@@ -489,8 +489,8 @@ $(document).ready(function() {
         $('#form-contact-number').removeAttr('disabled');
         $('#sub-btn').removeAttr('disabled');
         if ($('#form-email').val().trim() != '' && $('#form-contact-number').val().trim() != '' ) {
-            $('#form-contact-number').attr('disabled', 'enabled');
-            $('#form-email').attr('disabled', 'enabled');
+            $('#form-contact-number').removeAttr('disabled');
+            $('#form-email').removeAttr('disabled');
         } else if ($('#form-email').val().trim() != '') {
            $('#form-contact-number').attr('disabled', 'disabled');
         } else if (($('#form-contact-number').val().trim() != '')) {
