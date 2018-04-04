@@ -1,102 +1,137 @@
 @extends('layout.layout')
-@include('includes.menu')
+@include('includes.sub-menu')
 @include('includes.footer')
 @section('title', 'Услуги')
+<!-- Menu -->
+@yield('sub-menu')
+<!-- end: Menu -->
 @section('services')
-    <article id="grid" class="section-wrapper clearfix" data-custom-background-img="{{asset('img/bg2.jpg')}}">
-        <div class="content-wrapper clearfix">
-            <div class="col-sm-11 col-md-10 pull-right">
+    <article id="services" class="section-wrapper clearfix" data-custom-background-img="{{asset('img/bg2.jpg')}}">
+        <div class="content-wrapper mid-vertical-positioning clearfix" >
+            <div class="col-sm-10 col-md-9 pull-right">
 
-                <h1 class="section-title">Наши услуги</h1>
+                <h1 id="services"  class="section-title">Наши услуги</h1>
+                <h6 class="text-left">Как мы можем быть полезны Вашему бизнесу?</h6>
 
-                <!-- grid -->
-                <section class="grid row clearfix clearfix-for-2cols">
+                <div  class="tabpanel styled-tabs uniform-height" role="tabpanel">
 
-                    <!-- grid item -->
-                    <div class="grid-item col-md-6">
-                        <div class="item-content clearfix">
-                            <div class="text-content">
-                                <h5>Контент</h5>
-                                <p>Ведение блогов (личных и компаний)<br>
-                                    Ведение страниц в соцсетях (личных и компаний)<br>
-                                    Написание репутационных статей<br>
-                                    Внедрение контент-маркетинга в Ваш бизнес “под ключ”
-                                </p>
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs" role="tablist" id="accordion">
+                        <li class="card">
+                            <a href="javascript:void(0)" class="card-header" id="headingOne">
+                                <i class="icon fab fa-accusoft"></i><span class="btn" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Контент
+                                </span>
+                            </a>
+                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                                <div class="card-body">
+                                    <ul>
+                                        <li>Ведение блогов (личных и компаний)</li>
+                                        <li>Ведение страниц в соцсетях (личных и компаний)</li>
+                                        <li>Написание репутационных статей</li>
+                                        <li>Внедрение контент-маркетинга в Ваш бизнес “под ключ”</li>
+                                    </ul>
+                                </div>
                             </div>
-                        </div><!-- end: .item-content -->
-                    </div><!-- end: .grid-item -->
+                        </li>
 
-                    <!-- grid item -->
-                    <div class="grid-item col-md-6">
-                        <div class="item-content clearfix">
-                            <div class="text-content">
-                                <h5>Продающий копирайтинг</h5>
-                                <p>Написание текстов на лендинги, посадочные страницы, страницы лид-магнитов<br>
-                                    Написание коммерческих предложений<br>
-                                    Написание писем в email-рассылки и чат-бот рассылки<br>
-                                    Тексты для корпоративных сайтов и другие копирайтинг-задачи
-                                </p>
+                        <li class="card">
+                            <a href="javascript:void(0)" class="card-header" id="headingTwo">
+                                    <i class="icon fas fa-edit"></i><span class="btn" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                    Продающий копирайтинг
+                                </span>
+                            </a>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                <div class="card-body">
+                                    <ul>
+                                        <li>Написание текстов на лендинги, посадочные страницы, страницы лид-магнитов</li>
+                                        <li>Написание коммерческих предложений</li>
+                                        <li>Написание писем в email-рассылки и чат-бот рассылки</li>
+                                        <li>Тексты для корпоративных сайтов и другие копирайтинг-задачи</li>
+                                    </ul>
+                                </div>
                             </div>
-                        </div><!-- end: .item-content -->
-                    </div><!-- end: .grid-item -->
+                        </li>
 
-                    <!-- grid item -->
-                    <div class="grid-item col-md-6">
-                        <div class="item-content clearfix">
-                            <div class="text-content">
-                                <h5>Маркетинг</h5>
-                                <p>Разработка контент-стратегий<br>
-                                    Разработка стратегий под запуск<br>
-                                    Разработка маркетинг-стратегий<br>
-                                    Разработка воронок писем
-                                </p>
+                        <li class="card">
+                            <a href="javascript:void(0)" class="card-header" id="headingThree">
+                                    <i class="icon fas fa-chart-bar"></i><span class="btn" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                    Маркетинг
+                                </span>
+                            </a>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                                <div class="card-body">
+                                    <ul>
+                                        <li>Разработка контент-стратегий</li>
+                                        <li>Разработка стратегий под запуск</li>
+                                        <li>Разработка маркетинг-стратегий</li>
+                                        <li>Разработка воронок писем</li>
+                                    </ul>
+                                </div>
                             </div>
-                        </div><!-- end: .item-content -->
-                    </div><!-- end: .grid-item -->
+                        </li>
+                    </ul>
 
-                    <!-- grid item -->
-                    <div class="grid-item col-md-6">
-                        <div class="item-content clearfix">
-                            <div class="text-content">
-                                <h5>Реклама</h5>
-                                <p>Сбор участников на онлайн и живые события<br>
-                                    Сбор заявок на покупку продуктов<br>
-                                    Продвижение сообществ в соцсетях<br>
-                                    Комплексное продвижение в соцсетях
-                                </p>
+
+                    <ul class="nav nav-tabs" role="tablist" id="accordion">
+                        <li class="card">
+                            <a href="javascript:void(0)" class="card-header" id="headingFour">
+                                <i class="icon fas fa-bullhorn"></i><span class="btn" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseOne">
+                                    Реклама
+                                </span>
+                            </a>
+                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                                <div class="card-body">
+                                    <ul>
+                                        <li>Ведение блогов (личных и компаний)</li>
+                                        <li>Ведение страниц в соцсетях (личных и компаний)</li>
+                                        <li>Написание репутационных статей</li>
+                                        <li>Внедрение контент-маркетинга в Ваш бизнес “под ключ”</li>
+                                    </ul>
+                                </div>
                             </div>
-                        </div><!-- end: .item-content -->
-                    </div><!-- end: .grid-item -->
+                        </li>
 
-                    <div class="grid-item col-md-6">
-                        <div class="item-content clearfix">
-                            <div class="text-content">
-                                <h5>Технические услуги</h5>
-                                <p>Создание сайтов и блогов<br>
-                                    Создание лендингов, посадочных страниц “под ключ”<br>
-                                    Создание чат-ботов<br>
-                                    Реализация технических задач любой сложности
-                                </p>
+                        <li class="card">
+                            <a href="javascript:void(0)" class="card-header" id="headingFive">
+                                <i class="icon fas fa-laptop"></i><span class="btn" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                                    Технические услуги
+                                </span>
+                            </a>
+                            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                                <div class="card-body">
+                                    <ul>
+                                        <li>Написание текстов на лендинги, посадочные страницы, страницы лид-магнитов</li>
+                                        <li>Написание коммерческих предложений</li>
+                                        <li>Написание писем в email-рассылки и чат-бот рассылки</li>
+                                        <li>Тексты для корпоративных сайтов и другие копирайтинг-задачи</li>
+                                    </ul>
+                                </div>
                             </div>
-                        </div><!-- end: .item-content -->
-                    </div><!-- end: .grid-item -->
+                        </li>
 
-                    <div class="grid-item col-md-6">
-                        <div class="item-content clearfix">
-                            <div class="text-content">
-                                <h5>Дизайн</h5>
-                                <p>Дизайн продающих страниц<br>
-                                    Дизайн корпоративных сайтов и блогов<br>
-                                    Оформление коммерческих предложений<br>
-                                    Решение других дизайн-задач для Вашего бизнеса
-
-                                </p>
+                        <li class="card">
+                            <a href="javascript:void(0)" class="card-header" id="headingSix">
+                                <i class="icon far fa-object-group"></i><span class="btn" data-toggle="collapse" data-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+                                    Дизайн
+                                </span>
+                            </a>
+                            <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+                                <div class="card-body">
+                                    <ul>
+                                        <li>Разработка контент-стратегий</li>
+                                        <li>Разработка стратегий под запуск</li>
+                                        <li>Разработка маркетинг-стратегий</li>
+                                        <li>Разработка воронок писем</li>
+                                    </ul>
+                                </div>
                             </div>
-                        </div><!-- end: .item-content -->
-                    </div><!-- end: .grid-item -->
-                </section><!-- end: grid -->
+                        </li>
+                    </ul>
+                </div><!-- .tabpanel -->
 
-            </div><!-- .col-sm-11 -->
+            </div><!-- .col-sm-10 -->
         </div><!-- .content-wrapper -->
     </article><!-- .section-wrapper -->
+
 @stop

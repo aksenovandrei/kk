@@ -17,7 +17,7 @@
         </div><!-- .content-wrapper -->
     </article><!-- .section-wrapper -->
 
-    <article id="about2" class="section-wrapper clearfix" data-custom-background-img="{{asset('img/bg9.jpg')}}">
+    <article id="about2" class="section-wrapper clearfix" data-custom-background-img="{{asset('img/bg4.jpg')}}">
         <div class="content-wrapper clearfix">
             <div class="col-sm-10 col-md-9 pull-right">
                 <h4>Вы сидите на стуле в пустой квартире.</h4>
@@ -57,7 +57,7 @@
         </div><!-- .content-wrapper -->
     </article><!-- .section-wrapper -->
 
-    <article id="about4" class="section-wrapper clearfix" data-custom-background-img="{{asset('img/bg2.jpg')}}">
+    <article id="about4" class="section-wrapper clearfix" data-custom-background-img="{{asset('img/bg4.jpg')}}">
         <div class="content-wrapper clearfix">
             <div class="col-sm-10 col-md-9 pull-right">
 
@@ -129,9 +129,264 @@
                             </div>
                         </div><!-- end: .item-content -->
                     </div><!-- end: .grid-item -->
-
+                    <h6 class="text-center">Специалистов, которые любят то, что делают<br>
+                        И выкладываются на 101% просто потому, что по-другому не умеют и не хотят</h6>
                 </section><!-- end: grid -->
             </div><!-- .col-sm-10 -->
+        </div><!-- .content-wrapper -->
+    </article><!-- .section-wrapper -->
+
+    <article id="about5" class="section-wrapper clearfix" data-custom-background-img="{{asset('img/bg4.jpg')}}">
+        <div class="content-wrapper clearfix">
+            <div class="col-sm-2 col-md-2 pull-left">
+                <img src="{{asset('img/alina.png')}}" alt="Alina">
+            </div>
+            <div class="col-sm-10 col-md-9 pull-right">
+                <h4 class="text-left">Почему Ваша удаленная команда справится со всеми задачами</h4>
+                <p class="text-left">Привет! Меня зовут Алина Аксёнова.<br><br>
+                    Я контент-маркетолог. Основатель проектов Контент Квартира - удаленный контент-отдел, интегрируемый в бизнес, и Пиши Просто - обучающий проект, где делюсь нашими наработками в области контент-маркетинга</p>
+                <p>
+                <h6 class="text-left">Что у меня есть на сегодня:</h6>
+                <ul class="list">
+                    <li>Более 11520 часов практического опыта продающего копирайтинга и контент-маркетинга</li>
+                    <li>Сотни реализованных копирайтинг-проектов</li>
+                    <li>Десятки успешно внедренных в бизнесы клиентов Контент Квартиры стратегий по работе с контентом</li>
+                    <li>Команда из 18 контент-маркетологов</li>
+                    <li>Контент-маркетинг проекты для рынков Польши, Германии, Италии</li>
+                    <li>Работа с лучшими: GeniusMarketing, Игорь Обуховский, Бегущий Банкир Андрей Онистрат, Роман Шляхов, Ицхак Пинтосевич, Первая мужская конференция в Украине, Группа строительных компаний Delmar, Павел Авдонькин, Vinzer Home, Эдвард Дубинский и другими</li>
+                    <li>Вывод компании с информационным продуктом в ТОП-40 компаний Украины по самому активному продвижению в Facebook (наряду с известными автомобильными брендами, брендами одежды и продуктами питания)</li>
+                    <li>Автор контент-стратегии, которая приносит продаж на 14.000$ в месяц без вложений”</li>
+                </ul>
+                </p>
+
+            </div><!-- .col-sm-10 -->
+        </div><!-- .content-wrapper -->
+    </article><!-- .section-wrapper -->
+
+    <article id="about6" class="section-wrapper clearfix" data-custom-background-img="{{asset('img/bg4.jpg')}}">
+        <div class="content-wrapper clearfix">
+            <div class="col-sm-11 pull-right">
+
+                <h4 class="section-title">Она лично подобрала и протестировала людей, которые создадут для Вашей
+                    компании что-то подобное:</h4>
+
+                <!-- feature columns -->
+                <section class="feature-columns row clearfix">
+
+                    <!-- feature 1 -->
+                    <article class="feature-col col-md-4">
+                        <a href="" onclick="populate_and_open_modal(event, 'modal-content-7');"
+                           class="thumbnail linked">
+                            <div class="image-container">
+                                <img data-img-src="{{asset('img/mega-preview.jpg')}}" class="lazy item-thumbnail"
+                                     alt="Lorem Ipsum">
+                            </div>
+                            <div class="caption">
+                                <h6>Текст на лендинг Мегатренинга Ицхака Пинтосевича</h6>
+                            </div><!-- .caption -->
+                        </a><!-- .thumbnail -->
+
+                        <div class="content-to-populate-in-modal" id="modal-content-7">
+                            <img data-img-src="{{asset('img/megatraining.png')}}" class="lazy full-width"
+                                 alt="Lorem Ipsum">
+                        </div><!-- #modal-content-7 -->
+                    </article>
+
+                    <!-- feature 2 -->
+                    <article class="feature-col col-md-4">
+                        <a href="" onclick="populate_and_open_modal(event, 'modal-content-8', '', 'full-size');"
+                           class="thumbnail linked">
+                            <div class="image-container">
+                                <img data-img-src="{{asset('img/kolesnikov-preview.jpg')}}" class="lazy item-thumbnail"
+                                     alt="Lorem Ipsum">
+                            </div>
+                            <div class="caption">
+                                <h6>Блог эксперта по Facebook из США</h6>
+                            </div><!-- .caption -->
+                        </a><!-- .thumbnail -->
+
+                        <div class="content-to-populate-in-modal" id="modal-content-8">
+                            <h3>Личный блог эксперта по
+                                Фейсбук-продвижению из США
+                                Давида Колесникова</h3>
+                            <h5>Краткое описание проекта</h5>
+                            <p>Давид Колесников – эксперт по продвижению бизнеса в Facebook, интернет-маркетолог,
+                                предприниматель из Америки, который только выходит на рынок СНГ и не является узнаваемой
+                                для аудитории личностью.</p>
+                            <h5>Цели</h5>
+                            <p>
+                            <ul>
+                                <li>Формирование образа эксперта в своей нише (продвижение бизнеса через Facebook);</li>
+                                <li>Повышение уровня доверия у аудитории, которая привлекается на события.</li>
+                                <li>Активность по имени в сети.</li>
+                            </ul>
+                            </p>
+                            <h5>Инструмент</h5>
+                            <p>Блог.</p>
+                            <h5>Вложения: точечное продвижение постов.</h5>
+                            <p>При минимальных вложениях, за счет качества предоставляемой информации, уже на 3-м месяце
+                                ведения блога (на первом запуске) клиент сделал продажи своего авторского онлайн-курса
+                                по продвижению в Facebook при стоимости пакета участия от $200.</p>
+
+                            <div id="unique-id-for-alt-image-slider" class="owl-carousel popup-alt-image-gallery">
+                                <div class="item">
+                                    <a href="https://www.davidkolesnikov.com/blog/6-prostyh-shagov-kak-zanyat-vysokuyu-pozitsiyu-v-poiskovoj-vydache-google/"
+                                       target="_blank"><img class="lazyOwl"
+                                                            data-src="{{asset('img/kolesnikov-link1.jpg')}}">
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="https://www.davidkolesnikov.com/blog/8-proverennyh-sovetov-po-raskrutke-biznesa-v-instagram-chast-1/"
+                                       target="_blank"><img class="lazyOwl"
+                                                            data-src="{{asset('img/kolesnikov-link2.jpg')}}"></a>
+                                </div>
+                                <div class="item">
+                                    <a href="https://www.davidkolesnikov.com/blog/kak-sozdavat-ubeditelnyj-kontent-chtoby-rasshiryat-klientskuyu-bazu/"
+                                       target="_blank"><img class="lazyOwl"
+                                                            data-src="{{asset('img/kolesnikov-link3.jpg')}}"></a>
+                                </div>
+                                <div class="item">
+                                    <a href="https://www.davidkolesnikov.com/blog/zachem-vnedryat-programmu-loyalnosti-klientov/"
+                                       target="_blank"><img class="lazyOwl"
+                                                            data-src="{{asset('img/kolesnikov-link4.jpg')}}"></a>
+                                </div>
+                            </div>
+                        </div><!-- #modal-content-8 -->
+                    </article>
+
+                    <!-- feature 3 -->
+                    <article class="feature-col col-md-4">
+                        <a href="" onclick="populate_and_open_modal(event, 'modal-content-9', '', 'full-size');"
+                           class="thumbnail linked">
+                            <div class="image-container">
+                                <img data-img-src="{{asset('img/gayvan-preview.jpg')}}" class="lazy item-thumbnail"
+                                     alt="Lorem Ipsum">
+                            </div>
+                            <div class="caption">
+                                <h6>Страница в Instagram интернет-магазина чая из Германии</h6>
+                            </div><!-- .caption -->
+                        </a><!-- .thumbnail -->
+
+                        <div class="content-to-populate-in-modal" id="modal-content-9">
+                            <h3>Проект “Чай Гайван”</h3>
+                            <h5>Описание проекта</h5>
+                            <p>Клиент - ТМ, занимающаяся продажей элитных сортов чая в Германии и Англии.</p>
+                            <h5>Цели</h5>
+                            <p>
+                            <ul>
+                                <li>Повысить узнаваемость бренда</li>
+                                <li>Собрать аудиторию ценителей чая в одном месте</li>
+                                <li>Активность по имени в сети.</li>
+                                <li>Сформировать образ места, где истинные ценители чая могут найти напиток
+                                    индивидуально под свои вкусы и требования
+                                </li>
+                                <li>Сформировать образ владельца ТМ как эксперта в чае</li>
+                            </ul>
+                            </p>
+                            <h5>Инструмент: Instagram</h5>
+                            <p>*аккаунт велся на английском языке</p>
+                            <h5>Первый этап работы</h5>
+                            <p>
+                            <ul>
+                                <li>Создание контент-плана и внедрение разнообразных рубрик постов вместо однообразных
+                                    продающих публикаций;
+                                </li>
+                                <li>Смена внешнего вида аккаунта.</li>
+                            </ul>
+                            </p>
+                            <div class="block-item">
+                                <p>Так аккаунт выглядел до начала работы</p>
+                                <img src="{{asset('img/gayvan1.jpg')}}">
+                            </div>
+                            <div class="block-item">
+                                <p>Так - через пару недель после старта</p>
+                                <img src="{{asset('img/gayvan2.jpg')}}">
+                            </div>
+                            <div class="block-item">
+                                <p>Мы меняли внешний вид аккаунта <br>в зависимости от сезона</p>
+                                <img src="{{asset('img/gayvan3.jpg')}}">
+                            </div>
+                            <div class="block-item">
+                                <p>Наилучшим образом аудитория реагировала именно на фото в таких теплых тонах</p>
+                                <img src="{{asset('img/gayvan4.jpg')}}">
+                            </div>
+                            <h5>Второй этап</h5>
+                            <p>
+                            <ul>
+                                <li>Продвижение. Мы использовали продвижение публикаций на разные группы потенциально
+                                    заинтересованной аудитории в Инстаграм.
+                                </li>
+                                <li>Сложность задачи - продвижение осуществлялось на рынок Англии и Германии. Контент
+                                    там воспринимается иначе, нежели на русскоязычном рынке. К примеру, аудиторию сложно
+                                    зацепить всевозможными розыгрышами и бесплатностями.
+                                </li>
+                                <li>днако нам удалось выйти на стоимость уникального клика 0,23-0,63 евро (в 2,5 раза
+                                    дешевле изначальной цены), что для европейского рынка считается отличным
+                                    показателем.
+                                </li>
+                            </ul>
+                            </p>
+                            <p>Исходя их общей затраченной на продвижение суммы и количества новых подписчиков в месяц,
+                                стоимость подписчика выходила 1,2 евро, а через месяц была снижена до 1,1 евро (при
+                                среднем показателе цены подписчика по Европе в 2,5-3,5 евро). </p>
+                            <p>Кроме того, бонусом удалось увеличить количество переходов в магазин клиента на Амазоне
+                                из Инстаграм, хотя такой цели рекламная кампания вообще не преследовала.</p>
+
+                        </div><!-- #modal-content-8 -->
+                        <p class="btn-inrow"><a href="#text" class="link-scroll btn btn-outline-inverse btn-lg">Больше
+                                кейсов</a></p>
+                    </article>
+                </section><!-- end: .feature-columns -->
+
+                <!-- End: Section content to edit -->
+
+            </div><!-- .col-sm-10 -->
+        </div><!-- .content-wrapper -->
+    </article><!-- .section-wrapper -->
+
+    <article id="about7" class="section-wrapper clearfix" data-custom-background-img="{{asset('img/bg4.jpg')}}">
+        <div class="content-wrapper clearfix">
+            <h4 class="section-title">
+                Попробуйте нас в деле<br>
+                Закажите детальный контент-аудит Вашего бизнеса и узнайте, из-за чего Вы ежедневно теряете клиентов</h4>
+
+            <div class="contact-details col-sm-5 col-md-3">
+            </div>
+
+            <!-- CONTACT FORM -->
+            <div class="col-sm-7 col-md-9">
+                <!-- IMPORTANT: change the email address at the top of the assets/php/mail.php file to the email address that you want this form to send to -->
+
+                <form class="form-style clearfix form-val" action="{{route('main')}}" method="POST"
+                      role="form" name="form_name"> <!-- убрал класс validate-form-->
+                {{ csrf_field() }}
+                <!-- form left col -->
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="text" class="text-field form-control required"
+                                   data-validation-type="string" id="form-name" placeholder="Ваше имя" name="name"
+                                   value="{{old('name')}}">
+                        </div>
+                    </div><!-- end: form left col -->
+
+                    <!-- form right col -->
+                    <div class="col-md-6">
+
+                        <div class="form-group">
+                            <input type="email" class="text-field form-control"
+                                   data-validation-type="email" id="form-email" placeholder="Ваш email"
+                                   name="email" value="{{old('email')}}">
+                        </div>
+                        <div class="form-group">
+                            <img src="{{asset('img/loader-form.GIF')}}" class="form-loader">
+                            <button id="sub-btn" type="submit" class="btn btn-sm btn-outline-inverse">Заказать за $10</button>
+                        </div>
+                        <div class="form-group form-general-error-container"></div>
+                    </div><!-- end: form right col -->
+
+                </form>
+            </div><!-- end: CONTACT FORM -->
+
         </div><!-- .content-wrapper -->
     </article><!-- .section-wrapper -->
 @stop
