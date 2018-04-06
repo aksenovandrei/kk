@@ -15,7 +15,6 @@ class ContactController extends Controller
     public function store(Request $request){
 
         $order = new Order();
-
         $order->name = $request->name;
         $order->email = $request->email;
         $order->phone = $request->contact_number;
