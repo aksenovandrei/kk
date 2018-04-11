@@ -541,31 +541,6 @@ $(document).ready(function() {
 });
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 function contact_form_IE9_placeholder_fix() {
     var a = $("form");
     a.each(function() {
@@ -613,3 +588,45 @@ function tabs_uniform_height() {
         })
     }
 };
+
+$('#myModal').modal();
+$('#myModal').on('shown.bs.modal', function () {
+    $(document).off('focusin.modal');
+});
+
+$('.chart').on('click', function () {
+    $('.modal-body ul h5').hide();
+    $('.modal-body ul li').remove();
+    $("input:checkbox:checked").each(function () {
+        if ($(this).closest('div').attr('id') == 'tabs-tab1') {
+            $('.modal-body #title1').show();
+        $(this).closest('li').clone().insertAfter("#title1");
+        } if ($(this).closest('div').attr('id') == 'tabs-tab2') {
+            $('.modal-body #title2').show();
+            $(this).closest('li').clone().insertAfter("#title2");
+        } if ($(this).closest('div').attr('id') == 'tabs-tab3') {
+            $('.modal-body #title3').show();
+            $(this).closest('li').clone().insertAfter("#title3");
+        } if ($(this).closest('div').attr('id') == 'tabs-tab4') {
+            $('.modal-body #title4').show();
+            $(this).closest('li').clone().insertAfter("#title4");
+        } if ($(this).closest('div').attr('id') == 'tabs-tab5') {
+            $('.modal-body #title5').show();
+            $(this).closest('li').clone().insertAfter("#title5");
+        } if ($(this).closest('div').attr('id') == 'tabs-tab6') {
+            $('.modal-body #title6').show();
+            $(this).closest('li').clone().insertAfter("#title6");
+        }
+    });
+});
+$(".modal-body").on('click', 'li', function (e) {
+    $thisId = $(this).find("input").attr("id");
+    $('input#'+$thisId).closest('label').toggleClass('active-row');
+    $(e.target).closest('li').remove();
+    $('input#'+$thisId).prop( "checked", false);
+});
+
+$('label input').click(function () {
+    $(this).closest('label').toggleClass('active-row');
+});
+
