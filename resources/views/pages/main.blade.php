@@ -196,7 +196,7 @@
                             </p>
                             <h2 class="title">Игорь Обуховский</h2>
                             <p>Экс-тренер проекта «Зваженi та щасливi», автор онлайн фитнес-игры «ЖирКиллер»</p>
-                            <p><a href="#" class="btn btn-outline-inverse btn-sm">Все отзывы</a></p>
+                            <p><a href="{{route('reviews')}}" class="btn btn-outline-inverse btn-sm">Все отзывы</a></p>
 
                             <div class="content-to-populate-in-modal" id="modal-content-3">
                                 <p><img data-img-src="{{asset('img/Obuhovskiy.jpg')}}"
@@ -225,7 +225,7 @@
                             </p>
                             <h2 class="title">Границ.нет</h2>
                             <p>Обучающий проект для тех, кто хочет построить бизнес на любимом деле</p>
-                            <p><a href="#" class="btn btn-outline-inverse btn-sm">Все отзывы</a></p>
+                            <p><a href="{{route('reviews')}}" class="btn btn-outline-inverse btn-sm">Все отзывы</a></p>
 
                             <div class="content-to-populate-in-modal" id="modal-content-3">
                                 <p><img data-img-src="{{asset('img/Obuhovskiy.jpg')}}"
@@ -252,7 +252,7 @@
                             <h2 class="title">Роман Шляхов</h2>
                             <p>интернет-предприниматель, продюсер, миллионер</p>
                             <p>Работали над написанием продающих текстов для Романа и его учеников.</p>
-                            <p><a href="#" class="btn btn-outline-inverse btn-sm">Все отзывы</a></p>
+                            <p><a href="{{route('reviews')}}" class="btn btn-outline-inverse btn-sm">Все отзывы</a></p>
 
                             <div class="content-to-populate-in-modal" id="modal-content-3">
                                 <p><img data-img-src="{{asset('img/Obuhovskiy.jpg')}}"
