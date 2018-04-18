@@ -2113,9 +2113,8 @@ label {
     font-weight: 300;
     color: rgba(255, 255, 255, 0.8);
     position: relative;
-    padding-left: 20px;
-    line-height: 20px;
     margin: 5px 10px 5px 0;
+    display: inline;
 }
 label:hover {
     color: #ffffff;
@@ -2143,11 +2142,13 @@ label:hover {
     background-color: transparent;
     border: 1px solid white;
     position: absolute;
-    top: 5px;
-    left: 0;
+    top: 3px;
+    left: -30px;
 }
 .modal-body .checkmark {
     border: 1px solid #252525;
+    left: 0;
+
 }
 /* On mouse-over, add a grey background color */
 label:hover input ~ .checkmark {
@@ -2248,4 +2249,54 @@ label .checkmark:after {
 }
 .review-item img {
     width: 100%;
+}
+.arrow-btn {
+    /*position: absolute;*/
+    display: inline-block;
+    top: 4px;
+    right: 0;
+    width: 15px;
+    height: 15px;
+    border: 5px solid transparent;
+    border-bottom-color: rgba(255, 255, 255, 0.71);
+    border-right-color: rgba(255, 255, 255, 0.71);
+    transform-origin: 75%;
+    transform: rotate(-45deg);
+    transition: transform 0.2s;
+}
+.servs-content ul li:hover .arrow-btn {
+    /*display: inline-block;*/
+}
+.arrow-btn:hover {
+    transform: rotate(45deg);
+    border-bottom-color: #ffffff;
+    border-right-color: #ffffff;
+    cursor: pointer;
+}
+.arrow-btn-up {
+    transform: rotate(-135deg);
+    color: #ffffff;
+}
+.arrow-btn-up:hover {
+    transform: rotate(-135deg);
+}
+li .description {
+    display: none;
+}
+.tabpanel.styled-tabs .tab-content > .tab-pane p.description {
+    font-size: 0.8em;
+}
+#about5 img {
+    width: 130%;
+    height: auto;
+    border-radius: 30px;
+}
+.tabpanel.styled-tabs .servs-content > .tab-pane ul li {
+    padding-left: 30px;
+}
+.modal-body label {
+    padding-left: 30px;
+}
+.modal-body .arrow-btn {
+    display: none;
 }

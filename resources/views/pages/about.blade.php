@@ -139,7 +139,7 @@
     <article id="about5" class="section-wrapper clearfix" data-custom-background-img="{{asset('img/bg4.jpg')}}">
         <div class="content-wrapper clearfix">
             <div class="col-sm-2 col-md-2 pull-left">
-                <img src="{{asset('img/alina.png')}}" alt="Alina">
+                <img src="{{asset('img/alina.jpg')}}" alt="Alina">
             </div>
             <div class="col-sm-10 col-md-9 pull-right">
                 <h4 class="text-left">Почему Ваша удаленная команда справится со всеми задачами</h4>

@@ -16,7 +16,7 @@
                     <h4>Решим задачу качественного присутствия Вашего бизнеса в сети</h4>
                     <span>Контент-маркетинг. Копирайтинг. SMM. Реклама. Дизайн. Технические задачи любой сложности.
 </span><br>
-                    <p class="btn-inrow"><a href="#text" class="link-scroll btn btn-outline-inverse btn-lg">Узнать
+                    <p class="btn-inrow"><a href="#about" class="link-scroll btn btn-outline-inverse btn-lg">Узнать
                             больше</a></p>
                     <p class="btn-inrow"><a href="{{route('services')}}" class="link-scroll btn btn-outline-inverse btn-lg">Заказать
                             услугу</a></p>

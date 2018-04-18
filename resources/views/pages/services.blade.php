@@ -7,7 +7,7 @@
 <!-- end: Menu -->
 @section('services')
 
-    <article id="services" class="service-tab section-wrapper clearfix" data-custom-background-img="{{asset('img/bg4.jpg')}}">
+    <article id="services" class="service-tab section-wrapper clearfix" data-custom-background-img="{{asset('img/bg.jpg')}}">
         <div class="content-wrapper mid-vertical-positioning clearfix  active" style="position: relative">
             <div class="col-sm-10 col-md-9 pull-right">
 
@@ -39,10 +39,15 @@
                     </ul>
 
                     <!-- Tab panes -->
-                    <div class="tab-content">
 
+                    <div class="tab-content servs-content">
                         <div role="tabpanel" class="tab-pane fade in active" id="tabs-tab1">
                             <h4>Контент</h4>
+                            <p>Внедряемся в Ваш бизнес как готовый контент-отдел<br>
+                                Экономим Вам 3+ часа в день<br>
+                                Создаем контент люкс-уровня<br>
+                                Предлагаем решения, а не ждем их от Вас
+                            </p>
                             <ul>
                                 <li>
                                     <label>
@@ -50,6 +55,8 @@
                                         <span class="checkmark"></span>
                                         Ведение блогов (личных и компаний)
                                     </label>
+                                    <div class="arrow-btn"></div>
+                                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto distinctio, ducimus est eum minima porro quos sint velit! Aliquam, assumenda at atque commodi consectetur debitis dignissimos dolore dolores, et illo ipsum iste magni maxime mollitia nam natus necessitatibus nostrum nulla quaerat quibusdam recusandae rem repellendus rerum saepe soluta suscipit vitae!</p>
                                 </li>
                                 <li>
                                     <label>
@@ -57,6 +64,8 @@
                                         <span class="checkmark"></span>
                                         Ведение страниц в соцсетях (личных и компаний)
                                     </label>
+                                    <div class="arrow-btn"></div>
+                                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam aperiam asperiores distinctio excepturi fugiat quia ratione reprehenderit, voluptates! A architecto beatae blanditiis commodi culpa error, excepturi facere fugiat id impedit magnam minus molestias nemo numquam officiis placeat porro quae ratione reprehenderit soluta suscipit tempora tempore temporibus vel vero voluptatem.</p>
                                 </li>
                                 <li>
                                     <label>
@@ -64,6 +73,8 @@
                                         <span class="checkmark"></span>
                                         Написание репутационных статей
                                     </label>
+                                    <div class="arrow-btn"></div>
+                                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto dolor earum harum, id, libero maxime nam nesciunt numquam odit porro quia, repellat sed velit. Eaque, fugiat, omnis! Ex ipsa iste possimus saepe. Hic pariatur, provident. Aspernatur incidunt iusto omnis rem repudiandae soluta voluptas? Aliquam commodi dolore nostrum praesentium sed sit?</p>
                                 </li>
                                 <li>
                                     <label>
@@ -71,12 +82,19 @@
                                         <span class="checkmark"></span>
                                         Внедрение контент-маркетинга в Ваш бизнес “под ключ”
                                     </label>
+                                    <div class="arrow-btn"></div>
+                                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aperiam aspernatur, autem debitis dolorum id nemo nesciunt nulla odit quae quia sed sint voluptate. Accusantium ad commodi dolore facilis illo reiciendis sapiente sit, ullam voluptates. Adipisci consequatur deleniti et fugiat iure nam neque optio ratione rerum voluptates! Impedit, necessitatibus, praesentium.</p>
                                 </li>
                             </ul>
                         </div>
 
                         <div role="tabpanel" class="tab-pane fade" id="tabs-tab2">
                             <h4>Продающий копирайтинг</h4>
+                            <p>Отдел копирайтеров, пишущих исключительно продающие тексты
+                                Знаем основы маркетинга и продаж
+                                Проводим глубокий анализ аудитории
+                                Пишем просто и “в точку”
+                            </p>
                             <ul>
                                 <li>
                                     <label>
@@ -84,6 +102,8 @@
                                         <span class="checkmark"></span>
                                         Написание текстов на лендинги, посадочные страницы, страницы лид-магнитов
                                     </label>
+                                    <div class="arrow-btn"></div>
+                                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid corporis minima minus quae quibusdam. Commodi dolor incidunt iure nostrum officiis perferendis recusandae sequi voluptates? Animi autem cupiditate deleniti dignissimos, dolore dolorem, eum illo ipsum nemo neque nobis quo, quod reiciendis rem rerum saepe sed similique sint tenetur ullam velit.</p>
                                 </li>
                                 <li>
                                     <label>
@@ -91,6 +111,8 @@
                                         <span class="checkmark"></span>
                                         Написание коммерческих предложений
                                     </label>
+                                    <div class="arrow-btn"></div>
+                                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, atque consequuntur cupiditate ex fuga illum inventore laudantium mollitia necessitatibus numquam, optio quae quas rem similique voluptatibus. Asperiores ducimus eum excepturi facere illo ipsa iusto, quibusdam rerum saepe, sint totam velit. Adipisci blanditiis dignissimos ipsum necessitatibus pariatur porro quae quod totam.</p>
                                 </li>
                                 <li>
                                     <label>
@@ -98,6 +120,8 @@
                                         <span class="checkmark"></span>
                                         Написание писем в email-рассылки и чат-бот рассылки
                                     </label>
+                                    <div class="arrow-btn"></div>
+                                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet assumenda consectetur consequatur culpa deserunt dignissimos ducimus ea enim ipsam libero molestias nihil odit officiis perspiciatis placeat quae quam qui quisquam sed soluta temporibus unde ut veniam, vero voluptatem! Consequatur deleniti ducimus eaque nesciunt non perferendis perspiciatis quaerat ratione sapiente voluptate.</p>
                                 </li>
                                 <li>
                                     <label>
@@ -105,12 +129,19 @@
                                         <span class="checkmark"></span>
                                         Тексты для корпоративных сайтов и другие копирайтинг-задачи
                                     </label>
+                                    <div class="arrow-btn"></div>
+                                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam architecto asperiores beatae blanditiis, dicta doloremque doloribus ea eius enim error est et expedita facere facilis fugit ipsum iusto laboriosam magni maxime minima nam nemo nobis nostrum numquam possimus quas quasi quod reiciendis rem sequi tempora vel velit veniam voluptatibus voluptatum?</p>
                                 </li>
                             </ul>
                         </div>
 
                         <div role="tabpanel" class="tab-pane fade" id="tabs-tab3">
                             <h4>Маркетинг</h4>
+                            <p>Создаем стратегию под Ваш проект
+                                Прописываем пошаговый план достижения цели на 3, 6 месяцев и более
+                                Готовим контент-планы для реализации стратегии
+                                Разрабатываем воронки писем для рассылок
+                            </p>
                             <ul>
                                 <li>
                                     <label>
@@ -118,6 +149,7 @@
                                         <span class="checkmark"></span>
                                         Разработка контент-стратегий
                                     </label>
+                                    <div class="arrow-btn"></div>
                                 </li>
                                 <li>
                                     <label>
@@ -125,6 +157,7 @@
                                         <span class="checkmark"></span>
                                         Разработка стратегий под запуск
                                     </label>
+                                    <div class="arrow-btn"></div>
                                 </li>
                                 <li>
                                     <label>
@@ -132,6 +165,7 @@
                                         <span class="checkmark"></span>
                                         Разработка маркетинг-стратегий
                                     </label>
+                                    <div class="arrow-btn"></div>
                                 </li>
                                 <li>
                                     <label>
@@ -139,12 +173,18 @@
                                         <span class="checkmark"></span>
                                         Разработка воронок писем
                                     </label>
+                                    <div class="arrow-btn"></div>
                                 </li>
                             </ul>
                         </div>
 
                         <div role="tabpanel" class="tab-pane fade" id="tabs-tab4">
                             <h4>Реклама</h4>
+                            <p>Предлагаем стратегию запуска кампании
+                                Делаем глубокий анализ аудитории
+                                Пишем посты и готовим визуальное оформление
+                                Проводим тесты и прогнозируем результаты
+                            </p>
                             <ul>
                                 <li>
                                     <label>
@@ -152,6 +192,7 @@
                                         <span class="checkmark"></span>
                                         Сбор участников на онлайн и живые события
                                     </label>
+                                    <div class="arrow-btn"></div>
                                 </li>
                                 <li>
                                     <label>
@@ -159,6 +200,7 @@
                                         <span class="checkmark"></span>
                                         Сбор заявок на покупку продуктов
                                     </label>
+                                    <div class="arrow-btn"></div>
                                 </li>
                                 <li>
                                     <label>
@@ -166,6 +208,7 @@
                                         <span class="checkmark"></span>
                                         Продвижение сообществ в соцсетях
                                     </label>
+                                    <div class="arrow-btn"></div>
                                 </li>
                                 <li>
                                     <label>
@@ -173,12 +216,18 @@
                                         <span class="checkmark"></span>
                                         Комплексное продвижение в соцсетях
                                     </label>
+                                    <div class="arrow-btn"></div>
                                 </li>
                             </ul>
                         </div>
 
                         <div role="tabpanel" class="tab-pane fade" id="tabs-tab5">
                             <h4>Технические услуги</h4>
+                            <p>Реализуем технических задачи любой сложности
+                                Разработаем индивидуальные решения
+                                Оказываем техподдержку и проводим консультации
+                                Решим технические задачи бизнеса “под ключ”
+                            </p>
                             <ul>
                                 <li>
                                     <label>
@@ -186,6 +235,7 @@
                                         <span class="checkmark"></span>
                                         Создание сайтов и блогов
                                     </label>
+                                    <div class="arrow-btn"></div>
                                 </li>
                                 <li>
                                     <label>
@@ -193,6 +243,7 @@
                                         <span class="checkmark"></span>
                                         Создание лендингов, посадочных страниц “под ключ”
                                     </label>
+                                    <div class="arrow-btn"></div>
                                 </li>
                                 <li>
                                     <label>
@@ -200,6 +251,7 @@
                                         <span class="checkmark"></span>
                                         Создание чат-ботов
                                     </label>
+                                    <div class="arrow-btn"></div>
                                 </li>
                                 <li>
                                     <label>
@@ -207,12 +259,17 @@
                                         <span class="checkmark"></span>
                                         Реализация технических задач любой сложности
                                     </label>
+                                    <div class="arrow-btn"></div>
                                 </li>
                             </ul>
                         </div>
 
                         <div role="tabpanel" class="tab-pane fade" id="tabs-tab6">
                             <h4>Дизайн</h4>
+                            <p>Создаем продающие дизайны для сайтов, лендингов, посадок и т.д.
+                                Разрабатываем индивидуальный стиль Вашего проекта
+                                Реализовываем визуальную часть упаковки бизнеса
+                            </p>
                             <ul>
                                 <li>
                                     <label>
@@ -220,6 +277,7 @@
                                         <span class="checkmark"></span>
                                         Дизайн продающих страниц
                                     </label>
+                                    <div class="arrow-btn"></div>
                                 </li>
                                 <li>
                                     <label>
@@ -227,6 +285,7 @@
                                         <span class="checkmark"></span>
                                         Дизайн корпоративных сайтов и блогов
                                     </label>
+                                    <div class="arrow-btn"></div>
                                 </li>
                                 <li>
                                     <label>
@@ -234,6 +293,7 @@
                                         <span class="checkmark"></span>
                                         Оформление коммерческих предложений
                                     </label>
+                                    <div class="arrow-btn"></div>
                                 </li>
                                 <li>
                                     <label>
@@ -241,6 +301,7 @@
                                         <span class="checkmark"></span>
                                         Решение других дизайн-задач для Вашего бизнеса
                                     </label>
+                                    <div class="arrow-btn"></div>
                                 </li>
                             </ul>
                         </div>
@@ -292,7 +353,7 @@
                     <!-- form right col -->
                     <div class="col-md-6">
                         <div class="form-group">
-                                <textarea placeholder="Ваше сообщение" class="form-control validate-field"
+                                <textarea placeholder="Ваш вопрос" class="form-control validate-field"
                                           name="message">{{old('message')}}</textarea>
                         </div>
                         <div class="form-group">

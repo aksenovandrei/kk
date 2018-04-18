@@ -601,27 +601,37 @@ $('.chart').on('click', function () {
         if ($(this).closest('div').attr('id') == 'tabs-tab1') {
             $('.modal-body #title1').show();
         $(this).closest('li').clone().insertAfter("#title1");
+            $('.modal-body ul li .description').remove();
         } if ($(this).closest('div').attr('id') == 'tabs-tab2') {
             $('.modal-body #title2').show();
             $(this).closest('li').clone().insertAfter("#title2");
+            $('.modal-body ul li .description').remove();
         } if ($(this).closest('div').attr('id') == 'tabs-tab3') {
             $('.modal-body #title3').show();
             $(this).closest('li').clone().insertAfter("#title3");
+            $('.modal-body ul li .description').remove();
         } if ($(this).closest('div').attr('id') == 'tabs-tab4') {
             $('.modal-body #title4').show();
             $(this).closest('li').clone().insertAfter("#title4");
+            $('.modal-body ul li .description').remove();
         } if ($(this).closest('div').attr('id') == 'tabs-tab5') {
             $('.modal-body #title5').show();
             $(this).closest('li').clone().insertAfter("#title5");
+            $('.modal-body ul li .description').remove();
         } if ($(this).closest('div').attr('id') == 'tabs-tab6') {
             $('.modal-body #title6').show();
             $(this).closest('li').clone().insertAfter("#title6");
+            $('.modal-body ul li .description').remove();
         }
     });
 });
+
 $(".modal-body").on('click', 'li', function (e) {
     $thisId = $(this).find("input").attr("id");
     $('input#'+$thisId).closest('label').toggleClass('active-row');
+    if ( $(e.target).closest('li').prev('h5').next('li:last-of-type').length == 1) {
+        $(e.target).closest('li').prev('h5').hide();
+    }
     $(e.target).closest('li').remove();
     $('input#'+$thisId).prop( "checked", false);
 });
@@ -629,5 +639,12 @@ $(".modal-body").on('click', 'li', function (e) {
 $('label input').click(function () {
     $(this).closest('label').toggleClass('active-row');
 });
+
+$('.arrow-btn').on("click", function () {
+    $(this).siblings('.description').toggle(200);
+    $(this).toggleClass('arrow-btn-up');
+});
+
+
 
 

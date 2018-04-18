@@ -138,4 +138,57 @@
         </div><!-- .content-wrapper -->
     </article><!-- .section-wrapper -->
 
+    <article id="services" class="section-wrapper clearfix" data-custom-background-img="{{asset('img/bg4.jpg')}}">
+        <div class="content-wrapper clearfix">
+            <h3 class="section-title">Хотите задать вопрос? Заполните форму и мы ответим Вам в ближайшее время</h3>
+            <!-- CONTACT DETAILS -->
+            <div class="contact-details col-sm-5 col-md-3">
+            </div>
+            <!-- END: CONTACT DETAILS -->
+
+            <!-- CONTACT FORM -->
+            <div class="col-sm-7 col-md-9">
+                <!-- IMPORTANT: change the email address at the top of the assets/php/mail.php file to the email address that you want this form to send to -->
+
+                <form class="form-style clearfix form-val" action="{{route('main')}}" method="POST"
+                      role="form" name="form_name"> <!-- убрал класс validate-form-->
+                {{ csrf_field() }}
+                <!-- form left col -->
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="text" class="text-field form-control required"
+                                   data-validation-type="string" id="form-name" placeholder="Ваше имя" name="name"
+                                   value="{{old('name')}}">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="text-field form-control"
+                                   data-validation-type="email" id="form-email" placeholder="Ваш email"
+                                   name="email" value="{{old('email')}}">
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" class="text-field form-control phone"
+                                   data-validation-type="phone" id="form-contact-number"
+                                   placeholder="Ваш телефон" name="contact_number" value="{{old('contact_number')}}"
+                                   data-bv-live="disabled">
+                        </div>
+                    </div><!-- end: form left col -->
+
+                    <!-- form right col -->
+                    <div class="col-md-6">
+                        <div class="form-group">
+                                <textarea placeholder="Ваш вопрос" class="form-control validate-field"
+                                          name="message">{{old('message')}}</textarea>
+                        </div>
+                        <div class="form-group">
+                            <img src="{{asset('img/loader-form.GIF')}}" class="form-loader">
+                            <button id="sub-btn" type="submit" class="btn btn-sm btn-outline-inverse">Отправить</button>
+                        </div>
+                        <div class="form-group form-general-error-container"></div>
+                    </div><!-- end: form right col -->
+
+                </form>
+            </div><!-- end: CONTACT FORM -->
+
+        </div><!-- .content-wrapper -->
+
 @stop
