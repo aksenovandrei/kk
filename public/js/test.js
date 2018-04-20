@@ -528,11 +528,12 @@ $(document).ready(function() {
             },
             contact_number: {
                 validators: {
-                    stringLength: {
-                        min: 5
-                    },
                     notEmpty: {
                         message: 'Пожалуйста, введите свой телефон'
+                    },
+                    regexp: {
+                        regexp: /^[1-9][0-9]{5,15}$/,
+                        message: 'Введите правильный номер телефона'
                     }
                 }
             }

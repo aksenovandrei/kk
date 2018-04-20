@@ -5928,7 +5928,7 @@ if (typeof jQuery === 'undefined') {
     $.fn.bootstrapValidator.i18n.stringLength = $.extend($.fn.bootstrapValidator.i18n.stringLength || {}, {
         'default': 'Please enter a value with valid length',
         less: 'Please enter less than %s characters',
-        more: 'Введите больше %s цифр',
+        more: 'Введите больше %s букв',
         between: 'Please enter value between %s and %s characters long'
     });
 
