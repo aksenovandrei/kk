@@ -630,8 +630,23 @@ $('.chart').on('click', function () {
 $(".modal-body").on('click', 'li', function (e) {
     $thisId = $(this).find("input").attr("id");
     $('input#'+$thisId).closest('label').toggleClass('active-row');
-    if ( $(e.target).closest('li').prev('h5').next('li:last-of-type').length == 1) {
-        $(e.target).closest('li').prev('h5').hide();
+    if ($('#title1').nextUntil('h5', 'li').length == 1) {
+        $('#title1').hide();
+    }
+    if ($('#title2').nextUntil('h5', 'li').length == 1) {
+        $('#title2').hide();
+    }
+    if ($('#title3').nextUntil('h5', 'li').length == 1) {
+        $('#title3').hide();
+    }
+    if ($('#title4').nextUntil('h5', 'li').length == 1) {
+        $('#title4').hide();
+    }
+    if ($('#title5').nextUntil('h5', 'li').length == 1) {
+        $('#title5').hide();
+    }
+    if ($('#title6').nextUntil('h5', 'li').length == 1) {
+        $('#title6').hide();
     }
     $(e.target).closest('li').remove();
     $('input#'+$thisId).prop( "checked", false);
