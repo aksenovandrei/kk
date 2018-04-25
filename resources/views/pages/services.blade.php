@@ -430,6 +430,11 @@
             <h3 class="section-title">Хотите задать вопрос? Заполните форму и мы ответим Вам в ближайшее время</h3>
             <!-- CONTACT DETAILS -->
             <div class="contact-details col-sm-5 col-md-3">
+                {{--<p>123A,<br/>Molestie Lorem Avenue,<br/>Aliquam<br/>AAA0010</p>--}}
+                <p>Tel: +7 (499) 677 24 11</p>
+                <p>Tel: +38 (094) 711 70 66</p>
+                <p><a href="mailto:content.kvartira@gmail.com">content.kvartira@gmail.com</a></p>
+                <p>тут будут иконки сцсетей</p>
             </div>
             <!-- END: CONTACT DETAILS -->
 

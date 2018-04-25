@@ -17,5 +17,4 @@ class Order extends Model
 
         Mail::to('aksenov.andrew@gmail.com')->send(new OrderMail($name, $email, $phone, $msg));
     }
-
 }

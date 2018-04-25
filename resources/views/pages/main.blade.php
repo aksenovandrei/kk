@@ -515,9 +515,11 @@
             <h1 class="section-title">Свяжитесь с нами</h1>
             <!-- CONTACT DETAILS -->
             <div class="contact-details col-sm-5 col-md-3">
-                {{--<p>123A,<br/>Molestie Lorem Avenue,<br/>Aliquam<br/>AAA0010</p>
-                <p>Tel: (+20) 21 301 524</p>
-                <p><a href="mailto:info@loremipsum.com">info@loremipsum.com</a></p>--}}
+                {{--<p>123A,<br/>Molestie Lorem Avenue,<br/>Aliquam<br/>AAA0010</p>--}}
+                <p>Tel: +7 (499) 677 24 11</p>
+                <p>Tel: +38 (094) 711 70 66</p>
+                <p><a href="mailto:content.kvartira@gmail.com">content.kvartira@gmail.com</a></p>
+                <p>тут будут иконки сцсетей</p>
             </div>
             <!-- END: CONTACT DETAILS -->
 
