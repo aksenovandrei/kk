@@ -385,7 +385,7 @@
                                 из Инстаграм, хотя такой цели рекламная кампания вообще не преследовала.</p>
 
                         </div><!-- #modal-content-8 -->
-                        <p class="btn-inrow"><a href="#text" class="link-scroll btn btn-outline-inverse btn-lg">Больше
+                        <p class="btn-inrow"><a href="http://kk/portfolio" class="link-scroll btn btn-outline-inverse btn-lg">Больше
                                 кейсов</a></p>
                     </article>
                 </section><!-- end: .feature-columns -->
