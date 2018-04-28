@@ -12,7 +12,7 @@
         </ul>
 
         <!-- copyright text -->
-        <div class="footer-text-line">&copy; 2015 Twilli | Air</div>
+        <div class="footer-text-line">© {{date('Y')}}<br> ФЛП Аксёнова Алина Юрьевна</div>
     </section>
     <!-- end: Footer -->
     @endsection
