@@ -1,131 +1,100 @@
 @extends('layout.layout')
-@include('includes.menu')
+@include('includes.sub-menu')
 @include('includes.footer')
 @section('title', 'Вакансии')
+<!-- Menu -->
+@yield('sub-menu')
+<!-- end: Menu -->
 @section('vacancies')
-    <article id="featured" class="section-wrapper clearfix" data-custom-background-img="{{asset('img/bg3.jpg')}}">
+    <article id="vacancies" class="section-wrapper clearfix" data-custom-background-img="{{asset('img/bg5.jpg')}}">
         <div class="content-wrapper clearfix">
-            <div class="col-sm-11 pull-right">
+            <div class="col-sm-10 col-md-9 pull-right">
 
-                <h1 class="section-title">Featured</h1>
+                <h1 class="section-title">Ищем в команду</h1>
+                <h3>Как стать частью Контент Квартиры</h3>
+            </div><!-- .col-sm-11 -->
+        </div><!-- .content-wrapper -->
+    </article><!-- .section-wrapper -->
 
-                <!-- feature columns -->
-                <section class="feature-columns row clearfix">
+    <article id="vacancies" class="section-wrapper clearfix" data-custom-background-img="{{asset('img/bg5.jpg')}}">
+        <div class="content-wrapper clearfix">
+            <div class="col-sm-10 col-md-9 pull-right">
 
-                    <!-- feature 1 -->
-                    <article class="feature-col col-md-4">
-                        <a href="" onclick="populate_and_open_modal(event, 'modal-content-6');"
-                           class="thumbnail linked">
-                            <div class="image-container">
-                                <img data-img-src="{{asset('img/project-3.jpg')}}" class="lazy item-thumbnail" alt="Lorem Ipsum">
+                <h3>Что для нас работа</h3>
+                <p>Ценные ценности. Великая миссия. Мир-дружба-пирожок... Не то.<br><br>
+
+                    Мы просто любим контент-маркетинг и дарим эту любовь нашим клиентам. Чтобы развивать их бренды, приводить им клиентов и увеличивать прибыль.<br><br>
+
+                    Поэтому для нас работа - это достижение результата.
+                </p>
+                <p class="text-center">Если и для тебя тоже...</p>
+            </div><!-- .col-sm-11 -->
+        </div><!-- .content-wrapper -->
+    </article><!-- .section-wrapper -->
+
+    <article id="vacancies" class="section-wrapper clearfix" data-custom-background-img="{{asset('img/bg5.jpg')}}">
+        <div class="content-wrapper clearfix">
+            <div class="col-sm-10 col-md-9 pull-right">
+                <h3>Тебе у нас понравится</h3>
+                <p class="feature-paragraph">
+                <ul class="list">
+                    <li>Ты сможешь работать с интересными и разноплановыми проектами. В том числе и с лидерами в своих нишах</li>
+                    <li>Получишь опыт практической реализации контент-маркетинг стратегий</li>
+                    <li>Прокачаешься в контент-маркетинге. Быстро, жестко, с гарантией</li>
+                    <li>Ты будешь вовремя получать оплату своей работы. Всегда
+                    </li>
+                    <li>Мы разные, но очень дружелюбные:) Да, так говорят все, но мы действительно такие:) Ты поймешь это уже после первого дня в общем чате</li>
+                </ul>
+                </p>
+            </div><!-- .col-sm-11 -->
+        </div><!-- .content-wrapper -->
+    </article><!-- .section-wrapper -->
+
+    <article id="vacancies" class="section-wrapper clearfix" data-custom-background-img="{{asset('img/bg5.jpg')}}">
+        <div class="content-wrapper clearfix">
+            <div class="col-sm-10 col-md-9 pull-right">
+                <h3>Что мы ищем</h3>
+                <!-- grid -->
+                <section class="grid row clearfix clearfix-for-2cols">
+
+                    <!-- grid item -->
+                    <div class="grid-item col-md-6">
+                        <div class="item-content clearfix">
+                            <img data-img-src="{{asset('img/duh.jpg')}}" class="lazy item-thumbnail"
+                                 alt="duh">
+                            <div class="text-content">
+                                <h6 class="text-center">Ответственность</h6>
+                                <h5 class="text-center">Командный дух</h5>
                             </div>
-                            <div class="caption">
-                                <h5>Image Carousel</h5>
-                                <p>This feature contains an image carousel when you open popup.</p>
-                            </div><!-- .caption -->
-                        </a><!-- .thumbnail -->
+                        </div><!-- end: .item-content -->
+                    </div><!-- end: .grid-item -->
 
-                        <div class="content-to-populate-in-modal" id="modal-content-6">
-                            <h1>Sed scelerisque</h1>
-                            <p>Nullam ac rhoncus. Aliquam adipiscing eros non elit imperdiet congue. Etiam at ligula
-                                sit amet arcu laoreet consequat.<br/></p>
-
-                            <!-- image slider inside popup -->
-                            <div id="unique-id-for-image-slider" class="owl-carousel popup-image-gallery">
-                                <!-- slide -->
-                                <div>
-                                    <!-- caption is optional. To remove it, remove the <h6> below -->
-                                    <h6 class="caption">Caption for Image 1</h6>
-                                    <img class="lazyOwl" data-src="{{asset('img/bg1.jpg')}}">
-                                </div>
-                                <!-- slide -->
-                                <div>
-                                    <h6 class="caption">Caption for Image 2</h6>
-                                    <img class="lazyOwl" data-src="{{asset('img/bg2.jpg')}}">
-                                </div>
-                                <!-- slide -->
-                                <div>
-                                    <h6 class="caption">Caption for Image 3</h6>
-                                    <img class="lazyOwl" data-src="{{asset('img/bg3.jpg')}}">
-                                </div>
+                    <!-- grid item -->
+                    <div class="grid-item col-md-6">
+                        <div class="item-content clearfix">
+                            <img data-img-src="{{asset('img/delo.jpg')}}" class="lazy item-thumbnail"
+                                 alt="delo">
+                            <div class="text-content">
+                                <h6 class="text-center">Инициативность</h6>
+                                <h5 class="text-center">Желание делать на 101%</h5>
                             </div>
-                        </div><!-- #modal-content-6 -->
-                    </article>
+                        </div><!-- end: .item-content -->
+                    </div><!-- end: .grid-item -->
 
-                    <!-- feature 2 -->
-                    <article class="feature-col col-md-4">
-                        <a href="" onclick="populate_and_open_modal(event, 'modal-content-7');"
-                           class="thumbnail linked">
-                            <div class="image-container">
-                                <img data-img-src="{{asset('img/project-2.jpg')}}" class="lazy item-thumbnail" alt="Lorem Ipsum">
+                    <!-- grid item -->
+                    <div class="grid-item col-md-6">
+                        <div class="item-content clearfix">
+                            <img data-img-src="{{asset('img/lubov.jpg')}}" class="lazy item-thumbnail"
+                                 alt="lubov">
+                            <div class="text-content">
+                                <h6 class="text-center">Стремление развиваться</h6>
+                                <h5 class="text-center">Любовь к своему делу</h5>
                             </div>
-                            <div class="caption">
-                                <h5>Text popup</h5>
-                                <p>This feature contains generic image and text content when you open popup.</p>
-                            </div><!-- .caption -->
-                        </a><!-- .thumbnail -->
+                        </div><!-- end: .item-content -->
+                    </div><!-- end: .grid-item -->
 
-                        <div class="content-to-populate-in-modal" id="modal-content-7">
-                            <img data-img-src="{{asset('img/top-image2.jpg')}}" class="lazy full-width" alt="Lorem Ipsum">
-                            <h1>Sed scelerisque</h1>
-                            <p>Nullam ac rhoncus. Aliquam adipiscing eros non elit imperdiet congue. Etiam at ligula
-                                sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus
-                                imperdiet nec. Suspendisse molestie lorem odio</a>, sit amet. </p>
-                            <p>Laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec.
-                                Suspendisse molestie lorem odio, sit amet.</p>
-                            <p>Suspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus
-                                risus imperdiet nec. Suspendisse molestie lorem odio test.</p>
-                        </div><!-- #modal-content-7 -->
-                    </article>
-
-                    <!-- feature 3 -->
-                    <article class="feature-col col-md-4">
-                        <a href="" onclick="populate_and_open_modal(event, 'modal-content-8', '', 'full-size');"
-                           class="thumbnail linked">
-                            <div class="image-container">
-                                <img data-img-src="{{asset('img/project-4.jpg')}}" class="lazy item-thumbnail" alt="Lorem Ipsum">
-                            </div>
-                            <div class="caption">
-                                <h5>Alternate Gallery</h5>
-                                <p>Inside this feature's popup you'll find an alternative version of an image
-                                    gallery.</p>
-                            </div><!-- .caption -->
-                        </a><!-- .thumbnail -->
-
-                        <div class="content-to-populate-in-modal" id="modal-content-8">
-                            <h1>Sed scelerisque</h1>
-                            <p>Nullam ac rhoncus. Aliquam adipiscing eros non elit imperdiet congue. Etiam at ligula
-                                sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus
-                                imperdiet nec. Suspendisse molestie lorem odio</a>, sit amet. Adipiscing eros non
-                                elit imperdiet congue tiam at ligula sit amet arcu.</p>
-
-                            <!-- alt image slider inside popup -->
-                            <div id="unique-id-for-alt-image-slider" class="owl-carousel popup-alt-image-gallery">
-                                <div class="item"><a href="{{asset('img/bg1.jpg')}}" data-lightbox="popup-alt-gallery"><img
-                                                class="lazyOwl" data-src="{{asset('img/gallery-thumb-1.jpg')}}"></a></div>
-                                <div class="item"><a href="{{asset('img/bg2.jpg')}}" data-lightbox="popup-alt-gallery"><img
-                                                class="lazyOwl" data-src="{{asset('img/gallery-thumb-2.jpg')}}"></a></div>
-                                <div class="item"><a href="{{asset('img/bg3.jpg')}}" data-lightbox="popup-alt-gallery"><img
-                                                class="lazyOwl" data-src="{{asset('img/gallery-thumb-3.jpg')}}"></a></div>
-                                <div class="item"><a href="{{asset('img/bg4.jpg')}}" data-lightbox="popup-alt-gallery"><img
-                                                class="lazyOwl" data-src="{{asset('img/gallery-thumb-4.jpg')}}"></a></div>
-                                <div class="item"><a href="{{asset('img/bg5.jpg')}}" data-lightbox="popup-alt-gallery"><img
-                                                class="lazyOwl" data-src="{{asset('img/gallery-thumb-5.jpg')}}"></a></div>
-                                <div class="item"><a href="{{asset('img/bg6.jpg')}}" data-lightbox="popup-alt-gallery"><img
-                                                class="lazyOwl" data-src="{{asset('img/gallery-thumb-6.jpg')}}"></a></div>
-                                <div class="item"><a href="{{asset('img/bg2.jpg')}}" data-lightbox="popup-alt-gallery"><img
-                                                class="lazyOwl" data-src="{{asset('img/gallery-thumb-2.jpg')}}"></a></div>
-                                <div class="item"><a href="{{asset('img/bg3.jpg')}}" data-lightbox="popup-alt-gallery"><img
-                                                class="lazyOwl" data-src="{{asset('img/gallery-thumb-3.jpg')}}"></a></div>
-                            </div>
-                        </div><!-- #modal-content-8 -->
-                    </article>
-
-                </section><!-- end: .feature-columns -->
-
-                <!-- End: Section content to edit -->
-
-            </div><!-- .col-sm-10 -->
+                </section><!-- end: grid -->
+            </div><!-- .col-sm-11 -->
         </div><!-- .content-wrapper -->
     </article><!-- .section-wrapper -->
 @stop

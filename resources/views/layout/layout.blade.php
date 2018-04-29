@@ -51,7 +51,7 @@
         @yield('services')
         @yield('reviews')
         @yield('portfolio')
-        @yield('partners')
+        {{--@yield('partners')--}}
         @yield('vacancies')
         @yield('contact')
         @yield('thanks')

@@ -121,7 +121,7 @@
             <li id="menu-item-services" class="menu-item scroll"><a href="{{route('services')}}">Услуги</a></li>
             <li id="menu-item-reviews" class="menu-item scroll"><a href="{{route('reviews')}}">Отзывы</a></li>
             <li id="menu-item-portfolio" class="menu-item scroll"><a href="{{route('portfolio')}}">Портфолио</a></li>
-            <li id="menu-item-partners" class="menu-item scroll"><a href="{{route('main')}}">Партнеры</a></li>
+            {{--<li id="menu-item-partners" class="menu-item scroll"><a href="{{route('main')}}">Партнеры</a></li>--}}
             <li id="menu-item-vacancies" class="menu-item scroll"><a href="{{route('vacancies')}}">Вакансии</a></li>
             <li id="menu-item-contact" class="menu-item scroll"><a href="{{route('contact')}}">Контакты</a></li>
         </ul><!-- #main-menu -->

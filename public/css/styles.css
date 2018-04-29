@@ -2331,3 +2331,13 @@ li .description {
     width: 95%;
     border-radius: 5px;
 }
+.btn-center {
+    display: block;
+    margin: 0 auto;
+}
+#vacancies img {
+    width: 100%;
+    height: auto;
+    border-radius: 10%;
+    opacity: 0.9;
+}

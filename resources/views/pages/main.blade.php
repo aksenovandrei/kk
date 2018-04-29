@@ -231,7 +231,7 @@
                            class="thumbnail linked">
                             <div class="image-container">
                                 <img data-img-src="{{asset('img/mega-preview.jpg')}}" class="lazy item-thumbnail"
-                                     alt="Lorem Ipsum">
+                                     alt="mega-preview">
                             </div>
                             <div class="caption">
                                 <h6>Текст на лендинг Мегатренинга Ицхака Пинтосевича</h6>
@@ -239,8 +239,8 @@
                         </a><!-- .thumbnail -->
 
                         <div class="content-to-populate-in-modal" id="modal-content-7">
-                            <img data-img-src="{{asset('img/megatraining.png')}}" class="lazy full-width"
-                                 alt="Lorem Ipsum">
+                            <img data-img-src="{{asset('img/megatraining.jpg')}}" class="lazy full-width"
+                                 alt="megatraining">
                         </div><!-- #modal-content-7 -->
                     </article>
 
@@ -250,7 +250,7 @@
                            class="thumbnail linked">
                             <div class="image-container">
                                 <img data-img-src="{{asset('img/kolesnikov-preview.jpg')}}" class="lazy item-thumbnail"
-                                     alt="Lorem Ipsum">
+                                     alt="kolesnikov-preview">
                             </div>
                             <div class="caption">
                                 <h6>Блог эксперта по Facebook из США</h6>
@@ -412,7 +412,7 @@
                            class="thumbnail linked">
                             <div class="image-container">
                                 <img data-img-src="{{asset('img/mega-preview.jpg')}}" class="lazy item-thumbnail"
-                                     alt="Lorem Ipsum">
+                                     alt="mega-preview">
                             </div>
                             <div class="caption">
                                 <h6>Текст на лендинг Мегатренинга Ицхака Пинтосевича</h6>
@@ -426,7 +426,7 @@
                            class="thumbnail linked">
                             <div class="image-container">
                                 <img data-img-src="{{asset('img/kolesnikov-preview.jpg')}}" class="lazy item-thumbnail"
-                                     alt="Lorem Ipsum">
+                                     alt="kolesnikov-preview">
                             </div>
                             <div class="caption">
                                 <h6>Блог эксперта по Facebook из США</h6>
@@ -497,7 +497,7 @@
                     <div class="grid-item col-md-6">
                         <div class="item-content clearfix">
                             <div class="text-content">
-                                <p class="btn-inrow"><a href="#text" class="link-scroll btn btn-outline-inverse btn-lg">Подробнее</a>
+                                <p class="btn-inrow"><a href="{{route('vacancies')}}" class="link-scroll btn btn-outline-inverse btn-lg">Подробнее</a>
                                 </p>
                             </div>
                         </div><!-- end: .item-content -->
