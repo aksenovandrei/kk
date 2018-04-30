@@ -7,7 +7,7 @@
 <!-- end: Menu -->
 @section('services')
 
-    <article id="services" class="service-tab section-wrapper clearfix" data-custom-background-img="{{asset('img/bg.jpg')}}">
+    <article id="services" class="service-tab section-wrapper clearfix" data-custom-background-img="{{asset('img/bg2.jpg')}}">
         <div class="content-wrapper mid-vertical-positioning clearfix  active" style="position: relative">
             <div class="col-sm-10 col-md-9 pull-right">
 

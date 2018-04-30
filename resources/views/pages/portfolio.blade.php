@@ -13,55 +13,12 @@
                 <h1 class="section-title">Наши кейсы</h1>
                 <p>Как мы реализовываем проекты для наших клиентов</p>
 
-                <!-- grid -->
-                <section class="grid row clearfix clearfix-for-2cols">
+                <h5><a href="#portfolio1" class="link-scroll">Ведение блогов</a></h5>
+                <h5><a href="#portfolio2" class="link-scroll">SMM</a></h5>
+                <h5><a href="#portfolio3" class="link-scroll">Продающий копирайтинг</a></h5>
+                <h5><a href="#portfolio4" class="link-scroll">Email-рассылки</a></h5>
+                <h5><a href="#portfolio5" class="link-scroll">Запуски “под ключ”</a></h5>
 
-                    <!-- grid item -->
-                    <div class="grid-item col-md-6">
-                        <div class="item-content clearfix">
-                            <div class="text-content">
-                                <h5 class="btn-inrow"><a href="#portfolio1" class="link-scroll btn btn-outline-inverse btn-lg">Ведение блогов</a></h5>
-                            </div>
-                        </div><!-- end: .item-content -->
-                    </div><!-- end: .grid-item -->
-
-                    <!-- grid item -->
-                    <div class="grid-item col-md-6">
-                        <div class="item-content clearfix">
-                            <div class="text-content">
-                                <h5 class="btn-inrow"><a href="#portfolio2" class="link-scroll btn btn-outline-inverse btn-lg">SMM</a></h5>
-                            </div>
-                        </div><!-- end: .item-content -->
-                    </div><!-- end: .grid-item -->
-
-                    <!-- grid item -->
-                    <div class="grid-item col-md-6">
-                        <div class="item-content clearfix">
-                            <div class="text-content">
-                                <h5 class="btn-inrow"><a href="#portfolio3" class="link-scroll btn btn-outline-inverse btn-lg">Продающий копирайтинг</a></h5>
-                            </div>
-                        </div><!-- end: .item-content -->
-                    </div><!-- end: .grid-item -->
-
-                    <!-- grid item -->
-                    <div class="grid-item col-md-6">
-                        <div class="item-content clearfix">
-                            <div class="text-content">
-                                <h5 class="btn-inrow"><a href="#portfolio4" class="link-scroll btn btn-outline-inverse btn-lg">Email-рассылки</a></h5>
-                            </div>
-                        </div><!-- end: .item-content -->
-                    </div><!-- end: .grid-item -->
-
-                    <!-- grid item -->
-                    <div class="grid-item col-md-6">
-                        <div class="item-content clearfix">
-                            <div class="text-content">
-                                <h5 class="btn-inrow"><a href="#portfolio5" class="link-scroll btn btn-outline-inverse btn-lg">Запуски “под ключ”</a></h5>
-                            </div>
-                        </div><!-- end: .item-content -->
-                    </div><!-- end: .grid-item -->
-
-                </section><!-- end: grid -->
 
             </div><!-- .col-sm-11 -->
         </div><!-- .content-wrapper -->
@@ -564,7 +521,7 @@
                                     <a href=""
                                        onclick="populate_and_open_modal(event, 'modal-content-15', '', 'full-size');"><img class="lazyOwl"
                                                             data-src="{{asset('img/pishiprosto-preview.jpg')}}"></a>
-                                    <p>Подарочные сертификаты на дегустацию виски</p>
+                                    <p>Контент-спринт от Пиши просто</p>
                                     <div class="content-to-populate-in-modal" id="modal-content-15">
                                         <img data-img-src="{{asset('img/pishiprosto.jpg')}}" class="lazy item-thumbnail"
                                              alt="pishiprosto">
@@ -900,48 +857,94 @@
         </div><!-- .content-wrapper -->
     </article><!-- .section-wrapper -->
 
-    <article id="contact" class="section-wrapper clearfix" data-custom-background-img="{{asset('img/bg4.jpg')}}">
+    <article id="portfolio5" class="section-wrapper clearfix" data-custom-background-img="{{asset('img/bg3.jpg')}}">
         <div class="content-wrapper clearfix">
-            <h1 class="section-title">Заказать услугу</h1>
+            <div class="col-sm-11 pull-right">
 
-            <!-- CONTACT FORM -->
-            <div class="col-sm-7 col-md-9">
-                <!-- IMPORTANT: change the email address at the top of the assets/php/mail.php file to the email address that you want this form to send to -->
+                <h1 class="section-title">Запуски “под ключ”</h1>
 
-                <form class="form-style clearfix form-val" action="{{route('main')}}" method="POST"
-                      role="form" name="form_name"> <!-- убрал класс validate-form-->
-                {{ csrf_field() }}
-                <!-- form left col -->
-                    <div class="col-md-6">
-                    </div><!-- end: form left col -->
-                    <!-- form right col -->
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <input type="text" class="text-field form-control required"
-                                   data-validation-type="string" id="form-name" placeholder="Ваше имя" name="name"
-                                   value="{{old('name')}}">
-                        </div>
-                        <div class="form-group">
-                            <input type="email" class="text-field form-control"
-                                   data-validation-type="email" id="form-email" placeholder="Ваш email"
-                                   name="email" value="{{old('email')}}">
-                        </div>
-                        <div class="form-group">
-                            <input type="tel" class="text-field form-control phone"
-                                   data-validation-type="phone" id="form-contact-number"
-                                   placeholder="Ваш телефон" name="contact_number" value="{{old('contact_number')}}"
-                                   data-bv-live="disabled">
-                        </div>
-                        <div class="form-group">
-                            <img src="{{asset('img/loader-form.GIF')}}" class="form-loader">
-                            <button id="sub-btn" type="submit" class="btn btn-sm btn-outline-inverse btn-center">Заказать услугу</button>
-                        </div>
-                        <div class="form-group form-general-error-container"></div>
-                    </div><!-- end: form right col -->
+                <!-- feature columns -->
+                <section class="feature-columns row clearfix">
 
-                </form>
-            </div><!-- end: CONTACT FORM -->
+                    <!-- feature 1 -->
+                    <article class="feature-col col-md-4">
+                        <a href="" onclick="populate_and_open_modal(event, 'modal-content-27', '', 'full-size');"
+                           class="thumbnail linked">
+                            <div class="image-container">
+                                <img data-img-src="{{asset('img/morozov-preview.jpg')}}" class="lazy item-thumbnail"
+                                     alt="granyts-preview">
+                            </div>
+                            <div class="caption">
+                                <h6>Курс “Продюсер-миллионер”</h6>
+                            </div><!-- .caption -->
+                        </a><!-- .thumbnail -->
 
+                        <div class="content-to-populate-in-modal" id="modal-content-27">
+                            <div id="unique-id-for-alt-image-slider" class="owl-carousel popup-alt-image-gallery">
+                                <div class="item">
+                                    <a href="https://valery.fm/morozov_million" target="_blank">
+                                        <img class="lazyOwl" data-src="{{asset('morozov-preview.jpg')}}">
+                                    </a>
+                                    <p>Лендинг</p>
+                                </div>
+                                <div class="item">
+                                    <a href="https://valery.fm/antichaos4" target="_blank">
+                                        <img class="lazyOwl" data-src="{{asset('morozovlead-preview.jpg')}}">
+                                    </a>
+                                    <p>Лид-магнит</p>
+                                </div>
+                                <div class="item">
+                                    <a href="https://valery.fm/antichaos2" target="_blank">
+                                        <img class="lazyOwl" data-src="{{asset('morozovoto-preview.jpg')}}">
+                                    </a>
+                                </div>
+                            </div>
+                        </div><!-- #modal-content-13 -->
+                    </article>
+
+                    <!-- feature 2 -->
+                    <article class="feature-col col-md-4">
+                        <a href="" onclick="populate_and_open_modal(event, 'modal-content-28', '', 'full-size');"
+                           class="thumbnail linked">
+                            <div class="image-container">
+                                <img data-img-src="{{asset('img/pishiprosto-preview.jpg')}}" class="lazy item-thumbnail"
+                                     alt="leadtext-preview">
+                            </div>
+                            <div class="caption">
+                                <h6>Пишипросто</h6>
+                            </div><!-- .caption -->
+                        </a><!-- .thumbnail -->
+
+                        <div class="content-to-populate-in-modal" id="modal-content-28">
+                            <div id="unique-id-for-alt-image-slider" class="owl-carousel popup-alt-image-gallery">
+                                <div class="item">
+                                    <a href="" onclick="populate_and_open_modal(event, 'modal-content-17', '', 'full-size');">
+                                        <img class="lazyOwl" data-src="{{asset('img/sprint-preview.jpg')}}">
+                                    </a>
+                                    <p>Лендинг</p>
+                                </div>
+                                <div class="item">
+                                    <a href="" onclick="populate_and_open_modal(event, 'modal-content-15', '', 'full-size');">
+                                        <img class="lazyOwl" data-src="{{asset('img/pishiprosto-preview.jpg')}}">
+                                    </a>
+                                    <p>Лид-магнит</p>
+                                </div>
+                                <div class="item">
+                                    <a href="" onclick="populate_and_open_modal(event, 'modal-content-29', '', 'full-size');">
+                                        <img class="lazyOwl" data-src="{{asset('img/sprintlessons-preview.jpg')}}">
+                                    </a>
+                                    <p>Страницы уроков</p>
+                                    <div class="content-to-populate-in-modal" id="modal-content-29">
+                                        <img data-img-src="{{asset('img/sprintlessons.jpg')}}" class="lazy item-thumbnail"
+                                             alt="sprintlessons">
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- #modal-content-14 -->
+                    </article>
+                </section><!-- end: .feature-columns -->
+                <section class="feature-columns row clearfix">
+            </div><!-- .col-sm-10 -->
         </div><!-- .content-wrapper -->
     </article><!-- .section-wrapper -->
 
@@ -974,11 +977,6 @@
                                    placeholder="Ваш телефон" name="contact_number" value="{{old('contact_number')}}"
                                    data-bv-live="disabled">
                         </div>
-                        <!--<div class="form-group text-right">-->
-                        <!--<img id="form-captcha-img" src="img/captcha_img.php">-->
-                        <!--<input type="text" class="text-field form-control validate-field required" data-validation-type="captcha" id="form-captcha" placeholder="Enter text" name="captcha">-->
-                        <!--<span id="form-captcha-refresh" class="fa fa-refresh" title="Reload"></span>-->
-                        <!--</div>                 -->
                     </div><!-- end: form left col -->
 
                     <!-- form right col -->

@@ -8,7 +8,6 @@
         <ul class="social-icons">
             <li><a href="#" target="_blank" title="Facebook"><img src="{{asset('img/facebook.png')}}" alt="Facebook"></a></li>
             <li><a href="#" target="_blank" title="Twitter"><img src="{{asset('img/twitter.png')}}" alt="Twitter"></a></li>
-            <li><a href="#" target="_blank" title="Google+"><img src="{{asset('img/googleplus.png')}}" alt="Google+"></a></li>
         </ul>
 
         <!-- copyright text -->

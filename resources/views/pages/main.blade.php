@@ -13,8 +13,8 @@
                 <section class="feature-text">
                     <h1 class="main-title"><span>[</span>Контент<span>]</span> Квартира</h1>
                     <p>Ваш удаленный контент-отдел</p>
-                    <h4>Решим задачу качественного присутствия Вашего бизнеса в сети</h4>
-                    <span>Контент-маркетинг. Копирайтинг. SMM. Реклама. Дизайн. Технические задачи любой сложности.
+                    <h4>Решаем любую задачу присутствия Вашего бизнеса в сетии</h4>
+                    <span>Стратегия. Копирайтинг. SMM. Реклама. Дизайн. Технические задачи любой сложности.
 </span><br>
                     <p class="btn-inrow"><a href="#about" class="link-scroll btn btn-outline-inverse btn-lg">Узнать
                             больше</a></p>
@@ -30,9 +30,7 @@
     <article id="about" class="section-wrapper clearfix" data-custom-background-img="{{asset('img/bg1.jpg')}}">
         <div class="content-wrapper clearfix">
             <div class="col-sm-10 col-md-9 pull-right">
-                <h2 class="section-title">
-                    Кто такие проект<br>
-                    Контент Квартира</h2>
+                <h2 class="section-title">Контент Квартира - это:</h2>
                 <p class="feature-paragraph">
                 <ul class="list">
                     <li>Команда из 18 контент-маркетологов, таргетологов, дизайнеров и технических специалистов</li>
@@ -470,7 +468,7 @@
                         <div class="item-content clearfix">
                             <span class="icon fas fa-book"></span>
                             <div class="text-content">
-                                <h5>Копирайтер</h5>
+                                <h5 class="text-center">Копирайтер</h5>
                             </div>
                         </div><!-- end: .item-content -->
                     </div><!-- end: .grid-item -->
@@ -480,7 +478,7 @@
                         <div class="item-content clearfix">
                             <span class="icon fas fa-cube"></span>
                             <div class="text-content">
-                                <h5>SMM</h5>
+                                <h5 class="text-center">SMM</h5>
                             </div>
                         </div><!-- end: .item-content -->
                     </div><!-- end: .grid-item -->
@@ -490,7 +488,7 @@
                         <div class="item-content clearfix">
                             <span class="icon fas fa-calendar-alt"></span>
                             <div class="text-content">
-                                <h5>Project-менеджер</h5>
+                                <h5 class="text-center">Project-менеджер</h5>
                             </div>
                         </div><!-- end: .item-content -->
                     </div><!-- end: .grid-item -->
