@@ -13,19 +13,12 @@
                     <h1 class="main-title"><span>[</span>Контент<span>]</span> Квартира</h1>
                     <p>Ваш удаленный отдел исключительных профессионалов</p>
                 </section>
-            </div><!-- .col-sm-10 -->
-        </div><!-- .content-wrapper -->
-    </article><!-- .section-wrapper -->
-
-    <article id="about2" class="section-wrapper clearfix" data-custom-background-img="{{asset('img/bg4.jpg')}}">
-        <div class="content-wrapper clearfix">
-            <div class="col-sm-10 col-md-9 pull-right">
-                <h4>Представьте.... Вы сидите на стуле в пустой квартире.</h4>
+                <p><span>Представьте.... Вы сидите на стуле в пустой квартире.</span></p>
                 <p>Недавно её купили, кое-где уже даже начали ремонт... Стены без обоев, нет пола, стоит один стул, на котором Вы и сидите. Столько работы...</p>
-                <h5>Как же не хочется тратить на неё свое личное время, правда?</h5>
+                <p>Как же не хочется тратить на неё свое личное время, правда?</p>
                 <p>А представьте, что кто-то пришел и сделал все за Вас - договорился с бригадой, выбрал обои, купил и расставил мебель.<br><br>
                     И все это <span>без Вашего участия.</span></p>
-                <h4>Теперь так возможно и в бизнесе</h4>
+                <p>Теперь так возможно и в бизнесе</p>
                 <p>Скорее всего, сейчас вы сидите в такой своей «квартире». Это интернет-магазин или обучающие курсы, а может, услуги или сервис...<br>
                     Неважно.</p>
                 <p><span>У Вас есть продукт – интеллектуальный или физический.</span><br>
@@ -36,7 +29,7 @@
         </div><!-- .content-wrapper -->
     </article><!-- .section-wrapper -->
 
-    <article id="about3" class="section-wrapper clearfix" data-custom-background-img="{{asset('img/bg4.jpg')}}">
+    <article id="about3" class="section-wrapper clearfix" data-custom-background-img="{{asset('img/bg1.jpg')}}">
         <div class="content-wrapper clearfix">
             <div class="col-sm-10 col-md-9 pull-right">
                 <h4>Что делать, чтобы он продавался в 10-ки или даже 100-ни раз больше</h4>
@@ -57,7 +50,7 @@
         </div><!-- .content-wrapper -->
     </article><!-- .section-wrapper -->
 
-    <article id="about4" class="section-wrapper clearfix" data-custom-background-img="{{asset('img/bg4.jpg')}}">
+    <article id="about4" class="section-wrapper clearfix" data-custom-background-img="{{asset('img/bg1.jpg')}}">
         <div class="content-wrapper clearfix">
             <div class="col-sm-10 col-md-9 pull-right">
 
@@ -136,7 +129,7 @@
         </div><!-- .content-wrapper -->
     </article><!-- .section-wrapper -->
 
-    <article id="about5" class="section-wrapper clearfix" data-custom-background-img="{{asset('img/bg4.jpg')}}">
+    <article id="about5" class="section-wrapper clearfix" data-custom-background-img="{{asset('img/bg1.jpg')}}">
         <div class="content-wrapper clearfix">
             <div class="col-sm-2 col-md-2 pull-left">
                 <img src="{{asset('img/alina.jpg')}}" alt="Alina">
@@ -163,7 +156,7 @@
         </div><!-- .content-wrapper -->
     </article><!-- .section-wrapper -->
 
-    <article id="about6" class="section-wrapper clearfix" data-custom-background-img="{{asset('img/bg4.jpg')}}">
+    <article id="about6" class="section-wrapper clearfix" data-custom-background-img="{{asset('img/bg1.jpg')}}">
         <div class="content-wrapper clearfix">
             <div class="col-sm-11 pull-right">
 

@@ -2,6 +2,7 @@
 /*@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,700&subset=cyrillic');*/
 /*@import url('https://fonts.googleapis.com/css?family=Open+Sans:700|Roboto:300,400,400i,700');*/
 @import url('https://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans:700|Roboto:300,400,400i,700');
+@import url('https://fonts.googleapis.com/css?family=Comfortaa:300,400,700&subset=cyrillic');
 /* ====================================================
    GENERAL STYLES
    ==================================================== */
@@ -12,7 +13,7 @@ html {
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Comfortaa', sans-serif;
     font-weight: 300;
     color: #fff;
     background: #000;
@@ -53,7 +54,7 @@ a:hover {
 p a {
     padding-bottom:1px;
     border-bottom:1px dotted rgba(255,255,255,0.4);
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Comfortaa', sans-serif;
     font-weight: 400;
 }
 p a:hover {
@@ -62,11 +63,11 @@ p a:hover {
 }
 
 strong {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Comfortaa', sans-serif;
     font-weight: 700;
 }
 em {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Comfortaa', sans-serif;
     font-style: italic;
 }
 
@@ -88,6 +89,15 @@ h6,
 }
 h1.main-title {
     font-family: 'Open Sans', sans-serif;
+    position: relative;
+}
+h1.main-title:before {
+    content: 'Ваш удаленный контент-отдел';
+    position: absolute;
+    right: 0;
+    top: 5%;
+    font-size: 0.31em;
+    color: rgba(255, 255, 255, 0.90);
 }
 h1 span {
     color:#FBB03B;
@@ -142,7 +152,7 @@ dl {
     margin-top:2em;
 }
 dt {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Comfortaa', sans-serif;
     font-weight: 700;
 }
 
@@ -253,7 +263,7 @@ table {
     -webkit-transition: all 0.4s;
     transition: all 0.4s;
     border-radius: 0;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Comfortaa', sans-serif;
     font-weight: 300;
 }
 
@@ -392,7 +402,7 @@ table {
     list-style: none;
     margin:0;
     padding:0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Comfortaa', sans-serif;
     font-weight: 300;
     font-size:0.86em;
     line-height:1.05;
@@ -423,7 +433,7 @@ table {
 }
 
 #left-sidebar #main-menu > li.menu-item.active > * {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Comfortaa', sans-serif;
     font-weight: 700;
     font-weight: bold;
     background:rgba(0,0,0,0.15);
@@ -569,7 +579,7 @@ table {
     margin:20px 5%;
     overflow: visible;
     min-height:1px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Comfortaa', sans-serif;
     font-weight: 300;
     -webkit-transform: translate3d(0,0,0);
 }
@@ -658,7 +668,7 @@ table {
             position: absolute;
             right:0;
             bottom:16%;
-            text-align: right;
+            text-align: left;
             padding:0;
             background:none;
         }
@@ -701,7 +711,11 @@ h4 {
     font-size:1.25em;
     line-height:1.1;
     margin:0.65em 0;
+    margin-top: 100px;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.33);
+}
+.tab-pane h4 {
+    margin:0.65em 0;
 }
 h5 {
     font-size:1.15em;
@@ -718,6 +732,7 @@ h6 {
 
 #main-content *.section-title {
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+    text-align: right;
 }
 
 #main-content .feature-paragraph {
@@ -735,9 +750,10 @@ ul.list {
     content: '';
     position: absolute;
     width: 20px;
-    height: 2px;
-    background: #ffffff;
-    top: 0.6em;
+    height: 20px;
+    background: url(../img/box-with-check.png);
+    background-size: cover;
+    top: 4px;
     left: -30px;
 }
 
@@ -1037,7 +1053,7 @@ p span {
     right:12%;
     text-align: right;
     position: absolute;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Comfortaa', sans-serif;
     font-weight: bold;
     -webkit-transition: all 0.4s;
     transition: all 0.4s;
@@ -1226,6 +1242,7 @@ p span {
 }
 
 .form-style .form-group {
+    text-align: right;
     position:relative;
 }
 
@@ -1272,7 +1289,7 @@ p span {
     background:#fff;
     color:#a10000;
     font-size: 0.7em;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Comfortaa', sans-serif;
     font-weight: 700;
     border-radius: 0;
     padding:8px 10px;
@@ -1295,7 +1312,7 @@ p span {
 
 #main-content .contact-details {
     font-size: 0.9em;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Comfortaa', sans-serif;
 }
 
     @media (min-width: 768px) {
@@ -1503,7 +1520,7 @@ p span {
     cursor: pointer;
     background:none;
     border-radius:0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Comfortaa', sans-serif;
     font-size:0.8em;
     line-height:1;
     font-weight: normal;
@@ -1547,7 +1564,7 @@ p span {
 
 #main-content .carousel *.title {
     font-size:2em;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open sans', sans-serif;
     font-weight: 700;
     line-height:1.1;
     color:#fff;
@@ -1765,7 +1782,7 @@ p span {
     font-size: 0.9em;
     line-height: 1.1;
     text-align: center;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Comfortaa', sans-serif;
     font-weight: 300;
 }
 
@@ -2102,7 +2119,7 @@ small.help-block  {
 }
 .service-tab .tabpanel.styled-tabs .tab-content > .tab-pane > h4,
 .service-tab .tabpanel.styled-tabs .tab-content > .tab-pane > p {
-    text-align: right;
+    text-align: left;
 }
 .service-tab .tabpanel.styled-tabs .tab-content > .tab-pane > p {
     margin: 30px 0;
@@ -2126,7 +2143,7 @@ small.help-block  {
     cursor: pointer;
 }
 label {
-    font-family: 'Monserrat', sans-serif;
+    font-family: 'Comfortaa', sans-serif;
     font-size: 18px;
     font-weight: 300;
     color: rgba(255, 255, 255, 0.8);

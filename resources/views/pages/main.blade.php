@@ -12,10 +12,9 @@
 
                 <section class="feature-text">
                     <h1 class="main-title"><span>[</span>Контент<span>]</span> Квартира</h1>
-                    <p>Ваш удаленный контент-отдел</p>
-                    <h4>Решаем любую задачу присутствия Вашего бизнеса в сетии</h4>
-                    <span>Стратегия. Копирайтинг. SMM. Реклама. Дизайн. Технические задачи любой сложности.
-</span><br>
+                    <p>Решаем любую задачу присутствия<br>Вашего бизнеса в сетии</p>
+                    <p>Стратегия. Копирайтинг. SMM. Реклама. Дизайн. Технические задачи любой сложности.
+</p><br>
                     <p class="btn-inrow"><a href="#about" class="link-scroll btn btn-outline-inverse btn-lg">Узнать
                             больше</a></p>
                     <p class="btn-inrow"><a href="{{route('services')}}" class="link-scroll btn btn-outline-inverse btn-lg">Заказать
