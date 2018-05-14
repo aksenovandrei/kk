@@ -6,19 +6,21 @@
 @yield('sub-menu')
 <!-- end: Menu -->
 @section('about')
-    <article id="about" class="section-wrapper clearfix about-1" data-custom-background-img="{{asset('img/bg1.jpg')}}">
+    <article id="about" class="section-wrapper clearfix about-1" data-custom-background-img="{{asset('img/bg9.jpg')}}">
         <div class="content-wrapper clearfix">
             <div class="col-sm-10 col-md-9 pull-right">
                 <section class="feature-text">
-                    <h1 class="main-title"><span>[</span>Контент<span>]</span> Квартира</h1>
-                    <p>Ваш удаленный отдел исключительных профессионалов</p>
+                    <h1 class="main-title"><span class="yellow">[</span>Контент<span class="yellow">]</span> Квартира</h1>
+                    <p class="bold">Ваш удаленный отдел исключительных профессионалов</p>
                 </section>
                 <p><span>Представьте.... Вы сидите на стуле в пустой квартире.</span></p>
                 <p>Недавно её купили, кое-где уже даже начали ремонт... Стены без обоев, нет пола, стоит один стул, на котором Вы и сидите. Столько работы...</p>
+                <img class="clip-img" src="{{asset('img/empty.png')}}" alt="empty">
                 <p>Как же не хочется тратить на неё свое личное время, правда?</p>
                 <p>А представьте, что кто-то пришел и сделал все за Вас - договорился с бригадой, выбрал обои, купил и расставил мебель.<br><br>
                     И все это <span>без Вашего участия.</span></p>
                 <p>Теперь так возможно и в бизнесе</p>
+                <img class="clip-img" src="{{asset('img/do-man.png')}}" alt="empty">
                 <p>Скорее всего, сейчас вы сидите в такой своей «квартире». Это интернет-магазин или обучающие курсы, а может, услуги или сервис...<br>
                     Неважно.</p>
                 <p><span>У Вас есть продукт – интеллектуальный или физический.</span><br>
@@ -29,7 +31,7 @@
         </div><!-- .content-wrapper -->
     </article><!-- .section-wrapper -->
 
-    <article id="about3" class="section-wrapper clearfix" data-custom-background-img="{{asset('img/bg1.jpg')}}">
+    <article id="about3" class="section-wrapper clearfix" data-custom-background-img="{{asset('img/bg9.jpg')}}">
         <div class="content-wrapper clearfix">
             <div class="col-sm-10 col-md-9 pull-right">
                 <h4>Что делать, чтобы он продавался в 10-ки или даже 100-ни раз больше</h4>
@@ -50,7 +52,7 @@
         </div><!-- .content-wrapper -->
     </article><!-- .section-wrapper -->
 
-    <article id="about4" class="section-wrapper clearfix" data-custom-background-img="{{asset('img/bg1.jpg')}}">
+    <article id="about4" class="section-wrapper clearfix" data-custom-background-img="{{asset('img/bg9.jpg')}}">
         <div class="content-wrapper clearfix">
             <div class="col-sm-10 col-md-9 pull-right">
 
@@ -61,7 +63,7 @@
                     <!-- grid item -->
                     <div class="grid-item col-md-6">
                         <div class="item-content clearfix">
-                            <span class="icon icon-about fas fa-users"></span>
+                            <img src="{{asset('img/icon1.png')}}" alt="icon1">
                             <div class="text-content">
                                 <p>Готовую команду специалистов.
                                     Вам не придется искать, собеседовать, тестировать и обучать людей, оплачивая их пробы и ошибки</p>
@@ -72,7 +74,7 @@
                     <!-- grid item -->
                     <div class="grid-item col-md-6">
                         <div class="item-content clearfix">
-                            <span class="icon icon-about fas fa-sitemap"></span>
+                            <img src="{{asset('img/icon2.png')}}" alt="icon2">
                             <div class="text-content">
                                 <p>Возможность передать все ключевые задачи - создание контента, продвижение, технические задачи, дизайн - одной команде</p>
                             </div>
@@ -82,7 +84,7 @@
                     <!-- grid item -->
                     <div class="grid-item col-md-6">
                         <div class="item-content clearfix">
-                            <span class="icon icon-about fas fa-check-square"></span>
+                            <img src="{{asset('img/icon4.png')}}" alt="icon4">
                             <div class="text-content">
                                 <p>Полное погружение в проект.
                                     Мы изучаем Ваш проект “от и до”, не ограничиваясь лишь своей зоной ответственности</p>
@@ -93,7 +95,7 @@
                     <!-- grid item -->
                     <div class="grid-item col-md-6">
                         <div class="item-content clearfix">
-                            <span class="icon icon-about fas fa-clipboard-list"></span>
+                            <img src="{{asset('img/icon6.png')}}" alt="icon6">
                             <div class="text-content">
                                 <p>Стратегию.
                                     Выстраиваем работу для достижения заданной цели, анализируем результаты и корректируем план действий, а не просто “публикуем посты”</p>
@@ -104,7 +106,7 @@
                     <!-- grid item -->
                     <div class="grid-item col-md-6">
                         <div class="item-content clearfix">
-                            <span class="icon icon-about fas fa-comments"></span>
+                            <img src="{{asset('img/icon5.png')}}" alt="icon5">
                             <div class="text-content">
                                 <p>Постоянную связь с командой.
                                     Вы всегда можете получить ответы на свои вопросы от проект-менеджера или конкретного специалиста</p>
@@ -115,7 +117,7 @@
                     <!-- grid item -->
                     <div class="grid-item col-md-6">
                         <div class="item-content clearfix">
-                            <span class="icon icon-about fas fa-file-alt"></span>
+                            <img src="{{asset('img/icon3.png')}}" alt="icon3">
                             <div class="text-content">
                                 <p>Четкое понимание, как обстоят дела по проекту.
                                     Раз в месяц мы предоставляем подробный отчет по динамике развития проекта, с анализом и планом на следующий месяц</p>
@@ -129,7 +131,7 @@
         </div><!-- .content-wrapper -->
     </article><!-- .section-wrapper -->
 
-    <article id="about5" class="section-wrapper clearfix" data-custom-background-img="{{asset('img/bg1.jpg')}}">
+    <article id="about5" class="section-wrapper clearfix" data-custom-background-img="{{asset('img/bg9.jpg')}}">
         <div class="content-wrapper clearfix">
             <div class="col-sm-2 col-md-2 pull-left">
                 <img src="{{asset('img/alina.jpg')}}" alt="Alina">
@@ -156,7 +158,7 @@
         </div><!-- .content-wrapper -->
     </article><!-- .section-wrapper -->
 
-    <article id="about6" class="section-wrapper clearfix" data-custom-background-img="{{asset('img/bg1.jpg')}}">
+    <article id="about6" class="section-wrapper clearfix" data-custom-background-img="{{asset('img/bg9.jpg')}}">
         <div class="content-wrapper clearfix">
             <div class="col-sm-11 pull-right">
 

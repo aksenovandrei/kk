@@ -11,14 +11,14 @@
             <div class="col-sm-10 col-md-9 pull-right">
 
                 <section class="feature-text">
-                    <h1 class="main-title"><span>[</span>Контент<span>]</span> Квартира</h1>
-                    <p>Решаем любую задачу присутствия<br>Вашего бизнеса в сетии</p>
-                    <p>Стратегия. Копирайтинг. SMM. Реклама. Дизайн. Технические задачи любой сложности.
+                    <h1 class="main-title"><span class="yellow">[</span>Контент<span class="yellow">]</span> <span class="ending">Квартира</span></h1>
+                    <p class="bold">Решаем любую задачу присутствия<br>Вашего бизнеса в сети</p>
+                    <p class="sub-title">Стратегия. Копирайтинг. SMM. Реклама. Дизайн. Технические задачи любой сложности.
 </p><br>
+                    <p class="btn-inrow"><a href="{{route('services')}}" class="link-scroll btn btn-outline-inverse btn-yellow btn-lg">Заказать
+                            услугу</a></p>
                     <p class="btn-inrow"><a href="#about" class="link-scroll btn btn-outline-inverse btn-lg">Узнать
                             больше</a></p>
-                    <p class="btn-inrow"><a href="{{route('services')}}" class="link-scroll btn btn-outline-inverse btn-lg">Заказать
-                            услугу</a></p>
                 </section>
 
             </div><!-- .col-sm-10 -->
@@ -26,7 +26,7 @@
     </article><!-- .section-wrapper -->
 @stop
 @section('about')
-    <article id="about" class="section-wrapper clearfix" data-custom-background-img="{{asset('img/bg1.jpg')}}">
+    <article id="about" class="section-wrapper clearfix" data-custom-background-img="{{asset('img/bg9.jpg')}}">
         <div class="content-wrapper clearfix">
             <div class="col-sm-10 col-md-9 pull-right">
                 <h2 class="section-title">Контент Квартира - это:</h2>
@@ -43,7 +43,7 @@
                     </li>
                 </ul>
                 </p>
-                <p><a href="{{route('about')}}" class="link-scroll btn btn-outline-inverse btn-lg">Познакомиться</a></p>
+                <p><a href="{{route('about')}}" class="link-scroll btn btn-yellow btn-outline-inverse btn-lg">Познакомиться</a></p>
             </div><!-- .col-sm-10 -->
         </div><!-- .content-wrapper -->
     </article><!-- .section-wrapper -->
@@ -53,7 +53,7 @@
         <div class="content-wrapper mid-vertical-positioning clearfix" >
             <div class="col-sm-10 col-md-9 pull-right">
 
-                <h1 id="services"  class="section-title">Наши услуги</h1>
+                <h2 id="services"  class="section-title">Наши услуги</h2>
 
                 <div  class="tabpanel styled-tabs uniform-height" role="tabpanel">
 
@@ -90,6 +90,8 @@
                                 <li>Написание репутационных статей</li>
                                 <li>Внедрение контент-маркетинга в Ваш бизнес “под ключ”</li>
                             </ul>
+                            <p class="btn-inrow"><a href="{{route('services')}}" class="link-scroll btn btn-yellow btn-outline-inverse btn-lg">Подробнее</a>
+                        </p>
                         </div>
 
                         <div role="tabpanel" class="tab-pane fade" id="tabs-tab2">
@@ -100,6 +102,8 @@
                                 <li>Написание писем в email-рассылки и чат-бот рассылки</li>
                                 <li>Тексты для корпоративных сайтов и другие копирайтинг-задачи</li>
                             </ul>
+                            <p class="btn-inrow"><a href="{{route('services')}}" class="link-scroll btn btn-yellow btn-outline-inverse btn-lg">Подробнее</a>
+                        </p>
                         </div>
 
                         <div role="tabpanel" class="tab-pane fade" id="tabs-tab3">
@@ -110,6 +114,8 @@
                                 <li>Разработка маркетинг-стратегий</li>
                                 <li>Разработка воронок писем</li>
                             </ul>
+                            <p class="btn-inrow"><a href="{{route('services')}}" class="link-scroll btn btn-yellow btn-outline-inverse btn-lg">Подробнее</a>
+                        </p>
                         </div>
 
                         <div role="tabpanel" class="tab-pane fade" id="tabs-tab4">
@@ -120,6 +126,8 @@
                                 <li>Продвижение сообществ в соцсетях</li>
                                 <li>Комплексное продвижение в соцсетях</li>
                             </ul>
+                            <p class="btn-inrow"><a href="{{route('services')}}" class="link-scroll btn btn-yellow btn-outline-inverse btn-lg">Подробнее</a>
+                        </p>
                         </div>
 
                         <div role="tabpanel" class="tab-pane fade" id="tabs-tab5">
@@ -130,6 +138,8 @@
                                 <li>Создание чат-ботов</li>
                                 <li>Реализация технических задач любой сложности</li>
                             </ul>
+                            <p class="btn-inrow"><a href="{{route('services')}}" class="link-scroll btn btn-yellow btn-outline-inverse btn-lg">Подробнее</a>
+                        </p>
                         </div>
 
                         <div role="tabpanel" class="tab-pane fade" id="tabs-tab6">
@@ -140,11 +150,10 @@
                                 <li>Оформление коммерческих предложений</li>
                                 <li>Решение других дизайн-задач для Вашего бизнеса</li>
                             </ul>
+                            <p class="btn-inrow"><a href="{{route('services')}}" class="link-scroll btn btn-yellow btn-outline-inverse btn-lg">Подробнее</a>
+                        </p>
                         </div>
-
                     </div><!-- .tab-content -->
-                    <p class="btn-inrow"><a href="{{route('services')}}" class="link-scroll btn btn-outline-inverse btn-lg">Подробнее</a>
-                    </p>
                 </div><!-- .tabpanel -->
 
             </div><!-- .col-sm-10 -->
@@ -164,40 +173,39 @@
 
                     <div class="item active">
                         <div class="carousel-text-content">
-                            <img src="{{asset('img/Obuhovskiy.jpg')}}" alt="Obuhovskiy">
-                            <h2 class="title">Игорь Обуховский</h2>
+                            <h4 class="title">Игорь Обуховский</h4>
                             <p>Экс-тренер проекта «Зваженi та щасливi», автор онлайн фитнес-игры «ЖирКиллер»</p>
-                            <p><a href="{{route('reviews')}}" class="btn btn-outline-inverse btn-sm">Все отзывы</a></p>
+                            <img src="{{asset('img/Obuhovskiy.jpg')}}" alt="Obuhovskiy">
+                            <p class="btn-inrow"><a href="{{route('reviews')}}" class="link-scroll btn btn-yellow btn-outline-inverse btn-lg">Все отзывы</a>
                         </div>
                     </div><!-- .item -->
 
                     <div class="item">
                         <div class="carousel-text-content">
+                            <h4 class="title">Границ.нет</h4>
+                            <p>Обучающий проект для тех, кто хочет построить бизнес на любимом деле</p>
                             <img src="{{asset('img/Granyts1.png')}}" alt="Granyts1">
                             <img src="{{asset('img/Granyts2.png')}}" alt="Granyts2">
-                            <h2 class="title">Границ.нет</h2>
-                            <p>Обучающий проект для тех, кто хочет построить бизнес на любимом деле</p>
-                            <p><a href="{{route('reviews')}}" class="btn btn-outline-inverse btn-sm">Все отзывы</a></p>
+                            <p class="btn-inrow"><a href="{{route('reviews')}}" class="link-scroll btn btn-yellow btn-outline-inverse btn-lg">Все отзывы</a>
                         </div>
                     </div><!-- .item -->
 
                     <div class="item">
                         <div class="carousel-text-content">
-                            <img src="{{asset('img/Shlyahov.png')}}" alt="Shlyahov">
-                            <h2 class="title">Роман Шляхов</h2>
+                            <h4 class="title">Роман Шляхов</h4>
                             <p>интернет-предприниматель, продюсер, миллионер</p>
-                            <p>Работали над написанием продающих текстов для Романа и его учеников.</p>
-                            <p><a href="{{route('reviews')}}" class="btn btn-outline-inverse btn-sm">Все отзывы</a></p>
+                            <img src="{{asset('img/Shlyahov.png')}}" alt="Shlyahov">
+                            <p class="btn-inrow"><a href="{{route('reviews')}}" class="link-scroll btn btn-yellow btn-outline-inverse btn-lg">Все отзывы</a>
                         </div>
                     </div><!-- .item -->
 
                     <div class="item">
                         <div class="carousel-text-content">
-                            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                            <h2 class="title">Рик Астли</h2>
+                            <h4 class="title">Рик Астли</h4>
                             <p>певец, герой мемов</p>
                             <p>Ничего ему не делали, но и он нам, как бы, ничего не платил)))</p>
-                            <p><a href="{{route('reviews')}}" class="btn btn-outline-inverse btn-sm">Все отзывы</a></p>
+                            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            <p class="btn-inrow"><a href="{{route('reviews')}}" class="link-scroll btn btn-yellow btn-outline-inverse btn-lg">Все отзывы</a>
                         </div>
                     </div><!-- .item -->
 
@@ -217,7 +225,7 @@
         <div class="content-wrapper clearfix">
             <div class="col-sm-11 pull-right">
 
-                <h1 class="section-title">Наши кейсы</h1>
+                <h2 class="section-title">Наши кейсы</h2>
 
                 <!-- feature columns -->
                 <section class="feature-columns row clearfix">
@@ -255,14 +263,14 @@
                         </a><!-- .thumbnail -->
 
                         <div class="content-to-populate-in-modal" id="modal-content-8">
-                            <h3>Личный блог эксперта по
+                            <h3 class="no-shadow">Личный блог эксперта по
                                 Фейсбук-продвижению из США
                                 Давида Колесникова</h3>
-                            <h5>Краткое описание проекта</h5>
+                            <h5 class="no-shadow">Краткое описание проекта</h5>
                             <p>Давид Колесников – эксперт по продвижению бизнеса в Facebook, интернет-маркетолог,
                                 предприниматель из Америки, который только выходит на рынок СНГ и не является узнаваемой
                                 для аудитории личностью.</p>
-                            <h5>Цели</h5>
+                            <h5 class="no-shadow">Цели</h5>
                             <p>
                             <ul>
                                 <li>Формирование образа эксперта в своей нише (продвижение бизнеса через Facebook);</li>
@@ -270,9 +278,9 @@
                                 <li>Активность по имени в сети.</li>
                             </ul>
                             </p>
-                            <h5>Инструмент</h5>
+                            <h5 class="no-shadow">Инструмент</h5>
                             <p>Блог.</p>
-                            <h5>Вложения: точечное продвижение постов.</h5>
+                            <h5 class="no-shadow">Вложения: точечное продвижение постов.</h5>
                             <p>При минимальных вложениях, за счет качества предоставляемой информации, уже на 3-м месяце
                                 ведения блога (на первом запуске) клиент сделал продажи своего авторского онлайн-курса
                                 по продвижению в Facebook при стоимости пакета участия от $200.</p>
@@ -317,10 +325,10 @@
                         </a><!-- .thumbnail -->
 
                         <div class="content-to-populate-in-modal" id="modal-content-9">
-                            <h3>Проект “Чай Гайван”</h3>
-                            <h5>Описание проекта</h5>
+                            <h3 class="no-shadow">Проект “Чай Гайван”</h3>
+                            <h5 class="no-shadow">Описание проекта</h5>
                             <p>Клиент - ТМ, занимающаяся продажей элитных сортов чая в Германии и Англии.</p>
-                            <h5>Цели</h5>
+                            <h5 class="no-shadow">Цели</h5>
                             <p>
                             <ul>
                                 <li>Повысить узнаваемость бренда</li>
@@ -332,9 +340,9 @@
                                 <li>Сформировать образ владельца ТМ как эксперта в чае</li>
                             </ul>
                             </p>
-                            <h5>Инструмент: Instagram</h5>
+                            <h5 class="no-shadow">Инструмент: Instagram</h5>
                             <p>*аккаунт велся на английском языке</p>
-                            <h5>Первый этап работы</h5>
+                            <h5 class="no-shadow">Первый этап работы</h5>
                             <p>
                             <ul>
                                 <li>Создание контент-плана и внедрение разнообразных рубрик постов вместо однообразных
@@ -359,17 +367,19 @@
                                 <p>Наилучшим образом аудитория реагировала именно на фото в таких теплых тонах</p>
                                 <img src="{{asset('img/gayvan4.jpg')}}">
                             </div>
-                            <h5>Второй этап</h5>
+                            <h5 class="no-shadow">Второй этап</h5>
                             <p>
                             <ul>
                                 <li>Продвижение. Мы использовали продвижение публикаций на разные группы потенциально
                                     заинтересованной аудитории в Инстаграм.
                                 </li>
+                                <br>
                                 <li>Сложность задачи - продвижение осуществлялось на рынок Англии и Германии. Контент
                                     там воспринимается иначе, нежели на русскоязычном рынке. К примеру, аудиторию сложно
                                     зацепить всевозможными розыгрышами и бесплатностями.
                                 </li>
-                                <li>днако нам удалось выйти на стоимость уникального клика 0,23-0,63 евро (в 2,5 раза
+                                <br>
+                                <li>Однако нам удалось выйти на стоимость уникального клика 0,23-0,63 евро (в 2,5 раза
                                     дешевле изначальной цены), что для европейского рынка считается отличным
                                     показателем.
                                 </li>
@@ -382,7 +392,7 @@
                                 из Инстаграм, хотя такой цели рекламная кампания вообще не преследовала.</p>
 
                         </div><!-- #modal-content-8 -->
-                        <p class="btn-inrow"><a href="http://kk/portfolio" class="link-scroll btn btn-outline-inverse btn-lg">Больше
+                        <p class="btn-inrow"><a href="http://kk/portfolio" class="link-scroll btn btn-yellow btn-outline-inverse btn-lg">Больше
                                 кейсов</a></p>
                     </article>
                 </section><!-- end: .feature-columns -->
@@ -398,7 +408,7 @@
         <div class="content-wrapper clearfix">
             <div class="col-sm-11 pull-right">
 
-                <h1 class="section-title">Наши партнеры</h1>
+                <h2 class="section-title">Наши партнеры</h2>
 
                 <!-- feature columns -->
                 <section class="feature-columns row clearfix">
@@ -455,15 +465,15 @@
 @section('vacancies')
     <article id="vacancies" class="section-wrapper clearfix" data-custom-background-img="{{asset('img/bg5.jpg')}}">
         <div class="content-wrapper clearfix">
-            <div class="col-sm-11 col-md-10 pull-right">
+            <div class="col-sm-12 col-md-12">
 
-                <h1 class="section-title">Ищем в команду</h1>
+                <h2 class="section-title">Ищем в команду</h2>
 
                 <!-- grid -->
-                <section class="grid row clearfix clearfix-for-2cols">
+                <section class="grid row clearfix clearfix-for-3cols pull-right">
 
                     <!-- grid item -->
-                    <div class="grid-item col-md-6">
+                    <div class="grid-item col-md-4 pull-right">
                         <div class="item-content clearfix">
                             <span class="icon fas fa-book"></span>
                             <div class="text-content">
@@ -473,7 +483,7 @@
                     </div><!-- end: .grid-item -->
 
                     <!-- grid item -->
-                    <div class="grid-item col-md-6">
+                    <div class="grid-item col-md-4 pull-right">
                         <div class="item-content clearfix">
                             <span class="icon fas fa-cube"></span>
                             <div class="text-content">
@@ -483,7 +493,7 @@
                     </div><!-- end: .grid-item -->
 
                     <!-- grid item -->
-                    <div class="grid-item col-md-6">
+                    <div class="grid-item col-md-4 pull-right">
                         <div class="item-content clearfix">
                             <span class="icon fas fa-calendar-alt"></span>
                             <div class="text-content">
@@ -491,10 +501,11 @@
                             </div>
                         </div><!-- end: .item-content -->
                     </div><!-- end: .grid-item -->
-                    <div class="grid-item col-md-6">
+
+                    <div class="grid-item col-md-6 pull-right">
                         <div class="item-content clearfix">
                             <div class="text-content">
-                                <p class="btn-inrow"><a href="{{route('vacancies')}}" class="link-scroll btn btn-outline-inverse btn-lg">Подробнее</a>
+                                <p class="btn-inrow"><a href="{{route('vacancies')}}" class="link-scroll btn btn-yellow btn-outline-inverse btn-lg">Подробнее</a>
                                 </p>
                             </div>
                         </div><!-- end: .item-content -->
@@ -509,26 +520,26 @@
 @section('contact')
     <article id="contact" class="section-wrapper clearfix" data-custom-background-img="{{asset('img/bg4.jpg')}}">
         <div class="content-wrapper clearfix">
-            <h1 class="section-title">Свяжитесь с нами</h1>
+            <h2 class="section-title">Свяжитесь с нами</h2>
             <!-- CONTACT DETAILS -->
-            <div class="contact-details col-sm-5 col-md-3">
+            <div class="contact-details col-sm-5 col-md-5">
                 {{--<p>123A,<br/>Molestie Lorem Avenue,<br/>Aliquam<br/>AAA0010</p>--}}
-                <p>Tel: +7 (499) 677 24 11</p>
-                <p>Tel: +38 (094) 711 70 66</p>
-                <p><a href="mailto:content.kvartira@gmail.com">content.kvartira@gmail.com</a></p>
+                <p>Tel: +7 (499) 677 24 11 <i class="fas fa-mobile-alt"></i></p>
+                <p>Tel: +38 (094) 711 70 66 <i class="fas fa-mobile-alt"></i></p>
+                <p><a href="mailto:content.kvartira@gmail.com">content.kvartira@gmail.com</a><i class="far fa-envelope"></i></p>
                 <p>тут будут иконки сцсетей</p>
             </div>
             <!-- END: CONTACT DETAILS -->
 
             <!-- CONTACT FORM -->
-            <div class="col-sm-7 col-md-9">
+            <div class="col-sm-7 col-md-7 pull-right">
                 <!-- IMPORTANT: change the email address at the top of the assets/php/mail.php file to the email address that you want this form to send to -->
 
                 <form class="form-style clearfix form-val" action="{{route('main')}}" method="POST"
                       role="form" name="form_name"> <!-- убрал класс validate-form-->
                 {{ csrf_field() }}
                 <!-- form left col -->
-                    <div class="col-md-6">
+                    <div class="col-md-10 pull-right">
                         <div class="form-group">
                             <input type="text" class="text-field form-control required"
                                    data-validation-type="string" id="form-name" placeholder="Ваше имя" name="name"
@@ -545,15 +556,10 @@
                                    placeholder="Ваш телефон" name="contact_number" value="{{old('contact_number')}}"
                                    data-bv-live="disabled">
                         </div>
-                        <!--<div class="form-group text-right">-->
-                        <!--<img id="form-captcha-img" src="img/captcha_img.php">-->
-                        <!--<input type="text" class="text-field form-control validate-field required" data-validation-type="captcha" id="form-captcha" placeholder="Enter text" name="captcha">-->
-                        <!--<span id="form-captcha-refresh" class="fa fa-refresh" title="Reload"></span>-->
-                        <!--</div>                 -->
                     </div><!-- end: form left col -->
 
                     <!-- form right col -->
-                    <div class="col-md-6">
+                    <div class="col-md-10 pull-right">
                         <div class="form-group">
                                 <textarea placeholder="Ваше сообщение" class="form-control validate-field"
                                           name="message">{{old('message')}}</textarea>

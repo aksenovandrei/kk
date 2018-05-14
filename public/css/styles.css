@@ -30,7 +30,7 @@ body {
     display: inline-block; !important;
 }
 .btn-inrow {
-    margin-left: 30px; !important;
+    margin-right: 30px; !important;
 }
 a,
 .btn {
@@ -87,21 +87,27 @@ h6,
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
 }
+.bold {
+    font-weight: 600;
+}
 h1.main-title {
     font-family: 'Open Sans', sans-serif;
     position: relative;
 }
-h1.main-title:before {
-    content: 'Ваш удаленный контент-отдел';
-    position: absolute;
-    right: 0;
-    top: 5%;
-    font-size: 0.31em;
-    color: rgba(255, 255, 255, 0.90);
-}
-h1 span {
+.main-title .yellow {
     color:#FBB03B;
     font-size: 1.3em;
+}
+.main-title .ending {
+    position:  relative;
+}
+.main-title .ending:before {
+    content: 'Ваш удаленный контент-отдел';
+    position: absolute;
+    left: 4px;
+    top: -5%;
+    font-size: 0.30em;
+    color: rgba(255, 255, 255, 0.90);
 }
 
 p {
@@ -272,12 +278,22 @@ table {
   background-color: transparent;
   border-color: #fff;
 }
+.btn-yellow {
+  border-color: #FBB03B;
+}
 .btn-outline-inverse:hover,
 .btn-outline-inverse:focus {
   color: #000;
   text-shadow: none;
   background-color: #fff;
   border-color: #fff;
+}
+.btn-yellow:hover,
+.btn-yellow:focus {
+  color: #000;
+  text-shadow: none;
+  background-color: #FBB03B;
+  border-color: #FBB03B;
 }
 
 /* ====================================================
@@ -615,7 +631,7 @@ table {
 
 #main-content .section-wrapper.modified-height {
     /*height:auto !important;*/
-    height: 120%; !important;
+    height: 145%; !important;
 }
 
 
@@ -742,7 +758,7 @@ ul.list {
     list-style: none;
 }
 .list li {
-    margin: 15px 0;
+    margin: 25px 0;
     position: relative;
     font-weight: 500;
 }
@@ -816,8 +832,13 @@ p span {
 }
 
     @media (min-width: 768px) {
-        #main-content .feature-text { font-size:1.18em; }
-        #main-content .feature-text h1 { font-size:2.25em; }
+        #main-content .feature-text {
+            font-size:1.18em;
+        }
+        #main-content .feature-text .sub-title {
+            font-size: 1.08em;
+        }
+        #main-content .feature-text h1 { font-size:2.45em; }
         #main-content .feature-text h2 { font-size:1.9em; }
         #main-content .feature-text h3 { font-size:1.65em; }
         #main-content .feature-text h4 { font-size:1.25em; }
@@ -828,7 +849,12 @@ p span {
         #main-content .feature-text .btn-xs { font-size:0.43em; }        
     }
     @media (min-width: 992px) {
-        #main-content .feature-text { font-size:1.44em; }   
+        #main-content .feature-text {
+            font-size:1.44em;
+        }
+        #main-content .feature-text .sub-title {
+            font-size: 0.84em;
+        }
     }
     @media (min-width: 1200px) {
 
@@ -839,6 +865,9 @@ p span {
     display: inline-block;
     text-align: center;
     margin-bottom: 30px;
+}
+.block-item p {
+    height: 11%;
 }
 .block-item img {
     width: 70%;
@@ -873,6 +902,12 @@ p span {
     border-bottom:1px solid rgba(255,255,255,0.2); 
     text-align: left;  
 }
+#main-content .grid .grid-item img {
+    display: block;
+    margin: 0 auto;
+    height: 80px;
+    opacity: 0.8;
+}
 #main-content .grid > li:last-child,
 #main-content .grid .grid-item:last-of-type { border-bottom:none; }
 
@@ -906,11 +941,10 @@ p span {
 
 #main-content .grid .text-content {
     display:block;
-    /*padding-left:25%;*/
-    text-align: justify;
+    text-align: left;
 }
-#grid h1 {
-    margin-top: 15%;
+.section-title {
+    margin-top: 100px;
 }
 
     @media (min-width: 768px) {
@@ -1282,6 +1316,7 @@ p span {
 
 .form-style textarea {
     height:125px;
+    resize: none;
 }
 
 .form-style .alert {
@@ -1313,6 +1348,11 @@ p span {
 #main-content .contact-details {
     font-size: 0.9em;
     font-family: 'Comfortaa', sans-serif;
+    text-align: right;
+}
+#main-content .contact-details i {
+    font-size: 1.2em;
+    margin-left: 15px;
 }
 
     @media (min-width: 768px) {
@@ -1563,9 +1603,9 @@ p span {
 }
 
 #main-content .carousel *.title {
-    font-size:2em;
-    font-family: 'Open sans', sans-serif;
-    font-weight: 700;
+    font-size: 1em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
     line-height:1.1;
     color:#fff;
     margin:0.6em 0 0.7em 0;
@@ -1611,7 +1651,7 @@ p span {
             font-size:3.4em;
         } 
         #main-content .carousel *.title {
-            font-size:2em;
+            font-size: 1.3em;
             line-height:1.1;
             margin:0.3em 0 0.4em 0;
         }       
@@ -1646,7 +1686,7 @@ p span {
             font-size:4.2em;
         } 
         #main-content .carousel *.title {
-            font-size:2.4em;
+            font-size: 1.7em;
             line-height:1;
             margin:0.4em 0 0.5em 0;
         }                
@@ -1719,7 +1759,7 @@ p span {
 
     @media (min-width: 768px) { 
         .modal .modal-dialog {
-            width: auto;
+            width: 80%;
             margin: 20px;
         }      
         .modal .close {
@@ -1736,7 +1776,7 @@ p span {
             margin: 40px auto;
         } 
         .modal.full-size .modal-dialog {
-            width: 90%;
+            width: 60%;
             margin: 40px auto;
         }         
         .modal .close {
@@ -1747,7 +1787,7 @@ p span {
             padding: 25px 15px;
         }
         .modal.full-size .modal-content .modal-body {
-            padding:30px 60px;
+            padding:30px 80px;
         }                   
     }
     @media (min-width: 1200px) {  
@@ -1817,6 +1857,26 @@ p span {
     transition: all 0.4s;
 }
 .popup-alt-image-gallery .item > a:hover:after {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.modal-body .popup-alt-image-gallery .item > a:after {
+    content:"";
+    display: block;
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background:url(../img/more-link-icon.png) no-repeat center center;
+    background-color: rgba(0,0,0,0.45);
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+}
+.modal-body .popup-alt-image-gallery .item > a:hover:after {
     opacity: 1;
     filter: alpha(opacity=100);
 }
@@ -1929,6 +1989,9 @@ p span {
     padding: 0.1em 0 0.65em;
     background:none;
 }
+.tabpanel.styled-tabs ul.nav > li.active > a i, .tabpanel.styled-tabs ul.nav > li.active > a:hover i, .tabpanel.styled-tabs ul.nav > li.active > a:focus i {
+    color: #FBB03B;
+}
 
 .tabpanel.styled-tabs ul.nav > li > a::after {
     position: absolute;
@@ -1936,7 +1999,7 @@ p span {
     left: 0;
     width: 100%;
     height: 3px;
-    background: #fff;
+    background: #FBB03B;
     content: '';
     -webkit-transition: -webkit-transform 0.3s;
     transition: transform 0.3s;
@@ -1991,6 +2054,7 @@ p span {
 
 .tabpanel.styled-tabs .tab-content > .tab-pane {
     padding: 25px 15px;
+    padding-bottom: 0;
     padding-left: 0;
     padding-right: 0;
     text-align: left;
@@ -1998,9 +2062,11 @@ p span {
 .tabpanel.styled-tabs .tab-content > .tab-pane ul {
     list-style: none;
     padding-left: 30px;
+    display: block;
 }
 .tabpanel.styled-tabs .tab-content > .tab-pane ul li {
     position: relative;
+    margin: 10px 0;
 }
 .tabpanel.styled-tabs .tab-content > .tab-pane ul li:before {
     content: '';
@@ -2106,14 +2172,17 @@ small.help-block  {
     margin: 0;
     padding: 5px;
 }
-/*#reviews {
-    padding-bottom: 130px;
-}*/
-/*#portfolio,
-#partners,
-#vacancies {
-    min-height: 90%;
-}*/
+#reviews .client {
+    width: 80%;
+    height: auto;
+    margin-top: 50px;
+}
+#reviews .quptes {
+    width: 35px;
+    display: inline;
+    float: right;
+}
+
 .service-tab .tabpanel.styled-tabs .tab-content > .tab-pane ul{
     padding-left: 0;
 }
@@ -2172,45 +2241,40 @@ label:hover {
 }
 .checkmark {
     display: inline-block;
-    height: 14px;
-    width: 14px;
-    background-color: transparent;
-    border: 1px solid white;
+    height: 20px;
+    width: 20px;
+    background: url("../img/checkmark.png");
+    background-size: cover;
     position: absolute;
-    top: 3px;
+    top: 0;
     left: -30px;
 }
 .modal-body .checkmark {
-    border: 1px solid #252525;
     left: 0;
 
 }
-/* On mouse-over, add a grey background color */
-label:hover input ~ .checkmark {
-    background-color: #ccc;
-}
-.modal-body label:hover input ~ .checkmark {
-    background-color: #6e6e6e;
-}
-
-/* When the checkbox is checked, add a blue background */
 label input:checked ~ .checkmark {
-    background-color: transparent;
+    background: url("../img/checkmark-checked.png");
+    background-size: cover;
+}
+.modal-body label input ~ .checkmark {
+    background: url("../img/checkmark-modal.png");
+    background-size: cover;
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */
-.checkmark:after {
+/*.checkmark:after {
     content: "";
     position: absolute;
     display: none;
-}
-
-/* Show the checkmark when checked */
+}*/
+/*
+!* Show the checkmark when checked *!
 label input:checked ~ .checkmark:after {
     display: block;
 }
 
-/* Style the checkmark/indicator */
+!* Style the checkmark/indicator *!
 label .checkmark:after {
     left: 4px;
     top: 1px;
@@ -2232,7 +2296,7 @@ label .checkmark:after {
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
-}
+}*/
 .modal-body ul span {
     color: #252525;
 }
@@ -2248,12 +2312,14 @@ label .checkmark:after {
     color: #252525;
 }
 .modal-body .form-group  #sub-btn {
+    font-size: 1em;
     border: 1px solid #252525;
     display: block;
     margin: 12px auto;
-    width: 100px;
+    width: 300px;
     position: static;
     color: #252525;
+    height: 54px;
 }
 .modal-body .form-group  input.text-field::-webkit-input-placeholder,
 .modal-body .form-group  input.text-field:-moz-placeholder,
@@ -2366,4 +2432,13 @@ li .description {
 }
 #about6 h3 {
     margin-bottom: 8%;
+}
+.no-shadow {
+    text-shadow: none; !important;
+}
+#about .clip-img {
+    width: 73%;
+    display: block;
+    margin: 15px auto;
+    opacity: 0.8;
 }

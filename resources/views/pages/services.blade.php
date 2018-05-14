@@ -417,7 +417,7 @@
                         </div>
 
                     </div><!-- .tab-content -->
-                    <p class="{{--btn-inrow--}}"><a href="javascript.void(0);" class="chart link-scroll btn btn-outline-inverse btn-lg" data-toggle="modal" data-target="#exampleModalCenter">Заказать</a>
+                    <p class="{{--btn-inrow--}}"><a href="javascript.void(0);" class="chart link-scroll btn btn-yellow btn-outline-inverse btn-lg" data-toggle="modal" data-target="#exampleModalCenter">Заказать</a>
                     </p>
                 </div><!-- .tabpanel -->
 

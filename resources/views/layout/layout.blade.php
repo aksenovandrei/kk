@@ -81,23 +81,23 @@
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title" id="exampleModalLongTitle">Выбранные услуги</h4>
+                <h4 class="modal-title no-shadow" id="exampleModalLongTitle">Выбранные услуги</h4>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <div class="modal-body">
+            <div class="modal-body cart-modal">
                 <form class="form-style clearfix form-val" action="{{route('main')}}" method="POST"
                       role="form" name="form_name"> <!-- убрал класс validate-form-->
                 {{ csrf_field() }}
                 <!-- form left col -->
                     <ul class="content">
-                        <h5 id="title1">Контент</h5>
-                        <h5 id="title2">Продающий копирайтинг</h5>
-                        <h5 id="title3">Маркетинг</h5>
-                        <h5 id="title4">Реклама</h5>
-                        <h5 id="title5">Технические услуги</h5>
-                        <h5 id="title6">Дизайн</h5>
+                        <h5 class="no-shadow" id="title1">Контент</h5>
+                        <h5 class="no-shadow" id="title2">Продающий копирайтинг</h5>
+                        <h5 class="no-shadow" id="title3">Маркетинг</h5>
+                        <h5 class="no-shadow" id="title4">Реклама</h5>
+                        <h5 class="no-shadow" id="title5">Технические услуги</h5>
+                        <h5 class="no-shadow" id="title6">Дизайн</h5>
                     </ul>
                         <div class="form-group">
                             <input type="text" class="text-field form-control required"

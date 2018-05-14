@@ -496,49 +496,53 @@ $(document).ready(function() {
         } else if (($('#form-contact-number').val().trim() != '')) {
            $('#form-email').attr('disabled', 'disabled');
         }
-    });
-    $('.form-val').bootstrapValidator({
-        // To use feedback icons, ensure that you use Bootstrap v3.1.0 or later
-        feedbackIcons: {
-            valid: 'glyphicon glyphicon-ok',
-            invalid: 'glyphicon glyphicon-remove',
-            validating: 'glyphicon glyphicon-refresh'
-        },
-        fields: {
-            name: {
-                validators: {
-                    stringLength: {
-                        min: 2
-                    },
-                    notEmpty: {
-                        message: 'Пожадуйста, введите свое имя'
-                    }
-                }
+
+
+        $('.form-val').bootstrapValidator({
+            // To use feedback icons, ensure that you use Bootstrap v3.1.0 or later
+            feedbackIcons: {
+                valid: 'glyphicon glyphicon-ok',
+                invalid: 'glyphicon glyphicon-remove',
+                validating: 'glyphicon glyphicon-refresh'
             },
-            email: {
-                validators: {
-                    notEmpty: {
-                        message: 'Пожалуйста, введите свой email'
-                    },
-                    regexp: {
-                        regexp: /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/,
-                        message: 'Введите правильный email адрес'
+            fields: {
+                name: {
+                    validators: {
+                        stringLength: {
+                            min: 2
+                        },
+                        notEmpty: {
+                            message: 'Пожадуйста, введите свое имя'
+                        }
                     }
-                }
-            },
-            contact_number: {
-                validators: {
-                    notEmpty: {
-                        message: 'Пожалуйста, введите свой телефон'
-                    },
-                    regexp: {
-                        regexp: /^[1-9][0-9]{5,15}$/,
-                        message: 'Введите правильный номер телефона'
+                },
+                email: {
+                    validators: {
+                        notEmpty: {
+                            message: 'Пожалуйста, введите свой email'
+                        },
+                        regexp: {
+                            regexp: /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/,
+                            message: 'Введите правильный email адрес'
+                        }
+                    }
+                },
+                contact_number: {
+                    validators: {
+                        notEmpty: {
+                            message: 'Пожалуйста, введите свой телефон'
+                        },
+                        regexp: {
+                            regexp: /^[1-9][0-9]{5,15}$/,
+                            message: 'Введите правильный номер телефона'
+                        }
                     }
                 }
             }
-        }
-    })
+        })
+
+    });
+
 });
 
 
@@ -596,38 +600,38 @@ $('#myModal').on('shown.bs.modal', function () {
 });
 
 $('.chart').on('click', function () {
-    $('.modal-body ul h5').hide();
-    $('.modal-body ul li').remove();
+    $('.cart-modal ul h5').hide();
+    $('.cart-modal ul li').remove();
     $("input:checkbox:checked").each(function () {
         if ($(this).closest('div').attr('id') == 'tabs-tab1') {
-            $('.modal-body #title1').show();
+            $('.cart-modal #title1').show();
         $(this).closest('li').clone().insertAfter("#title1");
-            $('.modal-body ul li .description').remove();
+            $('.cart-modal ul li .description').remove();
         } if ($(this).closest('div').attr('id') == 'tabs-tab2') {
-            $('.modal-body #title2').show();
+            $('.cart-modal #title2').show();
             $(this).closest('li').clone().insertAfter("#title2");
-            $('.modal-body ul li .description').remove();
+            $('.cart-modal ul li .description').remove();
         } if ($(this).closest('div').attr('id') == 'tabs-tab3') {
-            $('.modal-body #title3').show();
+            $('.cart-modal #title3').show();
             $(this).closest('li').clone().insertAfter("#title3");
-            $('.modal-body ul li .description').remove();
+            $('.cart-modal ul li .description').remove();
         } if ($(this).closest('div').attr('id') == 'tabs-tab4') {
-            $('.modal-body #title4').show();
+            $('.cart-modal #title4').show();
             $(this).closest('li').clone().insertAfter("#title4");
-            $('.modal-body ul li .description').remove();
+            $('.cart-modal ul li .description').remove();
         } if ($(this).closest('div').attr('id') == 'tabs-tab5') {
-            $('.modal-body #title5').show();
+            $('.cart-modal #title5').show();
             $(this).closest('li').clone().insertAfter("#title5");
-            $('.modal-body ul li .description').remove();
+            $('.cart-modal ul li .description').remove();
         } if ($(this).closest('div').attr('id') == 'tabs-tab6') {
-            $('.modal-body #title6').show();
+            $('.cart-modal #title6').show();
             $(this).closest('li').clone().insertAfter("#title6");
-            $('.modal-body ul li .description').remove();
+            $('.cart-modal ul li .description').remove();
         }
     });
 });
 
-$(".modal-body").on('click', 'li', function (e) {
+$(".cart-modal").on('click', 'li', function (e) {
     $thisId = $(this).find("input").attr("id");
     $('input#'+$thisId).closest('label').toggleClass('active-row');
     var a = $(e.target).closest('li').prev('h5').nextUntil('h5', 'li').length;
