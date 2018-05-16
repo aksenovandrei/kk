@@ -52,7 +52,7 @@
         @yield('reviews')
         @yield('portfolio')
         {{--@yield('partners')--}}
-        @yield('vacancies')
+{{--        @yield('vacancies')--}}
         @yield('contact')
         @yield('thanks')
     </section>

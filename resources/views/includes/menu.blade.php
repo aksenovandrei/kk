@@ -122,7 +122,7 @@
             <li id="menu-item-reviews" class="menu-item scroll"><a href="#reviews">Отзывы</a></li>
             <li id="menu-item-portfolio" class="menu-item scroll"><a href="#portfolio">Портфолио</a></li>
             {{--<li id="menu-item-partners" class="menu-item scroll"><a href="#partners">Партнеры</a></li>--}}
-            <li id="menu-item-vacancies" class="menu-item scroll"><a href="#vacancies">Вакансии</a></li>
+            {{--<li id="menu-item-vacancies" class="menu-item scroll"><a href="#vacancies">Вакансии</a></li>--}}
             <li id="menu-item-contact" class="menu-item scroll"><a href="#contact">Контакты</a></li>
         </ul><!-- #main-menu -->
 
