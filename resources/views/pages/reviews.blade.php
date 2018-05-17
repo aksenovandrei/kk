@@ -9,8 +9,8 @@
     <article id="reviews" class="section-wrapper clearfix" data-custom-background-img="{{asset('img/bg6.jpg')}}">
         <div class="content-wrapper clearfix">
             <h2 class="section-title">Что говорят наши клиенты</h2>
-            <div class="col-sm-3 col-md-3 pull-left">
-                <img class="client" src="{{asset('img/alina.jpg')}}" alt="Alina">
+            <div class="client-wrapper col-sm-3 col-md-3">
+                <img class="client" src="{{asset('img/obuhovskiy-photo.jpg')}}" alt="obuhovskiy">
                 <h5>Игорь Обуховский</h5>
                 <p>экс-тренер проекта «Зваженi та щасливi», автор онлайн фитнес-игры
                     «ЖирКиллер»</p>
@@ -28,8 +28,8 @@
 
     <article id="reviews" class="section-wrapper clearfix" data-custom-background-img="{{asset('img/bg6.jpg')}}">
         <div class="content-wrapper clearfix">
-            <div class="col-sm-3 col-md-3 pull-left">
-                <img class="client" src="{{asset('img/alina.jpg')}}" alt="Alina">
+            <div class="client-wrapper col-sm-3 col-md-3">
+                <img class="client" src="{{asset('img/granitsnet-photo.jpg')}}" alt="granitsnet">
                 <h5>Границ.нет</h5>
                 <p>обучающий проект для тех, кто хочет построить бизнес на любимом деле»</p>
             </div>
@@ -47,8 +47,8 @@
 
     <article id="reviews" class="section-wrapper clearfix" data-custom-background-img="{{asset('img/bg6.jpg')}}">
         <div class="content-wrapper clearfix">
-            <div class="col-sm-3 col-md-3 pull-left">
-                <img class="client" src="{{asset('img/alina.jpg')}}" alt="Alina">
+            <div class="client-wrapper col-sm-3 col-md-3">
+                <img class="client" src="{{asset('img/gavrilova-photo.jpg')}}" alt="Alina">
                 <h5>Ирина Гаврилова</h5>
                 <p>Бизнес-тренер уровня PCC ICF</p>
             </div>
@@ -66,8 +66,24 @@
 
     <article id="reviews" class="section-wrapper clearfix" data-custom-background-img="{{asset('img/bg6.jpg')}}">
         <div class="content-wrapper clearfix">
-            <div class="col-sm-3 col-md-3 pull-left">
-                <img class="client" src="{{asset('img/alina.jpg')}}" alt="Alina">
+            <div class="client-wrapper col-sm-3 col-md-3">
+                <img class="client" src="{{asset('img/secret-f-photo.jpg')}}" alt="secret-f">
+                <h5>Эксперт в нише эзотерики</h5>
+            </div>
+            <div class="col-sm-9 col-md-9 pull-right">
+                <div class="review-item">
+                    <img class="quptes" src="{{asset('img/quotes.jpg')}}" alt="quotes">
+                    <p>Работали над запуском рекламной кампании для сбора участников на бесплатный интенсив</p>
+                    <img src="{{asset('img/izoterika.png')}}" alt="izoterika">
+                </div>
+            </div><!-- .col-sm-10 -->
+        </div><!-- .content-wrapper -->
+    </article><!-- .section-wrapper -->
+
+    <article id="reviews" class="section-wrapper clearfix" data-custom-background-img="{{asset('img/bg6.jpg')}}">
+        <div class="content-wrapper clearfix">
+            <div class="client-wrapper col-sm-3 col-md-3">
+                <img class="client" src="{{asset('img/kolesnikov-photo.jpg')}}" alt="Alina">
                 <h5>Давид Колесников</h5>
                 <p>американский эксперт по продвижению в Facebook</p>
             </div>
@@ -83,8 +99,8 @@
 
     <article id="reviews" class="section-wrapper clearfix" data-custom-background-img="{{asset('img/bg6.jpg')}}">
         <div class="content-wrapper clearfix">
-            <div class="col-sm-3 col-md-3 pull-left">
-                <img class="client" src="{{asset('img/alina.jpg')}}" alt="Alina">
+            <div class="client-wrapper col-sm-3 col-md-3">
+                <img class="client" src="{{asset('img/shliahov-photo.jpg')}}" alt="shliahov">
                 <h5>Роман Шляхов</h5>
                 <p>интернет-предприниматель, продюсер, миллионер</p>
             </div>
@@ -100,8 +116,24 @@
 
     <article id="reviews" class="section-wrapper clearfix" data-custom-background-img="{{asset('img/bg6.jpg')}}">
         <div class="content-wrapper clearfix">
-            <div class="col-sm-3 col-md-3 pull-left">
-                <img class="client" src="{{asset('img/alina.jpg')}}" alt="Alina">
+            <div class="client-wrapper col-sm-3 col-md-3">
+                <img class="client" src="{{asset('img/secret-f-photo.jpg')}}" alt="secret-f">
+                <h5>Производитель натуральных сладостей</h5>
+            </div>
+            <div class="col-sm-9 col-md-9 pull-right">
+                <div class="review-item">
+                    <img class="quptes" src="{{asset('img/quotes.jpg')}}" alt="quotes">
+                    <p>Разрабатывали название для нового продукта компании</p>
+                    <img src="{{asset('img/sladosti.jpg')}}" alt="izoterika">
+                </div>
+            </div><!-- .col-sm-10 -->
+        </div><!-- .content-wrapper -->
+    </article><!-- .section-wrapper -->
+
+    <article id="reviews" class="section-wrapper clearfix" data-custom-background-img="{{asset('img/bg6.jpg')}}">
+        <div class="content-wrapper clearfix">
+            <div class="client-wrapper col-sm-3 col-md-3">
+                <img class="client" src="{{asset('img/zastroyshik-photo.jpg')}}" alt="zastroyshik">
                 <p>Представитель крупного украинского застройщика (не можем указать название согласно требований Договора о конфиденциальности)</p>
             </div>
             <div class="col-sm-9 col-md-9 pull-right">
@@ -116,8 +148,8 @@
 
     <article id="reviews" class="section-wrapper clearfix" data-custom-background-img="{{asset('img/bg6.jpg')}}">
         <div class="content-wrapper clearfix">
-            <div class="col-sm-3 col-md-3 pull-left">
-                <img class="client" src="{{asset('img/alina.jpg')}}" alt="Alina">
+            <div class="client-wrapper col-sm-3 col-md-3">
+                <img class="client" src="{{asset('img/secret-f-photo.jpg')}}" alt="secret-f-photo">
                 <h5>Проект Виктории Шуриной</h5>
                 <p>духовный тренер счастливых людей</p>
             </div>
@@ -136,8 +168,8 @@
 
     <article id="reviews" class="section-wrapper clearfix" data-custom-background-img="{{asset('img/bg6.jpg')}}">
         <div class="content-wrapper clearfix">
-            <div class="col-sm-3 col-md-3 pull-left">
-                <img class="client" src="{{asset('img/alina.jpg')}}" alt="Alina">
+            <div class="client-wrapper col-sm-3 col-md-3">
+                <img class="client" src="{{asset('img/secret-m-photo.jpg')}}" alt="secret-m-photo">
                 <h5>Андрей</h5>
                 <p>владелец web-студии</p>
             </div>
@@ -153,8 +185,8 @@
 
     <article id="reviews" class="section-wrapper clearfix" data-custom-background-img="{{asset('img/bg6.jpg')}}">
         <div class="content-wrapper clearfix">
-            <div class="col-sm-3 col-md-3 pull-left">
-                <img class="client" src="{{asset('img/alina.jpg')}}" alt="Alina">
+            <div class="client-wrapper col-sm-3 col-md-3">
+                <img class="client" src="{{asset('img/secret-m-photo.jpg')}}" alt="secret-m-photo">
                 <h5>Организатор элитных путешествий</h5>
             </div>
             <div class="col-sm-9 col-md-9 pull-right">
@@ -169,8 +201,8 @@
 
     <article id="reviews" class="section-wrapper clearfix" data-custom-background-img="{{asset('img/bg6.jpg')}}">
         <div class="content-wrapper clearfix">
-            <div class="col-sm-3 col-md-3 pull-left">
-                <img class="client" src="{{asset('img/alina.jpg')}}" alt="Alina">
+            <div class="client-wrapper col-sm-3 col-md-3">
+                <img class="client" src="{{asset('img/secret-m-photo.jpg')}}" alt="secret-m-photo">
                 <h5>Украинский застройщик экодомов</h5>
             </div>
             <div class="col-sm-10 col-md-9 pull-right">
@@ -185,7 +217,8 @@
 
     <article id="services" class="section-wrapper clearfix" data-custom-background-img="{{asset('img/bg4.jpg')}}">
         <div class="content-wrapper clearfix">
-            <h3 class="section-title">Хотите задать вопрос? Заполните форму и мы ответим Вам в ближайшее время</h3>
+            <h3 class="section-title">Хотите задать вопрос?</h3>
+            <h5 class="pull-right">Заполните форму и мы ответим Вам в ближайшее время</h5>
             <!-- CONTACT DETAILS -->
             <div class="contact-details col-sm-5 col-md-3">
             </div>

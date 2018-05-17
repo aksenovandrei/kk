@@ -52,7 +52,7 @@ function initialise_document_ready_functions()
         {
           // custom parameters for carousel (see Owl Carousel documentation for more info)
           $("#common-modal .popup-image-gallery").owlCarousel({
-            autoPlay : 3000,
+            autoPlay : 1000,
             stopOnHover : true,
             navigation: false,
             paginationSpeed : 1000,
@@ -72,7 +72,7 @@ function initialise_document_ready_functions()
         if ($('#common-modal .popup-alt-image-gallery').length > 0)
         {
           $("#common-modal .popup-alt-image-gallery").owlCarousel({
-            autoPlay : false,
+            autoPlay : true,
             items : 5,
             stopOnHover : true,
             navigation: true,
@@ -81,7 +81,7 @@ function initialise_document_ready_functions()
             singleItem : false,
             lazyLoad : true,
             baseClass : 'hide-bullets',
-            autoHeight : false,
+            autoHeight : true,
             transitionStyle: "backSlide",
             afterLazyLoad : function() {
               position_modal_at_centre(); // position popup at the centre of the page 

@@ -6,7 +6,7 @@
 @yield('sub-menu')
 <!-- end: Menu -->
 @section('about')
-    <article id="about" class="section-wrapper clearfix about-1" data-custom-background-img="{{asset('img/bg9.jpg')}}">
+    <article id="about" class="section-wrapper clearfix about-1" data-custom-background-img="{{asset('img/bg1.jpg')}}">
         <div class="content-wrapper clearfix">
             <div class="col-sm-10 col-md-9 pull-right">
                 <section class="feature-text">
@@ -31,7 +31,7 @@
         </div><!-- .content-wrapper -->
     </article><!-- .section-wrapper -->
 
-    <article id="about3" class="section-wrapper clearfix" data-custom-background-img="{{asset('img/bg9.jpg')}}">
+    <article id="about3" class="section-wrapper clearfix" data-custom-background-img="{{asset('img/bg1.jpg')}}">
         <div class="content-wrapper clearfix">
             <div class="col-sm-10 col-md-9 pull-right">
                 <h4>Что делать, чтобы он продавался в 10-ки или даже 100-ни раз больше</h4>
@@ -52,7 +52,7 @@
         </div><!-- .content-wrapper -->
     </article><!-- .section-wrapper -->
 
-    <article id="about4" class="section-wrapper clearfix" data-custom-background-img="{{asset('img/bg9.jpg')}}">
+    <article id="about4" class="section-wrapper clearfix" data-custom-background-img="{{asset('img/bg1.jpg')}}">
         <div class="content-wrapper clearfix">
             <div class="col-sm-10 col-md-9 pull-right">
 
@@ -131,11 +131,12 @@
         </div><!-- .content-wrapper -->
     </article><!-- .section-wrapper -->
 
-    <article id="about5" class="section-wrapper clearfix" data-custom-background-img="{{asset('img/bg9.jpg')}}">
+    <article id="about5" class="section-wrapper clearfix" data-custom-background-img="{{asset('img/bg1.jpg')}}">
         <div class="content-wrapper clearfix">
-            <div class="col-sm-2 col-md-2 pull-left">
-                <img src="{{asset('img/alina.jpg')}}" alt="Alina">
+            <div class="col-sm-2 col-md-2 pull-left alina-wrapper">
+                <img src="{{asset('img/alina.png')}}" alt="Alina">
             </div>
+            <img class="hid-img" src="{{asset('img/alina.png')}}" alt="Alina">
             <div class="col-sm-10 col-md-9 pull-right">
                 <h4 class="text-left">Почему Ваша удаленная команда справится со всеми задачами</h4>
                 <p class="text-left">Привет! Меня зовут Алина Аксёнова.<br><br>
@@ -158,7 +159,7 @@
         </div><!-- .content-wrapper -->
     </article><!-- .section-wrapper -->
 
-    <article id="about6" class="section-wrapper clearfix" data-custom-background-img="{{asset('img/bg9.jpg')}}">
+    <article id="about6" class="section-wrapper clearfix" data-custom-background-img="{{asset('img/bg1.jpg')}}">
         <div class="content-wrapper clearfix">
             <div class="col-sm-11 pull-right">
 
@@ -201,14 +202,14 @@
                         </a><!-- .thumbnail -->
 
                         <div class="content-to-populate-in-modal" id="modal-content-8">
-                            <h3>Личный блог эксперта по
+                            <h3 class="no-shadow">Личный блог эксперта по
                                 Фейсбук-продвижению из США
                                 Давида Колесникова</h3>
-                            <h5>Краткое описание проекта</h5>
+                            <h5 class="no-shadow">Краткое описание проекта</h5>
                             <p>Давид Колесников – эксперт по продвижению бизнеса в Facebook, интернет-маркетолог,
                                 предприниматель из Америки, который только выходит на рынок СНГ и не является узнаваемой
                                 для аудитории личностью.</p>
-                            <h5>Цели</h5>
+                            <h5 class="no-shadow">Цели</h5>
                             <p>
                             <ul>
                                 <li>Формирование образа эксперта в своей нише (продвижение бизнеса через Facebook);</li>
@@ -216,9 +217,9 @@
                                 <li>Активность по имени в сети.</li>
                             </ul>
                             </p>
-                            <h5>Инструмент</h5>
+                            <h5 class="no-shadow">Инструмент</h5>
                             <p>Блог.</p>
-                            <h5>Вложения: точечное продвижение постов.</h5>
+                            <h5 class="no-shadow">Вложения: точечное продвижение постов.</h5>
                             <p>При минимальных вложениях, за счет качества предоставляемой информации, уже на 3-м месяце
                                 ведения блога (на первом запуске) клиент сделал продажи своего авторского онлайн-курса
                                 по продвижению в Facebook при стоимости пакета участия от $200.</p>
@@ -263,10 +264,10 @@
                         </a><!-- .thumbnail -->
 
                         <div class="content-to-populate-in-modal" id="modal-content-9">
-                            <h3>Проект “Чай Гайван”</h3>
-                            <h5>Описание проекта</h5>
+                            <h3 class="no-shadow">Проект “Чай Гайван”</h3>
+                            <h5 class="no-shadow">Описание проекта</h5>
                             <p>Клиент - ТМ, занимающаяся продажей элитных сортов чая в Германии и Англии.</p>
-                            <h5>Цели</h5>
+                            <h5 class="no-shadow">Цели</h5>
                             <p>
                             <ul>
                                 <li>Повысить узнаваемость бренда</li>
@@ -278,9 +279,9 @@
                                 <li>Сформировать образ владельца ТМ как эксперта в чае</li>
                             </ul>
                             </p>
-                            <h5>Инструмент: Instagram</h5>
+                            <h5 class="no-shadow">Инструмент: Instagram</h5>
                             <p>*аккаунт велся на английском языке</p>
-                            <h5>Первый этап работы</h5>
+                            <h5 class="no-shadow">Первый этап работы</h5>
                             <p>
                             <ul>
                                 <li>Создание контент-плана и внедрение разнообразных рубрик постов вместо однообразных
@@ -290,22 +291,22 @@
                             </ul>
                             </p>
                             <div class="block-item">
-                                <p>Так аккаунт выглядел до начала работы</p>
+                                <h6 class="no-shadow">Так аккаунт выглядел до начала работы</h6>
                                 <img src="{{asset('img/gayvan1.jpg')}}">
                             </div>
                             <div class="block-item">
-                                <p>Так - через пару недель после старта</p>
+                                <h6 class="no-shadow">Так - через пару недель после старта</h6>
                                 <img src="{{asset('img/gayvan2.jpg')}}">
                             </div>
                             <div class="block-item">
-                                <p>Мы меняли внешний вид аккаунта <br>в зависимости от сезона</p>
+                                <h6 class="no-shadow">Мы меняли внешний вид аккаунта <br>в зависимости от сезона</h6>
                                 <img src="{{asset('img/gayvan3.jpg')}}">
                             </div>
                             <div class="block-item">
-                                <p>Наилучшим образом аудитория реагировала именно на фото в таких теплых тонах</p>
+                                <h6 class="no-shadow">Наилучшим образом аудитория реагировала именно на фото в таких теплых тонах</h6>
                                 <img src="{{asset('img/gayvan4.jpg')}}">
                             </div>
-                            <h5>Второй этап</h5>
+                            <h5 class="no-shadow">Второй этап</h5>
                             <p>
                             <ul>
                                 <li>Продвижение. Мы использовали продвижение публикаций на разные группы потенциально
@@ -328,7 +329,7 @@
                                 из Инстаграм, хотя такой цели рекламная кампания вообще не преследовала.</p>
 
                         </div><!-- #modal-content-8 -->
-                        <p class="btn-inrow"><a href="#text" class="link-scroll btn btn-outline-inverse btn-lg">Больше
+                        <p class="btn-inrow"><a href="{{route('portfolio')}}" class="link-scroll btn btn-yellow btn-outline-inverse btn-lg">Больше
                                 кейсов</a></p>
                     </article>
                 </section><!-- end: .feature-columns -->
@@ -356,7 +357,7 @@
                       role="form" name="form_name"> <!-- убрал класс validate-form-->
                 {{ csrf_field() }}
                 <!-- form left col -->
-                    <div class="col-md-6">
+                    <div class="col-md-6 col-md-offset-2">
                         <div class="form-group">
                             <input type="text" class="text-field form-control required"
                                    data-validation-type="string" id="form-name" placeholder="Ваше имя" name="name"
@@ -365,7 +366,7 @@
                     </div><!-- end: form left col -->
 
                     <!-- form right col -->
-                    <div class="col-md-6">
+                    <div class="col-md-6 col-md-offset-2">
 
                         <div class="form-group">
                             <input type="email" class="text-field form-control"
@@ -374,7 +375,7 @@
                         </div>
                         <div class="form-group">
                             <img src="{{asset('img/loader-form.GIF')}}" class="form-loader">
-                            <button id="sub-btn" type="submit" class="btn btn-sm btn-outline-inverse">Заказать за $10</button>
+                            <button id="sub-btn" type="submit" class="btn btn-yellow btn-sm btn-outline-inverse">Заказать за $10</button>
                         </div>
                         <div class="form-group form-general-error-container"></div>
                     </div><!-- end: form right col -->

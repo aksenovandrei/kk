@@ -17,7 +17,7 @@
 </p><br>
                     <p class="btn-inrow"><a href="{{route('services')}}" class="link-scroll btn btn-outline-inverse btn-yellow btn-lg">Заказать
                             услугу</a></p>
-                    <p class="btn-inrow"><a href="#about" class="link-scroll btn btn-outline-inverse btn-lg">Узнать
+                    <p class="btn-inrow"><a href="#about-title" class="link-scroll btn btn-outline-inverse btn-lg">Узнать
                             больше</a></p>
                 </section>
 
@@ -29,7 +29,7 @@
     <article id="about" class="section-wrapper clearfix" data-custom-background-img="{{asset('img/bg9.jpg')}}">
         <div class="content-wrapper clearfix">
             <div class="col-sm-10 col-md-9 pull-right">
-                <h2 class="section-title">Контент Квартира - это:</h2>
+                <h2 class="section-title" id="about-title">Контент Квартира - это:</h2>
                 <p class="feature-paragraph">
                 <ul class="list">
                     <li>Команда из 18 контент-маркетологов, таргетологов, дизайнеров и технических специалистов</li>
@@ -352,19 +352,19 @@
                             </ul>
                             </p>
                             <div class="block-item">
-                                <p>Так аккаунт выглядел до начала работы</p>
+                                <h6 class="no-shadow">Так аккаунт выглядел до начала работы</h6>
                                 <img src="{{asset('img/gayvan1.jpg')}}">
                             </div>
                             <div class="block-item">
-                                <p>Так - через пару недель после старта</p>
+                                <h6 class="no-shadow">Так - через пару недель после старта</h6>
                                 <img src="{{asset('img/gayvan2.jpg')}}">
                             </div>
                             <div class="block-item">
-                                <p>Мы меняли внешний вид аккаунта <br>в зависимости от сезона</p>
+                                <h6 class="no-shadow">Мы меняли внешний вид аккаунта <br>в зависимости от сезона</h6>
                                 <img src="{{asset('img/gayvan3.jpg')}}">
                             </div>
                             <div class="block-item">
-                                <p>Наилучшим образом аудитория реагировала именно на фото в таких теплых тонах</p>
+                                <h6 class="no-shadow">Наилучшим образом аудитория реагировала именно на фото в таких теплых тонах</h6>
                                 <img src="{{asset('img/gayvan4.jpg')}}">
                             </div>
                             <h5 class="no-shadow">Второй этап</h5>
@@ -392,7 +392,7 @@
                                 из Инстаграм, хотя такой цели рекламная кампания вообще не преследовала.</p>
 
                         </div><!-- #modal-content-8 -->
-                        <p class="btn-inrow"><a href="http://kk/portfolio" class="link-scroll btn btn-yellow btn-outline-inverse btn-lg">Больше
+                        <p class="btn-inrow"><a href="{{route('about')}}" class="link-scroll btn btn-yellow btn-outline-inverse btn-lg">Больше
                                 кейсов</a></p>
                     </article>
                 </section><!-- end: .feature-columns -->
@@ -527,7 +527,10 @@
                 <p>Tel: +7 (499) 677 24 11 <i class="fas fa-mobile-alt"></i></p>
                 <p>Tel: +38 (094) 711 70 66 <i class="fas fa-mobile-alt"></i></p>
                 <p><a href="mailto:content.kvartira@gmail.com">content.kvartira@gmail.com</a><i class="far fa-envelope"></i></p>
-                <p>тут будут иконки сцсетей</p>
+                <p>Мы в соцсетях
+                    <a href="https://www.facebook.com/content.kvartira/" target="_blank" title="Facebook"><img src="{{asset('img/facebook.png')}}" alt="Facebook"></a>
+                    <a href="https://vk.com/content_kvartira" target="_blank" title="Vk"><img src="{{asset('img/vk.png')}}" alt="Vk"></a>
+                </p>
             </div>
             <!-- END: CONTACT DETAILS -->
 

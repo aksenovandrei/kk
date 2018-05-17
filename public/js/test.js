@@ -1,8 +1,10 @@
 window.xs_screen_max = 767;
+// window.xs_screen_max = 767;
+// window.sm_screen_max = 991;
 window.sm_screen_max = 991;
 var page_is_scrolling = false;
 var background_settings = {
-    change_on_mobile: false,
+    change_on_mobile: true,
     change_on_nonmobile: true,
     use_script: true,
 };
@@ -497,6 +499,13 @@ $(document).ready(function() {
            $('#form-email').attr('disabled', 'disabled');
         }
 
+        function delay() {
+            $('#form-email').removeAttr('disabled');
+            $('#form-contact-number').removeAttr('disabled');
+            $('#sub-btn').removeAttr('disabled');
+        }
+        setTimeout(delay, 100)
+
 
         $('.form-val').bootstrapValidator({
             // To use feedback icons, ensure that you use Bootstrap v3.1.0 or later
@@ -512,7 +521,7 @@ $(document).ready(function() {
                             min: 2
                         },
                         notEmpty: {
-                            message: 'Пожадуйста, введите свое имя'
+                            message: 'Пожалуйста, введите свое имя'
                         }
                     }
                 },
@@ -539,6 +548,7 @@ $(document).ready(function() {
                     }
                 }
             }
+
         })
 
     });
@@ -633,7 +643,7 @@ $('.chart').on('click', function () {
 
 $(".cart-modal").on('click', 'li', function (e) {
     $thisId = $(this).find("input").attr("id");
-    $('input#'+$thisId).closest('label').toggleClass('active-row');
+    $('input#'+ $thisId).closest('label').toggleClass('active-row');
     var a = $(e.target).closest('li').prev('h5').nextUntil('h5', 'li').length;
     console.log(a);
 
@@ -653,6 +663,8 @@ $('.arrow-btn').on("click", function () {
     $(this).siblings('.description').toggle(200);
     $(this).toggleClass('arrow-btn-up');
 });
+
+
 
 
 
