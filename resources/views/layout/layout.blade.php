@@ -11,7 +11,7 @@
     <title>@yield('title')</title>
 
     <!-- favicon -->
-    <link rel="icon" type="image/png" href="{{asset('img/favicon.png')}}">
+    <link rel="shortcut icon" href="{{asset('img/kk_favicon.png')}}" type="image/x-icon">
     <!-- Bootstrap core CSS -->
     <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
     <!-- Bootstrap theme -->

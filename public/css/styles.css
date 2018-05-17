@@ -2458,9 +2458,13 @@ label:hover {
 }
 @keyframes swipe {
     0%{
+        -webkit-transform: skew(30deg)scale(1.5, 0.2)translateX(1000px);
+        -ms-transform: skew(30deg)scale(1.5, 0.2)translateX(1000px);
         transform: skew(30deg)scale(1.5, 0.2)translateX(1000px);
     }
     100% {
+        -webkit-transform: translateX(0px)skew(0deg)scale(1);
+        -ms-transform: translateX(0px)skew(0deg)scale(1);
         transform: translateX(0px)skew(0deg)scale(1);
     }
 }
@@ -2581,6 +2585,8 @@ label .checkmark:after {
     height: 25px;
     width: 25px;
     background: #ffffff;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
     transform: rotate(45deg);
 }
 .review-item img {
@@ -2592,8 +2598,14 @@ label .checkmark:after {
     right: 0;
     width: 20px;
     height: 20px;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
     transform: rotate(-45deg);
+    -webkit-transition: -webkit-transform 0.2s;
+    transition: -webkit-transform 0.2s;
+    -o-transition: transform 0.2s;
     transition: transform 0.2s;
+    transition: transform 0.2s, -webkit-transform 0.2s;
     position: relative;
     vertical-align: bottom;
 }
@@ -2612,16 +2624,22 @@ label .checkmark:after {
     /*display: inline-block;*/
 }
 .arrow-btn:hover {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
     transform: rotate(45deg);
     border-bottom-color: #ffffff;
     border-right-color: #ffffff;
     cursor: pointer;
 }
 .arrow-btn-up {
+    -webkit-transform: rotate(-135deg);
+    -ms-transform: rotate(-135deg);
     transform: rotate(-135deg);
     color: #ffffff;
 }
 .arrow-btn-up:hover {
+    -webkit-transform: rotate(-135deg);
+    -ms-transform: rotate(-135deg);
     transform: rotate(-135deg);
 }
 li .description {
@@ -2694,7 +2712,10 @@ li .description {
     opacity: 0.8;
 }
 .row-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
 }
 .row-menu .btn:hover a {
@@ -2702,6 +2723,7 @@ li .description {
 }
 @media screen and (max-width: 639px){
     .row-menu {
+        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     }
     .row-menu .btn {
@@ -2710,7 +2732,10 @@ li .description {
     }
 }
 .slider {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
 .slider .slider-item {
