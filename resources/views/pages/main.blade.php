@@ -2,9 +2,6 @@
 @section('title', 'Главная')
 @include('includes.menu')
 @include('includes.footer')
-<!-- Menu -->
-@yield('menu')
-<!-- end: Menu -->
 @section('intro')
     <article id="main" class="section-wrapper clearfix" data-custom-background-img="{{asset('img/bg9.jpg')}}">
         <div class="content-wrapper clearfix wow fadeInDown" data-wow-delay="0.3s">

@@ -604,10 +604,32 @@ function tabs_uniform_height() {
     }
 };
 
+
 $('#myModal').modal();
 $('#myModal').on('shown.bs.modal', function () {
     $(document).off('focusin.modal');
 });
+
+//Филипп - пример кода
+// document.on('click', '.chart', function () {
+//     var $cartModel = $('.cart-modal'),
+//         $cartModalUl = $cartModel.find('ul');
+//     $cartModalUl.find('h5').hide();
+//     $cartModalUl.find('li').remove();
+//
+//     $("input:checked").each(function () {
+//         var $this = $(this),
+//             currentTabId = $(this).closest('div').attr('id'),
+//             currentTabCount = (currentTabId).split('tabs-tab')[1];
+//
+//         $('#title' + currentTabCount).show();
+//         $this.closest('li').clone().insertAfter("#title" + currentTabCount);
+//         $('.cart-modal ul li .description').remove();
+//     });
+// });
+
+
+
 
 $('.chart').on('click', function () {
     $('.cart-modal ul h5').hide();

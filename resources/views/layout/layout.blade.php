@@ -43,9 +43,11 @@
 </head>
 
 <body data-default-background-img="{{asset('img/bg5.jpg')}}" data-overlay="true" data-overlay-opacity="0.35">
+@yield('menu')
 <div id="outer-container">
     <!-- Main Content -->
     <section id="main-content" class="clearfix">
+
         @yield('intro')
         @yield('about')
         @yield('services')
