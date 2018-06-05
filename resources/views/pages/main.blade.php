@@ -3,16 +3,19 @@
 @include('includes.menu')
 @include('includes.footer')
 @section('intro')
-    <article id="main" class="section-wrapper clearfix" data-custom-background-img="{{asset('img/bg9.jpg')}}">
-        <div class="content-wrapper clearfix wow fadeInDown" data-wow-delay="0.3s">
+    <div id="main" class="section-wrapper clearfix section active" data-custom-background-img="{{asset('img/bg9.jpg')}}"
+         data-anchor="main-section">
+        <div class="content-wrapper clearfix">
             <div class="col-sm-10 col-md-9 pull-right">
-
                 <section class="feature-text">
-                    <h1 class="main-title"><span class="yellow">[</span>Контент<span class="yellow">]</span> <span class="ending">Квартира</span></h1>
+                    <h1 class="main-title"><span class="yellow">[</span>Контент<span class="yellow">]</span> <span
+                                class="ending">Квартира</span></h1>
                     <p class="bold">Решаем любую задачу присутствия<br>Вашего бизнеса в сети</p>
-                    <p class="sub-title">Стратегия. Копирайтинг. SMM. Реклама. Дизайн. Технические задачи любой сложности.
-</p><br>
-                    <p class="btn-inrow"><a href="{{route('services')}}" class="link-scroll btn btn-outline-inverse btn-yellow btn-lg">Заказать
+                    <p class="sub-title">Стратегия. Копирайтинг. SMM. Реклама. Дизайн. Технические задачи любой
+                        сложности.
+                    </p><br>
+                    <p class="btn-inrow"><a href="{{route('services')}}"
+                                            class="link-scroll btn btn-outline-inverse btn-yellow btn-lg">Заказать
                             услугу</a></p>
                     <p class="btn-inrow"><a href="#about-title" class="link-scroll btn btn-outline-inverse btn-lg">Узнать
                             больше</a></p>
@@ -20,10 +23,12 @@
 
             </div><!-- .col-sm-10 -->
         </div><!-- .content-wrapper -->
-    </article><!-- .section-wrapper -->
+    </div><!-- .section-wrapper -->
 @stop
 @section('about')
-    <article id="about" class="section-wrapper clearfix" data-custom-background-img="{{asset('img/bg9.jpg')}}">
+    <div id="about" class="section-wrapper clearfix section" data-custom-background-img="{{asset('img/bg9.jpg')}}"
+         data-anchor="about-section"
+         data-centered="false">
         <div class="content-wrapper clearfix">
             <div class="col-sm-10 col-md-9 pull-right">
                 <h2 class="section-title" id="about-title">Контент Квартира - это:</h2>
@@ -40,19 +45,21 @@
                     </li>
                 </ul>
                 </p>
-                <p><a href="{{route('about')}}" class="link-scroll btn btn-yellow btn-outline-inverse btn-lg">Познакомиться</a></p>
+                <p><a href="{{route('about')}}" class="link-scroll btn btn-yellow btn-outline-inverse btn-lg">Познакомиться</a>
+                </p>
             </div><!-- .col-sm-10 -->
         </div><!-- .content-wrapper -->
-    </article><!-- .section-wrapper -->
+    </div><!-- .section-wrapper -->
 @stop
 @section('services')
-    <article id="services" class="section-wrapper clearfix" data-custom-background-img="{{asset('img/bg2.jpg')}}">
-        <div class="content-wrapper mid-vertical-positioning clearfix" >
+    <div id="services" class="section-wrapper clearfix section" data-custom-background-img="{{asset('img/bg2.jpg')}}"
+         data-anchor="services-section">
+        <div class="content-wrapper clearfix">
             <div class="col-sm-10 col-md-9 pull-right">
 
-                <h2 id="services"  class="section-title">Наши услуги</h2>
+                <h2 class="section-title">Наши услуги</h2>
 
-                <div  class="tabpanel styled-tabs uniform-height" role="tabpanel">
+                <div class="tabpanel styled-tabs uniform-height" role="tabpanel">
 
                     <!-- Nav tabs -->
                     <ul class="nav nav-tabs" role="tablist" text-hidden-xs="true">
@@ -87,8 +94,9 @@
                                 <li>Написание репутационных статей</li>
                                 <li>Внедрение контент-маркетинга в Ваш бизнес “под ключ”</li>
                             </ul>
-                            <p class="btn-inrow"><a href="{{route('services')}}" class="link-scroll btn btn-yellow btn-outline-inverse btn-lg">Подробнее</a>
-                        </p>
+                            <p class="btn-inrow"><a href="{{route('services')}}"
+                                                    class="link-scroll btn btn-yellow btn-outline-inverse btn-lg">Подробнее</a>
+                            </p>
                         </div>
 
                         <div role="tabpanel" class="tab-pane fade" id="tabs-tab2">
@@ -99,8 +107,9 @@
                                 <li>Написание писем в email-рассылки и чат-бот рассылки</li>
                                 <li>Тексты для корпоративных сайтов и другие копирайтинг-задачи</li>
                             </ul>
-                            <p class="btn-inrow"><a href="{{route('services')}}" class="link-scroll btn btn-yellow btn-outline-inverse btn-lg">Подробнее</a>
-                        </p>
+                            <p class="btn-inrow"><a href="{{route('services')}}"
+                                                    class="link-scroll btn btn-yellow btn-outline-inverse btn-lg">Подробнее</a>
+                            </p>
                         </div>
 
                         <div role="tabpanel" class="tab-pane fade" id="tabs-tab3">
@@ -111,8 +120,9 @@
                                 <li>Разработка маркетинг-стратегий</li>
                                 <li>Разработка воронок писем</li>
                             </ul>
-                            <p class="btn-inrow"><a href="{{route('services')}}" class="link-scroll btn btn-yellow btn-outline-inverse btn-lg">Подробнее</a>
-                        </p>
+                            <p class="btn-inrow"><a href="{{route('services')}}"
+                                                    class="link-scroll btn btn-yellow btn-outline-inverse btn-lg">Подробнее</a>
+                            </p>
                         </div>
 
                         <div role="tabpanel" class="tab-pane fade" id="tabs-tab4">
@@ -123,8 +133,9 @@
                                 <li>Продвижение сообществ в соцсетях</li>
                                 <li>Комплексное продвижение в соцсетях</li>
                             </ul>
-                            <p class="btn-inrow"><a href="{{route('services')}}" class="link-scroll btn btn-yellow btn-outline-inverse btn-lg">Подробнее</a>
-                        </p>
+                            <p class="btn-inrow"><a href="{{route('services')}}"
+                                                    class="link-scroll btn btn-yellow btn-outline-inverse btn-lg">Подробнее</a>
+                            </p>
                         </div>
 
                         <div role="tabpanel" class="tab-pane fade" id="tabs-tab5">
@@ -135,8 +146,9 @@
                                 <li>Создание чат-ботов</li>
                                 <li>Реализация технических задач любой сложности</li>
                             </ul>
-                            <p class="btn-inrow"><a href="{{route('services')}}" class="link-scroll btn btn-yellow btn-outline-inverse btn-lg">Подробнее</a>
-                        </p>
+                            <p class="btn-inrow"><a href="{{route('services')}}"
+                                                    class="link-scroll btn btn-yellow btn-outline-inverse btn-lg">Подробнее</a>
+                            </p>
                         </div>
 
                         <div role="tabpanel" class="tab-pane fade" id="tabs-tab6">
@@ -147,78 +159,67 @@
                                 <li>Оформление коммерческих предложений</li>
                                 <li>Решение других дизайн-задач для Вашего бизнеса</li>
                             </ul>
-                            <p class="btn-inrow"><a href="{{route('services')}}" class="link-scroll btn btn-yellow btn-outline-inverse btn-lg">Подробнее</a>
-                        </p>
+                            <p class="btn-inrow"><a href="{{route('services')}}"
+                                                    class="link-scroll btn btn-yellow btn-outline-inverse btn-lg">Подробнее</a>
+                            </p>
                         </div>
                     </div><!-- .tab-content -->
                 </div><!-- .tabpanel -->
 
             </div><!-- .col-sm-10 -->
         </div><!-- .content-wrapper -->
-    </article><!-- .section-wrapper -->
+    </div><!-- .section-wrapper -->
 @stop
 @section('reviews')
-    <article id="reviews" class="section-wrapper clearfix" data-custom-background-img="{{asset('img/bg6.jpg')}}">
+    <div id="reviews" class="section-wrapper clearfix section" data-custom-background-img="{{asset('img/bg6.jpg')}}"
+         data-anchor="reviews-section">
         <div class="content-wrapper clearfix">
-
-            <div id="features-carousel" class="carousel slide with-title-indicators max-height"
-                 data-height-percent="70" data-ride="carousel">
-                <h2 class="section-title">Отзывы</h2>
-
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner">
-
-                    <div class="item active">
-                        <div class="carousel-text-content">
-                            <h4 class="title">Игорь Обуховский</h4>
-                            <p>Экс-тренер проекта «Зваженi та щасливi», автор онлайн фитнес-игры «ЖирКиллер»</p>
-                            <img src="{{asset('img/Obuhovskiy.jpg')}}" alt="Obuhovskiy">
-                            <p class="btn-inrow"><a href="{{route('reviews')}}" class="link-scroll btn btn-yellow btn-outline-inverse btn-lg">Все отзывы</a>
-                        </div>
-                    </div><!-- .item -->
-
-                    <div class="item">
-                        <div class="carousel-text-content">
-                            <h4 class="title">Границ.нет</h4>
-                            <p>Обучающий проект для тех, кто хочет построить бизнес на любимом деле</p>
-                            <img src="{{asset('img/Granyts1.png')}}" alt="Granyts1">
-                            <img src="{{asset('img/Granyts2.png')}}" alt="Granyts2">
-                            <p class="btn-inrow"><a href="{{route('reviews')}}" class="link-scroll btn btn-yellow btn-outline-inverse btn-lg">Все отзывы</a>
-                        </div>
-                    </div><!-- .item -->
-
-                    <div class="item">
-                        <div class="carousel-text-content">
-                            <h4 class="title">Роман Шляхов</h4>
-                            <p>интернет-предприниматель, продюсер, миллионер</p>
-                            <img src="{{asset('img/Shlyahov.png')}}" alt="Shlyahov">
-                            <p class="btn-inrow"><a href="{{route('reviews')}}" class="link-scroll btn btn-yellow btn-outline-inverse btn-lg">Все отзывы</a>
-                        </div>
-                    </div><!-- .item -->
-
-                    <div class="item">
-                        <div class="carousel-text-content">
-                            <h4 class="title">Рик Астли</h4>
-                            <p>певец, герой мемов</p>
-                            <p>Ничего ему не делали, но и он нам, как бы, ничего не платил)))</p>
-                            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                            <p class="btn-inrow"><a href="{{route('reviews')}}" class="link-scroll btn btn-yellow btn-outline-inverse btn-lg">Все отзывы</a>
-                        </div>
-                    </div><!-- .item -->
-
-                </div><!-- .carousel-inner -->
-
-                <!-- Controls -->
-                <a class="left carousel-control" href="#features-carousel" data-slide="prev"></a>
-                <a class="right carousel-control" href="#features-carousel" data-slide="next"></a>
-
-            </div><!-- #about-carousel -->
-
+            <h2 class="section-title slider-title">Отзывы</h2>
+            <div class="col-sm-10 col-md-9 pull-right slider">
+                <div class="item slide">
+                    <h4 class="title">Игорь Обуховский</h4>
+                    <p>Экс-тренер проекта «Зваженi та щасливi», автор онлайн фитнес-игры «ЖирКиллер»</p>
+                    <img src="{{asset('img/Obuhovskiy-wide.jpg')}}" alt="Obuhovskiy">
+                    <p class="btn-inrow"><a href="{{route('reviews')}}"
+                                            class="link-scroll btn btn-yellow btn-outline-inverse btn-lg">Все
+                            отзывы</a>
+                    </p>
+                </div>
+                <div class="item slide">
+                    <h4 class="title">Границ.нет</h4>
+                    <p>Обучающий проект для тех, кто хочет построить бизнес на любимом деле</p>
+                    <img src="{{asset('img/Granytz-wide.jpg')}}" alt="Granyts-wide">
+                    <p class="btn-inrow"><a href="{{route('reviews')}}"
+                                            class="link-scroll btn btn-yellow btn-outline-inverse btn-lg">Все
+                            отзывы</a>
+                    </p>
+                </div>
+                <div class="item slide">
+                    <h4 class="title">Роман Шляхов</h4>
+                    <p>интернет-предприниматель, <br>продюсер, миллионер</p>
+                    <img src="{{asset('img/Shlyahov-wide.jpg')}}" alt="Shlyahov">
+                    <p class="btn-inrow"><a href="{{route('reviews')}}"
+                                            class="link-scroll btn btn-yellow btn-outline-inverse btn-lg">Все
+                            отзывы</a>
+                    </p>
+                </div>
+                <div class="item slide">
+                    <h4 class="title">Рик Астли</h4>
+                    <p>певец, герой мемов<br>Ничего ему не делали, но и он нам, как бы, ничего не платил)))</p>
+                    <iframe width="670" height="287" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0"
+                            allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    <p class="btn-inrow"><a href="{{route('reviews')}}"
+                                            class="link-scroll btn btn-yellow btn-outline-inverse btn-lg">Все
+                            отзывы</a>
+                    </p>
+                </div>
+            </div><!-- .col-sm-10 -->
         </div><!-- .content-wrapper -->
-    </article><!-- .section-wrapper -->
+    </div><!-- .section-wrapper -->
 @stop
 @section('portfolio')
-    <article id="portfolio" class="section-wrapper clearfix" data-custom-background-img="{{asset('img/bg3.jpg')}}">
+    <div id="portfolio" class="section-wrapper clearfix section" data-custom-background-img="{{asset('img/bg3.jpg')}}"
+         data-anchor="portfolio-section">
         <div class="content-wrapper clearfix">
             <div class="col-sm-11 pull-right">
 
@@ -229,29 +230,26 @@
 
                     <!-- feature 1 -->
                     <article class="feature-col col-md-4">
-                        <a href="" onclick="populate_and_open_modal(event, 'modal-content-7');"
-                           class="thumbnail linked">
+                        <a href="" data="modal-content-0" class="modal-button thumbnail linked"
+                           data-toggle="modal"
+                           data-target="#common-modal">
                             <div class="image-container">
-                                <img data-img-src="{{asset('img/mega-preview.jpg')}}" class="lazy item-thumbnail"
+                                <img src="{{asset('img/mega-preview.jpg')}}" class="lazy item-thumbnail"
                                      alt="mega-preview">
                             </div>
                             <div class="caption">
                                 <h6>Текст на лендинг Мегатренинга Ицхака Пинтосевича</h6>
                             </div><!-- .caption -->
                         </a><!-- .thumbnail -->
-
-                        <div class="content-to-populate-in-modal" id="modal-content-7">
-                            <img data-img-src="{{asset('img/megatraining.jpg')}}" class="lazy full-width"
-                                 alt="megatraining">
-                        </div><!-- #modal-content-7 -->
                     </article>
 
                     <!-- feature 2 -->
                     <article class="feature-col col-md-4">
-                        <a href="" onclick="populate_and_open_modal(event, 'modal-content-8', '', 'full-size');"
-                           class="thumbnail linked">
+                        <a href="" data="modal-content-1" class="modal-button thumbnail linked"
+                           data-toggle="modal"
+                           data-target="#common-modal">
                             <div class="image-container">
-                                <img data-img-src="{{asset('img/kolesnikov-preview.jpg')}}" class="lazy item-thumbnail"
+                                <img src="{{asset('img/kolesnikov-preview.jpg')}}" class="lazy item-thumbnail"
                                      alt="kolesnikov-preview">
                             </div>
                             <div class="caption">
@@ -259,7 +257,7 @@
                             </div><!-- .caption -->
                         </a><!-- .thumbnail -->
 
-                        <div class="content-to-populate-in-modal" id="modal-content-8">
+                        {{--<div id="modal-content-1">
                             <h3 class="no-shadow">Личный блог эксперта по
                                 Фейсбук-продвижению из США
                                 Давида Колесникова</h3>
@@ -282,38 +280,35 @@
                                 ведения блога (на первом запуске) клиент сделал продажи своего авторского онлайн-курса
                                 по продвижению в Facebook при стоимости пакета участия от $200.</p>
 
-                            <div id="unique-id-for-alt-image-slider" class="owl-carousel popup-alt-image-gallery">
+                            <div class="modalSlider">
                                 <div class="item">
                                     <a href="https://www.davidkolesnikov.com/blog/6-prostyh-shagov-kak-zanyat-vysokuyu-pozitsiyu-v-poiskovoj-vydache-google/"
-                                       target="_blank"><img class="lazyOwl"
-                                                            data-src="{{asset('img/kolesnikov-link1.jpg')}}">
+                                       target="_blank"><img class="lazyOwl" src="'http://kk/img/kolesnikov-link1.jpg">
                                     </a>
                                 </div>
                                 <div class="item">
                                     <a href="https://www.davidkolesnikov.com/blog/8-proverennyh-sovetov-po-raskrutke-biznesa-v-instagram-chast-1/"
-                                       target="_blank"><img class="lazyOwl"
-                                                            data-src="{{asset('img/kolesnikov-link2.jpg')}}"></a>
+                                       target="_blank"><img class="lazyOwl" src="http://kk/img/kolesnikov-link2.jpg"></a>
                                 </div>
                                 <div class="item">
                                     <a href="https://www.davidkolesnikov.com/blog/kak-sozdavat-ubeditelnyj-kontent-chtoby-rasshiryat-klientskuyu-bazu/"
-                                       target="_blank"><img class="lazyOwl"
-                                                            data-src="{{asset('img/kolesnikov-link3.jpg')}}"></a>
+                                       target="_blank"><img class="lazyOwl" src="http://kk/img/kolesnikov-link3.jpg"></a>
                                 </div>
                                 <div class="item">
                                     <a href="https://www.davidkolesnikov.com/blog/zachem-vnedryat-programmu-loyalnosti-klientov/"
-                                       target="_blank"><img class="lazyOwl"
-                                                            data-src="{{asset('img/kolesnikov-link4.jpg')}}"></a>
+                                       target="_blank"><img class="lazyOwl" src="http://kk/img/kolesnikov-link4.jpg"></a>
                                 </div>
                             </div>
-                        </div><!-- #modal-content-8 -->
+                        </div>--}}
                     </article>
 
                     <!-- feature 3 -->
                     <article class="feature-col col-md-4">
-                        <a href="" onclick="populate_and_open_modal(event, 'modal-content-9', '', 'full-size');"
-                           class="thumbnail linked">
+                        <a href="" data="modal-content-2" class="modal-button thumbnail linked"
+                           data-toggle="modal"
+                           data-target="#common-modal">
                             <div class="image-container">
-                                <img data-img-src="{{asset('img/gayvan-preview.jpg')}}" class="lazy item-thumbnail"
+                                <img src="{{asset('img/gayvan-preview.jpg')}}" class="lazy item-thumbnail"
                                      alt="Lorem Ipsum">
                             </div>
                             <div class="caption">
@@ -321,7 +316,7 @@
                             </div><!-- .caption -->
                         </a><!-- .thumbnail -->
 
-                        <div class="content-to-populate-in-modal" id="modal-content-9">
+                        {{--<div id="modal-content-2">
                             <h3 class="no-shadow">Проект “Чай Гайван”</h3>
                             <h5 class="no-shadow">Описание проекта</h5>
                             <p>Клиент - ТМ, занимающаяся продажей элитных сортов чая в Германии и Англии.</p>
@@ -350,19 +345,20 @@
                             </p>
                             <div class="block-item">
                                 <h6 class="no-shadow">Так аккаунт выглядел до начала работы</h6>
-                                <img src="{{asset('img/gayvan1.jpg')}}">
+                                <img src="http://kk/img/gayvan1.jpg">
                             </div>
                             <div class="block-item">
                                 <h6 class="no-shadow">Так - через пару недель после старта</h6>
-                                <img src="{{asset('img/gayvan2.jpg')}}">
+                                <img src="http://kk/img/gayvan2.jpg">
                             </div>
                             <div class="block-item">
                                 <h6 class="no-shadow">Мы меняли внешний вид аккаунта <br>в зависимости от сезона</h6>
-                                <img src="{{asset('img/gayvan3.jpg')}}">
+                                <img src="http://kk/img/gayvan3.jpg">
                             </div>
                             <div class="block-item">
-                                <h6 class="no-shadow">Наилучшим образом аудитория реагировала именно на фото в таких теплых тонах</h6>
-                                <img src="{{asset('img/gayvan4.jpg')}}">
+                                <h6 class="no-shadow">Наилучшим образом аудитория реагировала именно на фото в таких
+                                    теплых тонах</h6>
+                                <img src="http://kk/img/gayvan4.jpg">
                             </div>
                             <h5 class="no-shadow">Второй этап</h5>
                             <p>
@@ -388,8 +384,9 @@
                             <p>Кроме того, бонусом удалось увеличить количество переходов в магазин клиента на Амазоне
                                 из Инстаграм, хотя такой цели рекламная кампания вообще не преследовала.</p>
 
-                        </div><!-- #modal-content-8 -->
-                        <p class="btn-inrow"><a href="{{route('about')}}" class="link-scroll btn btn-yellow btn-outline-inverse btn-lg">Больше
+                        </div><!-- #modal-content-8 -->--}}
+                        <p class="btn-inrow"><a href="{{route('about')}}"
+                                                class="link-scroll btn btn-yellow btn-outline-inverse btn-lg">Больше
                                 кейсов</a></p>
                     </article>
                 </section><!-- end: .feature-columns -->
@@ -398,10 +395,11 @@
 
             </div><!-- .col-sm-10 -->
         </div><!-- .content-wrapper -->
-    </article><!-- .section-wrapper -->
+    </div><!-- .section-wrapper -->
 @stop
-@section('partners')
-    <article id="partners" class="section-wrapper clearfix" data-custom-background-img="{{asset('img/bg3.jpg')}}">
+{{--@section('partners')
+    <div id="partners" class="section-wrapper clearfix section" data-custom-background-img="{{asset('img/bg3.jpg')}}"
+         data-anchor="6thPage">
         <div class="content-wrapper clearfix">
             <div class="col-sm-11 pull-right">
 
@@ -457,10 +455,10 @@
 
             </div><!-- .col-sm-10 -->
         </div><!-- .content-wrapper -->
-    </article><!-- .section-wrapper -->
+    </div><!-- .section-wrapper -->
 @stop
 @section('vacancies')
-    <article id="vacancies" class="section-wrapper clearfix" data-custom-background-img="{{asset('img/bg5.jpg')}}">
+    <div id="vacancies" class="section-wrapper clearfix section" data-custom-background-img="{{asset('img/bg5.jpg')}}">
         <div class="content-wrapper clearfix">
             <div class="col-sm-12 col-md-12">
 
@@ -512,68 +510,166 @@
 
             </div><!-- .col-sm-11 -->
         </div><!-- .content-wrapper -->
-    </article><!-- .section-wrapper -->
-@stop
+    </div><!-- .section-wrapper -->
+@stop--}}
 @section('contact')
-    <article id="contact" class="section-wrapper clearfix" data-custom-background-img="{{asset('img/bg4.jpg')}}">
+    <div id="contact" class="section-wrapper clearfix section" data-custom-background-img="{{asset('img/bg4.jpg')}}"
+         data-anchor="contact-section">
+
         <div class="content-wrapper clearfix">
+
             <h2 class="section-title">Свяжитесь с нами</h2>
-            <!-- CONTACT DETAILS -->
-            <div class="contact-details col-sm-5 col-md-5">
-                {{--<p>123A,<br/>Molestie Lorem Avenue,<br/>Aliquam<br/>AAA0010</p>--}}
-                <p>Tel: +7 (499) 677 24 11 <i class="fas fa-mobile-alt"></i></p>
-                <p>Tel: +38 (094) 711 70 66 <i class="fas fa-mobile-alt"></i></p>
-                <p><a href="mailto:content.kvartira@gmail.com">content.kvartira@gmail.com</a><i class="far fa-envelope"></i></p>
-                <p>Мы в соцсетях
-                    <a href="https://www.facebook.com/content.kvartira/" target="_blank" title="Facebook"><img src="{{asset('img/facebook.png')}}" alt="Facebook"></a>
-                    <a href="https://vk.com/content_kvartira" target="_blank" title="Vk"><img src="{{asset('img/vk.png')}}" alt="Vk"></a>
-                </p>
-            </div>
-            <!-- END: CONTACT DETAILS -->
+            <div class="col-md-12 pull-right">
 
-            <!-- CONTACT FORM -->
-            <div class="col-sm-7 col-md-7 pull-right">
-                <!-- IMPORTANT: change the email address at the top of the assets/php/mail.php file to the email address that you want this form to send to -->
 
-                <form class="form-style clearfix form-val" action="{{route('main')}}" method="POST"
-                      role="form" name="form_name"> <!-- убрал класс validate-form-->
-                {{ csrf_field() }}
-                <!-- form left col -->
-                    <div class="col-md-10 pull-right">
-                        <div class="form-group">
-                            <input type="text" class="text-field form-control required"
-                                   data-validation-type="string" id="form-name" placeholder="Ваше имя" name="name"
-                                   value="{{old('name')}}">
-                        </div>
-                        <div class="form-group">
-                            <input type="email" class="text-field form-control"
-                                   data-validation-type="email" id="form-email" placeholder="Ваш email"
-                                   name="email" value="{{old('email')}}">
-                        </div>
-                        <div class="form-group">
-                            <input type="tel" class="text-field form-control phone"
-                                   data-validation-type="phone" id="form-contact-number"
-                                   placeholder="Ваш телефон" name="contact_number" value="{{old('contact_number')}}"
-                                   data-bv-live="disabled">
-                        </div>
-                    </div><!-- end: form left col -->
+                <div class="contact-details col-sm-5 col-md-5">
+                    <p>Tel: +7 (499) 677 24 11 <i class="fas fa-mobile-alt"></i></p>
+                    <p>Tel: +38 (094) 711 70 66 <i class="fas fa-mobile-alt"></i></p>
+                    <p><a href="mailto:content.kvartira@gmail.com">content.kvartira@gmail.com</a><i
+                                class="far fa-envelope"></i></p>
+                    <p>Мы в соцсетях
+                        <a href="https://www.facebook.com/content.kvartira/" target="_blank" title="Facebook"><img
+                                    src="{{asset('img/facebook.png')}}" alt="Facebook"></a>
+                        <a href="https://vk.com/content_kvartira" target="_blank" title="Vk"><img
+                                    src="{{asset('img/vk.png')}}" alt="Vk"></a>
+                    </p>
+                </div>
 
-                    <!-- form right col -->
-                    <div class="col-md-10 pull-right">
-                        <div class="form-group">
+                <div class="col-sm-7 col-md-7 pull-right">
+                    <!-- IMPORTANT: change the email address at the top of the assets/php/mail.php file to the email address that you want this form to send to -->
+                    <form class="form-style clearfix form-val" action="{{route('main')}}" method="POST"
+                          role="form" name="form_name"> <!-- убрал класс validate-form-->
+                    {{ csrf_field() }}
+                    <!-- form left col -->
+                        <div class="col-md-12 pull-right">
+                            <div class="form-group">
+                                <input type="text" class="text-field form-control required"
+                                       data-validation-type="string" id="form-name" placeholder="Ваше имя" name="name"
+                                       value="{{old('name')}}">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="text-field form-control"
+                                       data-validation-type="email" id="form-email" placeholder="Ваш email"
+                                       name="email" value="{{old('email')}}">
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" class="text-field form-control phone"
+                                       data-validation-type="phone" id="form-contact-number"
+                                       placeholder="Ваш телефон" name="contact_number" value="{{old('contact_number')}}"
+                                       data-bv-live="disabled">
+                            </div>
+                        </div><!-- end: form left col -->
+
+                        <!-- form right col -->
+                        <div class="col-md-12 pull-right">
+                            <div class="form-group">
                                 <textarea placeholder="Ваше сообщение" class="form-control validate-field"
                                           name="message">{{old('message')}}</textarea>
-                        </div>
-                        <div class="form-group">
-                            <img src="{{asset('img/loader-form.GIF')}}" class="form-loader">
-                            <button id="sub-btn" type="submit" class="btn btn-sm btn-outline-inverse">Отправить</button>
-                        </div>
-                        <div class="form-group form-general-error-container"></div>
-                    </div><!-- end: form right col -->
+                            </div>
+                            <div class="form-group">
+                                <img src="{{asset('img/loader-form.GIF')}}" class="form-loader">
+                                <button id="sub-btn" type="submit" class="btn btn-sm btn-outline-inverse">Отправить
+                                </button>
+                            </div>
+                            <div class="form-group form-general-error-container"></div>
+                        </div><!-- end: form right col -->
+                    </form>
+                </div><!-- end: CONTACT FORM -->
 
-                </form>
-            </div><!-- end: CONTACT FORM -->
-
+            </div><!-- .col-sm-10 -->
         </div><!-- .content-wrapper -->
-    </article><!-- .section-wrapper -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        {{--<div class="content-wrapper clearfix">
+            <div class="col-sm-11 pull-right">
+                <h2 class="section-title">Свяжитесь с нами</h2>
+                <!-- CONTACT DETAILS -->
+                <div class="contact-details col-sm-5 col-md-5">
+                    <p>Tel: +7 (499) 677 24 11 <i class="fas fa-mobile-alt"></i></p>
+                    <p>Tel: +38 (094) 711 70 66 <i class="fas fa-mobile-alt"></i></p>
+                    <p><a href="mailto:content.kvartira@gmail.com">content.kvartira@gmail.com</a><i
+                                class="far fa-envelope"></i></p>
+                    <p>Мы в соцсетях
+                        <a href="https://www.facebook.com/content.kvartira/" target="_blank" title="Facebook"><img
+                                    src="{{asset('img/facebook.png')}}" alt="Facebook"></a>
+                        <a href="https://vk.com/content_kvartira" target="_blank" title="Vk"><img
+                                    src="{{asset('img/vk.png')}}" alt="Vk"></a>
+                    </p>
+                </div>
+                <!-- END: CONTACT DETAILS -->
+
+                <!-- CONTACT FORM -->
+                <div class="col-sm-8 col-md-8 pull-right">
+                    <!-- IMPORTANT: change the email address at the top of the assets/php/mail.php file to the email address that you want this form to send to -->
+
+                    <form class="form-style clearfix form-val" action="{{route('main')}}" method="POST"
+                          role="form" name="form_name"> <!-- убрал класс validate-form-->
+                    {{ csrf_field() }}
+                    <!-- form left col -->
+                        <div class="col-md-10 pull-right">
+                            <div class="form-group">
+                                <input type="text" class="text-field form-control required"
+                                       data-validation-type="string" id="form-name" placeholder="Ваше имя" name="name"
+                                       value="{{old('name')}}">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="text-field form-control"
+                                       data-validation-type="email" id="form-email" placeholder="Ваш email"
+                                       name="email" value="{{old('email')}}">
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" class="text-field form-control phone"
+                                       data-validation-type="phone" id="form-contact-number"
+                                       placeholder="Ваш телефон" name="contact_number" value="{{old('contact_number')}}"
+                                       data-bv-live="disabled">
+                            </div>
+                        </div><!-- end: form left col -->
+
+                        <!-- form right col -->
+                        <div class="col-md-10 pull-right">
+                            <div class="form-group">
+                                <textarea placeholder="Ваше сообщение" class="form-control validate-field"
+                                          name="message">{{old('message')}}</textarea>
+                            </div>
+                            <div class="form-group">
+                                <img src="{{asset('img/loader-form.GIF')}}" class="form-loader">
+                                <button id="sub-btn" type="submit" class="btn btn-sm btn-outline-inverse">Отправить
+                                </button>
+                            </div>
+                            <div class="form-group form-general-error-container"></div>
+                        </div><!-- end: form right col -->
+                    </form>
+                </div><!-- end: CONTACT FORM -->
+            </div>
+
+        </div><!-- .content-wrapper -->--}}
+    </div><!-- .section-wrapper -->
 @stop

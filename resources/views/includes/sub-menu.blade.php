@@ -115,7 +115,7 @@
         <div id="mobile-menu-icon" class="visible-xs" onClick="toggle_main_menu();"><span
                     class="glyphicon glyphicon-th"></span></div>
 
-        <ul id="main-menu">
+        <ul id="menu">
             <li id="menu-item-main" class="menu-item scroll"><a href="{{route('main')}}">Главная</a></li>
             <li id="menu-item-about" class="menu-item scroll"><a href="{{route('about')}}">О проекте</a></li>
             <li id="menu-item-services" class="menu-item scroll"><a href="{{route('services')}}">Услуги</a></li>
