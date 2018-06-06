@@ -153,9 +153,12 @@
     });
 
     //enabling fullpage scroll
-    $(document).on('click', '.close, #common-modal', function () {
-        $.fn.fullpage.setAllowScrolling(true);
-        $.fn.fullpage.setKeyboardScrolling(true);
+    $('#common-modal').on('click', function (e) {
+        var a = e.target.getAttribute('class');
+        console.log(a);
+        if (a === 'close' || a === 'modal fade in') {
+            $.fn.fullpage.setAllowScrolling(true);
+            $.fn.fullpage.setKeyboardScrolling(true);
+        }
     });
-
 })(jQuery);

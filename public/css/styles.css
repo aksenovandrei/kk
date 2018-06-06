@@ -2560,6 +2560,13 @@ p span {
     font-size: 1em;
 }
 
+#services2 .tabpanel.styled-tabs .tab-content > .tab-pane ul li:before {
+    display: none;
+}
+#services2 .tabpanel.styled-tabs .tab-content > .tab-pane ul {
+    padding-left: 0px;
+}
+
 /* ====================================================
    IMAGES
    ==================================================== */
