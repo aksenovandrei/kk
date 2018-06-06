@@ -256,50 +256,6 @@
                                 <h6>Блог эксперта по Facebook из США</h6>
                             </div><!-- .caption -->
                         </a><!-- .thumbnail -->
-
-                        {{--<div id="modal-content-1">
-                            <h3 class="no-shadow">Личный блог эксперта по
-                                Фейсбук-продвижению из США
-                                Давида Колесникова</h3>
-                            <h5 class="no-shadow">Краткое описание проекта</h5>
-                            <p>Давид Колесников – эксперт по продвижению бизнеса в Facebook, интернет-маркетолог,
-                                предприниматель из Америки, который только выходит на рынок СНГ и не является узнаваемой
-                                для аудитории личностью.</p>
-                            <h5 class="no-shadow">Цели</h5>
-                            <p>
-                            <ul>
-                                <li>Формирование образа эксперта в своей нише (продвижение бизнеса через Facebook);</li>
-                                <li>Повышение уровня доверия у аудитории, которая привлекается на события.</li>
-                                <li>Активность по имени в сети.</li>
-                            </ul>
-                            </p>
-                            <h5 class="no-shadow">Инструмент</h5>
-                            <p>Блог.</p>
-                            <h5 class="no-shadow">Вложения: точечное продвижение постов.</h5>
-                            <p>При минимальных вложениях, за счет качества предоставляемой информации, уже на 3-м месяце
-                                ведения блога (на первом запуске) клиент сделал продажи своего авторского онлайн-курса
-                                по продвижению в Facebook при стоимости пакета участия от $200.</p>
-
-                            <div class="modalSlider">
-                                <div class="item">
-                                    <a href="https://www.davidkolesnikov.com/blog/6-prostyh-shagov-kak-zanyat-vysokuyu-pozitsiyu-v-poiskovoj-vydache-google/"
-                                       target="_blank"><img class="lazyOwl" src="'http://kk/img/kolesnikov-link1.jpg">
-                                    </a>
-                                </div>
-                                <div class="item">
-                                    <a href="https://www.davidkolesnikov.com/blog/8-proverennyh-sovetov-po-raskrutke-biznesa-v-instagram-chast-1/"
-                                       target="_blank"><img class="lazyOwl" src="http://kk/img/kolesnikov-link2.jpg"></a>
-                                </div>
-                                <div class="item">
-                                    <a href="https://www.davidkolesnikov.com/blog/kak-sozdavat-ubeditelnyj-kontent-chtoby-rasshiryat-klientskuyu-bazu/"
-                                       target="_blank"><img class="lazyOwl" src="http://kk/img/kolesnikov-link3.jpg"></a>
-                                </div>
-                                <div class="item">
-                                    <a href="https://www.davidkolesnikov.com/blog/zachem-vnedryat-programmu-loyalnosti-klientov/"
-                                       target="_blank"><img class="lazyOwl" src="http://kk/img/kolesnikov-link4.jpg"></a>
-                                </div>
-                            </div>
-                        </div>--}}
                     </article>
 
                     <!-- feature 3 -->
@@ -316,75 +272,6 @@
                             </div><!-- .caption -->
                         </a><!-- .thumbnail -->
 
-                        {{--<div id="modal-content-2">
-                            <h3 class="no-shadow">Проект “Чай Гайван”</h3>
-                            <h5 class="no-shadow">Описание проекта</h5>
-                            <p>Клиент - ТМ, занимающаяся продажей элитных сортов чая в Германии и Англии.</p>
-                            <h5 class="no-shadow">Цели</h5>
-                            <p>
-                            <ul>
-                                <li>Повысить узнаваемость бренда</li>
-                                <li>Собрать аудиторию ценителей чая в одном месте</li>
-                                <li>Активность по имени в сети.</li>
-                                <li>Сформировать образ места, где истинные ценители чая могут найти напиток
-                                    индивидуально под свои вкусы и требования
-                                </li>
-                                <li>Сформировать образ владельца ТМ как эксперта в чае</li>
-                            </ul>
-                            </p>
-                            <h5 class="no-shadow">Инструмент: Instagram</h5>
-                            <p>*аккаунт велся на английском языке</p>
-                            <h5 class="no-shadow">Первый этап работы</h5>
-                            <p>
-                            <ul>
-                                <li>Создание контент-плана и внедрение разнообразных рубрик постов вместо однообразных
-                                    продающих публикаций;
-                                </li>
-                                <li>Смена внешнего вида аккаунта.</li>
-                            </ul>
-                            </p>
-                            <div class="block-item">
-                                <h6 class="no-shadow">Так аккаунт выглядел до начала работы</h6>
-                                <img src="http://kk/img/gayvan1.jpg">
-                            </div>
-                            <div class="block-item">
-                                <h6 class="no-shadow">Так - через пару недель после старта</h6>
-                                <img src="http://kk/img/gayvan2.jpg">
-                            </div>
-                            <div class="block-item">
-                                <h6 class="no-shadow">Мы меняли внешний вид аккаунта <br>в зависимости от сезона</h6>
-                                <img src="http://kk/img/gayvan3.jpg">
-                            </div>
-                            <div class="block-item">
-                                <h6 class="no-shadow">Наилучшим образом аудитория реагировала именно на фото в таких
-                                    теплых тонах</h6>
-                                <img src="http://kk/img/gayvan4.jpg">
-                            </div>
-                            <h5 class="no-shadow">Второй этап</h5>
-                            <p>
-                            <ul>
-                                <li>Продвижение. Мы использовали продвижение публикаций на разные группы потенциально
-                                    заинтересованной аудитории в Инстаграм.
-                                </li>
-                                <br>
-                                <li>Сложность задачи - продвижение осуществлялось на рынок Англии и Германии. Контент
-                                    там воспринимается иначе, нежели на русскоязычном рынке. К примеру, аудиторию сложно
-                                    зацепить всевозможными розыгрышами и бесплатностями.
-                                </li>
-                                <br>
-                                <li>Однако нам удалось выйти на стоимость уникального клика 0,23-0,63 евро (в 2,5 раза
-                                    дешевле изначальной цены), что для европейского рынка считается отличным
-                                    показателем.
-                                </li>
-                            </ul>
-                            </p>
-                            <p>Исходя их общей затраченной на продвижение суммы и количества новых подписчиков в месяц,
-                                стоимость подписчика выходила 1,2 евро, а через месяц была снижена до 1,1 евро (при
-                                среднем показателе цены подписчика по Европе в 2,5-3,5 евро). </p>
-                            <p>Кроме того, бонусом удалось увеличить количество переходов в магазин клиента на Амазоне
-                                из Инстаграм, хотя такой цели рекламная кампания вообще не преследовала.</p>
-
-                        </div><!-- #modal-content-8 -->--}}
                         <p class="btn-inrow"><a href="{{route('about')}}"
                                                 class="link-scroll btn btn-yellow btn-outline-inverse btn-lg">Больше
                                 кейсов</a></p>

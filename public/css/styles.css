@@ -2816,6 +2816,9 @@ label input:checked ~ .checkmark {
 .modal-body ul span {
     color: #252525;
 }
+.modal-body ul li label {
+    color: #252525;
+}
 
 .modal-body .form-group input {
     border: 1px solid #252525;
@@ -3146,5 +3149,5 @@ li .description {
 
 .gap-block {
     width: 1px;
-    height: 35%;
+    height: 350px;
 }

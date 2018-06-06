@@ -1,12 +1,8 @@
 @extends('layout.layout')
+@section('title', 'Услуги')
 @include('includes.sub-menu')
 @include('includes.footer')
-@section('title', 'Услуги')
-<!-- Menu -->
-@yield('sub-menu')
-<!-- end: Menu -->
 @section('services')
-
     <div id="services2" class="section-wrapper clearfix section" data-custom-background-img="{{asset('img/bg2.jpg')}}"
          data-anchor="services-section"
          data-centered="false">
@@ -432,11 +428,11 @@
                     </div><!-- .tab-content -->
                     <p class="{{--btn-inrow--}}"><a href="javascript.void(0);" class="chart link-scroll btn btn-yellow btn-outline-inverse btn-lg" data-toggle="modal" data-target="#exampleModalCenter">Заказать</a>
                     </p>
+                    <div class="gap-block"></div>
                 </div><!-- .tabpanel -->
 
             </div><!-- .col-sm-10 -->
         </div><!-- .content-wrapper -->
-        <div class="gap-block"></div>
     </div><!-- .section-wrapper -->
 
     <div id="contact" class="section-wrapper clearfix section" data-custom-background-img="{{asset('img/bg4.jpg')}}"

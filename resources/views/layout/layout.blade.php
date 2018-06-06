@@ -32,6 +32,7 @@
 
 <body>
 @yield('menu')
+@yield('sub-menu')
 {{--<div id="outer-container">--}}
     <!-- Main Content -->
     <div id="fullpage" class="clearfix main-content">
@@ -82,12 +83,6 @@
                 {{ csrf_field() }}
                 <!-- form left col -->
                     <ul class="content">
-                        <h5 class="no-shadow" id="title1">Контент</h5>
-                        <h5 class="no-shadow" id="title2">Продающий копирайтинг</h5>
-                        <h5 class="no-shadow" id="title3">Маркетинг</h5>
-                        <h5 class="no-shadow" id="title4">Реклама</h5>
-                        <h5 class="no-shadow" id="title5">Технические услуги</h5>
-                        <h5 class="no-shadow" id="title6">Дизайн</h5>
                     </ul>
                         <div class="form-group">
                             <input type="text" class="text-field form-control required"

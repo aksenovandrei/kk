@@ -161,4 +161,45 @@
             $.fn.fullpage.setKeyboardScrolling(true);
         }
     });
+
+    var $content = $('ul.content');
+    $('.chart').on('click', function () {
+        $content.empty();
+        var result = {};
+        var $activeInputs = $("input:checkbox:checked");
+        $activeInputs.each(function(item, i) {
+            var $element = $(i);
+            var groupName = $element.closest('.tab-pane').find('h4:first').text();
+            var currentCheckbox = $element.closest('label').find('input');
+            result[groupName] = result[groupName] || [];
+            result[groupName].push(currentCheckbox);
+        });
+
+        jQuery.each(result, function (i, val) {
+            $content.append('<h5 class="no-shadow" id="title1">' + i + '</h5>');
+            jQuery.each(val, function () {
+                $content.append('<li>' +
+                    '<label>' +
+                    '<input name="service[]" type="checkbox" id="' + this[0].id + '" value="' + this[0].value + '">' +
+                    '<span class="checkmark"></span>'
+                    + this[0].value + '' +
+                    '</label>' +
+                    '</li>');
+            });
+        });
+    });
+
+    $content.on('click', 'li', function (e) {
+        var $thisId = $(this).find("input").attr("id");
+        var $curInput = $('input#'+ $thisId);
+        $curInput.closest('label').toggleClass('active-row');
+
+        if ( $(e.target).closest('li').prev('h5').nextUntil('h5', 'li').length === 1) {
+            $(e.target).closest('li').prev('h5').hide();
+        }
+
+        $(e.target).closest('li').remove();
+        $curInput.prop( "checked", false);
+    });
+
 })(jQuery);
