@@ -1,12 +1,10 @@
 @extends('layout.layout')
+@section('title', 'Отзывы')
 @include('includes.sub-menu')
 @include('includes.footer')
-@section('title', 'Отзывы')
-<!-- Menu -->
-@yield('sub-menu')
-<!-- end: Menu -->
 @section('reviews')
-    <article id="reviews" class="section-wrapper clearfix" data-custom-background-img="{{asset('img/bg6.jpg')}}">
+    <div id="reviews" class="section-wrapper clearfix section reviews" data-custom-background-img="{{asset('img/bg6.jpg')}}"
+         data-centered="false">
         <div class="content-wrapper clearfix">
             <h2 class="section-title">Что говорят наши клиенты</h2>
             <div class="client-wrapper col-sm-3 col-md-3">
@@ -16,17 +14,17 @@
                     «ЖирКиллер»</p>
             </div>
             <div class="col-sm-9 col-md-9 pull-right">
-                <p class="feature-paragraph">
                 <div class="review-item">
                     <img class="quptes" src="{{asset('img/quotes.jpg')}}" alt="quotes">
                     <p>Дорабатывали лендинг и подготовили всю воронку писем от продаж до запуска.</p>
                     <img src="{{asset('img/Obuhovskiy.jpg')}}" alt="Obuhovskiy">
                 </div>
-            </div><!-- .col-sm-10 -->
-        </div><!-- .content-wrapper -->
-    </article><!-- .section-wrapper -->
+            </div>
+        </div>
+    </div><!-- .section-wrapper -->
 
-    <article id="reviews" class="section-wrapper clearfix" data-custom-background-img="{{asset('img/bg6.jpg')}}">
+    <div id="reviews2" class="section-wrapper clearfix section reviews" data-custom-background-img="{{asset('img/bg6.jpg')}}"
+         data-centered="false">
         <div class="content-wrapper clearfix">
             <div class="client-wrapper col-sm-3 col-md-3">
                 <img class="client" src="{{asset('img/granitsnet-photo.jpg')}}" alt="granitsnet">
@@ -36,16 +34,18 @@
             <div class="col-sm-9 col-md-9 pull-right">
                 <div class="review-item">
                     <img class="quptes" src="{{asset('img/quotes.jpg')}}" alt="quotes">
-                    <p>Работали с проектом в качестве удаленного контент-отдела: взяли на себя все задачи от разработки стратегии до регулярного постинга в соцсетях и в блоге.
+                    <p>Работали с проектом в качестве удаленного контент-отдела: взяли на себя все задачи от разработки
+                        стратегии до регулярного постинга в соцсетях и в блоге.
                     </p>
                     <img src="{{asset('img/Granyts1.png')}}" alt="Granyts1">
                     <img src="{{asset('img/Granyts2.png')}}" alt="Granyts2">
                 </div>
             </div><!-- .col-sm-10 -->
         </div><!-- .content-wrapper -->
-    </article><!-- .section-wrapper -->
+    </div><!-- .section-wrapper -->
 
-    <article id="reviews" class="section-wrapper clearfix" data-custom-background-img="{{asset('img/bg6.jpg')}}">
+    <div id="reviews3" class="section-wrapper clearfix section reviews" data-custom-background-img="{{asset('img/bg6.jpg')}}"
+         data-centered="false">
         <div class="content-wrapper clearfix">
             <div class="client-wrapper col-sm-3 col-md-3">
                 <img class="client" src="{{asset('img/gavrilova-photo.jpg')}}" alt="Alina">
@@ -55,16 +55,18 @@
             <div class="col-sm-9 col-md-9 pull-right">
                 <div class="review-item">
                     <img class="quptes" src="{{asset('img/quotes.jpg')}}" alt="quotes">
-                    <p>Работали с проектом в качестве удаленного контент-отдела: взяли на себя все задачи от разработки стратегии до регулярного постинга в соцсетях и в блоге.
+                    <p>Работали с проектом в качестве удаленного контент-отдела: взяли на себя все задачи от разработки
+                        стратегии до регулярного постинга в соцсетях и в блоге.
                     </p>
                     <img src="{{asset('img/Gavrilova1.png')}}" alt="Gavrilova1">
                     <img src="{{asset('img/Gavrilova2.jpg')}}" alt="Gavrilova2">
                 </div>
             </div><!-- .col-sm-10 -->
         </div><!-- .content-wrapper -->
-    </article><!-- .section-wrapper -->
+    </div><!-- .section-wrapper -->
 
-    <article id="reviews" class="section-wrapper clearfix" data-custom-background-img="{{asset('img/bg6.jpg')}}">
+    <div id="review4" class="section-wrapper clearfix section reviews" data-custom-background-img="{{asset('img/bg6.jpg')}}"
+         data-centered="false">
         <div class="content-wrapper clearfix">
             <div class="client-wrapper col-sm-3 col-md-3">
                 <img class="client" src="{{asset('img/secret-f-photo.jpg')}}" alt="secret-f">
@@ -78,9 +80,10 @@
                 </div>
             </div><!-- .col-sm-10 -->
         </div><!-- .content-wrapper -->
-    </article><!-- .section-wrapper -->
+    </div><!-- .section-wrapper -->
 
-    <article id="reviews" class="section-wrapper clearfix" data-custom-background-img="{{asset('img/bg6.jpg')}}">
+    <div id="review5" class="section-wrapper clearfix section reviews" data-custom-background-img="{{asset('img/bg6.jpg')}}"
+         data-centered="false">
         <div class="content-wrapper clearfix">
             <div class="client-wrapper col-sm-3 col-md-3">
                 <img class="client" src="{{asset('img/kolesnikov-photo.jpg')}}" alt="Alina">
@@ -90,14 +93,16 @@
             <div class="col-sm-9 col-md-9 pull-right">
                 <div class="review-item">
                     <img class="quptes" src="{{asset('img/quotes.jpg')}}" alt="quotes">
-                    <p>Работали с проектом в качестве удаленного контент-отдела: взяли на себя все задачи от разработки стратегии до регулярного постинга в соцсетях и в блоге.</p>
+                    <p>Работали с проектом в качестве удаленного контент-отдела: взяли на себя все задачи от разработки
+                        стратегии до регулярного постинга в соцсетях и в блоге.</p>
                     <img src="{{asset('img/kolesnikov-review.png')}}" alt="kolesnikov">
                 </div>
             </div><!-- .col-sm-10 -->
         </div><!-- .content-wrapper -->
-    </article><!-- .section-wrapper -->
+    </div><!-- .section-wrapper -->
 
-    <article id="reviews" class="section-wrapper clearfix" data-custom-background-img="{{asset('img/bg6.jpg')}}">
+    <div id="reviews6" class="section-wrapper clearfix section reviews" data-custom-background-img="{{asset('img/bg6.jpg')}}"
+         data-centered="false">
         <div class="content-wrapper clearfix">
             <div class="client-wrapper col-sm-3 col-md-3">
                 <img class="client" src="{{asset('img/shliahov-photo.jpg')}}" alt="shliahov">
@@ -112,9 +117,10 @@
                 </div>
             </div><!-- .col-sm-10 -->
         </div><!-- .content-wrapper -->
-    </article><!-- .section-wrapper -->
+    </div><!-- .section-wrapper -->
 
-    <article id="reviews" class="section-wrapper clearfix" data-custom-background-img="{{asset('img/bg6.jpg')}}">
+    <div id="reviews7" class="section-wrapper clearfix section reviews" data-custom-background-img="{{asset('img/bg6.jpg')}}"
+         data-centered="false">
         <div class="content-wrapper clearfix">
             <div class="client-wrapper col-sm-3 col-md-3">
                 <img class="client" src="{{asset('img/secret-f-photo.jpg')}}" alt="secret-f">
@@ -128,25 +134,29 @@
                 </div>
             </div><!-- .col-sm-10 -->
         </div><!-- .content-wrapper -->
-    </article><!-- .section-wrapper -->
+    </div><!-- .section-wrapper -->
 
-    <article id="reviews" class="section-wrapper clearfix" data-custom-background-img="{{asset('img/bg6.jpg')}}">
+    <div id="reviews8" class="section-wrapper clearfix section reviews" data-custom-background-img="{{asset('img/bg6.jpg')}}"
+         data-centered="false">
         <div class="content-wrapper clearfix">
             <div class="client-wrapper col-sm-3 col-md-3">
                 <img class="client" src="{{asset('img/zastroyshik-photo.jpg')}}" alt="zastroyshik">
-                <p>Представитель крупного украинского застройщика (не можем указать название согласно требований Договора о конфиденциальности)</p>
+                <p>Представитель крупного украинского застройщика (не можем указать название согласно требований
+                    Договора о конфиденциальности)</p>
             </div>
             <div class="col-sm-9 col-md-9 pull-right">
                 <div class="review-item">
                     <img class="quptes" src="{{asset('img/quotes.jpg')}}" alt="quotes">
-                    <p>Работали над формированием узнаваемости и доверия к компании, т.к.она впервые зашла на рынок недвижимости Киева, через активное ведение бизнес-страницы на Facebook.</p>
+                    <p>Работали над формированием узнаваемости и доверия к компании, т.к.она впервые зашла на рынок
+                        недвижимости Киева, через активное ведение бизнес-страницы на Facebook.</p>
                     <img src="{{asset('img/potolok.png')}}" alt="potolok">
                 </div>
             </div><!-- .col-sm-10 -->
         </div><!-- .content-wrapper -->
-    </article><!-- .section-wrapper -->
+    </div><!-- .section-wrapper -->
 
-    <article id="reviews" class="section-wrapper clearfix" data-custom-background-img="{{asset('img/bg6.jpg')}}">
+    <div id="reviews9" class="section-wrapper clearfix section reviews" data-custom-background-img="{{asset('img/bg6.jpg')}}"
+         data-centered="false">
         <div class="content-wrapper clearfix">
             <div class="client-wrapper col-sm-3 col-md-3">
                 <img class="client" src="{{asset('img/secret-f-photo.jpg')}}" alt="secret-f-photo">
@@ -156,7 +166,8 @@
             <div class="col-sm-9 col-md-9 pull-right">
                 <div class="review-item">
                     <img class="quptes" src="{{asset('img/quotes.jpg')}}" alt="quotes">
-                    <p>Работали над написанием продающих текстов для Виктории, а также комплексно над ведением страниц в соцсетях.
+                    <p>Работали над написанием продающих текстов для Виктории, а также комплексно над ведением страниц в
+                        соцсетях.
                         <br><br>
                         Важно было вести страницы так, чтобы аудитория чувствовала в каждом посте личность Виктории.
                     </p>
@@ -164,9 +175,10 @@
                 </div>
             </div><!-- .col-sm-10 -->
         </div><!-- .content-wrapper -->
-    </article><!-- .section-wrapper -->
+    </div><!-- .section-wrapper -->
 
-    <article id="reviews" class="section-wrapper clearfix" data-custom-background-img="{{asset('img/bg6.jpg')}}">
+    <div id="reviews10" class="section-wrapper clearfix section reviews" data-custom-background-img="{{asset('img/bg6.jpg')}}"
+         data-centered="false">
         <div class="content-wrapper clearfix">
             <div class="client-wrapper col-sm-3 col-md-3">
                 <img class="client" src="{{asset('img/secret-m-photo.jpg')}}" alt="secret-m-photo">
@@ -181,9 +193,10 @@
                 </div>
             </div><!-- .col-sm-10 -->
         </div><!-- .content-wrapper -->
-    </article><!-- .section-wrapper -->
+    </div><!-- .section-wrapper -->
 
-    <article id="reviews" class="section-wrapper clearfix" data-custom-background-img="{{asset('img/bg6.jpg')}}">
+    <div id="reviews11" class="section-wrapper clearfix section reviews" data-custom-background-img="{{asset('img/bg6.jpg')}}"
+         data-centered="false">
         <div class="content-wrapper clearfix">
             <div class="client-wrapper col-sm-3 col-md-3">
                 <img class="client" src="{{asset('img/secret-m-photo.jpg')}}" alt="secret-m-photo">
@@ -197,9 +210,10 @@
                 </div>
             </div><!-- .col-sm-10 -->
         </div><!-- .content-wrapper -->
-    </article><!-- .section-wrapper -->
+    </div><!-- .section-wrapper -->
 
-    <article id="reviews" class="section-wrapper clearfix" data-custom-background-img="{{asset('img/bg6.jpg')}}">
+    <div id="reviews12" class="section-wrapper clearfix section reviews" data-custom-background-img="{{asset('img/bg6.jpg')}}"
+         data-centered="false">
         <div class="content-wrapper clearfix">
             <div class="client-wrapper col-sm-3 col-md-3">
                 <img class="client" src="{{asset('img/secret-m-photo.jpg')}}" alt="secret-m-photo">
@@ -213,9 +227,10 @@
                 </div>
             </div><!-- .col-sm-10 -->
         </div><!-- .content-wrapper -->
-    </article><!-- .section-wrapper -->
+    </div><!-- .section-wrapper -->
 
-    <article id="services" class="section-wrapper clearfix" data-custom-background-img="{{asset('img/bg4.jpg')}}">
+    <div id="reviews13" class="section-wrapper clearfix section" data-custom-background-img="{{asset('img/bg4.jpg')}}"
+         data-centered="false">
         <div class="content-wrapper clearfix">
             <h3 class="section-title">Хотите задать вопрос?</h3>
             <h5 class="pull-right">Заполните форму и мы ответим Вам в ближайшее время</h5>
@@ -266,7 +281,6 @@
 
                 </form>
             </div><!-- end: CONTACT FORM -->
-
         </div><!-- .content-wrapper -->
-
+    </div>
 @stop

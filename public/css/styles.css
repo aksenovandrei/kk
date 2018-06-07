@@ -2657,17 +2657,17 @@ small.help-block {
     padding: 5px;
 }
 
-#reviews .client {
+.reviews .client {
     width: 80%;
     height: auto;
     margin-top: 50px;
 }
 
-#reviews .item {
+.reviews .item {
     padding-left: 5px;
 }
 
-#reviews .quptes {
+.reviews .quptes {
     width: 35px;
     display: inline;
     float: right;

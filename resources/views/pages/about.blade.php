@@ -4,7 +4,6 @@
 @include('includes.footer')
 @section('about')
     <div id="about" class="section-wrapper clearfix section" data-custom-background-img="{{asset('img/bg9.jpg')}}"
-         data-anchor="about-section"
          data-centered="false">
         <div class="content-wrapper clearfix">
             <div class="col-sm-10 col-md-9 pull-right">
@@ -31,8 +30,7 @@
         <div class="gap-block"></div>
     </div><!-- .section-wrapper -->
 
-    <div id="about3" class="section-wrapper clearfix section" data-custom-background-img="{{asset('img/bg9.jpg')}}"
-         data-anchor="about-section"
+    <div id="about2" class="section-wrapper clearfix section" data-custom-background-img="{{asset('img/bg9.jpg')}}"
          data-centered="false">
         <div class="content-wrapper clearfix">
             <div class="col-sm-10 col-md-9 pull-right">
@@ -55,8 +53,7 @@
         <div class="gap-block"></div>
     </div><!-- .section-wrapper -->
 
-    <div id="about4" class="section-wrapper clearfix section" data-custom-background-img="{{asset('img/bg9.jpg')}}"
-         data-anchor="about-section"
+    <div id="about3" class="section-wrapper clearfix section" data-custom-background-img="{{asset('img/bg9.jpg')}}"
          data-centered="false">
         <div class="content-wrapper clearfix">
             <div class="col-sm-10 col-md-9 pull-right">
@@ -137,8 +134,7 @@
         <div class="gap-block"></div>
     </div><!-- .section-wrapper -->
 
-    <div id="about5" class="section-wrapper clearfix section" data-custom-background-img="{{asset('img/bg9.jpg')}}"
-         data-anchor="about-section"
+    <div id="about4" class="section-wrapper clearfix section" data-custom-background-img="{{asset('img/bg9.jpg')}}"
          data-centered="false">
         <div class="content-wrapper clearfix">
             <div class="col-sm-2 col-md-2 pull-left alina-wrapper">
@@ -157,7 +153,6 @@
                     <li>Десятки успешно внедренных в бизнесы клиентов Контент Квартиры стратегий по работе с контентом</li>
                     <li>Команда из 18 контент-маркетологов</li>
                     <li>Контент-маркетинг проекты для рынков Польши, Германии, Италии</li>
-                    {{--<li>Работа с лучшими: GeniusMarketing, Игорь Обуховский, Бегущий Банкир Андрей Онистрат, Роман Шляхов, Ицхак Пинтосевич, Первая мужская конференция в Украине, Группа строительных компаний Delmar, Павел Авдонькин, Vinzer Home, Эдвард Дубинский и другими</li>--}}
                     <li>Вывод компании с информационным продуктом в ТОП-40 компаний Украины по самому активному продвижению в Facebook (наряду с известными автомобильными брендами, брендами одежды и продуктами питания)</li>
                     <li>Автор контент-стратегии, которая приносит продаж на 14.000$ в месяц без вложений”</li>
                 </ul>
@@ -168,8 +163,7 @@
         <div class="gap-block"></div>
     </div><!-- .section-wrapper -->
 
-    <div id="about6" class="section-wrapper clearfix section" data-custom-background-img="{{asset('img/bg9.jpg')}}"
-         data-anchor="about-section">
+    <div id="about5" class="section-wrapper clearfix section" data-custom-background-img="{{asset('img/bg9.jpg')}}">
         <div class="content-wrapper clearfix">
             <div class="col-sm-11 pull-right">
 
@@ -234,8 +228,7 @@
         </div><!-- .content-wrapper -->
     </div><!-- .section-wrapper -->
 
-    <div id="about7" class="section-wrapper clearfix section" data-custom-background-img="{{asset('img/bg9.jpg')}}"
-         data-anchor="about-section">
+    <div id="about6" class="section-wrapper clearfix section" data-custom-background-img="{{asset('img/bg9.jpg')}}">
         <div class="content-wrapper clearfix">
             <div class="contact-details col-sm-5 col-md-3">
             </div>
