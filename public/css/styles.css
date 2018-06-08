@@ -392,8 +392,10 @@ table {
 #left-sidebar {
     display: block;
     background: rgba(0, 0, 0, 0.29);
+    /*position: fixed;
+    width: 100%;
+    z-index: 15;*/
 }
-
 @media (min-width: 768px) {
     #left-sidebar {
         /* any change has to be replicated in #footer below */
@@ -2569,6 +2571,12 @@ p span {
 }
 #services2 .tabpanel.styled-tabs .tab-content > .tab-pane ul {
     padding-left: 0px;
+}
+#services {
+    margin-top: 10%;
+}
+#reviews {
+    margin-top: 10%;
 }
 
 /* ====================================================

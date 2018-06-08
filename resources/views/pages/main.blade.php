@@ -3,8 +3,7 @@
 @include('includes.menu')
 @include('includes.footer')
 @section('intro')
-    <div id="main" class="section-wrapper clearfix section active" data-custom-background-img="{{asset('img/bg9.jpg')}}"
-         {{--data-anchor="main-section"--}}>
+    <div id="main" class="section-wrapper clearfix section active" data-custom-background-img="{{asset('img/bg9.jpg')}}">
         <div class="content-wrapper clearfix">
             <div class="col-sm-10 col-md-9 pull-right">
                 <section class="feature-text">

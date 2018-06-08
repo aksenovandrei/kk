@@ -1,5 +1,5 @@
 (function ($) {
-    $(document).ready(function() {
+    $(document).ready(function () {
         $('#fullpage').fullpage({
             /*anchors:['main-section', 'about-section', 'services-section', 'reviews-section', 'portfolio-section', 'contact-section'],*/
             menu: '#menu',
@@ -13,6 +13,7 @@
                 var menuList = $section.attr('id');
                 $('.main-menu li').removeClass('active');
                 $('.main-menu .' + menuList).closest('li').addClass('active');
+                test();
             }
         });
     });
@@ -40,6 +41,50 @@
         $.fn.fullpage.moveTo(section);
     });
 
+    $(document).on('click', '#mobile-menu-icon', function () {
+        var a = $("#mobile-menu-icon");
+        var b = $("#menu");
+        if (b.is(":visible")) {
+            b.addClass("menu_closed_on_xs").removeClass("menu_opened_on_xs").slideUp("fast", function () {
+                a.removeClass("active")
+            });
+            return "closed"
+        } else {
+            b.addClass("menu_opened_on_xs").removeClass("menu_closed_on_xs").slideDown("fast", function () {
+                a.addClass("active")
+            });
+            return "opened"
+        }
+    });
+
+    var $menu = $("#menu");
+    function test() {
+        console.log('qweqweqwe');
+        var $section = $('.main-content .section.active');
+        var $windowSize = $(window).width();
+        if ($windowSize < 768) {
+            if ($section.attr('id') === 'main') {
+                $('#left-sidebar').fadeIn(500);
+            } else {
+                $('#left-sidebar').fadeOut(500);
+            }
+        }
+    }
+
+    $(window).resize(function () {
+        var $windowSize = $(window).width();
+        var $section = $('.main-content .section.active');
+        if ($windowSize >= 768) {
+            if ($menu.hasClass("menu_closed_on_xs")) {
+                $menu.show()
+            }
+            if (!$('#left-sidebar').is(':visible')) {
+                $('#left-sidebar').show();
+            }
+        } else if ($section.attr('id') !== 'main') {
+            $('#left-sidebar').hide();
+        }
+    });
 
 
     //Collecting all modal data into array
@@ -773,15 +818,10 @@
             '                                    </div>');
 
 
-
-
-
-
-
     });
 
     //Show modal window with context content
-        $(document).on('click', '.modal-button', function () {
+    $(document).on('click', '.modal-button', function () {
         //disabling fullpage scroll when modal is open
         $.fn.fullpage.setAllowScrolling(false);
         $.fn.fullpage.setKeyboardScrolling(false);
@@ -807,7 +847,7 @@
         $content.empty();
         var result = {};
         var $activeInputs = $("input:checkbox:checked");
-        $activeInputs.each(function(item, i) {
+        $activeInputs.each(function (item, i) {
             var $element = $(i);
             var groupName = $element.closest('.tab-pane').find('h4:first').text();
             var currentCheckbox = $element.closest('label').find('input');
@@ -831,15 +871,15 @@
 
     $content.on('click', 'li', function (e) {
         var $thisId = $(this).find("input").attr("id");
-        var $curInput = $('input#'+ $thisId);
+        var $curInput = $('input#' + $thisId);
         $curInput.closest('label').toggleClass('active-row');
 
-        if ( $(e.target).closest('li').prev('h5').nextUntil('h5', 'li').length === 1) {
+        if ($(e.target).closest('li').prev('h5').nextUntil('h5', 'li').length === 1) {
             $(e.target).closest('li').prev('h5').hide();
         }
 
         $(e.target).closest('li').remove();
-        $curInput.prop( "checked", false);
+        $curInput.prop("checked", false);
     });
 
 })(jQuery);
