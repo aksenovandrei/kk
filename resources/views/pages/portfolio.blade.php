@@ -9,21 +9,21 @@
                 <h2 class="section-title" style="text-align: center;">Как мы реализовываем проекты для наших клиентов</h2>
                 <div class="row-menu">
                     <div class="btn">
-                        <h5><a href="#blog-title" class="link-scroll">Ведение блогов</a></h5>
+                        <h5><a href="1" class="link-scroll">Ведение блогов</a></h5>
                     </div>
                     <div class="btn">
-                        <h5><a href="#portfolio2" class="link-scroll">SMM</a></h5>
+                        <h5><a href="2" class="link-scroll">SMM</a></h5>
                     </div>
                     <div class="btn">
-                        <h5><a href="#portfolio3" class="link-scroll">Продающий копирайтинг</a></h5>
+                        <h5><a href="3" class="link-scroll">Продающий копирайтинг</a></h5>
                     </div>
                 </div>
                 <div class="row-menu">
                     <div class="btn">
-                        <h5><a href="#portfolio4" class="link-scroll">Email-рассылки</a></h5>
+                        <h5><a href="4" class="link-scroll">Email-рассылки</a></h5>
                     </div>
                     <div class="btn">
-                        <h5><a href="#portfolio5" class="link-scroll">Запуски “под ключ”</a></h5>
+                        <h5><a href="5" class="link-scroll">Запуски “под ключ”</a></h5>
                     </div>
                 </div>
 

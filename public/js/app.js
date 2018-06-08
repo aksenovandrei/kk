@@ -25,11 +25,19 @@
         $.fn.fullpage.moveTo(section);
     });
 
-    /*Smooth scroll main*/
+    /*Smooth scroll moreButton*/
     $('#main .btn-inrow:last-of-type').on('click', function (e) {
         e.preventDefault();
         e.stopPropagation();
         $.fn.fullpage.moveTo(2);
+    });
+
+    /*Smooth scroll portfolio*/
+    $('#portfolio .btn a').on('click', function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        var section = e.target.getAttribute('href');
+        $.fn.fullpage.moveTo(section);
     });
 
 

@@ -20,7 +20,8 @@
                     <img src="{{asset('img/Obuhovskiy.jpg')}}" alt="Obuhovskiy">
                 </div>
             </div>
-        </div>
+        </div><!-- .content-wrapper -->
+        <div class="gap-block"></div>
     </div><!-- .section-wrapper -->
 
     <div id="reviews2" class="section-wrapper clearfix section reviews" data-custom-background-img="{{asset('img/bg6.jpg')}}"
@@ -42,6 +43,7 @@
                 </div>
             </div><!-- .col-sm-10 -->
         </div><!-- .content-wrapper -->
+        <div class="gap-block"></div>
     </div><!-- .section-wrapper -->
 
     <div id="reviews3" class="section-wrapper clearfix section reviews" data-custom-background-img="{{asset('img/bg6.jpg')}}"
@@ -63,6 +65,7 @@
                 </div>
             </div><!-- .col-sm-10 -->
         </div><!-- .content-wrapper -->
+        <div class="gap-block"></div>
     </div><!-- .section-wrapper -->
 
     <div id="review4" class="section-wrapper clearfix section reviews" data-custom-background-img="{{asset('img/bg6.jpg')}}"
@@ -80,6 +83,7 @@
                 </div>
             </div><!-- .col-sm-10 -->
         </div><!-- .content-wrapper -->
+        <div class="gap-block"></div>
     </div><!-- .section-wrapper -->
 
     <div id="review5" class="section-wrapper clearfix section reviews" data-custom-background-img="{{asset('img/bg6.jpg')}}"
@@ -99,6 +103,7 @@
                 </div>
             </div><!-- .col-sm-10 -->
         </div><!-- .content-wrapper -->
+        <div class="gap-block"></div>
     </div><!-- .section-wrapper -->
 
     <div id="reviews6" class="section-wrapper clearfix section reviews" data-custom-background-img="{{asset('img/bg6.jpg')}}"
@@ -117,6 +122,7 @@
                 </div>
             </div><!-- .col-sm-10 -->
         </div><!-- .content-wrapper -->
+        <div class="gap-block"></div>
     </div><!-- .section-wrapper -->
 
     <div id="reviews7" class="section-wrapper clearfix section reviews" data-custom-background-img="{{asset('img/bg6.jpg')}}"
@@ -134,6 +140,7 @@
                 </div>
             </div><!-- .col-sm-10 -->
         </div><!-- .content-wrapper -->
+        <div class="gap-block"></div>
     </div><!-- .section-wrapper -->
 
     <div id="reviews8" class="section-wrapper clearfix section reviews" data-custom-background-img="{{asset('img/bg6.jpg')}}"
@@ -153,6 +160,7 @@
                 </div>
             </div><!-- .col-sm-10 -->
         </div><!-- .content-wrapper -->
+        <div class="gap-block"></div>
     </div><!-- .section-wrapper -->
 
     <div id="reviews9" class="section-wrapper clearfix section reviews" data-custom-background-img="{{asset('img/bg6.jpg')}}"
@@ -175,6 +183,7 @@
                 </div>
             </div><!-- .col-sm-10 -->
         </div><!-- .content-wrapper -->
+        <div class="gap-block"></div>
     </div><!-- .section-wrapper -->
 
     <div id="reviews10" class="section-wrapper clearfix section reviews" data-custom-background-img="{{asset('img/bg6.jpg')}}"
@@ -193,6 +202,7 @@
                 </div>
             </div><!-- .col-sm-10 -->
         </div><!-- .content-wrapper -->
+        <div class="gap-block"></div>
     </div><!-- .section-wrapper -->
 
     <div id="reviews11" class="section-wrapper clearfix section reviews" data-custom-background-img="{{asset('img/bg6.jpg')}}"
@@ -210,6 +220,7 @@
                 </div>
             </div><!-- .col-sm-10 -->
         </div><!-- .content-wrapper -->
+        <div class="gap-block"></div>
     </div><!-- .section-wrapper -->
 
     <div id="reviews12" class="section-wrapper clearfix section reviews" data-custom-background-img="{{asset('img/bg6.jpg')}}"
@@ -227,6 +238,7 @@
                 </div>
             </div><!-- .col-sm-10 -->
         </div><!-- .content-wrapper -->
+        <div class="gap-block"></div>
     </div><!-- .section-wrapper -->
 
     <div id="reviews13" class="section-wrapper clearfix section" data-custom-background-img="{{asset('img/bg4.jpg')}}"
