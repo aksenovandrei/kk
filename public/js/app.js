@@ -11,7 +11,6 @@
                 var image = $section.attr('data-custom-background-img');
                 $('body').css('background-image', 'url(' + image + ')');
                 var menuList = $section.attr('id');
-                console.log(menuList);
                 $('.main-menu li').removeClass('active');
                 $('.main-menu .' + menuList).closest('li').addClass('active');
             }
@@ -23,9 +22,17 @@
         e.preventDefault();
         e.stopPropagation();
         var section = e.target.getAttribute('data-number');
-        console.log(section);
         $.fn.fullpage.moveTo(section);
     });
+
+    /*Smooth scroll main*/
+    $('#main .btn-inrow:last-of-type').on('click', function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        $.fn.fullpage.moveTo(2);
+    });
+
+
 
     //Collecting all modal data into array
     var modalContent = [];
