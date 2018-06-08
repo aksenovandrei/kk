@@ -1,12 +1,10 @@
 @extends('layout.layout')
+@section('title', 'Контакты')
 @include('includes.sub-menu')
 @include('includes.footer')
-@section('title', 'Контакты')
-<!-- Menu -->
-@yield('sub-menu')
-<!-- end: Menu -->
 @section('contact')
-    <article id="contact" class="contact-tab section-wrapper clearfix" data-custom-background-img="{{asset('img/bg4.jpg')}}">
+    <div id="contact" class="section-wrapper clearfix section reviews" data-custom-background-img="{{asset('img/bg4.jpg')}}"
+         data-centered="false">
         <div class="content-wrapper clearfix">
 
             <h2 class="section-title">Хотите заказать услугу,<br> узнать подробнее или задать вопросы?</h2>
@@ -67,6 +65,6 @@
                 </form>
             </div><!-- end: CONTACT FORM -->
         </div>
-    </article><!-- .section-wrapper -->
+    </div><!-- .section-wrapper -->
     <a href="https://google.com" target="_blank">yyy</a>
 @stop

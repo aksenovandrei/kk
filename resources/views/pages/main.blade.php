@@ -53,7 +53,7 @@
 @stop
 @section('services')
     <div id="services" class="section-wrapper clearfix section" data-custom-background-img="{{asset('img/bg2.jpg')}}"
-         {{--data-anchor="services-section"--}}>
+         data-centered="false">
         <div class="content-wrapper clearfix">
             <div class="col-sm-10 col-md-9 pull-right">
 
@@ -168,6 +168,7 @@
 
             </div><!-- .col-sm-10 -->
         </div><!-- .content-wrapper -->
+        <div class="gap-block"></div>
     </div><!-- .section-wrapper -->
 @stop
 @section('reviews')
