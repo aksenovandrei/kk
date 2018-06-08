@@ -59,7 +59,17 @@
 <div class="modal fade" id="common-modal" role="dialog">
     <div class="modal-dialog">
         <div class="modal-content">
-            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+            <div class="modal-body clearfix">
+            </div><!-- .modal-body -->
+        </div><!-- .modal-content -->
+    </div><!-- .modal-dialog -->
+</div><!-- .modal -->
+
+<div class="modal fade" id="common-modal2" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
             <div class="modal-body clearfix">
             </div><!-- .modal-body -->
         </div><!-- .modal-content -->

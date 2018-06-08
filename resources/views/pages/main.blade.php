@@ -4,7 +4,7 @@
 @include('includes.footer')
 @section('intro')
     <div id="main" class="section-wrapper clearfix section active" data-custom-background-img="{{asset('img/bg9.jpg')}}"
-         data-anchor="main-section">
+         {{--data-anchor="main-section"--}}>
         <div class="content-wrapper clearfix">
             <div class="col-sm-10 col-md-9 pull-right">
                 <section class="feature-text">
@@ -27,7 +27,7 @@
 @stop
 @section('about')
     <div id="about" class="section-wrapper clearfix section" data-custom-background-img="{{asset('img/bg9.jpg')}}"
-         data-anchor="about-section"
+         {{--data-anchor="about-section"--}}
          data-centered="false">
         <div class="content-wrapper clearfix">
             <div class="col-sm-10 col-md-9 pull-right">
@@ -53,7 +53,7 @@
 @stop
 @section('services')
     <div id="services" class="section-wrapper clearfix section" data-custom-background-img="{{asset('img/bg2.jpg')}}"
-         data-anchor="services-section">
+         {{--data-anchor="services-section"--}}>
         <div class="content-wrapper clearfix">
             <div class="col-sm-10 col-md-9 pull-right">
 
@@ -172,7 +172,7 @@
 @stop
 @section('reviews')
     <div id="reviews" class="section-wrapper clearfix section" data-custom-background-img="{{asset('img/bg6.jpg')}}"
-         data-anchor="reviews-section">
+         {{--data-anchor="reviews-section"--}}>
         <div class="content-wrapper clearfix">
             <h2 class="section-title slider-title">Отзывы</h2>
             <div class="col-sm-10 col-md-9 pull-right slider">
@@ -219,7 +219,7 @@
 @stop
 @section('portfolio')
     <div id="portfolio" class="section-wrapper clearfix section" data-custom-background-img="{{asset('img/bg3.jpg')}}"
-         data-anchor="portfolio-section">
+         {{--data-anchor="portfolio-section"--}}>
         <div class="content-wrapper clearfix">
             <div class="col-sm-11 pull-right">
 
@@ -272,7 +272,7 @@
                             </div><!-- .caption -->
                         </a><!-- .thumbnail -->
 
-                        <p class="btn-inrow"><a href="{{route('about')}}"
+                        <p class="btn-inrow"><a href="{{route('portfolio')}}"
                                                 class="link-scroll btn btn-yellow btn-outline-inverse btn-lg">Больше
                                 кейсов</a></p>
                     </article>
@@ -401,7 +401,7 @@
 @stop--}}
 @section('contact')
     <div id="contact" class="section-wrapper clearfix section" data-custom-background-img="{{asset('img/bg4.jpg')}}"
-         data-anchor="contact-section">
+         {{--data-anchor="contact-section"--}}>
 
         <div class="content-wrapper clearfix">
 

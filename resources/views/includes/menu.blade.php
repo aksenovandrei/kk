@@ -115,32 +115,26 @@
         <div id="mobile-menu-icon" class="visible-xs" onClick="toggle_main_menu();"><span
                     class="glyphicon glyphicon-th"></span></div>
 
-        <ul id="menu">
-            <li id="menu-item-main" class="menu-item scroll"
-            data-menuanchor="main-section">
-                <a href="#main-section">Главная</a>
+        <ul id="menu" class="main-menu">
+            <li id="menu-item-main" class="menu-item scroll main">
+                <a href="#main" data-number="1">Главная</a>
             </li>
-            <li id="menu-item-about" class="menu-item scroll"
-            data-menuanchor="about-section">
-                <a href="#about-section">О проекте</a>
+            <li id="menu-item-about" class="menu-item scroll about">
+                <a href="#about" data-number="2">О проекте</a>
             </li>
-            <li id="menu-item-services" class="menu-item scroll"
-            data-menuanchor="services-section">
-                <a href="#services-section">Услуги</a>
+            <li id="menu-item-services" class="menu-item scroll services">
+                <a href="#services" data-number="3">Услуги</a>
             </li>
-            <li id="menu-item-reviews" class="menu-item scroll"
-            data-menuanchor="reviews-section">
-                <a href="#reviews-section">Отзывы</a>
+            <li id="menu-item-reviews" class="menu-item scroll reviews">
+                <a href="#reviews" data-number="4">Отзывы</a>
             </li>
-            <li id="menu-item-portfolio" class="menu-item scroll"
-            data-menuanchor="portfolio-section">
-                <a href="#portfolio-section">Портфолио</a>
+            <li id="menu-item-portfolio" class="menu-item scroll portfolio">
+                <a href="#portfolio" data-number="5">Портфолио</a>
             </li>
             {{--<li id="menu-item-partners" class="menu-item scroll"><a href="#partners">Партнеры</a></li>--}}
             {{--<li id="menu-item-vacancies" class="menu-item scroll"><a href="#vacancies">Вакансии</a></li>--}}
-            <li id="menu-item-contact" class="menu-item scroll"
-            data-menuanchor="contact-section">
-                <a href="#contact-section">Контакты</a>
+            <li id="menu-item-contact" class="menu-item scroll contact">
+                <a href="#contact" data-number="6">Контакты</a>
             </li>
         </ul><!-- #main-menu -->
 

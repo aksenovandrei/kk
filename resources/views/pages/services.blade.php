@@ -4,7 +4,6 @@
 @include('includes.footer')
 @section('services')
     <div id="services2" class="section-wrapper clearfix section" data-custom-background-img="{{asset('img/bg2.jpg')}}"
-         data-anchor="services-section"
          data-centered="false">
         <div class="content-wrapper mid-vertical-positioning clearfix  active" style="position: relative">
             <div class="col-sm-10 col-md-9 pull-right">
@@ -435,8 +434,7 @@
         </div><!-- .content-wrapper -->
     </div><!-- .section-wrapper -->
 
-    <div id="contact" class="section-wrapper clearfix section" data-custom-background-img="{{asset('img/bg4.jpg')}}"
-         data-anchor="contact-section">
+    <div id="contact" class="section-wrapper clearfix section" data-custom-background-img="{{asset('img/bg4.jpg')}}">
 
         <div class="content-wrapper clearfix">
 
