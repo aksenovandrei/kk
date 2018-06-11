@@ -346,17 +346,17 @@
                 <!-- form left col -->
                     <div class="col-md-6">
                         <div class="form-group">
-                            <input type="text" class="text-field form-control required"
+                            <input type="text" required class="text-field form-control required"
                                    data-validation-type="string" id="form-name" placeholder="Ваше имя" name="name"
                                    value="{{old('name')}}">
                         </div>
                         <div class="form-group">
-                            <input type="email" class="text-field form-control"
+                            <input type="email" required class="text-field form-control"
                                    data-validation-type="email" id="form-email" placeholder="Ваш email"
                                    name="email" value="{{old('email')}}">
                         </div>
                         <div class="form-group">
-                            <input type="tel" class="text-field form-control phone"
+                            <input type="tel" required class="text-field form-control phone"
                                    data-validation-type="phone" id="form-contact-number"
                                    placeholder="Ваш телефон" name="contact_number" value="{{old('contact_number')}}"
                                    data-bv-live="disabled">

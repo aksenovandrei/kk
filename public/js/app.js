@@ -1,9 +1,7 @@
 (function ($) {
     $(document).ready(function () {
         $('#fullpage').fullpage({
-            /*anchors:['main-section', 'about-section', 'services-section', 'reviews-section', 'portfolio-section', 'contact-section'],*/
             menu: '#menu',
-            /*navigationTooltips: ['main-section', 'about-section', 'services-section', 'reviews-section', 'portfolio-section', 'contact-section'],*/
             scrollOverflow: true,
             scrollingSpeed: 700,
             afterLoad: function change_bg() {
@@ -41,6 +39,7 @@
         $.fn.fullpage.moveTo(section);
     });
 
+    /*O[en-close menu on mobile devices*/
     $(document).on('click', '#mobile-menu-icon', function () {
         var a = $("#mobile-menu-icon");
         var b = $("#menu");
@@ -59,7 +58,6 @@
 
     var $menu = $("#menu");
     function test() {
-        console.log('qweqweqwe');
         var $section = $('.main-content .section.active');
         var $windowSize = $(window).width();
         if ($windowSize < 768) {
@@ -858,13 +856,15 @@
         jQuery.each(result, function (i, val) {
             $content.append('<h5 class="no-shadow" id="title1">' + i + '</h5>');
             jQuery.each(val, function () {
-                $content.append('<li>' +
-                    '<label>' +
-                    '<input name="service[]" type="checkbox" id="' + this[0].id + '" value="' + this[0].value + '">' +
-                    '<span class="checkmark"></span>'
-                    + this[0].value + '' +
-                    '</label>' +
-                    '</li>');
+                $content.append('<li>'
+                    + '<label>'
+                    + '<input name="service[]" type="checkbox" id="'
+                    + this[0].id + '" value="'
+                    + this[0].value + '">'
+                    + '<span class="checkmark"></span>'
+                    + this[0].value + ''
+                    + '</label>'
+                    + '</li>');
             });
         });
     });
@@ -880,6 +880,77 @@
 
         $(e.target).closest('li').remove();
         $curInput.prop("checked", false);
+    });
+
+
+    $(document).ready(function() {
+        $('#sub-btn').on('click', function () {
+            $('#form-email').removeAttr('disabled');
+            $('#form-contact-number').removeAttr('disabled');
+            $('#sub-btn').removeAttr('disabled');
+            if ($('#form-email').val().trim() != '' && $('#form-contact-number').val().trim() != '' ) {
+                $('#form-contact-number').removeAttr('disabled');
+                $('#form-email').removeAttr('disabled');
+            } else if ($('#form-email').val().trim() != '') {
+                $('#form-contact-number').attr('disabled', 'disabled');
+            } else if (($('#form-contact-number').val().trim() != '')) {
+                $('#form-email').attr('disabled', 'disabled');
+            }
+
+            function delay() {
+                $('#form-email').removeAttr('disabled');
+                $('#form-contact-number').removeAttr('disabled');
+                $('#sub-btn').removeAttr('disabled');
+            }
+            setTimeout(delay, 100)
+
+
+            $('.form-val').bootstrapValidator({
+                // To use feedback icons, ensure that you use Bootstrap v3.1.0 or later
+                feedbackIcons: {
+                    valid: 'glyphicon glyphicon-ok',
+                    invalid: 'glyphicon glyphicon-remove',
+                    validating: 'glyphicon glyphicon-refresh'
+                },
+                fields: {
+                    name: {
+                        validators: {
+                            stringLength: {
+                                min: 2
+                            },
+                            notEmpty: {
+                                message: 'Пожалуйста, введите свое имя'
+                            }
+                        }
+                    },
+                    email: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Пожалуйста, введите свой email'
+                            },
+                            regexp: {
+                                regexp: /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/,
+                                message: 'Введите правильный email адрес'
+                            }
+                        }
+                    },
+                    contact_number: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Пожалуйста, введите свой телефон'
+                            },
+                            regexp: {
+                                regexp: /^[1-9][0-9]{5,15}$/,
+                                message: 'Введите правильный номер телефона'
+                            }
+                        }
+                    }
+                }
+
+            })
+
+        });
+
     });
 
 })(jQuery);
