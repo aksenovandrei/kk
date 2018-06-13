@@ -2,8 +2,12 @@
     $(document).ready(function () {
         $('#fullpage').fullpage({
             menu: '#menu',
+            navigation: false,
             scrollOverflow: true,
             scrollingSpeed: 700,
+            verticalCentered: true,
+            controlArrows: false,
+            responsiveWidth: 1200,
             afterLoad: function change_bg() {
                 var $section = $('.main-content .section.active');
                 var image = $section.attr('data-custom-background-img');
@@ -885,25 +889,6 @@
 
     $(document).ready(function() {
         $('#sub-btn').on('click', function () {
-            $('#form-email').removeAttr('disabled');
-            $('#form-contact-number').removeAttr('disabled');
-            $('#sub-btn').removeAttr('disabled');
-            if ($('#form-email').val().trim() != '' && $('#form-contact-number').val().trim() != '' ) {
-                $('#form-contact-number').removeAttr('disabled');
-                $('#form-email').removeAttr('disabled');
-            } else if ($('#form-email').val().trim() != '') {
-                $('#form-contact-number').attr('disabled', 'disabled');
-            } else if (($('#form-contact-number').val().trim() != '')) {
-                $('#form-email').attr('disabled', 'disabled');
-            }
-
-            function delay() {
-                $('#form-email').removeAttr('disabled');
-                $('#form-contact-number').removeAttr('disabled');
-                $('#sub-btn').removeAttr('disabled');
-            }
-            setTimeout(delay, 100)
-
 
             $('.form-val').bootstrapValidator({
                 // To use feedback icons, ensure that you use Bootstrap v3.1.0 or later

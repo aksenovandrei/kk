@@ -3,7 +3,7 @@
 @include('includes.sub-menu')
 @include('includes.footer')
 @section('services')
-    <div id="services2" class="section-wrapper clearfix section" data-custom-background-img="{{asset('img/bg2.jpg')}}"
+    <div id="services2" class="section-wrapper clearfix section gap-block" data-custom-background-img="{{asset('img/bg2.jpg')}}"
          data-centered="false">
         <div class="content-wrapper mid-vertical-positioning clearfix  active" style="position: relative">
             <div class="col-sm-10 col-md-9 pull-right">
@@ -427,7 +427,6 @@
                     </div><!-- .tab-content -->
                     <p class="{{--btn-inrow--}}"><a href="javascript.void(0);" class="chart link-scroll btn btn-yellow btn-outline-inverse btn-lg" data-toggle="modal" data-target="#exampleModalCenter">Заказать</a>
                     </p>
-                    <div class="gap-block"></div>
                 </div><!-- .tabpanel -->
 
             </div><!-- .col-sm-10 -->

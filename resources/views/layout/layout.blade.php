@@ -10,6 +10,13 @@
 
     <title>@yield('title')</title>
 
+    <link href="{{ asset('css/preloader.css') }}" rel="stylesheet">
+    <script>
+        window.onload = function() {
+            $(".KvPreloaderDiv").delay(300).fadeOut(300);
+        };
+    </script>
+
     <!-- favicon -->
     <link rel="shortcut icon" href="{{asset('img/kk_favicon.png')}}" type="image/x-icon">
     <!-- Bootstrap core CSS -->
@@ -31,6 +38,10 @@
 </head>
 
 <body>
+<div class="KvPreloaderDiv">
+    <div class="KvPreloaderImage">
+    </div>
+</div>
 @yield('menu')
 @yield('sub-menu')
 {{--<div id="outer-container">--}}

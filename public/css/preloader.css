@@ -1,0 +1,18 @@
+.KvPreloaderDiv {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #252525;
+    z-index: 1;
+}
+.KvPreloaderImage{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    /*background-image:url(../img/logo.png); !* this GIF may be your custom one, Here I used a sample *!*/
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: -100px 0 0 -100px;
+}

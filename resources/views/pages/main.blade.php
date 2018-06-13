@@ -26,7 +26,6 @@
 @stop
 @section('about')
     <div id="about" class="section-wrapper clearfix section" data-custom-background-img="{{asset('img/bg9.jpg')}}"
-         {{--data-anchor="about-section"--}}
          data-centered="false">
         <div class="content-wrapper clearfix">
             <div class="col-sm-10 col-md-9 pull-right">
@@ -48,11 +47,12 @@
                 </p>
             </div><!-- .col-sm-10 -->
         </div><!-- .content-wrapper -->
+        <div class="gap-block"></div>
     </div><!-- .section-wrapper -->
 @stop
 @section('services')
     <div id="services" class="section-wrapper clearfix section" data-custom-background-img="{{asset('img/bg2.jpg')}}"
-         data-centered="false">
+    data-centered="false">
         <div class="content-wrapper clearfix">
             <div class="col-sm-10 col-md-9 pull-right">
 
@@ -171,8 +171,7 @@
     </div><!-- .section-wrapper -->
 @stop
 @section('reviews')
-    <div id="reviews" class="section-wrapper clearfix section" data-custom-background-img="{{asset('img/bg6.jpg')}}"
-         {{--data-anchor="reviews-section"--}}>
+    <div id="reviews" class="section-wrapper clearfix section" data-custom-background-img="{{asset('img/bg6.jpg')}}">
         <div class="content-wrapper clearfix">
             <h2 class="section-title slider-title">Отзывы</h2>
             <div class="col-sm-10 col-md-9 pull-right slider">
@@ -216,10 +215,11 @@
             </div><!-- .col-sm-10 -->
         </div><!-- .content-wrapper -->
     </div><!-- .section-wrapper -->
+
 @stop
 @section('portfolio')
     <div id="portfolio" class="section-wrapper clearfix section" data-custom-background-img="{{asset('img/bg3.jpg')}}"
-         {{--data-anchor="portfolio-section"--}}>
+         data-centered="false">
         <div class="content-wrapper clearfix">
             <div class="col-sm-11 pull-right">
 
