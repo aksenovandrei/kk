@@ -440,9 +440,10 @@ table {
 
 @media screen and (max-width: 767px) {
     #left-sidebar .logo {
-        width: 50%;
+        width: 26%;
         margin: 0 auto;
         background: none;
+        padding: 5px;
     }
 }
 
@@ -503,6 +504,22 @@ table {
 #left-sidebar #mobile-menu-icon.active {
     color: #fff;
     background: rgba(0, 0, 0, 0.4);
+}
+@media screen and (max-width: 767px) {
+    #left-sidebar #mobile-menu-icon {
+        height: 40px;
+    }
+    #left-sidebar #mobile-menu-icon span {
+        font-size: 0.93em;
+        line-height: 40px;
+    }
+    /*#left-sidebar {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 15;
+        background: rgba(37, 37, 37, 0.9);
+    }*/
 }
 
 #left-sidebar #menu {
@@ -1235,13 +1252,9 @@ p span {
     text-align: left;
 }
 
-.section-title {
-    /*margin-top: 100px;*/
-}
-
 @media screen and (max-width: 639px) {
     .section-title {
-        font-size: 1.25em;
+        font-size: 1.45em;
     }
 }
 
@@ -1700,6 +1713,11 @@ p span {
     float: right;
     margin-right: 15px;
 }
+@media screen and (max-width: 767px) {
+    #contact .section-title {
+        float: none;
+    }
+}
 
 @media (min-width: 768px) {
     .form-style input.text-field,
@@ -1718,6 +1736,12 @@ p span {
 
     .main-content .contact-details {
         font-size: 0.6em;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .main-content .contact-details {
+        padding-right: 30px;
     }
 }
 
@@ -1883,6 +1907,53 @@ p span {
     }
 }
 
+@media screen and (max-width: 767px) {
+    #reviews .slider .fp-controlArrow {
+        top: unset;
+        bottom: 8%;
+    }
+}
+@media screen and (max-width: 740px) {
+    #reviews .slider .fp-controlArrow {
+        bottom: 11%;
+    }
+}
+@media screen and (max-width: 740px) {
+    #reviews .slider .fp-controlArrow {
+        bottom: 11%;
+    }
+}
+@media screen and (max-width: 730px) {
+    #reviews .slider .fp-controlArrow {
+        bottom: 13%;
+    }
+}
+@media screen and (max-width: 700px) {
+    #reviews .slider .fp-controlArrow {
+        bottom: 18%;
+    }
+}
+@media screen and (max-width: 650px) {
+    #reviews .slider .fp-controlArrow {
+        bottom: 21%;
+    }
+}
+@media screen and (max-width: 550px) {
+    #reviews .slider .fp-controlArrow {
+        bottom: 25%;
+    }
+}
+@media screen and (max-width: 500px) {
+    #reviews .slider .fp-controlArrow {
+        bottom: 28%;
+    }
+}
+@media screen and (max-width: 400px) {
+    #reviews .slider .fp-controlArrow {
+        bottom: 32%;
+    }
+}
+
 #reviews .slider:hover .fp-controlArrow {
     opacity: .3;
     filter: alpha(opacity=30);
@@ -1907,6 +1978,15 @@ p span {
     background-image: url(../img/carousel_arrow_right.png);
     right: -6%;
     background-position: -10px 0px;
+}
+
+@media screen and (max-width: 767px) {
+    #reviews .slider .fp-controlArrow.fp-prev {
+        left: 0;
+    }
+    #reviews .slider .fp-controlArrow.fp-next {
+        right: 0;
+    }
 }
 
 #reviews .slider .fp-controlArrow.fp-next:hover {
@@ -2409,6 +2489,9 @@ p span {
 
     .tabpanel.styled-tabs ul.nav > li > a {
         line-height: 1.5;
+        width: 50%;
+        display: block;
+        margin: 0 auto;
     }
 
     .main-content *.section-title {
@@ -2565,7 +2648,7 @@ p span {
 
 @media screen and (max-width: 1600px) {
     .tabpanel.styled-tabs .tab-content > .tab-pane {
-        padding: 0px 15px;
+        padding: 0 15px 0 0;
     }
 }
 
@@ -2586,6 +2669,12 @@ p span {
 @media screen and (max-width: 1200px) {
     .tabpanel.styled-tabs .tab-content > .tab-pane ul {
         height: 205px;
+    }
+}
+
+@media screen and (max-width: 639px) {
+    .tabpanel.styled-tabs .tab-content > .tab-pane ul {
+        height: auto;
     }
 }
 
@@ -3203,14 +3292,49 @@ li .description {
     margin-bottom: 25%;
 }
 
-.preloader
-{
-    position: fixed;
-    left: 0px;
-    top: 0px;
-    width: 100%;
-    height: 100%;
-    z-index: 9999;
-    background: url('../img/AjaxLoader.gif') 50% 50% no-repeat rgb(249,249,249);
-    opacity: .8;
+@media screen and (max-width: 767px) {
+    .section {
+        margin-bottom: 0;
+    }
 }
+
+@media screen and (max-width: 991px) {
+    #portfolio > div {
+        float: right;
+    }
+    #contact > div {
+        float: right;
+    }
+}
+
+@media screen and (max-width: 639px) {
+    .section {
+        margin-bottom: 15%;
+    }
+    #reviews {
+        margin-bottom: 0;
+    }
+    .section:last-of-type {
+        margin-bottom: 0;
+    }
+}
+
+.upArrow {
+    position: fixed;
+    bottom: 10%;
+    left: 5%;
+    width: 15px;
+    height: 15px;
+    z-index: 20;
+    opacity: 0.3;
+    border-right: 5px solid #ffffff;
+    border-top: 5px solid #ffffff;
+    transform: rotate(-45deg) scale(1);
+    cursor: pointer;
+    transition: scale 0.3s, opacity 0.3s;
+}
+.upArrow:hover {
+    opacity: 1;
+    transform: rotate(-45deg) scale(1.15);
+}
+

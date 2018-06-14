@@ -42,6 +42,7 @@
     <div class="KvPreloaderImage">
     </div>
 </div>
+<div class="upArrow"></div>
 @yield('menu')
 @yield('sub-menu')
 {{--<div id="outer-container">--}}

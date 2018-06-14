@@ -3,7 +3,7 @@
 @include('includes.menu')
 @include('includes.footer')
 @section('intro')
-    <div id="main" class="section-wrapper clearfix section active" data-custom-background-img="{{asset('img/bg9.jpg')}}">
+    <div id="main" class="section-wrapper clearfix section active fp-auto-height-responsive" data-custom-background-img="{{asset('img/bg9.jpg')}}">
         <div class="content-wrapper clearfix">
             <div class="col-sm-10 col-md-9 pull-right">
                 <section class="feature-text">
@@ -25,7 +25,7 @@
     </div><!-- .section-wrapper -->
 @stop
 @section('about')
-    <div id="about" class="section-wrapper clearfix section" data-custom-background-img="{{asset('img/bg9.jpg')}}"
+    <div id="about" class="section-wrapper clearfix section fp-auto-height-responsive" data-custom-background-img="{{asset('img/bg9.jpg')}}"
          data-centered="false">
         <div class="content-wrapper clearfix">
             <div class="col-sm-10 col-md-9 pull-right">
@@ -51,7 +51,7 @@
     </div><!-- .section-wrapper -->
 @stop
 @section('services')
-    <div id="services" class="section-wrapper clearfix section" data-custom-background-img="{{asset('img/bg2.jpg')}}"
+    <div id="services" class="section-wrapper clearfix section fp-auto-height-responsive" data-custom-background-img="{{asset('img/bg2.jpg')}}"
     data-centered="false">
         <div class="content-wrapper clearfix">
             <div class="col-sm-10 col-md-9 pull-right">
@@ -171,7 +171,7 @@
     </div><!-- .section-wrapper -->
 @stop
 @section('reviews')
-    <div id="reviews" class="section-wrapper clearfix section" data-custom-background-img="{{asset('img/bg6.jpg')}}">
+    <div id="reviews" class="section-wrapper clearfix section fp-auto-height-responsive" data-custom-background-img="{{asset('img/bg6.jpg')}}">
         <div class="content-wrapper clearfix">
             <h2 class="section-title slider-title">Отзывы</h2>
             <div class="col-sm-10 col-md-9 pull-right slider">
@@ -218,10 +218,10 @@
 
 @stop
 @section('portfolio')
-    <div id="portfolio" class="section-wrapper clearfix section" data-custom-background-img="{{asset('img/bg3.jpg')}}"
-         data-centered="false">
+    <div id="portfolio" class="section-wrapper clearfix section fp-auto-height-responsive" data-custom-background-img="{{asset('img/bg3.jpg')}}"
+    data-centered="true">
         <div class="content-wrapper clearfix">
-            <div class="col-sm-11 pull-right">
+            <div class="col-sm-10 pull-right">
 
                 <h2 class="section-title">Наши кейсы</h2>
 
@@ -400,12 +400,12 @@
     </div><!-- .section-wrapper -->
 @stop--}}
 @section('contact')
-    <div id="contact" class="section-wrapper clearfix section" data-custom-background-img="{{asset('img/bg4.jpg')}}">
+    <div id="contact" class="section-wrapper clearfix section fp-auto-height-responsive" data-custom-background-img="{{asset('img/bg4.jpg')}}">
 
         <div class="content-wrapper clearfix">
 
             <h2 class="section-title">Свяжитесь с нами</h2>
-            <div class="col-md-12 pull-right">
+            <div class="col-sm-10 pull-right">
 
 
                 <div class="contact-details col-sm-5 col-md-5">

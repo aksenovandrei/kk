@@ -6,7 +6,7 @@
             scrollOverflow: true,
             scrollingSpeed: 700,
             verticalCentered: true,
-            controlArrows: false,
+            controlArrows: true,
             responsiveWidth: 1200,
             afterLoad: function change_bg() {
                 var $section = $('.main-content .section.active');
@@ -15,7 +15,6 @@
                 var menuList = $section.attr('id');
                 $('.main-menu li').removeClass('active');
                 $('.main-menu .' + menuList).closest('li').addClass('active');
-                test();
             }
         });
     });
@@ -26,6 +25,12 @@
         e.stopPropagation();
         var section = e.target.getAttribute('data-number');
         $.fn.fullpage.moveTo(section);
+    });
+
+    $(document).on('click', '.upArrow', function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        $.fn.fullpage.moveTo(1);
     });
 
     /*Smooth scroll moreButton*/
@@ -60,31 +65,30 @@
         }
     });
 
-    var $menu = $("#menu");
-    function test() {
-        var $section = $('.main-content .section.active');
-        var $windowSize = $(window).width();
-        if ($windowSize < 768) {
-            if ($section.attr('id') === 'main') {
-                $('#left-sidebar').fadeIn(500);
-            } else {
-                $('#left-sidebar').fadeOut(500);
-            }
-        }
-    }
+    $('.upArrow').hide();
+   window.onscroll = function () {
+       var $windowSize = $(window).width();
+       var $section = $('.section.active');
+       if ($windowSize <= 750) {
+           if ($section.attr('id') === 'main') {
+               $('.upArrow').hide(200);
+           } else {
+               $('.upArrow').show(200);
+           }
+       }
 
+   };
+
+    var $menu = $("#menu");
     $(window).resize(function () {
         var $windowSize = $(window).width();
-        var $section = $('.main-content .section.active');
-        if ($windowSize >= 768) {
+        if ($windowSize >= 750) {
             if ($menu.hasClass("menu_closed_on_xs")) {
                 $menu.show()
             }
             if (!$('#left-sidebar').is(':visible')) {
                 $('#left-sidebar').show();
             }
-        } else if ($section.attr('id') !== 'main') {
-            $('#left-sidebar').hide();
         }
     });
 
