@@ -3,7 +3,7 @@
 @include('includes.sub-menu')
 @include('includes.footer')
 @section('contact')
-    <div id="contact" class="section-wrapper clearfix section reviews" data-custom-background-img="{{asset('img/bg4.jpg')}}"
+    <div id="contact" class="section-wrapper clearfix section reviews fp-auto-height-responsive" data-custom-background-img="{{asset('img/bg4.jpg')}}"
          data-centered="false">
         <div class="content-wrapper clearfix">
 
@@ -66,5 +66,4 @@
             </div><!-- end: CONTACT FORM -->
         </div>
     </div><!-- .section-wrapper -->
-    <a href="https://google.com" target="_blank">yyy</a>
 @stop

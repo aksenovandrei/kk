@@ -3,13 +3,13 @@
 @include('includes.sub-menu')
 @include('includes.footer')
 @section('reviews')
-    <div id="reviews1" class="section-wrapper clearfix section reviews" data-custom-background-img="{{asset('img/bg6.jpg')}}"
+    <div id="reviews1" class="section-wrapper clearfix section reviews fp-auto-height-responsive" data-custom-background-img="{{asset('img/bg6.jpg')}}"
          data-centered="false">
         <div class="content-wrapper clearfix">
             <h2 class="section-title">Что говорят наши клиенты</h2>
             <div class="client-wrapper col-sm-3 col-md-3">
                 <img class="client" src="{{asset('img/obuhovskiy-photo.jpg')}}" alt="obuhovskiy">
-                <h5>Игорь Обуховский</h5>
+                <h6>Игорь Обуховский</h6>
                 <p>экс-тренер проекта «Зваженi та щасливi», автор онлайн фитнес-игры
                     «ЖирКиллер»</p>
             </div>
@@ -23,12 +23,12 @@
         </div><!-- .content-wrapper -->
     </div><!-- .section-wrapper -->
 
-    <div id="reviews2" class="section-wrapper clearfix section reviews" data-custom-background-img="{{asset('img/bg6.jpg')}}"
+    <div id="reviews2" class="section-wrapper clearfix section reviews fp-auto-height-responsive" data-custom-background-img="{{asset('img/bg6.jpg')}}"
          data-centered="false">
         <div class="content-wrapper clearfix">
             <div class="client-wrapper col-sm-3 col-md-3">
                 <img class="client" src="{{asset('img/granitsnet-photo.jpg')}}" alt="granitsnet">
-                <h5>Границ.нет</h5>
+                <h6>Границ.нет</h6>
                 <p>обучающий проект для тех, кто хочет построить бизнес на любимом деле»</p>
             </div>
             <div class="col-sm-9 col-md-9 pull-right">
@@ -44,12 +44,12 @@
         </div><!-- .content-wrapper -->
     </div><!-- .section-wrapper -->
 
-    <div id="reviews3" class="section-wrapper clearfix section reviews" data-custom-background-img="{{asset('img/bg6.jpg')}}"
+    <div id="reviews3" class="section-wrapper clearfix section reviews fp-auto-height-responsive" data-custom-background-img="{{asset('img/bg6.jpg')}}"
          data-centered="false">
         <div class="content-wrapper clearfix">
             <div class="client-wrapper col-sm-3 col-md-3">
                 <img class="client" src="{{asset('img/gavrilova-photo.jpg')}}" alt="Alina">
-                <h5>Ирина Гаврилова</h5>
+                <h6>Ирина Гаврилова</h6>
                 <p>Бизнес-тренер уровня PCC ICF</p>
             </div>
             <div class="col-sm-9 col-md-9 pull-right">
@@ -65,7 +65,7 @@
         </div><!-- .content-wrapper -->
     </div><!-- .section-wrapper -->
 
-    <div id="review4" class="section-wrapper clearfix section reviews" data-custom-background-img="{{asset('img/bg6.jpg')}}"
+    <div id="review4" class="section-wrapper clearfix section reviews fp-auto-height-responsive" data-custom-background-img="{{asset('img/bg6.jpg')}}"
          data-centered="false">
         <div class="content-wrapper clearfix">
             <div class="client-wrapper col-sm-3 col-md-3">
@@ -82,12 +82,12 @@
         </div><!-- .content-wrapper -->
     </div><!-- .section-wrapper -->
 
-    <div id="review5" class="section-wrapper clearfix section reviews" data-custom-background-img="{{asset('img/bg6.jpg')}}"
+    <div id="review5" class="section-wrapper clearfix section reviews fp-auto-height-responsive" data-custom-background-img="{{asset('img/bg6.jpg')}}"
          data-centered="false">
         <div class="content-wrapper clearfix">
             <div class="client-wrapper col-sm-3 col-md-3">
                 <img class="client" src="{{asset('img/kolesnikov-photo.jpg')}}" alt="Alina">
-                <h5>Давид Колесников</h5>
+                <h6>Давид Колесников</h6>
                 <p>американский эксперт по продвижению в Facebook</p>
             </div>
             <div class="col-sm-9 col-md-9 pull-right">
@@ -101,12 +101,12 @@
         </div><!-- .content-wrapper -->
     </div><!-- .section-wrapper -->
 
-    <div id="reviews6" class="section-wrapper clearfix section reviews" data-custom-background-img="{{asset('img/bg6.jpg')}}"
+    <div id="reviews6" class="section-wrapper clearfix section reviews fp-auto-height-responsive" data-custom-background-img="{{asset('img/bg6.jpg')}}"
          data-centered="false">
         <div class="content-wrapper clearfix">
             <div class="client-wrapper col-sm-3 col-md-3">
                 <img class="client" src="{{asset('img/shliahov-photo.jpg')}}" alt="shliahov">
-                <h5>Роман Шляхов</h5>
+                <h6>Роман Шляхов</h6>
                 <p>интернет-предприниматель, продюсер, миллионер</p>
             </div>
             <div class="col-sm-9 col-md-9 pull-right">
@@ -119,12 +119,12 @@
         </div><!-- .content-wrapper -->
     </div><!-- .section-wrapper -->
 
-    <div id="reviews7" class="section-wrapper clearfix section reviews" data-custom-background-img="{{asset('img/bg6.jpg')}}"
+    <div id="reviews7" class="section-wrapper clearfix section reviews fp-auto-height-responsive" data-custom-background-img="{{asset('img/bg6.jpg')}}"
          data-centered="false">
         <div class="content-wrapper clearfix">
             <div class="client-wrapper col-sm-3 col-md-3">
                 <img class="client" src="{{asset('img/secret-f-photo.jpg')}}" alt="secret-f">
-                <h5>Производитель натуральных сладостей</h5>
+                <h6>Производитель натуральных сладостей</h6>
             </div>
             <div class="col-sm-9 col-md-9 pull-right">
                 <div class="review-item">
@@ -136,7 +136,7 @@
         </div><!-- .content-wrapper -->
     </div><!-- .section-wrapper -->
 
-    <div id="reviews8" class="section-wrapper clearfix section reviews" data-custom-background-img="{{asset('img/bg6.jpg')}}"
+    <div id="reviews8" class="section-wrapper clearfix section reviews fp-auto-height-responsive" data-custom-background-img="{{asset('img/bg6.jpg')}}"
          data-centered="false">
         <div class="content-wrapper clearfix">
             <div class="client-wrapper col-sm-3 col-md-3">
@@ -155,12 +155,12 @@
         </div><!-- .content-wrapper -->
     </div><!-- .section-wrapper -->
 
-    <div id="reviews9" class="section-wrapper clearfix section reviews" data-custom-background-img="{{asset('img/bg6.jpg')}}"
+    <div id="reviews9" class="section-wrapper clearfix section reviews fp-auto-height-responsive" data-custom-background-img="{{asset('img/bg6.jpg')}}"
          data-centered="false">
         <div class="content-wrapper clearfix">
             <div class="client-wrapper col-sm-3 col-md-3">
                 <img class="client" src="{{asset('img/secret-f-photo.jpg')}}" alt="secret-f-photo">
-                <h5>Проект Виктории Шуриной</h5>
+                <h6>Проект Виктории Шуриной</h6>
                 <p>духовный тренер счастливых людей</p>
             </div>
             <div class="col-sm-9 col-md-9 pull-right">
@@ -177,12 +177,12 @@
         </div><!-- .content-wrapper -->
     </div><!-- .section-wrapper -->
 
-    <div id="reviews10" class="section-wrapper clearfix section reviews" data-custom-background-img="{{asset('img/bg6.jpg')}}"
+    <div id="reviews10" class="section-wrapper clearfix section reviews fp-auto-height-responsive" data-custom-background-img="{{asset('img/bg6.jpg')}}"
          data-centered="false">
         <div class="content-wrapper clearfix">
             <div class="client-wrapper col-sm-3 col-md-3">
                 <img class="client" src="{{asset('img/secret-m-photo.jpg')}}" alt="secret-m-photo">
-                <h5>Андрей</h5>
+                <h6>Андрей</h6>
                 <p>владелец web-студии</p>
             </div>
             <div class="col-sm-9 col-md-9 pull-right">
@@ -195,12 +195,12 @@
         </div><!-- .content-wrapper -->
     </div><!-- .section-wrapper -->
 
-    <div id="reviews11" class="section-wrapper clearfix section reviews" data-custom-background-img="{{asset('img/bg6.jpg')}}"
+    <div id="reviews11" class="section-wrapper clearfix section reviews fp-auto-height-responsive" data-custom-background-img="{{asset('img/bg6.jpg')}}"
          data-centered="false">
         <div class="content-wrapper clearfix">
             <div class="client-wrapper col-sm-3 col-md-3">
                 <img class="client" src="{{asset('img/secret-m-photo.jpg')}}" alt="secret-m-photo">
-                <h5>Организатор элитных путешествий</h5>
+                <h6>Организатор элитных путешествий</h6>
             </div>
             <div class="col-sm-9 col-md-9 pull-right">
                 <div class="review-item">
@@ -212,14 +212,14 @@
         </div><!-- .content-wrapper -->
     </div><!-- .section-wrapper -->
 
-    <div id="reviews12" class="section-wrapper clearfix section reviews" data-custom-background-img="{{asset('img/bg6.jpg')}}"
+    <div id="reviews12" class="section-wrapper clearfix section reviews fp-auto-height-responsive" data-custom-background-img="{{asset('img/bg6.jpg')}}"
          data-centered="false">
         <div class="content-wrapper clearfix">
             <div class="client-wrapper col-sm-3 col-md-3">
                 <img class="client" src="{{asset('img/secret-m-photo.jpg')}}" alt="secret-m-photo">
-                <h5>Украинский застройщик экодомов</h5>
+                <h6>Украинский застройщик экодомов</h6>
             </div>
-            <div class="col-sm-10 col-md-9 pull-right">
+            <div class="col-sm-9 col-md-9 pull-right">
                 <div class="review-item">
                     <img class="quptes" src="{{asset('img/quotes.jpg')}}" alt="quotes">
                     <p>Работали над написанием продающего текста</p>
@@ -229,7 +229,7 @@
         </div><!-- .content-wrapper -->
     </div><!-- .section-wrapper -->
 
-    <div id="reviews13" class="section-wrapper clearfix section" data-custom-background-img="{{asset('img/bg4.jpg')}}"
+    <div id="reviews13" class="section-wrapper clearfix section fp-auto-height-responsive" data-custom-background-img="{{asset('img/bg4.jpg')}}"
          data-centered="false">
         <div class="content-wrapper clearfix">
             <h3 class="section-title">Хотите задать вопрос?</h3>

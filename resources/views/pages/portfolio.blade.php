@@ -3,7 +3,7 @@
 @include('includes.sub-menu')
 @include('includes.footer')
 @section('portfolio')
-    <div id="portfolio" class="section-wrapper clearfix section" data-custom-background-img="{{asset('img/bg3.jpg')}}">
+    <div id="portfolio1" class="section-wrapper clearfix section fp-auto-height-responsive" data-custom-background-img="{{asset('img/bg3.jpg')}}">
         <div class="content-wrapper clearfix">
             <div class="col-sm-11 pull-right">
                 <h2 class="section-title" style="text-align: center;">Как мы реализовываем проекты для наших клиентов</h2>
@@ -77,14 +77,12 @@
                         </a><!-- .thumbnail -->
                     </article>
                 </section><!-- end: .feature-columns -->
-
                 <!-- End: Section content to edit -->
-
             </div><!-- .col-sm-10 -->
         </div><!-- .content-wrapper -->
     </div><!-- .section-wrapper -->
 
-    <div id="portfolio2" class="section-wrapper clearfix section" data-custom-background-img="{{asset('img/bg3.jpg')}}">
+    <div id="portfolio2" class="section-wrapper clearfix section fp-auto-height-responsive" data-custom-background-img="{{asset('img/bg3.jpg')}}">
         <div class="content-wrapper clearfix">
             <div class="col-sm-11 pull-right">
 
@@ -143,14 +141,12 @@
                         </div>
                     </article>
                 </section><!-- end: .feature-columns -->
-
                 <!-- End: Section content to edit -->
-
             </div><!-- .col-sm-10 -->
         </div><!-- .content-wrapper -->
     </div><!-- .section-wrapper -->
 
-    <div id="portfolio3" class="section-wrapper clearfix section" data-custom-background-img="{{asset('img/bg3.jpg')}}"
+    <div id="portfolio3" class="section-wrapper clearfix section fp-auto-height-responsive" data-custom-background-img="{{asset('img/bg3.jpg')}}"
          data-centered="false">
         <div class="content-wrapper clearfix">
             <div class="col-sm-11 pull-right">
@@ -241,10 +237,9 @@
                 <!-- End: Section content to edit -->
             </div><!-- .col-sm-10 -->
         </div><!-- .content-wrapper -->
-        <div class="gap-block"></div>
     </div><!-- .section-wrapper -->
 
-    <div id="portfolio4" class="section-wrapper clearfix section" data-custom-background-img="{{asset('img/bg3.jpg')}}">
+    <div id="portfolio4" class="section-wrapper clearfix section fp-auto-height-responsive" data-custom-background-img="{{asset('img/bg3.jpg')}}">
         <section class="content-wrapper clearfix">
             <section class="col-sm-11 pull-right">
 
@@ -288,7 +283,7 @@
         </section>
     </div><!-- .section-wrapper -->
 
-    <div id="portfolio5" class="section-wrapper clearfix section" data-custom-background-img="{{asset('img/bg3.jpg')}}">
+    <div id="portfolio5" class="section-wrapper clearfix section fp-auto-height-responsive" data-custom-background-img="{{asset('img/bg3.jpg')}}">
         <div class="content-wrapper clearfix">
             <div class="col-sm-11 pull-right">
 
@@ -331,7 +326,7 @@
         </div><!-- .content-wrapper -->
     </div><!-- .section-wrapper -->
 
-    <div id="contact" class="section-wrapper clearfix section" data-custom-background-img="{{asset('img/bg3.jpg')}}">
+    <div id="contact" class="section-wrapper clearfix section fp-auto-height-responsive" data-custom-background-img="{{asset('img/bg3.jpg')}}">
         <div class="content-wrapper clearfix">
             <h2 class="section-title">Хотите задать вопрос?</h2>
             <p class="pull-right">Заполните форму и мы ответим Вам в ближайшее время</p>

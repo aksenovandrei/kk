@@ -47,7 +47,6 @@
                 </p>
             </div><!-- .col-sm-10 -->
         </div><!-- .content-wrapper -->
-        <div class="gap-block"></div>
     </div><!-- .section-wrapper -->
 @stop
 @section('services')
@@ -167,7 +166,6 @@
 
             </div><!-- .col-sm-10 -->
         </div><!-- .content-wrapper -->
-        <div class="gap-block"></div>
     </div><!-- .section-wrapper -->
 @stop
 @section('reviews')
@@ -202,7 +200,7 @@
                             отзывы</a>
                     </p>
                 </div>
-                <div class="item slide">
+                {{--<div class="item slide">
                     <h4 class="title">Рик Астли</h4>
                     <p>певец, герой мемов<br>Ничего ему не делали, но и он нам, как бы, ничего не платил)))</p>
                     <iframe width="670" height="287" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0"
@@ -211,7 +209,7 @@
                                             class="link-scroll btn btn-yellow btn-outline-inverse btn-lg">Все
                             отзывы</a>
                     </p>
-                </div>
+                </div>--}}
             </div><!-- .col-sm-10 -->
         </div><!-- .content-wrapper -->
     </div><!-- .section-wrapper -->

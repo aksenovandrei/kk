@@ -1006,7 +1006,7 @@ ul.list {
     }
 
     h6 {
-        font-size: 1.1em;
+        font-size: 1em;
     }
 }
 
@@ -2265,7 +2265,7 @@ p span {
     position: absolute;
     top: 0;
     right: 0;
-    color: #fff;
+    color: #252525;
     font-weight: bold;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.19);
     font-size: 40px;
@@ -2291,6 +2291,18 @@ p span {
     text-align: left;
 }
 
+@media screen and (max-width: 991px) {
+    .modal .modal-dialog {
+        width: 93%;
+        margin: 20px auto;
+    }
+
+    .modal .close {
+        top: 2px;
+        right: 2px;
+    }
+}
+
 @media screen and (max-width: 639px) {
     .modal-body p {
         font-size: 0.6em;
@@ -2305,19 +2317,15 @@ p span {
     }
 }
 
-@media (min-width: 768px) {
-    .modal .modal-dialog {
-        width: 60%;
-        margin: 20px;
-    }
-
+@media screen and (max-width: 500px) {
     .modal .close {
-        top: 2px;
-        right: 2px;
+        font-size: 25px;
     }
 }
 
-@media (min-width: 992px) {
+
+
+/*@media (min-width: 992px) {
     .modal .modal-dialog {
         width: 700px;
         margin: 40px auto;
@@ -2336,7 +2344,7 @@ p span {
     .modal.full-size .modal-content .modal-body {
         padding: 30px 80px;
     }
-}
+}*/
 
 @media (min-width: 1200px) {
 }
@@ -2355,6 +2363,13 @@ p span {
     width: calc(50% - 20px);
     height: auto;
     margin: 10px 0;
+}
+
+@media screen and (max-width: 693px) {
+    .modalSlider .item {
+        width: 70%;
+        margin: 10px auto;
+    }
 }
 
 .modalSlider .item img {
@@ -2500,6 +2515,15 @@ p span {
 
     .main-content *.section-title ~ h6 {
         text-align: center;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .tabpanel.styled-tabs ul.nav > li > a {
+        line-height: 1.5;
+        width: 85%;
+        display: block;
+        margin: 0 auto;
     }
 }
 
@@ -2661,6 +2685,11 @@ p span {
 #services2 .tabpanel.styled-tabs .tab-content > .tab-pane ul {
     height: auto;
 }
+
+#services2 .servs-content {
+    width: 740px;
+}
+
 @media screen and (max-width: 1600px) {
     .tabpanel.styled-tabs .tab-content > .tab-pane ul {
         height: 170px;
@@ -2669,6 +2698,9 @@ p span {
 @media screen and (max-width: 1200px) {
     .tabpanel.styled-tabs .tab-content > .tab-pane ul {
         height: 205px;
+    }
+    #services2 .servs-content {
+        width: auto;
     }
 }
 
@@ -2845,8 +2877,8 @@ small.help-block {
         margin: 0 auto;
     }
 
-    .client-wrapper img {
-        width: 60%;
+    .reviews .client {
+        width: 40%;
     }
 
     .review-item:before {
@@ -3043,9 +3075,12 @@ label input:checked ~ .checkmark {
     right: 0;
     width: 20px;
     height: 20px;
-    -webkit-transform: rotate(-45deg);
+    /*-webkit-transform: rotate(-45deg);
     -ms-transform: rotate(-45deg);
-    transform: rotate(-45deg);
+    transform: rotate(-45deg);*/
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
     -webkit-transition: -webkit-transform 0.2s;
     transition: -webkit-transform 0.2s;
     -o-transition: transform 0.2s;
@@ -3068,9 +3103,9 @@ label input:checked ~ .checkmark {
 }
 
 .arrow-btn:hover {
-    -webkit-transform: rotate(45deg);
+/*    -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
+    transform: rotate(45deg);*/
     border-bottom-color: #ffffff;
     border-right-color: #ffffff;
     cursor: pointer;
@@ -3136,6 +3171,11 @@ li .description {
     width: 95%;
     border-radius: 5px;
 }
+@media screen and (max-width: 991px) {
+    .modal-content img {
+        width: 70%;
+    }
+}
 
 .btn-center {
     display: block;
@@ -3158,7 +3198,7 @@ li .description {
 !important;
 }
 
-#about .clip-img {
+#about1 .clip-img {
     width: 73%;
     display: block;
     margin: 15px auto;
@@ -3248,10 +3288,16 @@ li .description {
     width: 60%;
 }
 
-@media screen and (max-width: 639px) {
-    .slider .slider-item {
-        width: 100%;
-        margin: 15px 0;
+@media screen and (max-width: 1199px) {
+   .alina-photo {
+       width: 125%;
+       height: auto;
+   }
+}
+
+@media screen and (max-width: 992px) {
+    #about7 .form-style > div {
+        width: 80%;
     }
 }
 
@@ -3267,13 +3313,13 @@ li .description {
     }
 }
 
-@media screen and (max-width: 992px) {
-    #about7 .form-style > div {
-        width: 80%;
-    }
-}
 
 @media screen and (max-width: 639px) {
+    .slider .slider-item {
+        width: 100%;
+        margin: 15px 0;
+    }
+
     #about5 h4 {
         margin-top: 15px;
     }
@@ -3290,6 +3336,9 @@ li .description {
 
 .section {
     margin-bottom: 25%;
+}
+.section:last-of-type {
+    margin-bottom: 0;
 }
 
 @media screen and (max-width: 767px) {
@@ -3319,10 +3368,20 @@ li .description {
     }
 }
 
+.gap-block {
+    height: 300px;
+    width: 1px;
+}
+@media screen and (max-width: 1199px) {
+    .gap-block {
+        display: none;
+    }
+}
+
 .upArrow {
     position: fixed;
     bottom: 10%;
-    left: 5%;
+    left: 3%;
     width: 15px;
     height: 15px;
     z-index: 20;
