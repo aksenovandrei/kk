@@ -3287,6 +3287,10 @@ li .description {
     float: right;
     width: 60%;
 }
+.alina-photo {
+    width: 100%;
+    height: auto;
+}
 
 @media screen and (max-width: 1199px) {
    .alina-photo {

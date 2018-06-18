@@ -8,13 +8,58 @@
     z-index: 99;
 }
 .KvPreloaderImage{
-    width: 150px;
-    height: 150px;
+    width: 700px;
+    height: 600px;
     position: absolute;
-    left: 50%;
+    left: 34%;
     top: 50%;
-    /*background-image:url(../img/logo.png); !* this GIF may be your custom one, Here I used a sample *!*/
     background-repeat: no-repeat;
     background-position: center;
     margin: -100px 0 0 -100px;
+}
+.animate{
+    animation-name: loaderAnimation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transform-origin: 8% 18%;
+}
+.KvPreloaderImage svg {
+    animation-name: fade;
+    animation-duration: 3s;
+}
+
+@media screen and (max-width: 1200px) {
+    .KvPreloaderImage svg .logoText {
+        display: none;
+    }
+    .KvPreloaderImage {
+        width: 75%;
+        height: auto;
+        left: 50%;
+        margin-left: -12.5%;
+    }
+}
+@media screen and (max-width: 800px) {
+    .KvPreloaderImage {
+        width: 150%;
+        height: auto;
+        margin-left: -21.5%;
+    }
+}
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes loaderAnimation {
+    0% {
+        transform: rotate(90deg);
+    }
+    100% {
+        transform: rotate(-270deg);
+    }
 }
