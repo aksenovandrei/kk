@@ -4,6 +4,9 @@
             menu: '#menu',
             navigation: false,
             scrollOverflow: true,
+            scrollOverflowOptions: {
+                disablePointer: true
+            },
             scrollingSpeed: 700,
             verticalCentered: true,
             controlArrows: true,
@@ -23,6 +26,17 @@
                 }
             }
         });
+    });
+
+    $(document).ready(function () {
+        console.log (document.querySelector('title').text);
+       if (document.querySelector('title').text === 'О проекте' || document.querySelector('title').text === 'Услуги') {
+           $.fn.fullpage.setAutoScrolling(false);
+           $('body').addClass('fp-responsive');
+           console.log ('true title');
+       } else {
+           $.fn.fullpage.setAutoScrolling(true);
+       }
     });
 
     /*Smooth scroll menu*/

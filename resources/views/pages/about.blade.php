@@ -32,7 +32,6 @@
                 </p>
             </div><!-- .col-sm-10 -->
         </div><!-- .content-wrapper -->
-        <div class="gap-block"></div>
     </div><!-- .section-wrapper -->
 
     <div id="about2" class="section-wrapper clearfix section fp-auto-height"
@@ -58,7 +57,6 @@
                 <h5 class="text-center">Снимите Квартиру с уже готовым под Вас ремонтом</h5>
             </div><!-- .col-sm-10 -->
         </div><!-- .content-wrapper -->
-        <div class="gap-block"></div>
     </div><!-- .section-wrapper -->
 
     <div id="about3" class="section-wrapper clearfix section fp-auto-height"
@@ -153,7 +151,6 @@
                 </section><!-- end: grid -->
             </div><!-- .col-sm-10 -->
         </div><!-- .content-wrapper -->
-        <div class="gap-block"></div>
     </div><!-- .section-wrapper -->
 
     <div id="about4" class="section-wrapper clearfix section fp-auto-height"
@@ -189,10 +186,9 @@
 
             </div><!-- .col-sm-10 -->
         </div><!-- .content-wrapper -->
-        <div class="gap-block"></div>
     </div><!-- .section-wrapper -->
 
-    <div id="about5" class="section-wrapper clearfix section fp-auto-height-responsive"
+    <div id="about5" class="section-wrapper clearfix section fp-auto-height"
          data-custom-background-img="{{asset('img/bg9.jpg')}}">
         <div class="content-wrapper clearfix">
             <div class="col-sm-11 pull-right">
@@ -254,12 +250,11 @@
                 </section><!-- end: .feature-columns -->
 
                 <!-- End: Section content to edit -->
-
             </div><!-- .col-sm-10 -->
         </div><!-- .content-wrapper -->
     </div><!-- .section-wrapper -->
 
-    <div id="about6" class="section-wrapper clearfix section" data-custom-background-img="{{asset('img/bg9.jpg')}}">
+    <div id="about6" class="section-wrapper clearfix section fp-auto-height" data-custom-background-img="{{asset('img/bg9.jpg')}}">
         <div class="content-wrapper clearfix">
 
             <h4 class="section-title">Попробуйте нас в деле<br>
