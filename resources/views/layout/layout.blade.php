@@ -194,6 +194,8 @@
      aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
+            <form class="form-style clearfix form-val" action="{{route('main')}}" method="POST"
+                  role="form" name="form_name"> <!-- убрал класс validate-form-->
             <div class="modal-header">
                 <h4 class="modal-title no-shadow" id="exampleModalLongTitle">Выбранные услуги</h4>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -201,12 +203,13 @@
                 </button>
             </div>
             <div class="modal-body cart-modal">
-                <form class="form-style clearfix form-val" action="{{route('main')}}" method="POST"
-                      role="form" name="form_name"> <!-- убрал класс validate-form-->
+
                 {{ csrf_field() }}
                 <!-- form left col -->
+                    <div class=" form-check">
                     <ul class="content">
                     </ul>
+                    </div>
                         <div class="form-group">
                             <input type="text" required class="text-field form-control required"
                                    data-validation-type="string" id="form-name" placeholder="Ваше имя" name="name"
@@ -230,8 +233,9 @@
                         </div>
                         <div class="form-group form-general-error-container"></div>
 
-                </form>
+
             </div>
+            </form>
         </div>
     </div>
 </div>

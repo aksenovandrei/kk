@@ -895,7 +895,7 @@
             jQuery.each(val, function () {
                 $content.append('<li>'
                     + '<label>'
-                    + '<input name="service[]" type="checkbox" id="'
+                    + '<input checked name="services[]" type="checkbox" id="'
                     + this[0].id + '" value="'
                     + this[0].value + '">'
                     + '<span class="checkmark"></span>'

@@ -13,6 +13,7 @@ class ContactController extends Controller
         return view('pages.main');
     }
     public function store(Request $request){
+        dd($request);
 
         $order = new Order();
         $order->name = $request->name;
@@ -21,8 +22,7 @@ class ContactController extends Controller
         $order->message = $request->message;
 
         $order->save();
-
-        $order->sendEmail($order);
+        /*$order->sendEmail($order);*/
 
         $request->session()->put('userName', $request->name);
         return redirect()->route('thanks');
