@@ -25,11 +25,13 @@ Route::get('/services', ['as' => 'services', function () {
 Route::get('/portfolio', ['as' => 'portfolio', function () {
     return view('pages.portfolio');
 }]);
-Route::get('/vacancies', ['as' => 'vacancies', 'uses' => 'VacancyController@show']);
-Route::post('/vacancies', ['as' => 'vacancies', 'uses' => 'VacancyController@store']);
+//Route::get('/vacancies', ['as' => 'vacancies', 'uses' => 'VacancyController@show']);
+//Route::post('/vacancies', ['as' => 'vacancies', 'uses' => 'VacancyController@store']);
 Route::get('/contact', ['as' => 'contact', function () {
     return view('pages.contact');
 }]);
+
 Route::get('/thanks', ['as' => 'thanks', function () {
     return view('pages.thanks');
 }]);
+
