@@ -29,11 +29,9 @@
     });
 
     $(document).ready(function () {
-        console.log (document.querySelector('title').text);
        if (document.querySelector('title').text === 'О проекте' || document.querySelector('title').text === 'Услуги') {
            $.fn.fullpage.setAutoScrolling(false);
            $('body').addClass('fp-responsive');
-           console.log ('true title');
        } else {
            $.fn.fullpage.setAutoScrolling(true);
        }
@@ -76,12 +74,11 @@
         }, 200);
     });
 
-    $('.nav-tabs li').on('click', function () {
+    /*$('.nav-tabs li').on('click', function () {
         setTimeout(function () {
             $.fn.fullpage.reBuild();
         }, 500);
-
-    });
+    });*/
 
     /*O[en-close menu on mobile devices*/
     $(document).on('click', '#mobile-menu-icon', function () {

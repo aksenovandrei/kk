@@ -2939,7 +2939,8 @@ label {
 
 @media screen and (max-width: 639px) {
     label {
-        font-size: 12px;
+        font-size: 11px;
+        margin-right: 0;
     }
 }
 
@@ -2982,8 +2983,7 @@ label:hover {
 }
 
 .modal-body .checkmark {
-    left: 0;
-
+    left: -30px;
 }
 
 label input:checked ~ .checkmark {
@@ -3124,38 +3124,32 @@ label input:checked ~ .checkmark {
     transform: rotate(-135deg);
 }
 
+@media screen and (max-width: 639px) {
+    .arrow-btn {
+        width: 15px;
+        height: 15px;
+    }
+}
+
 li .description {
     display: none;
 }
 
 .tabpanel.styled-tabs .tab-content > .tab-pane p.description {
     font-size: 0.8em;
-    width: 85%;
-    position: absolute;
-    top: 28px;
-    left: 32px;
-    background: white;
-    color: black;
-    padding: 15px;
-    z-index: 5;
-    margin: 0;
 }
-.tabpanel.styled-tabs .tab-content > .tab-pane p.description:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 50px;
-    height: 50px;
-    border-bottom: solid 5px white;
-    border-left: solid 5px white;
+
+@media screen and (max-width: 639px) {
+    .tabpanel.styled-tabs .tab-content > .tab-pane p.description {
+        font-size: 11px;
+    }
 }
 
 .tabpanel.styled-tabs .servs-content > .tab-pane ul li {
     padding-left: 30px;
 }
 
-.modal-body label {
+.modal-body .content li {
     padding-left: 30px;
 }
 
