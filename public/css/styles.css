@@ -2982,6 +2982,12 @@ label:hover {
     left: -30px;
 }
 
+@media screen and (max-width: 639px) {
+    .checkmark {
+        top: -4px;
+    }
+}
+
 .modal-body .checkmark {
     left: -30px;
 }
