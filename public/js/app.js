@@ -900,15 +900,17 @@
                     + this[0].id + '" value="'
                     + this[0].value + '">'
                     + '<span class="checkmark"></span>'
-                    + this[0].value + ''
                     + '</label>'
+                    + '<span class="itemName">'
+                    + this[0].value
+                    + '</span>'
                     + '</li>');
             });
         });
     });
 
-    $content.on('click', 'li', function (e) {
-        var $thisId = $(this).find("input").attr("id");
+    $content.on('click', '.checkmark', function (e) {
+        var $thisId = $(this).prev("input").attr("id");
         var $curInput = $('input#' + $thisId);
         $curInput.closest('label').toggleClass('active-row');
 

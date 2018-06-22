@@ -2994,7 +2994,8 @@ label:hover {
     color: #252525;
 }
 
-.checkmark {
+.checkmark,
+.modal-body .checkmark {
     display: inline-block;
     height: 20px;
     width: 20px;
@@ -3005,13 +3006,15 @@ label:hover {
     left: 0;
 }
 @media screen and (max-width: 1791px) {
-    .checkmark {
+    .checkmark,
+    .modal-body .checkmark {
         top: 2px;
     }
 }
 
 @media screen and (max-width: 639px) {
-    .checkmark {
+    .checkmark,
+    .modal-body .checkmark {
         top: 1px;
     }
 }
@@ -3028,6 +3031,7 @@ label input:checked ~ .checkmark {
 .modal-body label input ~ .checkmark {
     background: url("../img/checkmark-modal.png");
     background-size: cover;
+    position: relative;
 }
 
 .modal-body ul span {
@@ -3035,6 +3039,7 @@ label input:checked ~ .checkmark {
 }
 .modal-body ul li label {
     color: #252525;
+    width: 0;
 }
 
 .modal-body .form-group input {
