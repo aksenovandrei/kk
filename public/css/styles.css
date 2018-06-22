@@ -3032,6 +3032,7 @@ label input:checked ~ .checkmark {
     background: url("../img/checkmark-modal.png");
     background-size: cover;
     position: relative;
+    cursor: pointer;
 }
 
 .modal-body ul span {
