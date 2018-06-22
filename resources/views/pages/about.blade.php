@@ -257,8 +257,8 @@
     <div id="about6" class="section-wrapper clearfix section fp-auto-height" data-custom-background-img="{{asset('img/bg9.jpg')}}">
         <div class="content-wrapper clearfix">
 
-            <h4 class="section-title">Попробуйте нас в деле<br>
-                Закажите детальный контент-аудит Вашего бизнеса и узнайте, из-за чего Вы ежедневно теряете клиентов</h4>
+            <h4 class="section-title">Попробуйте нас в деле</h4>
+                <p class="pull-right">Закажите детальный контент-аудит Вашего бизнеса и узнайте, из-за чего Вы ежедневно теряете клиентов</p>
             <div class="col-sm-10 pull-right">
                 <div class="contact-details col-sm-5 col-md-5">
                 </div>

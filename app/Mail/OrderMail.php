@@ -15,19 +15,21 @@ class OrderMail extends Mailable
     protected $email;
     protected $phone;
     protected $msg;
+    protected $services;
 
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct($name, $email, $phone, $msg)
+    public function __construct($name, $email, $phone, $msg, $services)
     {
 
         $this->name = $name;
         $this->email = $email;
         $this->phone = $phone;
         $this->msg = $msg;
+        $this->services = $services;
 //        dd($this->msg);
     }
 
@@ -40,14 +42,15 @@ class OrderMail extends Mailable
     {
 //        dd(111);
         return $this->view('emails.orderToEmail')
-            ->with(
-                [
-                    'name' => $this->name,
-                    'email' => $this->email,
-                    'phone' => $this->phone,
-                    'msg' => $this->msg,
-                ]
-            )
-            ->subject('Заявка с сайта Контент Квартира');
+                    ->with(
+                        [
+                            'name' => $this->name,
+                            'email' => $this->email,
+                            'phone' => $this->phone,
+                            'msg' => $this->msg,
+                            'services' =>  $this->services
+                        ]
+                    )
+                    ->subject('Заявка с сайта Контент Квартира');
     }
 }

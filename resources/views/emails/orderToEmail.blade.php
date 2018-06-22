@@ -16,6 +16,12 @@
 @if($msg)
     <p>Сообщение: {!! $msg !!}</p>
 @endif
-{{--<p>Имя: {{ $message }}</p>--}}
+@if($services)
+    <p><b>Перечень работ:</b></p>
+    @foreach($services as $service)
+        <span>- {{ $service }}</span><br>
+        @endforeach
+@endif
+
 </body>
 </html>

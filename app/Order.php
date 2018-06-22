@@ -14,7 +14,8 @@ class Order extends Model
         $email = $order->email;
         $phone = $order->phone;
         $msg = $order->message;
+        $services = unserialize($order->user_order);
 
-        Mail::to('aksenov.andrew@gmail.com')->send(new OrderMail($name, $email, $phone, $msg));
+        Mail::to('aksenov.andrew@gmail.com')->send(new OrderMail($name, $email, $phone, $msg,$services));
     }
 }
