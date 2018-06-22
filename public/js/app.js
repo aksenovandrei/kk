@@ -1,12 +1,10 @@
 (function ($) {
+
     $(document).ready(function () {
         $('#fullpage').fullpage({
             menu: '#menu',
             navigation: false,
             scrollOverflow: true,
-            scrollOverflowOptions: {
-                disablePointer: true
-            },
             scrollingSpeed: 700,
             verticalCentered: true,
             controlArrows: true,
@@ -24,17 +22,20 @@
                 } else {
                     $('.upArrow').show(200);
                 }
+            },
+            afterResponsive: function(isResponsive){
+                $('body').addClass('fp-responsive');
             }
         });
     });
 
     $(document).ready(function () {
-       if (document.querySelector('title').text === 'О проекте' || document.querySelector('title').text === 'Услуги') {
-           $.fn.fullpage.setAutoScrolling(false);
-           $('body').addClass('fp-responsive');
-       } else {
-           $.fn.fullpage.setAutoScrolling(true);
-       }
+        if (document.querySelector('title').text === 'О проекте' || document.querySelector('title').text === 'Услуги') {
+            $.fn.fullpage.setAutoScrolling(false);
+            $('body').addClass('fp-responsive');
+        } else {
+            $.fn.fullpage.setAutoScrolling(true);
+        }
     });
 
     /*Smooth scroll menu*/
@@ -52,7 +53,7 @@
     });
 
     /*Smooth scroll moreButton*/
-    $('#main .btn-inrow:last-of-type').on('click', function (e) {
+    $('#main .btn-inrow:last-of-type, #services2 .btn-inrow:last-of-type').on('click', function (e) {
         e.preventDefault();
         e.stopPropagation();
         $.fn.fullpage.moveTo(2);

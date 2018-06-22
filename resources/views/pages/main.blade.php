@@ -16,7 +16,7 @@
                     <p class="btn-inrow"><a href="{{route('services')}}"
                                             class="link-scroll btn btn-outline-inverse btn-yellow btn-lg">Заказать
                             услугу</a></p>
-                    <p class="btn-inrow"><a href="#about-title" class="link-scroll btn btn-outline-inverse btn-lg">Узнать
+                    <p class="btn-inrow"><a href="javascript.void(0);" class="link-scroll btn btn-outline-inverse btn-lg">Узнать
                             больше</a></p>
                 </section>
 
