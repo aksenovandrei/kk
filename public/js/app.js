@@ -67,9 +67,9 @@
         $.fn.fullpage.moveTo(section);
     });
 
-    $('.arrow-btn').on("click", function () {
+    $('.itemName, .arrow-btn').on("click", function () {
         $(this).siblings('.description').toggle(200);
-        $(this).toggleClass('arrow-btn-up');
+        // $(this).toggleClass('arrow-btn-up');
         setTimeout(function () {
             $.fn.fullpage.reBuild();
         }, 200);

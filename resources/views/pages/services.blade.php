@@ -41,7 +41,7 @@
                         <div role="tabpanel" class="tab-pane fade in active" id="tabs-tab1">
                             <h4>Контент</h4>
                             <p>Внедряемся в Ваш бизнес как готовый контент-отдел<br>
-                                Экономим Вам 3+ часа в день<br>0
+                                Экономим Вам 3+ часа в день<br>
                                 Создаем контент люкс-уровня<br>
                                 Предлагаем решения, а не ждем их от Вас
                             </p>
@@ -50,8 +50,8 @@
                                     <label>
                                         <input name="service[]" type="checkbox" id="num1" value="Ведение блогов (личных и компаний)">
                                         <span class="checkmark"></span>
-                                        Ведение личных блогов
                                     </label>
+                                    <span class="itemName">Ведение личных блогов</span>
                                         <div class="arrow-btn"></div>
                                     <p class="description">Подойдет для экспертов, коучей, психологов, тренеров, наставников - всех, кто хочет поделиться своими знаниями с аудиторией и сформировать доверие к себе благодаря качественному контенту.</p>
                                 </li>
@@ -59,8 +59,8 @@
                                     <label>
                                         <input name="service[]" type="checkbox" id="num2" value="Ведение страниц в соцсетях (личных и компаний)">
                                         <span class="checkmark"></span>
-                                        Ведение корпоративных блогов
                                     </label>
+                                    <span class="itemName">Ведение корпоративных блогов</span>
                                     <div class="arrow-btn"></div>
                                     <p class="description">Подойдет для компаний, которые хотят делиться с аудиторией полезным контентом и собирать вокруг себя лояльную аудиторию. А также для проектов, в которых объединяется несколько экспертов.</p>
                                 </li>
@@ -68,8 +68,9 @@
                                     <label>
                                         <input name="service[]" type="checkbox" id="num3" value="Написание репутационных статей">
                                         <span class="checkmark"></span>
-                                        Ведение страниц ВКонтакте
+
                                     </label>
+                                    <span class="itemName">Ведение страниц ВКонтакте</span>
                                     <div class="arrow-btn"></div>
                                     <p class="description">Включает в себя создание контент-планов, генерацию контента и регулярный постинг, работу с аудиторией, проведение активностей и продвижение.</p>
                                 </li>
@@ -77,8 +78,9 @@
                                     <label>
                                         <input name="service[]" type="checkbox" id="num4" value="Внедрение контент-маркетинга в Ваш бизнес “под ключ”">
                                         <span class="checkmark"></span>
-                                        Ведение страниц в Facebook
+
                                     </label>
+                                    <span class="itemName">Ведение страниц в Facebook</span>
                                     <div class="arrow-btn"></div>
                                     <p class="description">Включает в себя создание контент-планов, генерацию контента и регулярный постинг, работу с аудиторией, проведение активностей и продвижение.</p>
                                 </li>
@@ -86,8 +88,9 @@
                                     <label>
                                         <input name="service[]" type="checkbox" id="num5" value="Внедрение контент-маркетинга в Ваш бизнес “под ключ”">
                                         <span class="checkmark"></span>
-                                        Ведение страниц в Instagram
+
                                     </label>
+                                    <span class="itemName">Ведение страниц в Instagram</span>
                                     <div class="arrow-btn"></div>
                                     <p class="description">Включает в себя создание контент-планов, генерацию контента и регулярный постинг, работу с аудиторией, проведение активностей и продвижение.</p>
                                 </li>
@@ -95,8 +98,9 @@
                                     <label>
                                         <input name="service[]" type="checkbox" id="num6" value="Внедрение контент-маркетинга в Ваш бизнес “под ключ”">
                                         <span class="checkmark"></span>
-                                        Ведение Telegram-каналов
+
                                     </label>
+                                    <span class="itemName">Ведение Telegram-каналов</span>
                                     <div class="arrow-btn"></div>
                                     <p class="description">Включает в себя создание контент-планов, генерацию контента и регулярный постинг, проведение активностей и продвижение.</p>
                                 </li>
@@ -104,8 +108,9 @@
                                     <label>
                                         <input name="service[]" type="checkbox" id="num7" value="Внедрение контент-маркетинга в Ваш бизнес “под ключ”">
                                         <span class="checkmark"></span>
-                                        Написание сценариев для видео
+
                                     </label>
+                                    <span class="itemName">Написание сценариев для видео</span>
                                     <div class="arrow-btn"></div>
                                     <p class="description">Подойдет для проектов, которые делятся с аудиторией полезной информацией в видеоформате.</p>
                                 </li>
@@ -113,8 +118,9 @@
                                     <label>
                                         <input name="service[]" type="checkbox" id="num8" value="Внедрение контент-маркетинга в Ваш бизнес “под ключ”">
                                         <span class="checkmark"></span>
-                                        Написание лид-магнитов
+
                                     </label>
+                                    <span class="itemName">Написание лид-магнитов</span>
                                     <div class="arrow-btn"></div>
                                     <p class="description">Подготовка полезного материала, с помощью которого вы сможете собирать подписную базу.</p>
                                 </li>
@@ -133,51 +139,57 @@
                                     <label>
                                         <input name="service[]" type="checkbox" id="num9" value="Написание текстов на лендинги, посадочные страницы, страницы лид-магнитов">
                                         <span class="checkmark"></span>
-                                        Написание текста для лендинга
+
                                     </label>
+                                    <span class="itemName">Написание текста для лендинга</span>
                                 </li>
                                 <li>
                                     <label>
                                         <input name="service[]" type="checkbox" id="num10" value="Написание коммерческих предложений">
                                         <span class="checkmark"></span>
-                                        Написание текста для посадочной страницы
+
                                     </label>
+                                    <span class="itemName">Написание текста для посадочной страницы</span>
                                 </li>
                                 <li>
                                     <label>
                                         <input name="service[]" type="checkbox" id="num11" value="Написание писем в email-рассылки и чат-бот рассылки">
                                         <span class="checkmark"></span>
-                                        Написание текста на страницу лид-магнита
+
                                     </label>
+                                    <span class="itemName">Написание текста на страницу лид-магнита</span>
                                 </li>
                                 <li>
                                     <label>
                                         <input name="service[]" type="checkbox" id="num12" value="Тексты для корпоративных сайтов и другие копирайтинг-задачи">
                                         <span class="checkmark"></span>
-                                        Написание текстов на сайт
+
                                     </label>
+                                    <span class="itemName">Написание текстов на сайт</span>
                                 </li>
                                 <li>
                                     <label>
                                         <input name="service[]" type="checkbox" id="num13" value="Тексты для корпоративных сайтов и другие копирайтинг-задачи">
                                         <span class="checkmark"></span>
-                                        Написание коммерческих предложений
+
                                     </label>
+                                    <span class="itemName">Написание коммерческих предложений</span>
                                 </li>
                                 <li>
                                     <label>
                                         <input name="service[]" type="checkbox" id="num14" value="Тексты для корпоративных сайтов и другие копирайтинг-задачи">
                                         <span class="checkmark"></span>
-                                        Написание писем в email-рассылку
+
                                     </label>
+                                    <span class="itemName">Написание писем в email-рассылку</span>
                                 </li>
                                 <li>
                                     <label>
                                         <input name="service[]" type="checkbox" id="num15" value="Тексты для корпоративных сайтов и другие копирайтинг-задачи">
                                         <span class="checkmark"></span>
-                                        Написание цепочек сообщений для чат-ботов
 
                                     </label>
+                                    <span class="itemName">Написание цепочек сообщений для чат-ботов</span>
                                     <div class="arrow-btn"></div>
                                     <p class="description">Создадим тексты в ритме мессенджеров и соцсетей. Чтобы кратко и емко доносить то, что вы хотите сказать своим подписчикам.</p>
                                 </li>
@@ -185,8 +197,9 @@
                                     <label>
                                         <input name="service[]" type="checkbox" id="num16" value="Тексты для корпоративных сайтов и другие копирайтинг-задачи">
                                         <span class="checkmark"></span>
-                                        Написание сценариев продающих видео
+
                                     </label>
+                                    <span class="itemName">Написание сценариев продающих видео</span>
                                     <div class="arrow-btn"></div>
                                     <p class="description">Подойдет для видеорекламы, роликов на лендинги, посадочные страницы, видеопрезентаций.</p>
                                 </li>
@@ -194,8 +207,9 @@
                                     <label>
                                         <input name="service[]" type="checkbox" id="num17" value="Тексты для корпоративных сайтов и другие копирайтинг-задачи">
                                         <span class="checkmark"></span>
-                                        Написаний текстов рекламных постов
+
                                     </label>
+                                    <span class="itemName">Написаний текстов рекламных постов</span>
                                     <div class="arrow-btn"></div>
                                     <p class="description">Анализируем то, о чем говорит и чего хочет ваша аудитория. А после переносим это в текст, чтобы ваше предложение било прямо в цель.</p>
                                 </li>
@@ -203,8 +217,9 @@
                                     <label>
                                         <input name="service[]" type="checkbox" id="num18" value="Тексты для корпоративных сайтов и другие копирайтинг-задачи">
                                         <span class="checkmark"></span>
-                                        Разработка названий и слоганов
+
                                     </label>
+                                    <span class="itemName">Разработка названий и слоганов</span>
                                     <div class="arrow-btn"></div>
                                     <p class="description">Команда копирайтеров проводит брейншторм, анализирует продукт и аудиторию, подбирает ассоциативный ряд и в результате предлагает вам 5 вариантов слоганов/названий.</p>
                                 </li>
@@ -223,8 +238,9 @@
                                     <label>
                                         <input name="service[]" type="checkbox" id="num19" value="Разработка контент-стратегий">
                                         <span class="checkmark"></span>
-                                        Разработка маркетинговой стратегии
+
                                     </label>
+                                    <span class="itemName">Разработка маркетинговой стратегии</span>
                                     <div class="arrow-btn"></div>
                                     <p class="description">Маркетолог анализирует Вашу компанию, рынок, конкурентов и целевую аудиторию. Разрабатывает путь клиента - от первичного интереса до продажи. На основе этого под конкретную задачу создается решение - подбираются нужные в Вашем случае инструменты (например, сайт, социальные сети, реклама, seo). Прописывается пошаговый план - что и как выполнять, какие показатели отслеживать, чтобы добиться цели.</p>
                                 </li>
@@ -232,8 +248,9 @@
                                     <label>
                                         <input name="service[]" type="checkbox" id="num20" value="Разработка стратегий под запуск">
                                         <span class="checkmark"></span>
-                                        Разработка контент-стратегии
+
                                     </label>
+                                    <span class="itemName">Разработка контент-стратегии</span>
                                     <div class="arrow-btn"></div>
                                     <p class="description">Не знаете за что хвататься - Facebook, Instagram или лучше вложиться в собственный блог? На основе полученных и проанализированных данных маркетолог создает решение, которое позволяет за меньшие деньги получить максимум результата из вашего присутствия в социальных сетях, блоге, работе с блоггерами или сторонних ресурсах - лидеров мнений. Маркетолог определяет что конкретно в вашем случае оптимально использовать. Также Вы получаете общую концепцию, позиционирование и контент-планы на работы в данных ресурсах.</p>
                                 </li>
@@ -241,8 +258,9 @@
                                     <label>
                                         <input name="service[]" type="checkbox" id="num22" value="Разработка маркетинг-стратегий">
                                         <span class="checkmark"></span>
-                                        Разработка стратегии под запуск
+
                                     </label>
+                                    <span class="itemName">Разработка стратегии под запуск</span>
                                     <div class="arrow-btn"></div>
                                     <p class="description">Подойдет инфо предпринимателям, коучам и тренерам. Маркетолог проанализирует Ваш продукт, рынок, конкурентов ,целевую аудиторию и составит стратегию продажи с нуля. Также Вы получите детально проработанную воронку - как будет проходить реклама, какие страницы нужны для продажи, какие письма, контент и т.д.</p>
                                 </li>
@@ -250,8 +268,9 @@
                                     <label>
                                         <input name="service[]" type="checkbox" id="num22" value="Разработка воронок писем">
                                         <span class="checkmark"></span>
-                                        Разработка воронки писем
+
                                     </label>
+                                    <span class="itemName">Разработка воронки писем</span>
                                     <div class="arrow-btn"></div>
                                     <p class="description">Маркетолог под Вашу задачу разработает серию писем под нужные сегменты аудитории. Вы получите документ с концепцией, планом выхода писем и тезисно что должно быть в каждом письме.</p>
                                 </li>
@@ -259,8 +278,9 @@
                                     <label>
                                         <input name="service[]" type="checkbox" id="num23" value="Разработка воронок писем">
                                         <span class="checkmark"></span>
-                                        Разработка контент-плана для соцсетей
+
                                     </label>
+                                    <span class="itemName">Разработка контент-плана для соцсетей</span>
                                     <div class="arrow-btn"></div>
                                     <p class="description">Маркетолог проведет анализ и на его основе создаст концепцию и сетку постов на месяц</p>
                                 </li>
@@ -268,8 +288,9 @@
                                     <label>
                                         <input name="service[]" type="checkbox" id="num24" value="Разработка воронок писем">
                                         <span class="checkmark"></span>
-                                        Разработка контент-плана для блога
+
                                     </label>
+                                    <span class="itemName">Разработка контент-плана для блога</span>
                                     <div class="arrow-btn"></div>
                                     <p class="description">Маркетолог проведет анализ и на его основе создаст концепцию, позиционирование, рубрики, формат статей, рекомендации для копирайтеров по реализации.</p>
                                 </li>
@@ -288,22 +309,25 @@
                                     <label>
                                         <input name="service[]" type="checkbox" id="num25" value="Сбор участников на онлайн и живые события">
                                         <span class="checkmark"></span>
-                                        Продвижение публикаций в соцсетях
+
                                     </label>
+                                    <span class="itemName">Продвижение публикаций в соцсетях</span>
                                 </li>
                                 <li>
                                     <label>
                                         <input name="service[]" type="checkbox" id="num26" value="Сбор заявок на покупку продуктов">
                                         <span class="checkmark"></span>
-                                        Лидогенерация в соцсетях
+
                                     </label>
+                                    <span class="itemName">Лидогенерация в соцсетях</span>
                                 </li>
                                 <li>
                                     <label>
                                         <input name="service[]" type="checkbox" id="num27" value="Продвижение сообществ в соцсетях">
                                         <span class="checkmark"></span>
-                                        Комплексное продвижение страниц в соцсетях
+
                                     </label>
+                                    <span class="itemName">Комплексное продвижение страниц в соцсетях</span>
                                 </li>
                             </ul>
                         </div>
@@ -320,57 +344,65 @@
                                     <label>
                                         <input name="service[]" type="checkbox" id="num28" value="Создание сайтов и блогов">
                                         <span class="checkmark"></span>
-                                        Создание блога/корпоративного сайта
+
                                     </label>
+                                    <span class="itemName">Создание блога/корпоративного сайта</span>
                                 </li>
                                 <li>
                                     <label>
                                         <input name="service[]" type="checkbox" id="num29" value="Создание лендингов, посадочных страниц “под ключ”">
                                         <span class="checkmark"></span>
-                                        Создание лендинга
+
                                     </label>
+                                    <span class="itemName">Создание лендинга</span>
                                 </li>
                                 <li>
                                     <label>
                                         <input name="service[]" type="checkbox" id="num30" value="Создание чат-ботов">
                                         <span class="checkmark"></span>
-                                        Создание посадочной страницы
+
                                     </label>
+                                    <span class="itemName">Создание посадочной страницы</span>
                                 </li>
                                 <li>
                                     <label>
                                         <input name="service[]" type="checkbox" id="num31" value="Реализация технических задач любой сложности">
                                         <span class="checkmark"></span>
-                                        Создание страницы лид-магнита
+
                                     </label>
+                                    <span class="itemName">Создание страницы лид-магнита</span>
                                 </li>
                                 <li>
                                     <label>
                                         <input name="service[]" type="checkbox" id="num32" value="Реализация технических задач любой сложности">
                                         <span class="checkmark"></span>
-                                        Настройка готовых обучающих платформ
+
                                     </label>
+                                    <span class="itemName">Настройка готовых обучающих платформ</span>
                                 </li>
                                 <li>
                                     <label>
                                         <input name="service[]" type="checkbox" id="num33" value="Реализация технических задач любой сложности">
                                         <span class="checkmark"></span>
-                                        Настройка рассылки писем
+
                                     </label>
+                                    <span class="itemName">Настройка рассылки писем</span>
                                 </li>
                                 <li>
                                     <label>
                                         <input name="service[]" type="checkbox" id="num34" value="Реализация технических задач любой сложности">
                                         <span class="checkmark"></span>
-                                        Создание чат-ботов
+
                                     </label>
+                                    <span class="itemName">Создание чат-ботов</span>
                                 </li>
                                 <li>
                                     <label>
                                         <input name="service[]" type="checkbox" id="num35" value="Реализация технических задач любой сложности">
                                         <span class="checkmark"></span>
-                                        Создание собственной обучающей платформы
+
                                     </label>
+                                    <span class="itemName">Создание собственной обучающей платформы</span>
                                 </li>
                             </ul>
                         </div>
@@ -386,57 +418,65 @@
                                     <label>
                                         <input name="service[]" type="checkbox" id="num36" value="Дизайн продающих страниц">
                                         <span class="checkmark"></span>
-                                        Лендинг
+
                                     </label>
+                                    <span class="itemName">Лендинг</span>
                                 </li>
                                 <li>
                                     <label>
                                         <input name="service[]" type="checkbox" id="num37" value="Дизайн корпоративных сайтов и блогов">
                                         <span class="checkmark"></span>
-                                        Посадочная страница
+
                                     </label>
+                                    <span class="itemName">Посадочная страница</span>
                                 </li>
                                 <li>
                                     <label>
                                         <input name="service[]" type="checkbox" id="num38" value="Оформление коммерческих предложений">
                                         <span class="checkmark"></span>
-                                        Страница лид-магнита
+
                                     </label>
+                                    <span class="itemName">Страница лид-магнита</span>
                                 </li>
                                 <li>
                                     <label>
                                         <input name="service[]" type="checkbox" id="num39" value="Решение других дизайн-задач для Вашего бизнеса">
                                         <span class="checkmark"></span>
-                                        Корпоративный сайт/Блог
+
                                     </label>
+                                    <span class="itemName">Корпоративный сайт/Блог</span>
                                 </li>
                                 <li>
                                     <label>
                                         <input name="service[]" type="checkbox" id="num40" value="Решение других дизайн-задач для Вашего бизнеса">
                                         <span class="checkmark"></span>
-                                        Коммерческое предложение
+
                                     </label>
+                                    <span class="itemName">Коммерческое предложение</span>
                                 </li>
                                 <li>
                                     <label>
                                         <input name="service[]" type="checkbox" id="num41" value="Решение других дизайн-задач для Вашего бизнеса">
                                         <span class="checkmark"></span>
-                                        Брендинг для соцсетей
+
                                     </label>
+                                    <span class="itemName">Брендинг для соцсетей</span>
                                 </li>
                                 <li>
                                     <label>
                                         <input name="service[]" type="checkbox" id="num42" value="Решение других дизайн-задач для Вашего бизнеса">
                                         <span class="checkmark"></span>
-                                        Инфографики
+
                                     </label>
+                                    <span class="itemName">Инфографики</span>
                                 </li>
                                 <li>
                                     <label>
                                         <input name="service[]" type="checkbox" id="num43" value="Решение других дизайн-задач для Вашего бизнеса">
                                         <span class="checkmark"></span>
-                                        Другие работы по дизайну
+
                                     </label>
+                                    <span class="itemName">Другие работы по дизайну</span>
                                 </li>
                             </ul>
                         </div>

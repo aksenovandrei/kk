@@ -300,5 +300,6 @@
                 </div><!-- end: CONTACT FORM -->
             </div><!-- .col-sm-10 -->
         </div><!-- .content-wrapper -->
+        <div class="gap-block"></div>
     </div><!-- .section-wrapper -->
 @stop

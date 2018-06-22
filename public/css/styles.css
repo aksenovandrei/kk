@@ -1745,6 +1745,12 @@ p span {
     }
 }
 
+@media screen and (max-width: 639px) {
+    .contact-details p a {
+        font-size: 12px;
+    }
+}
+
 @media (min-width: 992px) {
     .form-style input.text-field,
     .form-style textarea {
@@ -2684,6 +2690,7 @@ p span {
 }
 #services2 .tabpanel.styled-tabs .tab-content > .tab-pane ul {
     height: auto;
+    width: 100%;
 }
 
 #services2 .servs-content {
@@ -2927,7 +2934,7 @@ small.help-block {
     cursor: pointer;
 }
 
-label {
+label + .itemName {
     font-family: 'Comfortaa', sans-serif;
     font-size: 18px;
     font-weight: 300;
@@ -2935,12 +2942,28 @@ label {
     position: relative;
     margin: 5px 10px 5px 0;
     display: inline;
+    transition: color 0.2s linear;
+}
+
+.tabpanel.styled-tabs .servs-content li label,
+.tabpanel.styled-tabs .servs-content li {
+    cursor: pointer;
+}
+.tabpanel.styled-tabs .servs-content li label {
+    float: left;
+}
+
+.tabpanel.styled-tabs .servs-content > .tab-pane ul li:hover .itemName {
+    color: white;
 }
 
 @media screen and (max-width: 639px) {
     label {
         font-size: 11px;
         margin-right: 0;
+    }
+    #services2 .pull-right {
+        padding: 0;
     }
 }
 
@@ -2978,13 +3001,18 @@ label:hover {
     background: url("../img/checkmark.png");
     background-size: cover;
     position: absolute;
-    top: 0;
-    left: -30px;
+    top: 7px;
+    left: 0;
+}
+@media screen and (max-width: 1791px) {
+    .checkmark {
+        top: 2px;
+    }
 }
 
 @media screen and (max-width: 639px) {
     .checkmark {
-        top: -4px;
+        top: 1px;
     }
 }
 
@@ -3076,14 +3104,14 @@ label input:checked ~ .checkmark {
 }
 
 .arrow-btn {
-    display: inline-block;
+    /*display: inline-block;
     top: 0;
     right: 0;
     width: 20px;
     height: 20px;
-    /*-webkit-transform: rotate(-45deg);
+    !*-webkit-transform: rotate(-45deg);
     -ms-transform: rotate(-45deg);
-    transform: rotate(-45deg);*/
+    transform: rotate(-45deg);*!
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
@@ -3093,10 +3121,19 @@ label input:checked ~ .checkmark {
     transition: transform 0.2s;
     transition: transform 0.2s, -webkit-transform 0.2s;
     position: relative;
-    vertical-align: bottom;
+    vertical-align: bottom;*/
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    background: url(../img/Information.png);
+    background-size: cover;
+    opacity: 0.3;
+    cursor: pointer;
 }
 
-.arrow-btn:after {
+/*.arrow-btn:after {
     content: '';
     width: 11px;
     height: 11px;
@@ -3106,15 +3143,12 @@ label input:checked ~ .checkmark {
     position: absolute;
     top: 0;
     left: 0;
-}
+}*/
 
-.arrow-btn:hover {
-/*    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);*/
-    border-bottom-color: #ffffff;
-    border-right-color: #ffffff;
-    cursor: pointer;
+@media screen and (max-width: 639px) {
+    .arrow-btn {
+        right: -18px;
+    }
 }
 
 .arrow-btn-up {
@@ -3130,12 +3164,12 @@ label input:checked ~ .checkmark {
     transform: rotate(-135deg);
 }
 
-@media screen and (max-width: 639px) {
+/*@media screen and (max-width: 639px) {
     .arrow-btn {
         width: 15px;
         height: 15px;
     }
-}
+}*/
 
 li .description {
     display: none;
@@ -3152,7 +3186,17 @@ li .description {
 }
 
 .tabpanel.styled-tabs .servs-content > .tab-pane ul li {
-    padding-left: 30px;
+    padding-left: 45px;
+}
+@media screen and (max-width: 639px) {
+    .tabpanel.styled-tabs .servs-content > .tab-pane ul li {
+        padding-left: 35px;
+    }
+}
+
+.tabpanel.styled-tabs .servs-content > .tab-pane ul li:hover .arrow-btn {
+    opacity: 0.9;
+    transition: opacity 0.5s linear;
 }
 
 .modal-body .content li {
