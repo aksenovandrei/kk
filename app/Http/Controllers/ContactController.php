@@ -18,25 +18,22 @@ class ContactController extends Controller
 
 
         $order = new Order();
+
         $order->name = $request->name;
         $order->email = $request->email;
         $order->phone = $request->contact_number;
         $order->message = $request->message;
-        $order->user_order = serialize($request->services);
-
-
+        if (!empty($request->services)) {
+            $order->user_order = serialize($request->services);
+        }
+        $order->sendTelegram($order);
+        //сохраняем в БД
         $order->save();
-//        dd($request);
-//        $name = $order->name;
-//        $email = $order->email;
-//        $phone = $order->phone;
-//        $msg = $order->message;
-//        $services = $order->user_order;
-
-//        Mail::to('aksenov.andrew@gmail.com')->send(new OrderMail($order->name, $email, $phone, $msg));
-        $order->sendEmail($order);
-
+        //отправляем письмо
+//        $order->sendEmail($order);
+        //записываем в сессию имя клиента
         $request->session()->put('userName', $request->name);
+
         return redirect()->route('thanks');
 
     }
