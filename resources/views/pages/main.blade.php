@@ -172,7 +172,7 @@
     <div id="reviews" class="section-wrapper clearfix section fp-auto-height-responsive" data-custom-background-img="{{asset('img/bg6.jpg')}}">
         <div class="content-wrapper clearfix">
             <h2 class="section-title slider-title">Отзывы</h2>
-            <div class="col-sm-10 col-md-9 pull-right slickSlider">
+            <div class="col-sm-10 col-md-9 pull-right slider">
                 <div class="item slide">
                     <h4 class="title">Игорь Обуховский</h4>
                     <p>Экс-тренер проекта «Зваженi та щасливi», автор онлайн фитнес-игры «ЖирКиллер»</p>
@@ -200,16 +200,18 @@
                             отзывы</a>
                     </p>
                 </div>
-                {{--<div class="item slide">
+                <div class="item slide">
                     <h4 class="title">Рик Астли</h4>
                     <p>певец, герой мемов<br>Ничего ему не делали, но и он нам, как бы, ничего не платил)))</p>
-                    <iframe width="670" height="287" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0"
+                    <div class="aspect-ratio">
+                        <iframe id="rick" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0"
                             allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
                     <p class="btn-inrow"><a href="{{route('reviews')}}"
                                             class="link-scroll btn btn-yellow btn-outline-inverse btn-lg">Все
                             отзывы</a>
                     </p>
-                </div>--}}
+                </div>
             </div><!-- .col-sm-10 -->
         </div><!-- .content-wrapper -->
     </div><!-- .section-wrapper -->

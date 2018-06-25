@@ -8,7 +8,6 @@
             verticalCentered: true,
             controlArrows: true,
             responsiveWidth: 1200,
-            continuousHorizontal: true,
             afterLoad: function change_bg() {
                 var $section = $('.main-content .section.active');
                 var image = $section.attr('data-custom-background-img');
@@ -24,7 +23,10 @@
                 }
             },
             afterResponsive: function(){
-                $('body').addClass('fp-responsive');
+                if (document.querySelector('title').text === 'О проекте' || document.querySelector('title').text === 'Услуги') {
+                    $('body').addClass('fp-responsive');
+                }
+
                 $('.main-menu li a').on('click', function (e) {
                     e.preventDefault();
                     e.stopPropagation();
@@ -35,13 +37,6 @@
                 });
             }
         });
-    });
-
-    $('.slickSlider').slick({
-        infinite: true,
-        speed: 300,
-        slidesToShow: 1,
-        adaptiveHeight: true
     });
 
     $(document).ready(function () {
@@ -102,17 +97,11 @@
             b.addClass("menu_closed_on_xs").removeClass("menu_opened_on_xs").slideUp("fast", function () {
                 a.removeClass("active")
             });
-            setTimeout(function () {
-                $.fn.fullpage.reBuild();
-            }, 200);
             return "closed"
         } else {
             b.addClass("menu_opened_on_xs").removeClass("menu_closed_on_xs").slideDown("fast", function () {
                 a.addClass("active")
             });
-            setTimeout(function () {
-                $.fn.fullpage.reBuild();
-            }, 200);
             return "opened"
         }
     });
@@ -139,6 +128,7 @@
                 $('#left-sidebar').show();
             }
         }
+        $.fn.fullpage.reBuild();
     });
 
 

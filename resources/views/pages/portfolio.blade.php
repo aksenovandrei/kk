@@ -146,8 +146,7 @@
         </div><!-- .content-wrapper -->
     </div><!-- .section-wrapper -->
 
-    <div id="portfolio3" class="section-wrapper clearfix section fp-auto-height-responsive" data-custom-background-img="{{asset('img/bg3.jpg')}}"
-         data-centered="false">
+    <div id="portfolio3" class="section-wrapper clearfix section fp-auto-height-responsive" data-custom-background-img="{{asset('img/bg3.jpg')}}">
         <div class="content-wrapper clearfix">
             <div class="col-sm-11 pull-right">
 
