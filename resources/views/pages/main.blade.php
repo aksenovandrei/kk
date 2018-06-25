@@ -172,7 +172,7 @@
     <div id="reviews" class="section-wrapper clearfix section fp-auto-height-responsive" data-custom-background-img="{{asset('img/bg6.jpg')}}">
         <div class="content-wrapper clearfix">
             <h2 class="section-title slider-title">Отзывы</h2>
-            <div class="col-sm-10 col-md-9 pull-right slider">
+            <div class="col-sm-10 col-md-9 pull-right slickSlider">
                 <div class="item slide">
                     <h4 class="title">Игорь Обуховский</h4>
                     <p>Экс-тренер проекта «Зваженi та щасливi», автор онлайн фитнес-игры «ЖирКиллер»</p>

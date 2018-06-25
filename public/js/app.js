@@ -1,5 +1,4 @@
 (function ($) {
-
     $(document).ready(function () {
         $('#fullpage').fullpage({
             menu: '#menu',
@@ -9,6 +8,7 @@
             verticalCentered: true,
             controlArrows: true,
             responsiveWidth: 1200,
+            continuousHorizontal: true,
             afterLoad: function change_bg() {
                 var $section = $('.main-content .section.active');
                 var image = $section.attr('data-custom-background-img');
@@ -23,18 +23,31 @@
                     $('.upArrow').show(200);
                 }
             },
-            afterResponsive: function(isResponsive){
+            afterResponsive: function(){
                 $('body').addClass('fp-responsive');
+                $('.main-menu li a').on('click', function (e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    var section = e.target.getAttribute('href');
+                    $('html, body').animate({
+                        scrollTop: $(section).offset().top
+                    }, 300);
+                });
             }
         });
+    });
+
+    $('.slickSlider').slick({
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        adaptiveHeight: true
     });
 
     $(document).ready(function () {
         if (document.querySelector('title').text === 'О проекте' || document.querySelector('title').text === 'Услуги') {
             $.fn.fullpage.setAutoScrolling(false);
             $('body').addClass('fp-responsive');
-        } else {
-            $.fn.fullpage.setAutoScrolling(true);
         }
     });
 
@@ -81,7 +94,7 @@
         }, 500);
     });*/
 
-    /*O[en-close menu on mobile devices*/
+    /*Open-close menu on mobile devices*/
     $(document).on('click', '#mobile-menu-icon', function () {
         var a = $("#mobile-menu-icon");
         var b = $("#menu");
@@ -89,11 +102,17 @@
             b.addClass("menu_closed_on_xs").removeClass("menu_opened_on_xs").slideUp("fast", function () {
                 a.removeClass("active")
             });
+            setTimeout(function () {
+                $.fn.fullpage.reBuild();
+            }, 200);
             return "closed"
         } else {
             b.addClass("menu_opened_on_xs").removeClass("menu_closed_on_xs").slideDown("fast", function () {
                 a.addClass("active")
             });
+            setTimeout(function () {
+                $.fn.fullpage.reBuild();
+            }, 200);
             return "opened"
         }
     });

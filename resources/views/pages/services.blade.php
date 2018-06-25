@@ -48,7 +48,7 @@
                             <ul>
                                 <li>
                                     <label>
-                                        <input name="service[]" type="checkbox" id="num1" value="Ведение блогов (личных и компаний)">
+                                        <input name="service[]" type="checkbox" id="num1" value="Ведение личных блогов">
                                         <span class="checkmark"></span>
                                     </label>
                                     <span class="itemName">Ведение личных блогов</span>
@@ -57,7 +57,7 @@
                                 </li>
                                 <li>
                                     <label>
-                                        <input name="service[]" type="checkbox" id="num2" value="Ведение страниц в соцсетях (личных и компаний)">
+                                        <input name="service[]" type="checkbox" id="num2" value="Ведение корпоративных блогов">
                                         <span class="checkmark"></span>
                                     </label>
                                     <span class="itemName">Ведение корпоративных блогов</span>
@@ -66,7 +66,7 @@
                                 </li>
                                 <li>
                                     <label>
-                                        <input name="service[]" type="checkbox" id="num3" value="Написание репутационных статей">
+                                        <input name="service[]" type="checkbox" id="num3" value="Ведение страниц ВКонтакте">
                                         <span class="checkmark"></span>
 
                                     </label>
@@ -76,7 +76,7 @@
                                 </li>
                                 <li>
                                     <label>
-                                        <input name="service[]" type="checkbox" id="num4" value="Внедрение контент-маркетинга в Ваш бизнес “под ключ”">
+                                        <input name="service[]" type="checkbox" id="num4" value="Ведение страниц в Facebook">
                                         <span class="checkmark"></span>
 
                                     </label>
@@ -86,7 +86,7 @@
                                 </li>
                                 <li>
                                     <label>
-                                        <input name="service[]" type="checkbox" id="num5" value="Внедрение контент-маркетинга в Ваш бизнес “под ключ”">
+                                        <input name="service[]" type="checkbox" id="num5" value="Ведение страниц в Instagram">
                                         <span class="checkmark"></span>
 
                                     </label>
@@ -96,7 +96,7 @@
                                 </li>
                                 <li>
                                     <label>
-                                        <input name="service[]" type="checkbox" id="num6" value="Внедрение контент-маркетинга в Ваш бизнес “под ключ”">
+                                        <input name="service[]" type="checkbox" id="num6" value="Ведение Telegram-каналов">
                                         <span class="checkmark"></span>
 
                                     </label>
@@ -106,7 +106,7 @@
                                 </li>
                                 <li>
                                     <label>
-                                        <input name="service[]" type="checkbox" id="num7" value="Внедрение контент-маркетинга в Ваш бизнес “под ключ”">
+                                        <input name="service[]" type="checkbox" id="num7" value="Написание сценариев для видео">
                                         <span class="checkmark"></span>
 
                                     </label>
@@ -116,7 +116,7 @@
                                 </li>
                                 <li>
                                     <label>
-                                        <input name="service[]" type="checkbox" id="num8" value="Внедрение контент-маркетинга в Ваш бизнес “под ключ”">
+                                        <input name="service[]" type="checkbox" id="num8" value="Написание лид-магнито">
                                         <span class="checkmark"></span>
 
                                     </label>
@@ -137,7 +137,7 @@
                             <ul>
                                 <li>
                                     <label>
-                                        <input name="service[]" type="checkbox" id="num9" value="Написание текстов на лендинги, посадочные страницы, страницы лид-магнитов">
+                                        <input name="service[]" type="checkbox" id="num9" value="Написание текста для лендинга">
                                         <span class="checkmark"></span>
 
                                     </label>
@@ -145,7 +145,7 @@
                                 </li>
                                 <li>
                                     <label>
-                                        <input name="service[]" type="checkbox" id="num10" value="Написание коммерческих предложений">
+                                        <input name="service[]" type="checkbox" id="num10" value="Написание текста для посадочной страницы">
                                         <span class="checkmark"></span>
 
                                     </label>
@@ -153,7 +153,7 @@
                                 </li>
                                 <li>
                                     <label>
-                                        <input name="service[]" type="checkbox" id="num11" value="Написание писем в email-рассылки и чат-бот рассылки">
+                                        <input name="service[]" type="checkbox" id="num11" value="Написание текста на страницу лид-магнита">
                                         <span class="checkmark"></span>
 
                                     </label>
@@ -161,7 +161,7 @@
                                 </li>
                                 <li>
                                     <label>
-                                        <input name="service[]" type="checkbox" id="num12" value="Тексты для корпоративных сайтов и другие копирайтинг-задачи">
+                                        <input name="service[]" type="checkbox" id="num12" value="Написание текстов на сайт">
                                         <span class="checkmark"></span>
 
                                     </label>
@@ -169,7 +169,7 @@
                                 </li>
                                 <li>
                                     <label>
-                                        <input name="service[]" type="checkbox" id="num13" value="Тексты для корпоративных сайтов и другие копирайтинг-задачи">
+                                        <input name="service[]" type="checkbox" id="num13" value="Написание коммерческих предложений">
                                         <span class="checkmark"></span>
 
                                     </label>
@@ -177,7 +177,7 @@
                                 </li>
                                 <li>
                                     <label>
-                                        <input name="service[]" type="checkbox" id="num14" value="Тексты для корпоративных сайтов и другие копирайтинг-задачи">
+                                        <input name="service[]" type="checkbox" id="num14" value="Написание писем в email-рассылку">
                                         <span class="checkmark"></span>
 
                                     </label>
@@ -185,7 +185,7 @@
                                 </li>
                                 <li>
                                     <label>
-                                        <input name="service[]" type="checkbox" id="num15" value="Тексты для корпоративных сайтов и другие копирайтинг-задачи">
+                                        <input name="service[]" type="checkbox" id="num15" value="Написание цепочек сообщений для чат-ботов">
                                         <span class="checkmark"></span>
 
                                     </label>
@@ -195,7 +195,7 @@
                                 </li>
                                 <li>
                                     <label>
-                                        <input name="service[]" type="checkbox" id="num16" value="Тексты для корпоративных сайтов и другие копирайтинг-задачи">
+                                        <input name="service[]" type="checkbox" id="num16" value="Написание сценариев продающих виде">
                                         <span class="checkmark"></span>
 
                                     </label>
@@ -205,7 +205,7 @@
                                 </li>
                                 <li>
                                     <label>
-                                        <input name="service[]" type="checkbox" id="num17" value="Тексты для корпоративных сайтов и другие копирайтинг-задачи">
+                                        <input name="service[]" type="checkbox" id="num17" value="Написаний текстов рекламных постов">
                                         <span class="checkmark"></span>
 
                                     </label>
@@ -215,7 +215,7 @@
                                 </li>
                                 <li>
                                     <label>
-                                        <input name="service[]" type="checkbox" id="num18" value="Тексты для корпоративных сайтов и другие копирайтинг-задачи">
+                                        <input name="service[]" type="checkbox" id="num18" value="Разработка названий и слоганов">
                                         <span class="checkmark"></span>
 
                                     </label>
@@ -236,7 +236,7 @@
                             <ul>
                                 <li>
                                     <label>
-                                        <input name="service[]" type="checkbox" id="num19" value="Разработка контент-стратегий">
+                                        <input name="service[]" type="checkbox" id="num19" value="Разработка маркетинговой стратегии">
                                         <span class="checkmark"></span>
 
                                     </label>
@@ -246,7 +246,7 @@
                                 </li>
                                 <li>
                                     <label>
-                                        <input name="service[]" type="checkbox" id="num20" value="Разработка стратегий под запуск">
+                                        <input name="service[]" type="checkbox" id="num20" value="Разработка контент-стратегии">
                                         <span class="checkmark"></span>
 
                                     </label>
@@ -256,7 +256,7 @@
                                 </li>
                                 <li>
                                     <label>
-                                        <input name="service[]" type="checkbox" id="num22" value="Разработка маркетинг-стратегий">
+                                        <input name="service[]" type="checkbox" id="num22" value="Разработка стратегии под запуск">
                                         <span class="checkmark"></span>
 
                                     </label>
@@ -266,7 +266,7 @@
                                 </li>
                                 <li>
                                     <label>
-                                        <input name="service[]" type="checkbox" id="num22" value="Разработка воронок писем">
+                                        <input name="service[]" type="checkbox" id="num22" value="Разработка воронки писем">
                                         <span class="checkmark"></span>
 
                                     </label>
@@ -276,7 +276,7 @@
                                 </li>
                                 <li>
                                     <label>
-                                        <input name="service[]" type="checkbox" id="num23" value="Разработка воронок писем">
+                                        <input name="service[]" type="checkbox" id="num23" value="Разработка контент-плана для соцсетей">
                                         <span class="checkmark"></span>
 
                                     </label>
@@ -286,7 +286,7 @@
                                 </li>
                                 <li>
                                     <label>
-                                        <input name="service[]" type="checkbox" id="num24" value="Разработка воронок писем">
+                                        <input name="service[]" type="checkbox" id="num24" value="Разработка контент-плана для блога">
                                         <span class="checkmark"></span>
 
                                     </label>
@@ -307,7 +307,7 @@
                             <ul>
                                 <li>
                                     <label>
-                                        <input name="service[]" type="checkbox" id="num25" value="Сбор участников на онлайн и живые события">
+                                        <input name="service[]" type="checkbox" id="num25" value="Продвижение публикаций в соцсетях">
                                         <span class="checkmark"></span>
 
                                     </label>
@@ -315,7 +315,7 @@
                                 </li>
                                 <li>
                                     <label>
-                                        <input name="service[]" type="checkbox" id="num26" value="Сбор заявок на покупку продуктов">
+                                        <input name="service[]" type="checkbox" id="num26" value="Лидогенерация в соцсетях">
                                         <span class="checkmark"></span>
 
                                     </label>
@@ -323,7 +323,7 @@
                                 </li>
                                 <li>
                                     <label>
-                                        <input name="service[]" type="checkbox" id="num27" value="Продвижение сообществ в соцсетях">
+                                        <input name="service[]" type="checkbox" id="num27" value="Комплексное продвижение страниц в соцсетях">
                                         <span class="checkmark"></span>
 
                                     </label>
@@ -342,7 +342,7 @@
                             <ul>
                                 <li>
                                     <label>
-                                        <input name="service[]" type="checkbox" id="num28" value="Создание сайтов и блогов">
+                                        <input name="service[]" type="checkbox" id="num28" value="Создание блога/корпоративного сайта">
                                         <span class="checkmark"></span>
 
                                     </label>
@@ -350,7 +350,7 @@
                                 </li>
                                 <li>
                                     <label>
-                                        <input name="service[]" type="checkbox" id="num29" value="Создание лендингов, посадочных страниц “под ключ”">
+                                        <input name="service[]" type="checkbox" id="num29" value="Создание лендинга">
                                         <span class="checkmark"></span>
 
                                     </label>
@@ -358,7 +358,7 @@
                                 </li>
                                 <li>
                                     <label>
-                                        <input name="service[]" type="checkbox" id="num30" value="Создание чат-ботов">
+                                        <input name="service[]" type="checkbox" id="num30" value="Создание посадочной страницы">
                                         <span class="checkmark"></span>
 
                                     </label>
@@ -366,7 +366,7 @@
                                 </li>
                                 <li>
                                     <label>
-                                        <input name="service[]" type="checkbox" id="num31" value="Реализация технических задач любой сложности">
+                                        <input name="service[]" type="checkbox" id="num31" value="Создание страницы лид-магнита">
                                         <span class="checkmark"></span>
 
                                     </label>
@@ -374,7 +374,7 @@
                                 </li>
                                 <li>
                                     <label>
-                                        <input name="service[]" type="checkbox" id="num32" value="Реализация технических задач любой сложности">
+                                        <input name="service[]" type="checkbox" id="num32" value="Настройка готовых обучающих платформ">
                                         <span class="checkmark"></span>
 
                                     </label>
@@ -382,7 +382,7 @@
                                 </li>
                                 <li>
                                     <label>
-                                        <input name="service[]" type="checkbox" id="num33" value="Реализация технических задач любой сложности">
+                                        <input name="service[]" type="checkbox" id="num33" value="Настройка рассылки писем">
                                         <span class="checkmark"></span>
 
                                     </label>
@@ -390,7 +390,7 @@
                                 </li>
                                 <li>
                                     <label>
-                                        <input name="service[]" type="checkbox" id="num34" value="Реализация технических задач любой сложности">
+                                        <input name="service[]" type="checkbox" id="num34" value="Создание чат-ботов">
                                         <span class="checkmark"></span>
 
                                     </label>
@@ -398,7 +398,7 @@
                                 </li>
                                 <li>
                                     <label>
-                                        <input name="service[]" type="checkbox" id="num35" value="Реализация технических задач любой сложности">
+                                        <input name="service[]" type="checkbox" id="num35" value="Создание собственной обучающей платформы">
                                         <span class="checkmark"></span>
 
                                     </label>
@@ -424,7 +424,7 @@
                                 </li>
                                 <li>
                                     <label>
-                                        <input name="service[]" type="checkbox" id="num37" value="Дизайн корпоративных сайтов и блогов">
+                                        <input name="service[]" type="checkbox" id="num37" value="Посадочная страница">
                                         <span class="checkmark"></span>
 
                                     </label>
@@ -432,7 +432,7 @@
                                 </li>
                                 <li>
                                     <label>
-                                        <input name="service[]" type="checkbox" id="num38" value="Оформление коммерческих предложений">
+                                        <input name="service[]" type="checkbox" id="num38" value="Страница лид-магнита">
                                         <span class="checkmark"></span>
 
                                     </label>
@@ -440,7 +440,7 @@
                                 </li>
                                 <li>
                                     <label>
-                                        <input name="service[]" type="checkbox" id="num39" value="Решение других дизайн-задач для Вашего бизнеса">
+                                        <input name="service[]" type="checkbox" id="num39" value="Корпоративный сайт/Блог">
                                         <span class="checkmark"></span>
 
                                     </label>
@@ -448,7 +448,7 @@
                                 </li>
                                 <li>
                                     <label>
-                                        <input name="service[]" type="checkbox" id="num40" value="Решение других дизайн-задач для Вашего бизнеса">
+                                        <input name="service[]" type="checkbox" id="num40" value="Коммерческое предложение">
                                         <span class="checkmark"></span>
 
                                     </label>
@@ -456,7 +456,7 @@
                                 </li>
                                 <li>
                                     <label>
-                                        <input name="service[]" type="checkbox" id="num41" value="Решение других дизайн-задач для Вашего бизнеса">
+                                        <input name="service[]" type="checkbox" id="num41" value="Брендинг для соцсетей">
                                         <span class="checkmark"></span>
 
                                     </label>
@@ -464,7 +464,7 @@
                                 </li>
                                 <li>
                                     <label>
-                                        <input name="service[]" type="checkbox" id="num42" value="Решение других дизайн-задач для Вашего бизнеса">
+                                        <input name="service[]" type="checkbox" id="num42" value="Инфографики">
                                         <span class="checkmark"></span>
 
                                     </label>
@@ -472,7 +472,7 @@
                                 </li>
                                 <li>
                                     <label>
-                                        <input name="service[]" type="checkbox" id="num43" value="Решение других дизайн-задач для Вашего бизнеса">
+                                        <input name="service[]" type="checkbox" id="num43" value="Другие работы по дизайну">
                                         <span class="checkmark"></span>
 
                                     </label>

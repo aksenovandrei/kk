@@ -33,6 +33,9 @@
 
     <!-- fullPage styles -->
     <link href="{{ asset('css/jquery.fullpage.css') }}" rel="stylesheet">
+    <!-- Slick slider styles -->
+    <link href="{{ asset('css/slick.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/slick-theme.css') }}" rel="stylesheet">
     <!-- main styles -->
     <link href="{{ asset('css/styles.css') }}" rel="stylesheet">
 </head>
@@ -249,6 +252,9 @@
 
 <!-- FullPge.js -->
 <script src="{{asset('js/jquery.fullpage.extensions.min.js')}}"></script>
+
+<!-- SlickSlider.js -->
+<script src="{{asset('js/slick.min.js')}}"></script>
 
 <!-- Custom functions for this theme -->
 <script src="{{asset('js/app.js')}}"></script>
