@@ -254,34 +254,27 @@
         </div><!-- .content-wrapper -->
     </div><!-- .section-wrapper -->
 
-    <div id="about6" class="section-wrapper clearfix section fp-auto-height" data-custom-background-img="{{asset('img/bg9.jpg')}}">
+    <div id="about6" class="section-wrapper clearfix section fp-auto-height"
+         data-custom-background-img="{{asset('img/bg9.jpg')}}">
         <div class="content-wrapper clearfix">
 
             <h4 class="section-title">Попробуйте нас в деле<br>
                 Закажите детальный контент-аудит Вашего бизнеса и узнайте, из-за чего Вы ежедневно теряете клиентов</h4>
             <div class="col-sm-10 pull-right">
-                <div class="contact-details col-sm-5 col-md-5">
-                </div>
-
+                <div class="contact-details col-sm-5 col-md-5"></div>
                 <div class="col-sm-7 col-md-7 pull-right">
-                    <!-- IMPORTANT: change the email address at the top of the assets/php/mail.php file to the email address that you want this form to send to -->
-                    <form class="form-style clearfix form-val" action="{{route('main')}}" method="POST"
-                          role="form" name="form_name"> <!-- убрал класс validate-form-->
+                    <form class="form-style clearfix form-val" action="{{route('main')}}" method="POST" role="form" name="form_name"> <!-- убрал класс validate-form-->
                     {{ csrf_field() }}
                     <!-- form left col -->
-                        <div class="col-md-12 pull-right">
-
-                        </div><!-- end: form left col -->
-
+                        <div class="col-md-12 pull-right"></div><!-- end: form left col -->
                         <!-- form right col -->
                         <div class="col-md-12 pull-right">
                             <div class="form-group">
                                 <input type="hidden" class="text-field form-control hidden"
-                                       data-validation-type="string" name="audit"
-                                       value="10$">
+                                       data-validation-type="string" name="services[]"
+                                       value="аудит 10$">
                                 <input type="text" required class="text-field form-control required"
-                                       data-validation-type="string" id="form-name" placeholder="Ваше имя" name="name"
-                                       value="{{old('name')}}">
+                                       data-validation-type="string" id="form-name" placeholder="Ваше имя" name="name" value="{{old('name')}}">
                             </div>
                             <div class="form-group">
                                 <input type="email" required class="text-field form-control"

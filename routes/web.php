@@ -34,4 +34,8 @@ Route::get('/contact', ['as' => 'contact', function () {
 Route::get('/thanks', ['as' => 'thanks', function () {
     return view('pages.thanks');
 }]);
+Route::get('/ops', ['as' => 'ops', function () {
+    return view('errors.ops');
+}]);
+
 

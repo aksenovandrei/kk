@@ -207,28 +207,28 @@
                 <!-- form left col -->
                     <ul class="content">
                     </ul>
-                        <div class="form-group">
-                            <input type="text" required class="text-field form-control required"
-                                   data-validation-type="string" id="form-name" placeholder="Ваше имя" name="name"
-                                   value="{{old('name')}}">
-                        </div>
-                        <div class="form-group">
-                            <input type="email" required class="text-field form-control"
-                                   data-validation-type="email" id="form-email" placeholder="Ваш email"
-                                   name="email" value="{{old('email')}}">
-                        </div>
-                        <div class="form-group">
-                            <input type="tel" required class="text-field form-control phone"
-                                   data-validation-type="phone" id="form-contact-number"
-                                   placeholder="Ваш телефон" name="contact_number" value="{{old('contact_number')}}"
-                                   data-bv-live="disabled">
-                        </div>
+                    <div class="form-group">
+                        <input type="text" required class="text-field form-control required"
+                               data-validation-type="string" id="form-name" placeholder="Ваше имя" name="name"
+                               value="{{old('name')}}">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" required class="text-field form-control"
+                               data-validation-type="email" id="form-email" placeholder="Ваш email"
+                               name="email" value="{{old('email')}}">
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" required class="text-field form-control phone"
+                               data-validation-type="phone" id="form-contact-number"
+                               placeholder="Ваш телефон" name="contact_number" value="{{old('contact_number')}}"
+                               data-bv-live="disabled">
+                    </div>
 
-                        <div class="form-group">
-                            <img src="{{asset('img/loader-form.GIF')}}" class="form-loader">
-                            <button id="sub-btn" type="submit" class="btn btn-sm btn-outline-inverse">Отправить</button>
-                        </div>
-                        <div class="form-group form-general-error-container"></div>
+                    <div class="form-group">
+                        <img src="{{asset('img/loader-form.GIF')}}" class="form-loader">
+                        <button id="sub-btn" type="submit" class="btn btn-sm btn-outline-inverse">Отправить</button>
+                    </div>
+                    <div class="form-group form-general-error-container"></div>
 
                 </form>
             </div>
@@ -249,7 +249,6 @@
 
 <!-- FullPge.js -->
 <script src="{{asset('js/jquery.fullpage.extensions.min.js')}}"></script>
-
 
 <!-- Custom functions for this theme -->
 <script src="{{asset('js/app.js')}}"></script>
