@@ -73,10 +73,10 @@
                         <li role="presentation"><a href="#tabs-tab4" aria-controls="tabs-tab4" role="tab"
                                                    data-toggle="tab"><i
                                         class="icon fas fa-bullhorn"></i><span>Реклама</span></a></li>
-                        <li role="presentation"><a href="#tabs-tab4" aria-controls="tabs-tab4" role="tab"
+                        <li role="presentation"><a href="#tabs-tab5" aria-controls="tabs-tab5" role="tab"
                                                    data-toggle="tab"><i
                                         class="icon fas fa-laptop"></i><span>Технические услуги</span></a></li>
-                        <li role="presentation"><a href="#tabs-tab4" aria-controls="tabs-tab4" role="tab"
+                        <li role="presentation"><a href="#tabs-tab6" aria-controls="tabs-tab6" role="tab"
                                                    data-toggle="tab"><i
                                         class="icon far fa-object-group"></i><span>Дизайн</span></a></li>
                     </ul>

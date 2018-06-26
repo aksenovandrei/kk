@@ -20,7 +20,7 @@ body {
     font-size: 18px;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: center center;
+    /*background-position: center center;*/
     background-size: cover;
     overflow: visible;
     transition: background linear 0.2s;
@@ -529,7 +529,6 @@ table {
     font-weight: 300;
     font-size: 0.86em;
     line-height: 1.05;
-    /*text-transform: lowercase;*/
     background: rgba(0, 0, 0, 0.1);
     width: 100%;
 }
@@ -3108,24 +3107,6 @@ label input:checked ~ .checkmark {
 }
 
 .arrow-btn {
-    /*display: inline-block;
-    top: 0;
-    right: 0;
-    width: 20px;
-    height: 20px;
-    !*-webkit-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    transform: rotate(-45deg);*!
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-    -webkit-transition: -webkit-transform 0.2s;
-    transition: -webkit-transform 0.2s;
-    -o-transition: transform 0.2s;
-    transition: transform 0.2s;
-    transition: transform 0.2s, -webkit-transform 0.2s;
-    position: relative;
-    vertical-align: bottom;*/
     position: absolute;
     top: 0;
     right: 0;
@@ -3463,12 +3444,18 @@ li .description {
     opacity: 0.3;
     border-right: 5px solid #ffffff;
     border-top: 5px solid #ffffff;
+    -webkit-transform: rotate(-45deg) scale(1);
+    -ms-transform: rotate(-45deg) scale(1);
     transform: rotate(-45deg) scale(1);
     cursor: pointer;
+    -webkit-transition: scale 0.3s, opacity 0.3s;
+    -o-transition: scale 0.3s, opacity 0.3s;
     transition: scale 0.3s, opacity 0.3s;
 }
 .upArrow:hover {
     opacity: 1;
+    -webkit-transform: rotate(-45deg) scale(1.15);
+    -ms-transform: rotate(-45deg) scale(1.15);
     transform: rotate(-45deg) scale(1.15);
 }
 

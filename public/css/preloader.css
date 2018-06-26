@@ -18,14 +18,22 @@
     margin: -100px 0 0 -100px;
 }
 .animate{
+    -webkit-animation-name: loaderAnimation;
     animation-name: loaderAnimation;
+    -webkit-animation-duration: 3s;
     animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
     animation-timing-function: linear;
+    -webkit-transform-origin: 8% 18%;
+    -ms-transform-origin: 8% 18%;
     transform-origin: 8% 18%;
 }
 .KvPreloaderImage svg {
+    -webkit-animation-name: fade;
     animation-name: fade;
+    -webkit-animation-duration: 3s;
     animation-duration: 3s;
 }
 
@@ -47,6 +55,14 @@
         margin-left: -21.5%;
     }
 }
+@-webkit-keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 @keyframes fade {
     0% {
         opacity: 0;
@@ -55,11 +71,23 @@
         opacity: 1;
     }
 }
-@keyframes loaderAnimation {
+@-webkit-keyframes loaderAnimation {
     0% {
+        -webkit-transform: rotate(90deg);
         transform: rotate(90deg);
     }
     100% {
+        -webkit-transform: rotate(-270deg);
+        transform: rotate(-270deg);
+    }
+}
+@keyframes loaderAnimation {
+    0% {
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+    100% {
+        -webkit-transform: rotate(-270deg);
         transform: rotate(-270deg);
     }
 }
