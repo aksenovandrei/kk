@@ -236,6 +236,14 @@
     </div>
 </div>
 
+<!-- Подгружаем все картинки, чтобы фон плавно менялся при первой загрузке -->
+<img class="hidden" src="{{asset('img/bg9.jpg')}}" alt="1">
+<img class="hidden" src="{{asset('img/bg2.jpg')}}" alt="2">
+<img class="hidden" src="{{asset('img/bg6.jpg')}}" alt="3">
+<img class="hidden" src="{{asset('img/bg3.jpg')}}" alt="4">
+<img class="hidden" src="{{asset('img/bg3.jpg')}}" alt="5">
+<img class="hidden" src="{{asset('img/bg4.jpg')}}" alt="6">
+
 <!-- Javascripts
 ================================================== -->
 

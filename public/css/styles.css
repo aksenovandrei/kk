@@ -20,10 +20,16 @@ body {
     font-size: 18px;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    /*background-position: center center;*/
+    background-position: center center;
     background-size: cover;
     overflow: visible;
     transition: background linear 0.2s;
+}
+@media screen and (max-width: 900px) {
+    body {
+        background-size: initial;
+        background-position: initial;
+    }
 }
 
 body:after {
