@@ -15,11 +15,11 @@
                 yyy.src = image;
                 yyy.onload = function () {
                     if (yyy.src === $('.main-content .section.active').attr('data-custom-background-img')){
-                        $('body').css('background-image', 'url(' + image + ')');
+                        $('.bg').css('background-image', 'url(' + image + ')');
                     }
                 };
                 if (yyy.naturalWidth) {
-                    $('body').css('background-image', 'url(' + image + ')');
+                    $('.bg').css('background-image', 'url(' + image + ')');
                 }
 
                 // $('body').css('background-image', 'url(' + image + ')');

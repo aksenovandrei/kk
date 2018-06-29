@@ -33,14 +33,24 @@
 </head>
 
 <body>
+<div class="bg"></div>
 <div class="KvPreloaderDiv">
     <div class="KvPreloaderImage">
-        <svg class="animate" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        <svg class="animate" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+             x="0px" y="0px"
              viewBox="0 0 300 300" style="enable-background:new 0 0 300 300;" xml:space="preserve">
 <style type="text/css">
-    .st0{fill:#FF9D2E;}
-    .st1{fill:none;}
-    .st2{fill:#FFFFFF;}
+    .st0 {
+        fill: #FF9D2E;
+    }
+
+    .st1 {
+        fill: none;
+    }
+
+    .st2 {
+        fill: #FFFFFF;
+    }
 </style>
             <g id="Layer_1">
                 <g>
@@ -59,28 +69,40 @@
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
              viewBox="0 0 1200 300" style="enable-background:new 0 0 1200 300;" xml:space="preserve">
 <style type="text/css">
-    .st0{fill:#FF9D2E;}
-    .st1{fill:none;}
-    .st2{fill:#FFFFFF;}
+    .st0 {
+        fill: #FF9D2E;
+    }
+
+    .st1 {
+        fill: none;
+    }
+
+    .st2 {
+        fill: #FFFFFF;
+    }
 </style>
             <g id="Layer_2">
                 <g>
                     <rect x="346.1" y="116.6" class="st1" width="994.5" height="93.4"/>
-                    <path class="st2" d="M403.2,181.2h-14.6l-22-30.8v30.8h-12.9v-60.7h12.9v29.4l21.7-29.4h13.7l-22.1,29.1L403.2,181.2z"/>
+                    <path class="st2"
+                          d="M403.2,181.2h-14.6l-22-30.8v30.8h-12.9v-60.7h12.9v29.4l21.7-29.4h13.7l-22.1,29.1L403.2,181.2z"/>
                     <path class="st2" d="M452,157.9c0,7.6-2,13.5-6,17.7c-4,4.3-9.5,6.4-16.6,6.4c-4.5,0-8.4-1-11.8-2.9c-3.4-2-6-4.8-7.8-8.4
 			s-2.7-7.9-2.7-12.8c0-7.6,2-13.5,5.9-17.7c4-4.2,9.5-6.3,16.7-6.3c4.5,0,8.4,1,11.8,2.9c3.4,1.9,6,4.7,7.8,8.3
 			C451.1,148.8,452,153,452,157.9z M419.9,157.9c0,4.6,0.8,8.1,2.3,10.4c1.5,2.4,4,3.5,7.4,3.5c3.4,0,5.8-1.2,7.3-3.5
 			c1.5-2.3,2.2-5.8,2.2-10.4c0-4.6-0.7-8-2.2-10.3c-1.5-2.3-3.9-3.4-7.3-3.4c-3.4,0-5.8,1.1-7.3,3.4
 			C420.7,149.8,419.9,153.3,419.9,157.9z"/>
-                    <path class="st2" d="M475.1,134.8v17.8h17.7v-17.8h12.7v46.4h-12.7v-19.1h-17.7v19.1h-12.7v-46.4H475.1z"/>
+                    <path class="st2"
+                          d="M475.1,134.8v17.8h17.7v-17.8h12.7v46.4h-12.7v-19.1h-17.7v19.1h-12.7v-46.4H475.1z"/>
                     <path class="st2" d="M557.2,134.8v9.5H542v36.9h-12.7v-36.9h-15.2v-9.5H557.2z"/>
                     <path class="st2" d="M586.8,182c-7.5,0-13.3-2.1-17.5-6.2c-4.2-4.1-6.3-10-6.3-17.5c0-7.8,1.9-13.8,5.8-18
 			c3.9-4.2,9.3-6.4,16.1-6.4c6.6,0,11.7,1.9,15.3,5.6s5.5,8.9,5.5,15.5v6.1h-29.9c0.1,3.6,1.2,6.4,3.2,8.4c2,2,4.8,3,8.4,3
 			c2.8,0,5.4-0.3,7.9-0.9s5.1-1.5,7.8-2.8v9.8c-2.2,1.1-4.6,1.9-7.1,2.5C593.5,181.8,590.4,182,586.8,182z M585,142.9
 			c-2.7,0-4.8,0.9-6.3,2.6c-1.5,1.7-2.4,4.1-2.6,7.2h17.8c-0.1-3.1-0.9-5.5-2.4-7.2C589.8,143.8,587.7,142.9,585,142.9z"/>
-                    <path class="st2" d="M628.7,134.8v17.8h17.7v-17.8H659v46.4h-12.7v-19.1h-17.7v19.1H616v-46.4H628.7z"/>
+                    <path class="st2"
+                          d="M628.7,134.8v17.8h17.7v-17.8H659v46.4h-12.7v-19.1h-17.7v19.1H616v-46.4H628.7z"/>
                     <path class="st2" d="M710.7,134.8v9.5h-15.2v36.9h-12.7v-36.9h-15.2v-9.5H710.7z"/>
-                    <path class="st2" d="M813.9,181.2h-14.6l-22-30.8v30.8h-12.9v-60.7h12.9v29.4l21.7-29.4h13.7l-22.1,29.1L813.9,181.2z"/>
+                    <path class="st2"
+                          d="M813.9,181.2h-14.6l-22-30.8v30.8h-12.9v-60.7h12.9v29.4l21.7-29.4h13.7l-22.1,29.1L813.9,181.2z"/>
                     <path class="st2" d="M863.4,147c0,2.5-0.8,4.6-2.3,6.4c-1.6,1.8-3.9,2.9-6.9,3.4v0.3c3.3,0.4,5.9,1.5,7.8,3.4
 			c1.9,1.9,2.9,4.2,2.9,6.9c0,4.5-1.8,7.9-5.3,10.3c-3.5,2.4-8.6,3.5-15.2,3.5h-23.8v-46.4h23.8c6.4,0,11.1,1,14.3,3.1
 			C861.8,140,863.4,143,863.4,147z M850.6,148c0-2.8-2.2-4.2-6.7-4.2h-10.6v9.2h9.2c2.7,0,4.7-0.4,6.1-1.2
@@ -149,21 +171,21 @@
 </div>
 <script>
     window.onload = function () {
+        var opacity = 1;
         function fadeOutEffect(el) {
-            var fadeEffect = setInterval(function () {
-                if (!el.style.opacity) {
-                    el.style.opacity = 1;
-                }
-                if (el.style.opacity > 0) {
-                    el.style.opacity -= 0.05;
+            setTimeout(function () {
+                if (opacity >= 0) {
+                    el.style.opacity = opacity;
+                    opacity -= 0.1;
                 } else {
-                clearInterval(fadeEffect);
-                    document.querySelector('.KvPreloaderDiv').style.display = "none"
+                    document.querySelector('.KvPreloaderDiv').style.display = "none";
                 }
-            }, 20);
+                fadeOutEffect(document.querySelector('.KvPreloaderDiv'));
+            }, 10);
         }
         fadeOutEffect(document.querySelector('.KvPreloaderDiv'));
     }
+
 </script>
 <div class="upArrow"></div>
 @yield('menu')

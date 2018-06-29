@@ -18,25 +18,31 @@ body {
     width: 100%;
     height: 100%;
     font-size: 18px;
+}
+.bg {
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     background-position: center center;
     background-size: cover;
     overflow: visible;
-    transition: background linear 0.2s;
+    transition: background linear 0.35s;
 }
 @media screen and (max-width: 900px) {
-    body {
-        background-size: initial;
+    .bg {
         background-position: initial;
     }
 }
 
-body:after {
+.bg:after {
     position: fixed;
     content: '';
     width: 100%;
-    height: 100%;
+    height: 99999px;
     top: 0;
     left: 0;
     background: url("../img/background-image-overlay-full.png");
@@ -399,6 +405,8 @@ table {
     display: block;
     background: rgba(0, 0, 0, 0.29);
     width: 100%;
+    position: relative;
+    z-index: 99;
 }
 @media (min-width: 768px) {
     #left-sidebar {
@@ -604,6 +612,7 @@ table {
     padding: 15px 5px;
     text-align: center;
     font-size: 0.9em;
+    position: relative;
 }
 
 #go-to-top {
@@ -1908,59 +1917,7 @@ p span {
     -webkit-transition: all 0.4s;
     transition: all 0.4s;
     border: none;
-    top: 400px;
-}
-@media screen and (max-width: 1600px) {
-    #reviews .slider .fp-controlArrow {
-        top: 300px;
-    }
-}
-
-@media screen and (max-width: 767px) {
-    #reviews .slider .fp-controlArrow {
-        top: unset;
-        bottom: 8%;
-    }
-}
-@media screen and (max-width: 740px) {
-    #reviews .slider .fp-controlArrow {
-        bottom: 11%;
-    }
-}
-@media screen and (max-width: 740px) {
-    #reviews .slider .fp-controlArrow {
-        bottom: 11%;
-    }
-}
-@media screen and (max-width: 730px) {
-    #reviews .slider .fp-controlArrow {
-        bottom: 13%;
-    }
-}
-@media screen and (max-width: 700px) {
-    #reviews .slider .fp-controlArrow {
-        bottom: 18%;
-    }
-}
-@media screen and (max-width: 650px) {
-    #reviews .slider .fp-controlArrow {
-        bottom: 21%;
-    }
-}
-@media screen and (max-width: 550px) {
-    #reviews .slider .fp-controlArrow {
-        bottom: 25%;
-    }
-}
-@media screen and (max-width: 500px) {
-    #reviews .slider .fp-controlArrow {
-        bottom: 28%;
-    }
-}
-@media screen and (max-width: 400px) {
-    #reviews .slider .fp-controlArrow {
-        bottom: 32%;
-    }
+    top: 50%;
 }
 
 #reviews .slider:hover .fp-controlArrow {
@@ -1982,24 +1939,22 @@ p span {
 #reviews .slider .fp-controlArrow.fp-prev:hover {
     background-position: 0 0;
 }
+#reviews .slider .fp-controlArrow.fp-next:hover {
+    background-position: 10px 0;
+}
 
 #reviews .slider .fp-controlArrow.fp-next {
     background-image: url(../img/carousel_arrow_right.png);
-    right: -6%;
-    background-position: -10px 0px;
+    right: -5%;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 900px) {
     #reviews .slider .fp-controlArrow.fp-prev {
         left: 0;
     }
     #reviews .slider .fp-controlArrow.fp-next {
         right: 0;
     }
-}
-
-#reviews .slider .fp-controlArrow.fp-next:hover {
-    background-position: 0 0;
 }
 
 #reviews .slider .item {

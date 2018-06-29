@@ -204,11 +204,7 @@
                     <h4 class="title">Рик Астли</h4>
                     <p>певец, герой мемов<br>Ничего ему не делали, но и он нам, как бы, ничего не платил)))</p>
                     <div class="aspect-ratio">
-                        {{--<iframe id="rick" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0"
-                            allow="autoplay; encrypted-media" allowfullscreen></iframe>--}}
-                        {{--<iframe src="https://myhub.autodesk360.com/ue2954980/shares/public/SH7f1edQT22b515c761e184b962a0562ad96?mode=embed" width="640" height="480" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0">
-                        </iframe>--}}
-                        <div class="sketchfab-embed-wrapper"><iframe width="640" height="480" src="https://sketchfab.com/models/1808ba54a79e4fdfac9779e639da027c/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe> <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;"> <a href="https://sketchfab.com/models/1808ba54a79e4fdfac9779e639da027c?utm_medium=embed&utm_source=website&utm_campain=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">01 041 05 00 00</a> by <a href="https://sketchfab.com/Frederick360?utm_medium=embed&utm_source=website&utm_campain=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Frederick360</a> on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campain=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a> </p> </div>
+                        <iframe id="rick" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     </div>
                     <p class="btn-inrow"><a href="{{route('reviews')}}"
                                             class="link-scroll btn btn-yellow btn-outline-inverse btn-lg">Все
