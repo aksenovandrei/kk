@@ -6,16 +6,27 @@
     left: 0;
     background-color: #252525;
     z-index: 99;
+    opacity: 1;
 }
 .KvPreloaderImage{
-    width: 700px;
-    height: 600px;
-    position: absolute;
-    left: 34%;
-    top: 50%;
+    width: 62%;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
     background-repeat: no-repeat;
     background-position: center;
-    margin: -100px 0 0 -100px;
+}
+.KvPreloaderImage svg:nth-of-type(1) {
+    width: 25%;
+    height: 100%;
+    float: left;
+    transform-origin: 50%;
+}
+.KvPreloaderImage svg:nth-of-type(2) {
+    width: 94%;
+    height: 100%;
+    float: left;
+    margin-left: -20%;
 }
 .animate{
     -webkit-animation-name: loaderAnimation;
@@ -26,36 +37,30 @@
     animation-iteration-count: infinite;
     -webkit-animation-timing-function: linear;
     animation-timing-function: linear;
-    -webkit-transform-origin: 8% 18%;
-    -ms-transform-origin: 8% 18%;
-    transform-origin: 8% 18%;
-}
-.KvPreloaderImage svg {
-    -webkit-animation-name: fade;
-    animation-name: fade;
-    -webkit-animation-duration: 3s;
-    animation-duration: 3s;
+    -webkit-transform-origin: 46%;
+    -ms-transform-origin: 46%;
+    transform-origin: 46%;
 }
 
 @media screen and (max-width: 1200px) {
-    .KvPreloaderImage svg .logoText {
+    .KvPreloaderImage svg:nth-of-type(2) {
         display: none;
     }
+    .KvPreloaderImage svg:nth-of-type(1) {
+        width: 100%;
+    }
     .KvPreloaderImage {
-        width: 75%;
-        height: auto;
-        left: 50%;
-        margin-left: -12.5%;
+        width: 30%;
     }
 }
-@media screen and (max-width: 800px) {
+/*@media screen and (max-width: 800px) {
     .KvPreloaderImage {
         width: 150%;
         height: auto;
-        margin-left: -21.5%;
+        margin-left: -15%;
     }
-}
-@-webkit-keyframes fade {
+}*/
+/*@-webkit-keyframes fade {
     0% {
         opacity: 0;
     }
@@ -70,7 +75,7 @@
     100% {
         opacity: 1;
     }
-}
+}*/
 @-webkit-keyframes loaderAnimation {
     0% {
         -webkit-transform: rotate(90deg);
