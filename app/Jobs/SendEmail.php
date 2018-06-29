@@ -13,14 +13,16 @@ class SendEmail implements ShouldQueue
 {
     use Dispatchable, InteractsWithQueue, Queueable, SerializesModels;
 
+    protected $order;
+
     /**
      * Create a new job instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct(Order $order)
     {
-        //
+        $this->order = $order;
     }
 
     /**
@@ -30,6 +32,13 @@ class SendEmail implements ShouldQueue
      */
     public function handle()
     {
-        //
+        try {
+            $this->order->sendEmail();
+
+        } catch (\Exception $e) {
+            $mailError = $e->getMessage();
+            $this->order->catchErrors($mailError);
+        }
+
     }
 }

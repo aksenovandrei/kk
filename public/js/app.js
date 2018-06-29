@@ -8,10 +8,21 @@
             verticalCentered: true,
             controlArrows: true,
             responsiveWidth: 1200,
-            afterLoad: function change_bg() {
+            afterLoad: function change_bg() { // зачем название
                 var $section = $('.main-content .section.active');
                 var image = $section.attr('data-custom-background-img');
-                $('body').css('background-image', 'url(' + image + ')');
+                var yyy = new Image();
+                yyy.src = image;
+                yyy.onload = function () {
+                    if (yyy.src === $('.main-content .section.active').attr('data-custom-background-img')){
+                        $('body').css('background-image', 'url(' + image + ')');
+                    }
+                };
+                if (yyy.naturalWidth) {
+                    $('body').css('background-image', 'url(' + image + ')');
+                }
+
+                // $('body').css('background-image', 'url(' + image + ')');
                 var menuList = $section.attr('id');
                 $('.main-menu li').removeClass('active');
                 $('.main-menu .' + menuList).closest('li').addClass('active');

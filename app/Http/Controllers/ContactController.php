@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Jobs\SendEmail;
 use Illuminate\Http\Request;
 use App\Order;
 use Illuminate\Support\Facades\DB;
@@ -56,7 +57,7 @@ class ContactController extends Controller
             $order->catchErrors($telegramError);
         }
 
-        //отправляем письмо
+        //отправляем письмо в очередь
         try {
             $order->sendEmail();
             $mailError = false;
