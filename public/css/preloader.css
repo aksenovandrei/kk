@@ -81,3 +81,7 @@
         transform: rotate(-270deg);
     }
 }
+
+body {
+    overflow: hidden;
+}

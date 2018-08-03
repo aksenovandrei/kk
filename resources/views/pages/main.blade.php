@@ -3,6 +3,23 @@
 @include('includes.menu')
 @include('includes.footer')
 @section('intro')
+    <script>
+        window.onload = function () {
+            var opacity = 1;
+            function fadeOutEffect(el) {
+                setTimeout(function () {
+                    if (opacity >= 0) {
+                        el.style.opacity = opacity;
+                        opacity -= 0.1;
+                    } else {
+                        document.querySelector('.KvPreloaderDiv').style.display = "none";
+                    }
+                    fadeOutEffect(document.querySelector('.KvPreloaderDiv'));
+                }, 10);
+            }
+            fadeOutEffect(document.querySelector('.KvPreloaderDiv'));
+        }
+    </script>
     <div id="main" class="section-wrapper clearfix section active fp-auto-height-responsive" data-custom-background-img="{{asset('img/bg9.jpg')}}">
         <div class="content-wrapper clearfix">
             <div class="col-sm-10 col-md-9 pull-right">
@@ -408,16 +425,16 @@
 
 
                 <div class="contact-details col-sm-5 col-md-5">
-                    <p>Tel: +7 (499) 677 24 11 <i class="fas fa-mobile-alt"></i></p>
-                    <p>Tel: +38 (094) 711 70 66 <i class="fas fa-mobile-alt"></i></p>
-                    <p><a href="mailto:content.kvartira@gmail.com">content.kvartira@gmail.com</a><i
-                                class="far fa-envelope"></i></p>
-                    <p>Мы в соцсетях
+                    {{--<p>Tel: +7 (499) 677 24 11 <i class="fas fa-mobile-alt"></i></p>
+                    <p>Tel: +38 (094) 711 70 66 <i class="fas fa-mobile-alt"></i></p>--}}
+                    {{--<p><a href="mailto:content.kvartira@gmail.com">content.kvartira@gmail.com</a><i
+                                class="far fa-envelope"></i></p>--}}
+                    {{--<p>Мы в соцсетях
                         <a href="https://www.facebook.com/content.kvartira/" target="_blank" title="Facebook"><img
                                     src="{{asset('img/facebook.png')}}" alt="Facebook"></a>
                         <a href="https://vk.com/content_kvartira" target="_blank" title="Vk"><img
                                     src="{{asset('img/vk.png')}}" alt="Vk"></a>
-                    </p>
+                    </p>--}}
                 </div>
 
                 <div class="col-sm-7 col-md-7 pull-right">
@@ -455,6 +472,8 @@
                                 <img src="{{asset('img/loader-form.GIF')}}" class="form-loader">
                                 <button id="sub-btn" type="submit" class="btn btn-sm btn-outline-inverse">Отправить
                                 </button>
+                                <p><a href="mailto:content.kvartira@gmail.com">content.kvartira@gmail.com</a><i
+                                            class="far fa-envelope"></i></p>
                             </div>
                             <div class="form-group form-general-error-container"></div>
                         </div><!-- end: form right col -->

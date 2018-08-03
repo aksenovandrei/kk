@@ -283,4 +283,8 @@
             </div><!-- end: CONTACT FORM -->
         </div><!-- .content-wrapper -->
     </div>
+    <!--hiding preloader on this page-->
+    <script>
+        document.querySelector('.KvPreloaderDiv').style.display = "none";
+    </script>
 @stop

@@ -556,5 +556,8 @@
             </div><!-- .col-sm-10 -->
         </div><!-- .content-wrapper -->
     </div><!-- .section-wrapper -->
-
+    <!--hiding preloader on this page-->
+    <script>
+        document.querySelector('.KvPreloaderDiv').style.display = "none";
+    </script>
 @stop

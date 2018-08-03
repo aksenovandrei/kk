@@ -34,7 +34,9 @@
                 }
             },
             afterResponsive: function(){
-                if (document.querySelector('title').text === 'О проекте' || document.querySelector('title').text === 'Услуги') {
+                if (document.querySelector('title').text === 'О проекте'
+                    || document.querySelector('title').text === 'Услуги'
+                    || document.querySelector('title').text === 'Портфолио') {
                     $('body').addClass('fp-responsive');
                 }
 
@@ -50,8 +52,26 @@
         });
     });
 
+    function hideAddressBar()
+    {
+        if(!window.location.hash)
+        {
+            if(document.height < window.outerHeight)
+            {
+                document.body.style.height = (window.outerHeight + 50) + 'px';
+            }
+
+            setTimeout( function(){ window.scrollTo(0, 1); }, 50 );
+        }
+    }
+
+    window.addEventListener("load", function(){ if(!window.pageYOffset){ hideAddressBar(); } } );
+    window.addEventListener("orientationchange", hideAddressBar );
+
     $(document).ready(function () {
-        if (document.querySelector('title').text === 'О проекте' || document.querySelector('title').text === 'Услуги') {
+        if (document.querySelector('title').text === 'О проекте'
+            || document.querySelector('title').text === 'Услуги'
+            || document.querySelector('title').text === 'Портфолио') {
             $.fn.fullpage.setAutoScrolling(false);
             $('body').addClass('fp-responsive');
         }
@@ -93,12 +113,6 @@
             $.fn.fullpage.reBuild();
         }, 200);
     });
-
-    /*$('.nav-tabs li').on('click', function () {
-        setTimeout(function () {
-            $.fn.fullpage.reBuild();
-        }, 500);
-    });*/
 
     /*Open-close menu on mobile devices*/
     $(document).on('click', '#mobile-menu-icon', function () {
@@ -142,6 +156,125 @@
         $.fn.fullpage.reBuild();
     });
 
+    //Show modal window with context content
+    $(document).on('click', '.modal-button', function () {
+        //disabling fullpage scroll when modal is open
+        $('body').css('overflow', 'hidden');
+        $.fn.fullpage.setAllowScrolling(false);
+        $.fn.fullpage.setKeyboardScrolling(false);
+
+        var $modalInner = $('.modal .modal-body');
+        $modalInner.empty();
+        var $modalId = $(this).attr('data');
+        var number = parseInt($modalId.split("-").pop());
+        $modalInner.append(modalContent[number]);
+    });
+
+    //enabling fullpage scroll
+    $('.modal').on('click', function (e) {
+        var a = e.target.getAttribute('class');
+        if (a === 'close' || a === 'modal fade in') {
+            $.fn.fullpage.setAllowScrolling(true);
+            $.fn.fullpage.setKeyboardScrolling(true);
+            $('body').css('overflow', 'auto');
+        }
+    });
+
+    var $content = $('ul.content');
+    $('.chart').on('click', function () {
+        $content.empty();
+        var result = {};
+        var $activeInputs = $("input:checkbox:checked");
+        $activeInputs.each(function (item, i) {
+            var $element = $(i);
+            var groupName = $element.closest('.tab-pane').find('h4:first').text();
+            var currentCheckbox = $element.closest('label').find('input');
+            result[groupName] = result[groupName] || [];
+            result[groupName].push(currentCheckbox);
+        });
+
+        jQuery.each(result, function (i, val) {
+            $content.append('<h5 class="no-shadow" id="title1">' + i + '</h5>');
+            jQuery.each(val, function () {
+                $content.append('<li>'
+                    + '<label>'
+                    + '<input checked name="services[]" type="checkbox" id="'
+                    + this[0].id + '" value="'
+                    + this[0].value + '">'
+                    + '<span class="checkmark"></span>'
+                    + '</label>'
+                    + '<span class="itemName">'
+                    + this[0].value
+                    + '</span>'
+                    + '</li>');
+            });
+        });
+    });
+
+    $content.on('click', '.checkmark', function (e) {
+        var $thisId = $(this).prev("input").attr("id");
+        var $curInput = $('input#' + $thisId);
+        $curInput.closest('label').toggleClass('active-row');
+
+        if ($(e.target).closest('li').prev('h5').nextUntil('h5', 'li').length === 1) {
+            $(e.target).closest('li').prev('h5').hide();
+        }
+
+        $(e.target).closest('li').remove();
+        $curInput.prop("checked", false);
+    });
+
+
+    $(document).ready(function() {
+        $('#sub-btn').on('click', function () {
+
+            $('.form-val').bootstrapValidator({
+                // To use feedback icons, ensure that you use Bootstrap v3.1.0 or later
+                feedbackIcons: {
+                    valid: 'glyphicon glyphicon-ok',
+                    invalid: 'glyphicon glyphicon-remove',
+                    validating: 'glyphicon glyphicon-refresh'
+                },
+                fields: {
+                    name: {
+                        validators: {
+                            stringLength: {
+                                min: 2
+                            },
+                            notEmpty: {
+                                message: 'Пожалуйста, введите свое имя'
+                            }
+                        }
+                    },
+                    email: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Пожалуйста, введите свой email'
+                            },
+                            regexp: {
+                                regexp: /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/,
+                                message: 'Введите правильный email адрес'
+                            }
+                        }
+                    },
+                    contact_number: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Пожалуйста, введите свой телефон'
+                            },
+                            regexp: {
+                                regexp: /^[1-9][0-9]{5,15}$/,
+                                message: 'Введите правильный номер телефона'
+                            }
+                        }
+                    }
+                }
+
+            })
+
+        });
+
+    });
 
     //Collecting all modal data into array
     var modalContent = [];
@@ -433,97 +566,46 @@
             '                                 alt="shurina">\n' +
             '                        </div>');
         modalContent.push('<div id="modal-content-7">\n' +
-            '                            <h5 class="no-shadow">Лендинги с нашим текстом</h5>\n' +
-            '                            <div class="slider">\n' +
-            '                                <div class="slider-item">\n' +
-            '                                    <a href="http://truemanbox.ru/" target="_blank">\n' +
-            '                                        <img class="lazyOwl" src="' + imgPath + 'img/trueman-preview.jpg">\n' +
-            '                                    </a>\n' +
-            '                                    <p>Нестандартные подарки для мужчин</p>\n' +
-            '                                </div>\n' +
-            '                                <div class="slider-item">\n' +
-            '                                    <a href="http://pintosevich.com/megatraining/"\n' +
-            '                                       target="_blank"><img class="lazyOwl"\n' +
-            '                                                            src="' + imgPath + 'img/mega-preview-small.jpg"></a>\n' +
-            '                                    <p>Мегатренинг Ицхака Пинтосевича 2018</p>\n' +
-            '                                </div>\n' +
-            '                                <div class="slider-item">\n' +
-            '                                    <a href="http://bestgiftformen.ru/ "\n' +
-            '                                       target="_blank"><img class="lazyOwl"\n' +
-            '                                                            src="' + imgPath + 'img/gifts-preview.jpg"></a>\n' +
-            '                                    <p>Подарочные сертификаты на дегустацию виски</p>\n' +
-            '                                </div>\n' +
-            '                                <div class="slider-item">\n' +
-            '                                    <a href="http://chuprova-tanya.ru/instagram/"\n' +
-            '                                       target="_blank"><img class="lazyOwl"\n' +
-            '                                                            src="' + imgPath + 'img/chuprova-preview.jpg"></a>\n' +
-            '                                    <p>Курс “Самый красивый Инстаграм”</p>\n' +
-            '                                </div>\n' +
-            '                                <div class="slider-item">\n' +
-            '                                    <a href="http://pg.deks.ua/"\n' +
-            '                                       target="_blank"><img class="lazyOwl"\n' +
-            '                                                            src="' + imgPath + 'img/deks-preview.jpg"></a>\n' +
-            '                                    <p>Фотопанели из стекла</p>\n' +
-            '                                </div>\n' +
-            '                            </div>\n' +
+            '                            <img src="' + imgPath + 'img/truemanbox.jpg" class="lazy full-width"\n' +
+            '                                 alt="truemanbox">\n' +
             '                        </div>');
         modalContent.push('<div id="modal-content-8">\n' +
-            '                            <div class="slider">\n' +
-            '                                <div class="slider-item">\n' +
-            '                                    <a href="https://valery.fm/antichaos4" target="_blank">\n' +
-            '                                        <img class="lazyOwl" src="' + imgPath + 'img/morozovlead-preview.jpg">\n' +
-            '                                    </a>\n' +
-            '                                    <p>Анти Хаос в Интернет Продюсировании</p>\n' +
-            '                                </div>\n' +
-            '                                <div class="slider-item">\n' +
-            '                                    <a href="http://www.kosmetologiya-kazan.ru/"\n' +
-            '                                       target="_blank"><img class="lazyOwl"\n' +
-            '                                                            src="' + imgPath + 'img/kosmetologiya-preview.jpg"></a>\n' +
-            '                                    <p>Косметоллгия Казань</p>\n' +
-            '                                </div>\n' +
-            '                                <div class="slider-item no-link">\n' +
-            '                                    <a href="" data="modal-content-9" class="modal-button thumbnail linked"\n' +
-            '                                       data-dismiss="modal"\n' +
-            '                                       data-toggle="modal"\n' +
-            '                                       data-target="#common-modal2">\n' +
-            '                                        <img class="lazyOwl"\n' +
-            '                                                src="' + imgPath + 'img/pishiprosto-preview.jpg"></a>\n' +
-            '                                    <p>Контент-спринт от Пиши просто</p>\n' +
-            '                                </div>\n' +
-            '                            </div>\n' +
+            '                            <img src="' + imgPath + 'img/bestgiftformen.jpg" class="lazy full-width"\n' +
+            '                                 alt="bestgiftformen">\n' +
             '                        </div>');
         modalContent.push('<div id="modal-content-9">\n' +
-            '                                        <img src="' + imgPath + 'img/pishiprosto.jpg" class="lazy item-thumbnail"\n' +
-            '                                             alt="pishiprosto">\n' +
-            '                                    </div>');
+            '                            <img src="' + imgPath + 'img/chuprova.jpg" class="lazy full-width"\n' +
+            '                                 alt="chuprova">\n' +
+            '                        </div>');
         modalContent.push('<div id="modal-content-10">\n' +
-            '                            <div class="slider">\n' +
-            '                                <div class="slider-item">\n' +
-            '                                    <a href="https://valery.fm/morozov_million" target="_blank">\n' +
-            '                                        <img class="lazyOwl" src="' + imgPath + 'img/morozov-preview.jpg">\n' +
-            '                                    </a>\n' +
-            '                                    <p>Курс “Продюсер-миллионер”</p>\n' +
-            '                                </div>\n' +
-            '                                <div class="slider-item no-link">\n' +
-            '                                    <a href="" data="modal-content-11" class="modal-button thumbnail linked"\n' +
-            '                                       data-dismiss="modal"\n' +
-            '                                       data-toggle="modal"\n' +
-            '                                       data-target="#common-modal2">\n' +
-            '                                        <img class="lazyOwl"\n' +
-            '                                                src="' + imgPath + 'img/sprint-preview.jpg"></a>\n' +
-            '                                    <p>Контент-спринт от Пиши Просто</p>\n' +
-            '                                </div>\n' +
-            '                            </div>\n' +
+            '                            <img src="' + imgPath + 'img/photopaneli.jpg" class="lazy full-width"\n' +
+            '                                 alt="photopaneli">\n' +
             '                        </div>');
         modalContent.push('<div id="modal-content-11">\n' +
-            '                                        <img src="' + imgPath + 'img/sprint.jpg" class="lazy full-width"\n' +
-            '                                             alt="pishiprosto">\n' +
-            '                                    </div>');
+            '                            <img src="' + imgPath + 'img/morozovlead.jpg" class="lazy full-width"\n' +
+            '                                 alt="morozovlead">\n' +
+            '                        </div>');
         modalContent.push('<div id="modal-content-12">\n' +
+            '                            <img src="' + imgPath + 'img/kosmetologiya.jpg" class="lazy full-width"\n' +
+            '                                 alt="kosmetologiya">\n' +
+            '                        </div>');
+        modalContent.push('<div id="modal-content-13">\n' +
+            '                            <img src="' + imgPath + 'img/sprint.jpg" class="lazy full-width"\n' +
+            '                                 alt="sprint">\n' +
+            '                        </div>');
+        modalContent.push('<div id="modal-content-14">\n' +
+            '                            <img src="' + imgPath + 'img/pishiprosto.jpg" class="lazy full-width"\n' +
+            '                                 alt="pishiprosto">\n' +
+            '                        </div>');
+        modalContent.push('<div id="modal-content-15">\n' +
+            '                            <img src="' + imgPath + 'img/morozov.jpg" class="lazy full-width"\n' +
+            '                                 alt="morozov">\n' +
+            '                        </div>');
+        modalContent.push('<div id="modal-content-16">\n' +
             '                            <h4 class="no-shadow">Группа строительных компаний Delmar</h4>\n' +
             '                            <div class="slider">\n' +
             '                                <div class="slider-item no-link">\n' +
-            '                                    <a href="" data="modal-content-13" class="modal-button thumbnail linked"\n' +
+            '                                    <a href="" data="modal-content-17" class="modal-button thumbnail linked"\n' +
             '                                       data-dismiss="modal"\n' +
             '                                       data-toggle="modal"\n' +
             '                                       data-target="#common-modal2">\n' +
@@ -531,7 +613,7 @@
             '                                    </a>\n' +
             '                                </div>\n' +
             '                                <div class="slider-item no-link">\n' +
-            '                                    <a href="" data="modal-content-14" class="modal-button thumbnail linked"\n' +
+            '                                    <a href="" data="modal-content-18" class="modal-button thumbnail linked"\n' +
             '                                       data-dismiss="modal"\n' +
             '                                       data-toggle="modal"\n' +
             '                                       data-target="#common-modal2">\n' +
@@ -539,7 +621,7 @@
             '                                    </a>\n' +
             '                                </div>\n' +
             '                                <div class="slider-item no-link">\n' +
-            '                                    <a href="" data="modal-content-15" class="modal-button thumbnail linked"\n' +
+            '                                    <a href="" data="modal-content-19" class="modal-button thumbnail linked"\n' +
             '                                       data-dismiss="modal"\n' +
             '                                       data-toggle="modal"\n' +
             '                                       data-target="#common-modal2">\n' +
@@ -550,7 +632,7 @@
             '                            <h4 class="no-shadow">Проект Rotach Training </h4>\n' +
             '                            <div class="slider">\n' +
             '                                <div class="slider-item no-link">\n' +
-            '                                    <a href="" data="modal-content-16" class="modal-button thumbnail linked"\n' +
+            '                                    <a href="" data="modal-content-20" class="modal-button thumbnail linked"\n' +
             '                                       data-dismiss="modal"\n' +
             '                                       data-toggle="modal"\n' +
             '                                       data-target="#common-modal2">\n' +
@@ -558,7 +640,7 @@
             '                                    </a>\n' +
             '                                </div>\n' +
             '                                <div class="slider-item no-link">\n' +
-            '                                    <a href="" data="modal-content-17" class="modal-button thumbnail linked"\n' +
+            '                                    <a href="" data="modal-content-21" class="modal-button thumbnail linked"\n' +
             '                                       data-dismiss="modal"\n' +
             '                                       data-toggle="modal"\n' +
             '                                       data-target="#common-modal2">\n' +
@@ -566,7 +648,7 @@
             '                                    </a>\n' +
             '                                </div>\n' +
             '                                <div class="slider-item no-link">\n' +
-            '                                    <a href="" data="modal-content-18" class="modal-button thumbnail linked"\n' +
+            '                                    <a href="" data="modal-content-22" class="modal-button thumbnail linked"\n' +
             '                                       data-dismiss="modal"\n' +
             '                                       data-toggle="modal"\n' +
             '                                       data-target="#common-modal2">\n' +
@@ -575,41 +657,31 @@
             '                                </div>\n' +
             '                            </div>\n' +
             '                        </div>');
-        modalContent.push('<div id="modal-content-13">\n' +
+        modalContent.push('<div id="modal-content-17">\n' +
             '                                        <img src="' + imgPath + 'img/delmar1.jpg" class="lazy item-thumbnail"\n' +
             '                                             alt="delmar1">\n' +
             '                                    </div>');
-        modalContent.push('<div id="modal-content-14">\n' +
+        modalContent.push('<div id="modal-content-18">\n' +
             '                                        <img src="' + imgPath + 'img/delmar2.jpg" class="lazy item-thumbnail"\n' +
             '                                             alt="delmar2">\n' +
             '                                    </div>');
-        modalContent.push('<div id="modal-content-15">\n' +
+        modalContent.push('<div id="modal-content-19">\n' +
             '                                        <img src="' + imgPath + 'img/delmar3.jpg" class="lazy item-thumbnail"\n' +
             '                                             alt="delmar3">\n' +
             '                                    </div>');
-        modalContent.push('<div id="modal-content-16">\n' +
+        modalContent.push('<div id="modal-content-20">\n' +
             '                                        <img src="' + imgPath + 'img/rotach1.jpg" class="lazy item-thumbnail"\n' +
             '                                             alt="rotach1">\n' +
             '                                    </div>');
-        modalContent.push('<div id="modal-content-17">\n' +
+        modalContent.push('<div id="modal-content-21">\n' +
             '                                        <img src="' + imgPath + 'img/rotach2.jpg" class="lazy item-thumbnail"\n' +
             '                                             alt="rotach2">\n' +
             '                                    </div>');
-        modalContent.push('<div id="modal-content-18">\n' +
+        modalContent.push('<div id="modal-content-22">\n' +
             '                                        <img src="' + imgPath + 'img/rotach3.jpg" class="lazy item-thumbnail"\n' +
             '                                             alt="rotach3">\n' +
             '                                    </div>');
-        modalContent.push('<div id="modal-content-19">\n' +
-            '                            <div class="slider">\n' +
-            '                                <div class="slider-item">\n' +
-            '                                    <a href="' + imgPath + 'img/Kom_pred.pdf" target="_blank">\n' +
-            '                                        <img class="lazyOwl" src="' + imgPath + 'img/kostenko-preview.jpg">\n' +
-            '                                    </a>\n' +
-            '                                    <p>Юридическая компания Костенко и партнеры</p>\n' +
-            '                                </div>\n' +
-            '                            </div>\n' +
-            '                        </div>');
-        modalContent.push('<div id="modal-content-20">\n' +
+        modalContent.push('<div id="modal-content-23">\n' +
             '                            <h4 class="no-shadow">Письмо 1 – информация о проекте, особенности</h4>\n' +
             '                            <h6 class="no-shadow">Тема: Похудеть и получить за это призы – возможно</h6>\n' +
             '                            <h6 class="no-shadow">Тема 2: 100 000 грн в обмен на твой лишний вес</h6>\n' +
@@ -740,7 +812,7 @@
             '                            </p>\n' +
             '\n' +
             '                        </div>');
-        modalContent.push('<div id="modal-content-21">\n' +
+        modalContent.push('<div id="modal-content-24">\n' +
             '                            <h4 class="no-shadow">Письмо 1 - приветствие и призыв присоединиться в соцсетя</h4>\n' +
             '                            <h6 class="no-shadow">Тема: [Имя], получите Вашу скидку</h6>\n' +
             '                            <p>[Имя], приветствую!<br>\n' +
@@ -814,184 +886,6 @@
             '                                руководитель интернет-магазина Vinzer Home Владислав\n' +
             '                            </p>\n' +
             '                        </div>');
-        modalContent.push('<div id="modal-content-22">\n' +
-            '                        <div class="owl-carousel popup-alt-image-gallery modalSlider">\n' +
-            '                            <div class="item">\n' +
-            '                                <a href="https://valery.fm/morozov_million" target="_blank">\n' +
-            '                                    <img class="lazyOwl" src="' + imgPath + 'img/morozov-preview.jpg">\n' +
-            '                                </a>\n' +
-            '                                <p>Лендинг</p>\n' +
-            '                            </div>\n' +
-            '                            <div class="item">\n' +
-            '                                <a href="https://valery.fm/antichaos4" target="_blank">\n' +
-            '                                    <img class="lazyOwl" src="' + imgPath + 'img/morozovlead-preview.jpg">\n' +
-            '                                </a>\n' +
-            '                                <p>Лид-магнит</p>\n' +
-            '                            </div>\n' +
-            '                            <div class="item">\n' +
-            '                                <a href="https://valery.fm/antichaos2" target="_blank">\n' +
-            '                                    <img class="lazyOwl" src="' + imgPath + 'img/morozovoto-preview.jpg">\n' +
-            '                                </a>\n' +
-            '                                <p>Лид-магнит</p>\n' +
-            '                            </div>\n' +
-            '                        </div>\n' +
-            '                    </div>');
-        modalContent.push('<div  id="modal-content-23">\n' +
-            '                            <div class="slider">\n' +
-            '                                <div class="slider-item no-link">\n' +
-            '                                    <a href="" data="modal-content-11" class="modal-button thumbnail linked"\n' +
-            '                                       data-dismiss="modal"\n' +
-            '                                       data-toggle="modal"\n' +
-            '                                       data-target="#common-modal2">\n' +
-            '                                        <img class="lazyOwl" src="' + imgPath + 'img/sprint-preview.jpg">\n' +
-            '                                    </a>\n' +
-            '                                    <p>Лендинг</p>\n' +
-            '                                </div>\n' +
-            '                                <div class="slider-item no-link">\n' +
-            '                                    <a href="" data="modal-content-9" class="modal-button thumbnail linked"\n' +
-            '                                       data-dismiss="modal"\n' +
-            '                                       data-toggle="modal"\n' +
-            '                                       data-target="#common-modal2">\n' +
-            '                                        <img class="lazyOwl" src="' + imgPath + 'img/pishiprosto-preview.jpg">\n' +
-            '                                    </a>\n' +
-            '                                    <p>Лид-магнит</p>\n' +
-            '                                </div>\n' +
-            '                                <div class="slider-item no-link">\n' +
-            '                                    <a href="" data="modal-content-24" class="modal-button thumbnail linked"\n' +
-            '                                       data-dismiss="modal"\n' +
-            '                                       data-toggle="modal"\n' +
-            '                                       data-target="#common-modal2">\n' +
-            '                                        <img class="lazyOwl" src="' + imgPath + 'img/sprintlessons-preview.jpg">\n' +
-            '                                    </a>\n' +
-            '                                    <p>Страницы уроков</p>\n' +
-            '                                </div>\n' +
-            '                            </div>\n' +
-            '                        </div>');
-        modalContent.push('<div id="modal-content-24">\n' +
-            '                                        <img src="' + imgPath + 'img/sprintlessons.jpg"\n' +
-            '                                             class="lazy item-thumbnail"\n' +
-            '                                             alt="sprintlessons">\n' +
-            '                                    </div>');
-
-
-    });
-
-    //Show modal window with context content
-    $(document).on('click', '.modal-button', function () {
-        //disabling fullpage scroll when modal is open
-        $.fn.fullpage.setAllowScrolling(false);
-        $.fn.fullpage.setKeyboardScrolling(false);
-
-        var $modalInner = $('.modal .modal-body');
-        $modalInner.empty();
-        var $modalId = $(this).attr('data');
-        var number = parseInt($modalId.split("-").pop());
-        $modalInner.append(modalContent[number]);
-    });
-
-    //enabling fullpage scroll
-    $('.modal').on('click', function (e) {
-        var a = e.target.getAttribute('class');
-        if (a === 'close' || a === 'modal fade in') {
-            $.fn.fullpage.setAllowScrolling(true);
-            $.fn.fullpage.setKeyboardScrolling(true);
-        }
-    });
-
-    var $content = $('ul.content');
-    $('.chart').on('click', function () {
-        $content.empty();
-        var result = {};
-        var $activeInputs = $("input:checkbox:checked");
-        $activeInputs.each(function (item, i) {
-            var $element = $(i);
-            var groupName = $element.closest('.tab-pane').find('h4:first').text();
-            var currentCheckbox = $element.closest('label').find('input');
-            result[groupName] = result[groupName] || [];
-            result[groupName].push(currentCheckbox);
-        });
-
-        jQuery.each(result, function (i, val) {
-            $content.append('<h5 class="no-shadow" id="title1">' + i + '</h5>');
-            jQuery.each(val, function () {
-                $content.append('<li>'
-                    + '<label>'
-                    + '<input checked name="services[]" type="checkbox" id="'
-                    + this[0].id + '" value="'
-                    + this[0].value + '">'
-                    + '<span class="checkmark"></span>'
-                    + '</label>'
-                    + '<span class="itemName">'
-                    + this[0].value
-                    + '</span>'
-                    + '</li>');
-            });
-        });
-    });
-
-    $content.on('click', '.checkmark', function (e) {
-        var $thisId = $(this).prev("input").attr("id");
-        var $curInput = $('input#' + $thisId);
-        $curInput.closest('label').toggleClass('active-row');
-
-        if ($(e.target).closest('li').prev('h5').nextUntil('h5', 'li').length === 1) {
-            $(e.target).closest('li').prev('h5').hide();
-        }
-
-        $(e.target).closest('li').remove();
-        $curInput.prop("checked", false);
-    });
-
-
-    $(document).ready(function() {
-        $('#sub-btn').on('click', function () {
-
-            $('.form-val').bootstrapValidator({
-                // To use feedback icons, ensure that you use Bootstrap v3.1.0 or later
-                feedbackIcons: {
-                    valid: 'glyphicon glyphicon-ok',
-                    invalid: 'glyphicon glyphicon-remove',
-                    validating: 'glyphicon glyphicon-refresh'
-                },
-                fields: {
-                    name: {
-                        validators: {
-                            stringLength: {
-                                min: 2
-                            },
-                            notEmpty: {
-                                message: 'Пожалуйста, введите свое имя'
-                            }
-                        }
-                    },
-                    email: {
-                        validators: {
-                            notEmpty: {
-                                message: 'Пожалуйста, введите свой email'
-                            },
-                            regexp: {
-                                regexp: /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/,
-                                message: 'Введите правильный email адрес'
-                            }
-                        }
-                    },
-                    contact_number: {
-                        validators: {
-                            notEmpty: {
-                                message: 'Пожалуйста, введите свой телефон'
-                            },
-                            regexp: {
-                                regexp: /^[1-9][0-9]{5,15}$/,
-                                message: 'Введите правильный номер телефона'
-                            }
-                        }
-                    }
-                }
-
-            })
-
-        });
-
     });
 
 })(jQuery);

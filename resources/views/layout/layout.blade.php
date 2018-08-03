@@ -169,24 +169,6 @@
 
     </div>
 </div>
-<script>
-    window.onload = function () {
-        var opacity = 1;
-        function fadeOutEffect(el) {
-            setTimeout(function () {
-                if (opacity >= 0) {
-                    el.style.opacity = opacity;
-                    opacity -= 0.1;
-                } else {
-                    document.querySelector('.KvPreloaderDiv').style.display = "none";
-                }
-                fadeOutEffect(document.querySelector('.KvPreloaderDiv'));
-            }, 10);
-        }
-        fadeOutEffect(document.querySelector('.KvPreloaderDiv'));
-    }
-
-</script>
 <div class="upArrow"></div>
 @yield('menu')
 @yield('sub-menu')

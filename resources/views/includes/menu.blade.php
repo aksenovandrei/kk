@@ -131,8 +131,6 @@
             <li id="menu-item-portfolio" class="menu-item scroll portfolio">
                 <a href="#portfolio" data-number="5">Портфолио</a>
             </li>
-            {{--<li id="menu-item-partners" class="menu-item scroll"><a href="#partners">Партнеры</a></li>--}}
-            {{--<li id="menu-item-vacancies" class="menu-item scroll"><a href="#vacancies">Вакансии</a></li>--}}
             <li id="menu-item-contact" class="menu-item scroll contact">
                 <a href="#contact" data-number="6">Контакты</a>
             </li>
